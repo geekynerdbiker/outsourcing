@@ -2,6 +2,21 @@
 
 namespace ConsoleApp1
 {
+    class Knight
+    {
+        public int hp;
+        public int attack;
+        public void Move()
+        {
+            Console.WriteLine("Knight Move");
+        }
+        public void Attack()
+        {
+            Console.WriteLine("Knight Attack");
+        }
+        public void Die() { }
+    }
+
     class Program
     {
         enum ClassType
@@ -11,6 +26,7 @@ namespace ConsoleApp1
             Archer = 2,
             Mage = 3
         }
+
         struct Player
         {
             public int hp;
@@ -170,7 +186,7 @@ namespace ConsoleApp1
             while (true)
             {
                 monster.hp -= player.attack;
-                if( monster.hp <= 0)
+                if (monster.hp <= 0)
                 {
                     Console.WriteLine($"Current HP: {player.hp}");
                     Console.WriteLine("Victory!");
@@ -178,7 +194,7 @@ namespace ConsoleApp1
                 }
 
                 player.hp -= monster.attack;
-                if(player.hp <= 0)
+                if (player.hp <= 0)
                 {
                     Console.WriteLine("Lost...");
                     break;
@@ -186,7 +202,8 @@ namespace ConsoleApp1
 
             }
         }
-        static void RunAway(ref Player player, ref Monster monster) 
+
+        static void RunAway(ref Player player, ref Monster monster)
         {
             Random rand = new Random();
             int runaway = rand.Next(1, 101);
@@ -196,21 +213,28 @@ namespace ConsoleApp1
             else
                 Fight(ref player, ref monster);
         }
+
         static void Main(string[] args)
         {
+            Knight knight = new Knight();
 
+            knight.hp = 100;
+            knight.attack = 10;
+
+            knight.Move();
+            knight.Attack();
+
+            /*
             while (true)
             {
                 ClassType choice = ChooseClass();
-                if (choice != ClassType.None)
-                {
-                    Player player;
-                    CreatePlayer(choice, out player);
-                    EnterGame(ref player);
+                if (choice == ClassType.None) continue;
 
-                    // Console.WriteLine($"HP{player.hp} Attack{player.attack}");
-                }
-            }
+                Player player;
+                CreatePlayer(choice, out player);
+                EnterGame(ref player);
+
+            }*/
         }
     }
 }
