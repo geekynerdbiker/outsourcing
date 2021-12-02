@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>  // srand, rand, Sleep, system
 #include <time.h>  // time
@@ -23,7 +23,7 @@ void user_move();
 void print_current();
 void print_user();
 
-int main()
+int main() // 엘리베이터 초기화 후 반복문 실행
 {
 	int input;
 	int result = 1;
@@ -64,7 +64,7 @@ int main()
 	return 0;
 }
 
-int routine(int input)
+int routine(int input) // 입력받은 층 만큼 엘리베이터가 이동
 {
 	while (1)
 	{
@@ -78,7 +78,7 @@ int routine(int input)
 	return elv.floor;
 }
 
-void door_routine() {
+void door_routine() { // 문이 열리고 대기했다가 닫히는 시나리오
 	printf("The door is opening.\n");
 	Sleep(1000 * DOOR_MOVING_TIME);
 	printf("The door opened.\n");
@@ -91,7 +91,7 @@ void door_routine() {
 	system("cls");
 }
 
-void user_move() {
+void user_move() { // 층을 이동할 때 마다 승객을 랜덤하게 태우거나 내려보냄
 	elv.currentUser += rand() % 3 - 6;
 	if (elv.currentUser < 0) elv.currentUser = 0;
 
@@ -103,7 +103,7 @@ void user_move() {
 	}
 }
 
-void print_current() {
+void print_current() { // 현재 층과 지상으로부터의 높이를 출력
 	Sleep(1000);
 	system("cls");
 	printf("-------------------------------------------------\n");
@@ -113,7 +113,7 @@ void print_current() {
 	printf("-------------------------------------------------\n");
 }
 
-void print_user() {
+void print_user() { // 현재 탑승객 수 출력
 	if (elv.currentUser > 1) printf("There are %d people in the elevator.\n", elv.currentUser);
 	else if (elv.currentUser == 1) printf("There is 1 person in the elevator.\n");
 	else printf("There is no person in the elevator.\n");

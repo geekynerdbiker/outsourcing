@@ -72,13 +72,16 @@ class TSP:
         # 전체 도시 수 = len(self.helper.nodes)
         # 새로 만들어질 경로: path_edit
         # 모든 도시를 경유하는 path 생성
-        path_edit = [] # Edit this (1)
+        # Edit this (1)
+        path_edit = []
 
         # path_edit를 섞음 (shuffle)
         # Edit this (2)
+        random.shuffle(path_edit)
         
         # 처음 도시로 다시 돌아오기 (path_edit의 첫 엘리먼트를 맨 뒤에 append)
         # Edit this (3)
+        path_edit.append(path_edit[0])
 
         # ----------------- DO NOT EDIT ------------------
         self.helper.after_making_path( path_edit )
@@ -117,23 +120,33 @@ class TSP:
             # pool 안에 있는 모든 도시들에 대하여
             for pool_i in range(len(pool)):
                 
-                # 현재 도시 (가장 최근에 path_edit에 추가된 도시)를 node1에 대입 
-                node1 = None # Edit this (1)
+                # 현재 도시 (가장 최근에 path_edit에 추가된 도시)를 node1에 대입
+                # Edit this (1)
+                node1 = path_edit.pop(len(path_edit))
+
                 # pool 리스트 안의 pool_i 인덱스에 있는 도시를 node2에 대입
-                node2 = None # Edit this (2)
+                # Edit this (2)
+                node2 = pool[pool_i]
+
                 # 두 도시의 거리 dist를 계산 ( self.helper.get_dist( a, b )를 사용하여 거리를 구할 수 있음 )
-                dist = None # Edit this (3)
+                # Edit this (3)
+                dist = self.helper.get_dist(node1, node2)
 
                 # 만약 dist가 기존의 min_dist보다 짧거나 min_dist가 아직 None이라면
-                if False: # Edit this (4)
+                # Edit this (4)
+                if min_dist is None or min_dist > dist:
                     # min_dist에는 dist를 대입
-                    min_dist = None # Edit this (5)
+                    # Edit this (5)
+                    min_dist = dist
+
                     # min_index에는 현재 pool의 index인 pool_i를 대입
-                    min_index = None # Edit this (6)
+                    # Edit this (6)
+                    min_index = pool_i
 
             # min_index와 min_dist를 구했으니
             # pool에서 min_index 도시를 pop() 해서 path_edit에 append
-            path_edit.append( pool.pop() ) # Edit this (7)
+            # Edit this (7)
+            path_edit.append( pool.pop(min_index) )
 
 
         # 모든 도시를 다 방문했으니 처음 도시로 돌아옴 (path_edit의 첫 엘리먼트를 맨 뒤에 append)
@@ -164,8 +177,9 @@ class TSP:
         # 이후 path_edit를 수정
         path_edit = self.helper.path.copy()
 
-        # 반복하며 경로를 수정 
-        iteration_num = 5000 # 얼마나 반복할지는 원하는 대로 Edit this (1)
+        # 반복하며 경로를 수정
+        # 얼마나 반복할지는 원하는 대로 Edit this (1)
+        iteration_num = 10000
 
         for trial in range(iteration_num):
 
