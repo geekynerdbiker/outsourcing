@@ -37,7 +37,7 @@ public:
     Vertex* FindVertex(int key);
 
     /// get the number of the vertics
-    int Size() const;
+    int Size() const { return m_vSize; }
 
     /// memory free for the vertics
     void Clear();

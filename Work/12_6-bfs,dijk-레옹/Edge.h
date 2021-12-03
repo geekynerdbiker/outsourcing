@@ -26,13 +26,13 @@ public:
     void SetNext(Edge* pNext);
 
     /// get the key of this edge
-    int GetKey() const;
+    int GetKey() const { return m_key; }
 
     /// get the weight of this edge
-    int GetWeight() const;
+    int GetWeight() const { return m_weight; }
 
     /// get the next pointer of this edge
-    Edge* GetNext() const;
+    Edge* GetNext() const { return m_pNext; }
 };
 
 #endif

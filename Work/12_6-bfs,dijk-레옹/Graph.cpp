@@ -7,7 +7,7 @@
 
 Graph::Graph()
 {
-    // TODO: implement
+    m_pVHead = NULL;
 }
 Graph::~Graph()
 {

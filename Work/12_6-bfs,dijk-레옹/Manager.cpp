@@ -1,11 +1,12 @@
 #include "Manager.h"
+#include "Queue.h"
 #include <cstring>
 
 Manager::~Manager()
 {
     if (fout.is_open())
         fout.close();
-
+    
     if (ferr.is_open())
         ferr.close();
 }
@@ -14,8 +15,8 @@ void Manager::Run(const char* filepath)
 {
     fout.open(RESULT_LOG_PATH);
     ferr.open(ERROR_LOG_PATH);
-
-    // TODO: implement
+    
+    cout << Load(filepath);
 }
 void Manager::PrintError(Result result)
 {
@@ -36,7 +37,15 @@ void Manager::PrintError(Result result)
 /// </returns>
 Result Manager::Load(const char* filepath)
 {
-    // TODO: implement
+    FILE* file = fopen(filepath, "r");
+    
+    if (file == NULL) {
+        printf("File does not exist.\n");
+        return LoadFileNotExist;
+    }
+    
+    return Success;
+    
 }
 /// <summary>
 /// print out the graph as matrix form
@@ -48,10 +57,11 @@ Result Manager::Load(const char* filepath)
 /// </returns>
 Result Manager::Print()
 {
+    return Success;
     // TODO: implement
 }
 /// <summary>
-/// find the path from startVertexKey to endVertexKey with DFS 
+/// find the path from startVertexKey to endVertexKey with BFS
 /// </summary>
 ///
 /// <param name="startVertexKey">
@@ -65,9 +75,35 @@ Result Manager::Print()
 /// Result::InvalidVertexKey or Result::GraphNotExist or Result::InvalidAlgorithm if an exception has occurred.
 /// Result::Success otherwise.
 /// </returns>
-Result Manager::FindPathDfs(int startVertexKey, int endVertexKey)
+Result Manager::FindPathBfs(int startVertexKey, int endVertexKey)
 {
-    // TODO: implement
+    bool *m_visit = new bool [m_graph.Size()];
+    
+    Queue<int> q;
+    q.Push(startVertexKey);
+    m_visit[startVertexKey] = true;
+    
+    while (!q.Empty())
+    {
+        int pPoint = q.front;
+        q.Pop();
+        
+        if (pPoint == endVertexKey)
+        {
+            return Success; //Arrive the distinition
+        }
+        
+        for (int i = 0; i < m_graph.Size(); i++) {
+            //The current point is not visited and can pass
+            if (!m_visit[m_graph.FindVertex(pPoint)->GetKey()])
+            {
+                m_visit[m_graph.FindVertex(pPoint)->GetKey()] = true;
+                q.Push(m_graph.FindVertex(pPoint)->GetKey());
+            }
+        }
+        
+    }
+    return Success;
 }
 /// <summary>
 /// find the shortest path from startVertexKey to endVertexKey with Dijkstra using std::set
@@ -87,6 +123,7 @@ Result Manager::FindPathDfs(int startVertexKey, int endVertexKey)
 Result Manager::FindShortestPathDijkstraUsingSet(int startVertexKey, int endVertexKey)
 {
     // TODO: implement
+    return Success;
 }
 /// <summary>
 /// find the shortest path from startVertexKey to endVertexKey with Bellman-Ford
@@ -105,10 +142,12 @@ Result Manager::FindShortestPathDijkstraUsingSet(int startVertexKey, int endVert
 /// </returns>
 Result Manager::FindShortestPathBellmanFord(int startVertexKey, int endVertexKey)
 {
+    return Success;
     // TODO: implement
 }
 
 Result Manager::RabinKarpCompare(const char* CompareString,const char* ComparedString)
 {
+    return Success;
     // TODO: implement
 }

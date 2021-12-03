@@ -5,6 +5,8 @@
 #define NULL	0
 #endif
 
+#
+
 #include "Edge.h"
 
 class Vertex
@@ -35,7 +37,7 @@ public:
     /// <returns>
     /// the key of this vertex
     /// </returns>
-    int GetKey() const;
+    int GetKey() const { return m_key; }
     /// <summary>
     /// get the next pointer of this vertex
     /// </summary>
@@ -43,7 +45,7 @@ public:
     /// <returns>
     /// the next pointer of this vertex
     /// </returns>
-    Vertex* GetNext() const;
+    Vertex* GetNext() const { return m_pNext; }
 
     /// <summary>
     /// get the number of the edges
@@ -52,7 +54,7 @@ public:
     /// <returns>
     /// the number of the edges
     /// </returns>
-    int Size() const;
+    int Size() const { return m_size; }
 
     /// <summary>
     /// add edge with edgeNum at the end of the linked list for the edges
@@ -72,7 +74,7 @@ public:
     /// <returns>
     /// the ehad pointer of the edge
     /// </returns>
-    Edge* GetHeadOfEdge() const;
+    Edge* GetHeadOfEdge() const { return m_pEHead; }
     /// <summary>
     /// memory free for edges
     /// </summary>
