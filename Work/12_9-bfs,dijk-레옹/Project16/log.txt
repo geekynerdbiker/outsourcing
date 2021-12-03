@@ -1,0 +1,75 @@
+========LOAD========
+Success
+=====================
+
+======== ADD =========
+Elsa Janssen 49 Busan
+=====================
+
+======== ADD =========
+Tommy Pfizer 38 Seoul
+=====================
+
+========== ERROR ==========
+600
+===========================
+
+=======PRINT_BP========
+Denny Pfizer 0 32 Gyeonggi
+Elsa Janssen 1 49 Busan
+Emily Moderna 0 21 Incheon
+Erin AstraZeneca 0 51 Daegu
+John Pfizer 1 17 Seoul
+Tom Pfizer 1 38 Seoul
+Tommy Pfizer 1 38 Seoul
+======================
+
+======SEARCH_BP=======
+Tom Pfizer 1 38 Seoul
+======================
+
+======== ADD =========
+John Pfizer 17 Seoul
+=====================
+
+======== ADD =========
+Emily Moderna 21 Incheon
+=====================
+
+======== ADD =========
+Emily Moderna 21 Incheon
+=====================
+
+========== ERROR ==========
+300
+===========================
+
+======SEARCH_AVL=======
+John Pfizer 2 17 Seoul
+======================
+
+========VLOAD========
+Success
+=====================
+
+======VPRINT A=======
+Elsa Janssen 1 49 Busan
+Emily Moderna 2 21 Incheon
+John Pfizer 2 17 Seoul
+======================
+
+======== ADD =========
+Tom Pfizer 38 Seoul
+=====================
+
+========VLOAD========
+Success
+=====================
+
+======VPRINT B=======
+Elsa Janssen 1 49 Busan
+Emily Moderna 2 21 Incheon
+Tom Pfizer 2 38 Seoul
+John Pfizer 2 17 Seoul
+======================
+
