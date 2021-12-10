@@ -1,0 +1,21 @@
+Program p2
+    integer i
+    real x(450)
+    real fx(450)
+    real x_min, fx_min
+    
+    x_min = 5000
+    fx_min = 5000
+    
+    do i = 100,450
+        x(i) = 0.01 * i
+        fx(i) = 5000 / (x(i) * sqrt(25-x(i)**2))
+
+        if (fx(i) < fx_min) then
+            fx_min = fx(i)
+            x_min = x(i)
+        endif
+    end do
+    
+    write(*, *) x_min, fx_min
+End Program p2
