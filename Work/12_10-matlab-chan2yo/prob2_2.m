@@ -1,38 +1,39 @@
-L=20;
 R=1.0e4;
 Fs=8*R;
-T=1/R;
-Ts=1/Fs;
-alpha =1;
 
-if mod(L, 2)==0 
- M=L/2;
-else
- M=(L-1)/2;
+T=1/R;
+Tfs=1/Fs;
+
+a=1;
+
+if mod(20, 2)==0 modula=20/2;
+else modula=(20-1)/2;
 end 
-g=zeros(1,L);
-for n=-M:M 
- num=sin(pi*n*Ts/T)*cos(alpha*pi*n*Ts/T);
- den=(pi*n*Ts/T)*(1-(2*alpha*n*Ts/T)^2);
- g(n+M+1)=num/den; 
- if (1-(2*alpha*n*Ts/T)^2)==0 
- g(n+M+1)=pi/4*sin(pi*n*Ts/T)/(pi*n*Ts/T);
- end 
- if (pi*n*Ts/T)==0 
- g(n+M+1)=cos(alpha*pi*n*Ts/T)/(1-(2*alpha*n*Ts/T)^2); 
- end 
-end 
+
+graph=zeros(1,20);
+for n=-modula:modula 
+    d=(pi*n*Tfs/T)*(1-(2*n*a*Tfs/T)^2);
+    num=cos(pi*n*a*Tfs/T)*sin(pi*n*Tfs/T);
+    graph(n+modula+1)=num/d; 
+    
+    if (1-(2*n*a*Tfs/T)^2)==0 graph(n+modula+1)=pi/4*sin(pi*n*Tfs/T)/(pi*n*Tfs/T);
+    end
+
+    if (pi*n*Tfs/T)==0 graph(n+modula+1)=cos(pi*n*a*Tfs/T)/(1-(2*n*a*Tfs/T)^2); 
+    end 
+end
 
 data1 = round(rand(1,20));
 output1=upsample(data1,Fs/R);
 
 y1=filter(g,1,output1);
 
+Fn=1e3
 [b,a]=butter(5,[25 25]/Fn, 'bandpass');
-y2=filter(b,a,y1)
+fx=filter(b,a,y1)
 
 figure;
-plot(y2);
+plot(fx);
 stem(data1);
 title('Input data to the Raised Cosine Filter');
 ylim([-1 ,2]);

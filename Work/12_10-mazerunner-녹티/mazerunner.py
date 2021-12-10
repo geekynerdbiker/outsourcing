@@ -1,4 +1,5 @@
 from maze import Maze
+from collections import deque
 
 """
     [과제 3]
@@ -27,12 +28,13 @@ from maze import Maze
         평가에는 반영되지 않으나, 출처 표기 없이 유사한 코드가 발견되면 0점
 """
 
+
 # 이 함수를 먼저 만들어보는 걸 추천함
 # def shortest_path_length(maze):
-    # maze에서 (1, 1)에서 (maze.height, maze.width)까지 가는 최단 경로의 "길이"를 리턴(정수)
-    # 이동 방향은 상/하/좌/우 네 방향 (대각선x)
-    # 갈 수 있는 경로가 없으면 -1을 리턴한다.
-    # return -1
+# maze에서 (1, 1)에서 (maze.height, maze.width)까지 가는 최단 경로의 "길이"를 리턴(정수)
+# 이동 방향은 상/하/좌/우 네 방향 (대각선x)
+# 갈 수 있는 경로가 없으면 -1을 리턴한다.
+# return -1
 
 
 def shortest_path(maze):
@@ -40,4 +42,51 @@ def shortest_path(maze):
     # 이동 방향은 상/하/좌/우 네 방향 (대각선x)
     # 경로는 2-tuple의 리스트로 만든다(예: [(1,1), (1, 2), (2, 2), ...]
     # 갈 수 있는 경로가 없으면 []를 리턴한다.
-    return [(1, 1), (1, 2), (2, 2)]
+    height = maze.height
+    width = maze.width
+
+    dir = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+    visited = [[0] * (width + 2) for _ in range(height + 2)]
+    route = [[0] * (width + 2) for _ in range(height + 2)]
+    x, y = 1, 1
+
+    path = deque()
+
+    visited[x][y] = 1
+    path.append((x, y))
+
+    for i in range(0, height+2):
+        for j in range(0, width+2):
+            if maze.maze[i][j] != '#':
+                visited[i][j] = 1
+
+    while len(path):
+        x, y = path.popleft()
+        if x == height and y == width:
+            break
+        for d in range(4):
+            next_x, next_y = x + dir[d][0], y + dir[d][1]
+            if next_x == 1 and next_y ==1:
+                continue
+            if next_x < 1 or next_y < 1 or next_x >= height+1 or next_y >= width+1:
+                continue
+            if maze.is_wall(next_x, next_y):
+                continue
+            if visited[next_x][next_y] == 1:
+                visited[next_x][next_y] = visited[x][y] + 1
+                path.append((next_x, next_y))
+                route[next_x][next_y] = (x, y);
+
+
+    rst = [(height,width)]
+    curr_x, curr_y = height, width
+    while curr_x != 1 or curr_y != 1:
+        rst.append(route[curr_x][curr_y])
+        new_x, new_y = route[curr_x][curr_y]
+        curr_x, curr_y = new_x, new_y
+
+    rst.reverse()
+    if rst[-1] != (height, width):
+        return []
+    return rst
+
