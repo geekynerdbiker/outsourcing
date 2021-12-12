@@ -1,33 +1,38 @@
-import requests
-import matplotlib.pyplot as plt
-from konlpy.tag import Kkma
-from bs4 import BeautifulSoup
-from collections import Counter
 import re
 import json
+import requests
+import numpy as np
+from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
+
+
+class Miner:
+    def data_list(wordname):
+        with open('data/SentiWord_info.json', encoding='utf-8-sig', mode='r') as f:
+            data = json.load(f)
+        result = ['None', 'None']
+        for i in range(0, len(data)):
+            if data[i]['word'] == wordname:
+                result.pop()
+                result.pop()
+                result.append(data[i]['word_root'])
+                result.append(data[i]['polarity'])
+
+        r_word = result[0]
+        s_word = result[1]
+
+        return r_word, s_word
 
 
 def fix_korean():
-    import platform
-
-    if platform.system() == 'Darwin':
-        plt.rc('font', family='AppleGothic')
-    elif platform.system() == 'Windows':
-        plt.rc('font', family='Malgun Gothic')
-    elif platform.system() == 'Linux':  # if use colab
-        # !wget "https://www.wfonts.com/download/data/2016/06/13/malgun-gothic/malgun.ttf"
-        # !mv malgun.ttf /usr/share/fonts/truetype/
-        # import matplotlib.font_manager as fm
-        # fm._rebuild()
-        plt.rc('font', family='Malgun Gothic')
-    plt.rcParams['axes.unicode_minus'] = False
+    plt.rc('font', family='AppleGothic')
 
 
-def get_titles():
+def get_titles(keyword):
     news_dict = []
 
-    query = '삼성'
-    news_num = 10
+    query = keyword
+    news_num = 200
     query = query.replace(' ', '+')
 
     news_url = 'https://search.naver.com/search.naver?where=news&sm=tab_jum&query={}'
@@ -62,59 +67,7 @@ def get_titles():
     return news_dict
 
 
-def get_comments():
-    comments_dict = []
-    urls = ["https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=015&aid=0004638999",
-            "https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=016&aid=0001923515",
-            "https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=015&aid=0004639419",
-            "https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=101&oid=018&aid=0005104521", ]
-
-    print('댓글 크롤링 중...')
-
-    for url in urls:
-        co_list = []
-
-        oid = url.split("oid=")[1].split("&")[0]  # 422
-        aid = url.split("aid=")[1]  # 0000430957
-        page = 1
-        header = {
-            "User-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36",
-            "referer": url,
-        }
-
-        while True:
-            c_url = "https://apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?ticket=news&templateId=default_society&pool=cbox5&_callback=jQuery1707138182064460843_1523512042464&lang=ko&country=&objectId=news" + oid + "%2C" + aid + "&categoryId=&pageSize=20&indexSize=10&groupId=&listType=OBJECT&pageType=more&page=" + str(
-                page) + "&refresh=false&sort=FAVORITE"
-            r = requests.get(c_url, headers=header)
-            cont = BeautifulSoup(r.content, "html.parser")
-            total_comm = str(cont).split('comment":')[1].split(",")[0]
-
-            match = re.findall('"contents":([^\*]*),"userIdNo"', str(cont))
-            co_list.append(match)
-            if int(total_comm) <= ((page) * 20):
-                break
-            else:
-                page += 1
-
-        def flatten(l):
-            flat_list = []
-            for elem in l:
-                if type(elem) == list:
-                    for e in elem:
-                        flat_list.append(e)
-                else:
-                    flat_list.append(elem)
-            return flat_list
-
-        allCommetns = flatten(co_list)
-
-        for comment in allCommetns:
-            comments_dict.append(comment)
-
-    return comments_dict
-
-
-def get_words(title, comment):
+def get_words(title):
     words = []
 
     for word in title:
@@ -122,38 +75,14 @@ def get_words(title, comment):
         for w in splits:
             words.append(w)
 
-    for line in comment:
-        for word in line:
-            splits = word.split(' ')
-            for w in splits:
-                words.append(w)
     return words
 
 
-class Miner():
-
-    def data_list(wordname):
-        with open('data/SentiWord_info.json', encoding='utf-8-sig', mode='r') as f:
-            data = json.load(f)
-        result = ['None', 'None']
-        for i in range(0, len(data)):
-            if data[i]['word'] == wordname:
-                result.pop()
-                result.pop()
-                result.append(data[i]['word_root'])
-                result.append(data[i]['polarity'])
-
-        r_word = result[0]
-        s_word = result[1]
-
-        return r_word, s_word
-
-
-if __name__ == '__main__':
-    words = get_words(get_titles(), get_comments())
-    print(words)
+def get_score(keyword):
+    words = get_words(get_titles(keyword))
     m = Miner
-    score = 0
+    pos = 0
+    neg = 0
 
     rst = []
     for w in words:
@@ -165,21 +94,39 @@ if __name__ == '__main__':
 
     for s in rst:
         word_count[s[0]] = word_count.get(s[0], 0) + 1
-        score += int(s[1])
+        if int(s[1]) > 0:
+            pos += 1
+        elif int(s[1]) < 0:
+            neg += 1
 
-    c = Counter(word_count)
-    t10 = c.most_common(10)
+    return pos, neg
 
-    ratio = []
-    labels = []
 
-    for i in t10:
-        labels.append(i[0])
-        ratio.append(i[1])
+if __name__ == '__main__':
+    scores = [get_score('삼성 마케팅'), get_score('삼성 재무'), get_score('삼성 생산'), get_score('삼성 인적'), get_score('삼성 기술'),
+              get_score('삼성 경영')]
 
-    fix_korean()
-    plt.pie(ratio, labels=labels, autopct='%.1f%%')
+    labels = ['삼성 마케팅', '삼성 재무', '삼성 생산', '삼성 인적', '삼성 기술', '삼성 경영']
+    pos_ratio = []
+    neg_ratio = []
+
+    for i in range(len(scores)):
+        if scores[i][1] == 0:
+            if scores[i][0] == 0:
+                pos_ratio.append(0)
+                neg_ratio.append(0)
+        else:
+            pos = scores[i][0] / (scores[i][0] + scores[i][1]) * 100
+            neg = scores[i][1] / (scores[i][0] + scores[i][1]) * 100
+            pos_ratio.append(pos)
+            neg_ratio.append(neg)
+
+    x1 = [1, 3, 5, 7, 9, 11]
+    x2 = [1.3, 3.3, 5.3, 7.3, 9.3, 11.3]
+    plt.bar(x1, pos_ratio, color='b', width=0.3, label='긍정도')
+    plt.legend()
+    plt.bar(x2, neg_ratio, color='r', width=0.3, label='부정도')
+    plt.legend()
+    plt.xticks(x1, labels)
     plt.title("기업: 삼성")
     plt.show()
-
-    print("score is" + str(score))
