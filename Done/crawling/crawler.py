@@ -1,14 +1,14 @@
 import re
 import json
 import requests
-import numpy as np
 from bs4 import BeautifulSoup
+from collections import Counter
 import matplotlib.pyplot as plt
 
 
 class Miner:
     def data_list(wordname):
-        with open('data/SentiWord_info.json', encoding='utf-8-sig', mode='r') as f:
+        with open('data.json', encoding='utf-8-sig', mode='r') as f:
             data = json.load(f)
         result = ['None', 'None']
         for i in range(0, len(data)):
@@ -22,10 +22,6 @@ class Miner:
         s_word = result[1]
 
         return r_word, s_word
-
-
-def fix_korean():
-    plt.rc('font', family='AppleGothic')
 
 
 def get_titles(keyword):
@@ -43,7 +39,7 @@ def get_titles(keyword):
     idx = 0
     cur_page = 1
 
-    print('제목 크롤링 중...')
+    print('\"' + keyword + '\" 관련 기사 크롤링 중...')
 
     while idx < news_num:
 
@@ -90,7 +86,7 @@ def get_score(keyword):
         if data[1] != 'None':
             rst.append(data)
 
-    word_count = {}  # 빈 set
+    word_count = {}
 
     for s in rst:
         word_count[s[0]] = word_count.get(s[0], 0) + 1
@@ -99,34 +95,54 @@ def get_score(keyword):
         elif int(s[1]) < 0:
             neg += 1
 
-    return pos, neg
+    c = Counter(word_count)
+    t5 = c.most_common(5)
+
+    ratio = []
+    labels = []
+
+    for i in t5:
+        labels.append(i[0])
+        ratio.append(i[1])
+
+    return pos, neg, labels, ratio
 
 
 if __name__ == '__main__':
-    scores = [get_score('삼성 마케팅'), get_score('삼성 재무'), get_score('삼성 생산'), get_score('삼성 인적'), get_score('삼성 기술'),
-              get_score('삼성 경영')]
+    table = [get_score('삼성 마케팅'), get_score('삼성 재무'), get_score('삼성 생산'), get_score('삼성 인적'), get_score('삼성 기술'),get_score('삼성 경영')]
 
     labels = ['삼성 마케팅', '삼성 재무', '삼성 생산', '삼성 인적', '삼성 기술', '삼성 경영']
     pos_ratio = []
     neg_ratio = []
 
-    for i in range(len(scores)):
-        if scores[i][1] == 0:
-            if scores[i][0] == 0:
+    for i in range(len(table)):
+        if table[i][1] == 0:
+            if table[i][0] == 0:
                 pos_ratio.append(0)
                 neg_ratio.append(0)
         else:
-            pos = scores[i][0] / (scores[i][0] + scores[i][1]) * 100
-            neg = scores[i][1] / (scores[i][0] + scores[i][1]) * 100
+            pos = table[i][0] / (table[i][0] + table[i][1]) * 100
+            neg = table[i][1] / (table[i][0] + table[i][1]) * 100
             pos_ratio.append(pos)
             neg_ratio.append(neg)
 
+    for i in range(len(table)):
+        plt.rc('font', family='NanumBarunGothic')
+        plt.pie(table[i][3], labels=table[i][2], autopct='%.1f%%')
+        plt.title(labels[i])
+        plt.show()
+
     x1 = [1, 3, 5, 7, 9, 11]
     x2 = [1.3, 3.3, 5.3, 7.3, 9.3, 11.3]
+
+    plt.rc('font', family='NanumBarunGothic')
     plt.bar(x1, pos_ratio, color='b', width=0.3, label='긍정도')
     plt.legend()
+
+    plt.rc('font', family='NanumBarunGothic')
     plt.bar(x2, neg_ratio, color='r', width=0.3, label='부정도')
     plt.legend()
+
     plt.xticks(x1, labels)
     plt.title("기업: 삼성")
     plt.show()
