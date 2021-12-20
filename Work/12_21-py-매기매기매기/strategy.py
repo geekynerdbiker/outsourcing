@@ -67,7 +67,16 @@ class Order:  # the Context
         fmt = '<Order total: {:.2f} due: {:.2f}>'
         return fmt.format(self.total(), self.due())
 
+
 # <2>
+
+
+def fidelity_promo_priority(order):
+    """20% discount for customers with 2000 or more fidelity points and with 20 or more same product"""
+    for item in order.cart:
+        if item.quantity >= 20:
+            return order.total() * .2 if order.customer.fidelity >= 2000 else 0
+
 
 def fidelity_promo(order):  # <3>
     """5% discount for customers with 1000 or more fidelity points"""

@@ -83,6 +83,15 @@ class FidelityPromo(Promotion):  # first Concrete Strategy
         return order.total() * .05 if order.customer.fidelity >= 1000 else 0
 
 
+class FidelityPromo_priority(Promotion):  # first Concrete Strategy
+    """20% discount for customers with 2000 or more fidelity points and with 20 or more same product"""
+
+    def discount(self, order):
+        for item in order.cart:
+            if item.quantity >= 20:
+                return order.total() * .2 if order.customer.fidelity >= 2000 else 0
+
+
 class BulkItemPromo(Promotion):  # second Concrete Strategy
     """10% discount for each LineItem with 20 or more units"""
 
