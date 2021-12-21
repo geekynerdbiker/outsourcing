@@ -71,7 +71,7 @@ class Order:  # the Context
 # <2>
 
 
-def fidelity_promo_priority(order):
+def fidelity_priority_promo(order):  # 2번 문제
     """20% discount for customers with 2000 or more fidelity points and with 20 or more same product"""
     for item in order.cart:
         if item.quantity >= 20:

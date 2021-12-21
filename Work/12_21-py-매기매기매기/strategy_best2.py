@@ -75,11 +75,12 @@ class Order:  # the Context
         return fmt.format(self.total(), self.due())
 
 
-def fidelity_promo_priority(order):
+def fidelity_priority_promo(order):  # 2번 문제
     """20% discount for customers with 2000 or more fidelity points and with 20 or more same product"""
     for item in order.cart:
         if item.quantity >= 20:
             return order.total() * .2 if order.customer.fidelity >= 2000 else 0
+    return 0
 
 
 def fidelity_promo(order):
@@ -108,7 +109,7 @@ def large_order_promo(order):
 
 promos = [globals()[name] for name in globals()  # <1>
           if name.__contains__('_promo')  # <2>
-          and name != 'best_promo' ]  # <3>
+          and name != 'best_promo']  # <3>
 
 
 def best_promo(order):
