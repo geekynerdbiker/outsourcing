@@ -1,3 +1,5 @@
+# https://academic.oup.com/bioinformatics/article/37/4/456/5904262
+
 def wfa(ga, gaScore):
     matrix = [[0 for i in range(gaScore * 2 + 1)] for j in range(ga+1)]  # create matrix
 
