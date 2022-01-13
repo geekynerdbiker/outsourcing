@@ -1,12 +1,31 @@
-# https://academic.oup.com/bioinformatics/article/37/4/456/5904262
+class WFA:
+    def __init__(self, s1, s2, penalty, score):
+        self.q = s1
+        self.t = s2
 
-def wfa(ga, gaScore):
-    matrix = [[0 for i in range(gaScore * 2 + 1)] for j in range(ga+1)]  # create matrix
+        self.a = penalty[0]
+        self.x = penalty[1]
+        self.e = penalty[2]
 
-    # dia = row - col  # anti = row + col  # row = (anti + dia) / 2  # col = (anti - dia) / 2
-    # (score, dia) = anti
+        self.s = score
 
-def globalAlignment(seq1, seq2):
+        self.matrix = [[0 for i in range(self.s * 2 + 1)] for j in range(self.s)]
+
+    def wf_extend(self, score):
+        m = min(len(self.q) > len(self.t))
+        for k in range(m):
+            v = self.matrix[score][k] - k
+            h = self.matrix[score][k]
+            while self.q[v] == self.t[h]:
+                self.matrix[score][k] += 1
+                v += 1
+                h += 1
+
+    def wf_next(self):
+        return
+
+
+def global_alignment(s1, s2):
     matrix = [[0 for i in range(cols)] for j in range(rows)]  # create matrix
     ctr = 0
     # setting first row and column with gap penalties
@@ -25,13 +44,13 @@ def globalAlignment(seq1, seq2):
             if i > 0 and j > 0:
                 top = matrix[i - 1][j] + gap  # gap in sequence 1
                 left = matrix[i][j - 1] + gap  # gap in sequence 2
-                if seq1[j - 1] == seq2[i - 1]:  # match
+                if s1[j - 1] == s2[i - 1]:  # match
                     diag = matrix[i - 1][j - 1] + match
                 else:  # mismatch
                     diag = matrix[i - 1][j - 1] + mismatch
 
                 # taking max of 3 possibilities
-                matrix[i][j] = max(top, left, diag)
+                matrix[i][j] = min(top, left, diag)
 
     for row in matrix:
         print(row)
@@ -78,42 +97,13 @@ def reconstruct(matrix, rowpos, colpos, a1, a2, a3):  # generates optimal aligme
         reconstruct(matrix, rowpos, colpos - 1, seq1[colpos - 1] + a1, ' ' + a2, '_' + a3)
 
 
-def reconstructLocal(matrix, rowpos, colpos, a1, a2, a3):  # generates optimal aligments
-    if matrix[rowpos][colpos] == 0:  # base case
-
-        print(a1)
-        print(a2)
-        print(a3)
-        return
-
-    if seq1[colpos - 1] == seq2[rowpos - 1]:
-        if matrix[rowpos - 1][colpos - 1] == matrix[rowpos][colpos] - match:
-            reconstructLocal(matrix, rowpos - 1, colpos - 1, seq1[colpos - 1] + a1, '|' + a2, seq2[rowpos - 1] + a3)
-
-    if seq1[colpos - 1] != seq2[rowpos - 1]:
-        if matrix[rowpos - 1][colpos - 1] == matrix[rowpos][colpos] - mismatch:
-            reconstructLocal(matrix, rowpos - 1, colpos - 1, seq1[colpos - 1] + a1, ' ' + a2, seq2[rowpos - 1] + a3)
-
-    if matrix[rowpos - 1][colpos] == matrix[rowpos][colpos] - gap:
-        reconstructLocal(matrix, rowpos - 1, colpos, '_' + a1, ' ' + a2, seq2[rowpos - 1] + a3)
-
-    if matrix[rowpos][colpos - 1] == matrix[rowpos][colpos] - gap:
-        reconstructLocal(matrix, rowpos, colpos - 1, seq1[colpos - 1] + a1, ' ' + a2, '_' + a3)
-
-
-# seq1 = list(input('Sequence 1: '))  # input sequence 1
-# seq2 = list(input('Sequence 2: '))  # input sequence 2
-# match = int(input('Enter scoring function.\nMatch: '))  # input scoring function
-# mismatch = int(input('Mismatch: '))
-# gap = int(input('Gap: '))
-
 seq1, seq2 = "ACACACTA", "AGCACACA"
-match, mismatch, gap = 1, 0, -1
+match, mismatch, gap = 0, 1, 1
+p = [0, 1, 2]
 cols = len(seq1) + 1
 rows = len(seq2) + 1
 
 print('\nGlobal Alignment:\n')
 
-# compute global alignment using dynamic programming
-ga = globalAlignment(seq1, seq2)
-wfa(ga, ga[rows - 1][cols - 1])
+ga = global_alignment(seq1, seq2)
+wfa = WFA(seq1, seq2, p, ga[rows - 1][cols - 1])
