@@ -72,6 +72,7 @@ def b2_click(event):
     imageTitle2.grid(row=0, column=0, columnspan=2)
 
     img2 = Image.open('vol.jpg')
+    img2 = img2.resize((500, 500), Image.ANTIALIAS)
     image2 = ImageTk.PhotoImage(img2)
     imageLabel2 = Label(root2, image=image2)
     imageLabel2.grid(row=1, column=0, columnspan=1)
