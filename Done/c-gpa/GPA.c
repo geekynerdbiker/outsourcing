@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -10,19 +10,14 @@ int main(int argc, char* argv[])
     /* argv[0] is the name of the program */
     printf("This program name is %s\n", argv[0]);
 
-    if (strcmp(argv[1], "-w") == 0)
-    {
-        systemC(argc - 2, argv); // call systemC
-    }
-    else
-    {
-        systemP(argc - 1, argv); // call systemP
-    }
+    systemC(argc - 1, argv);
+    systemP(argc - 1, argv);
 }
 
 void systemP(int num_subj, char* grade[])
 {
     int i, count = 0;
+    int invalid = 0;
     int num = num_subj;
     int numb = num_subj;
     char in_grade;
@@ -59,6 +54,18 @@ void systemP(int num_subj, char* grade[])
                 default: num_subj--; in_gp = 0.0; break;
                 }
             }
+            else if (grade[i][1] == '-')
+            {
+                in_grade = grade[i][0];
+                switch (in_grade)
+                {
+                case 'A': in_gp = -1.0; break;
+                case 'B': in_gp = -1.0; break;
+                case 'C': in_gp = -1.0; break;
+                case 'D': in_gp = -1.0; break;
+                default: num_subj--; in_gp = 0.0; break;
+                }
+            }
             else
             {
                 num_subj--; in_gp = 0.0;
@@ -69,25 +76,35 @@ void systemP(int num_subj, char* grade[])
         {
             num_subj--; in_gp = 0.0;
         }
-        sum_gp = sum_gp + in_gp;
+        if (in_gp >= 0.0) sum_gp = sum_gp + in_gp;
         if (num_subj == num)
         {
-            count++; // output each grade
-            printf("Grade for subject %d is %s, GP %5.2f\n", count, grade[i], in_gp);
+            if (in_gp != -1.0)
+            {
+                count++;
+                printf("Grade for subject %d is %s, GP %5.1f\n", count, grade[i], in_gp);
+            }
+            else
+            {
+                count++;
+                printf("Grade for subject %d is %s, invalid\n", count, grade[i]);
+                invalid++;
+            }
         }
         else
         {
             num--;
         }
     }
-    float gpa = sum_gp / num_subj; // compute and output GPA
+    float gpa = sum_gp / (num_subj-invalid);
     if (gpa > 4.0) gpa = 4.0;
-    printf("Your GPA for %d subjects is %5.2f, under systemP\n", num_subj, gpa);
+    printf("Your GPA for %d valid subjects is %5.2f\n", num_subj, gpa);
 }
 
 void systemC(int num_subj, char* grade[])
 {
     int i, count = 0;
+    int invalid = 0;
     int num = num_subj;
     int numb = num_subj;
     char in_grade;
@@ -117,10 +134,10 @@ void systemC(int num_subj, char* grade[])
                 in_grade = grade[i][0];
                 switch (in_grade)
                 {
-                case 'A': in_gp = 4.5; break;
-                case 'B': in_gp = 3.5; break;
-                case 'C': in_gp = 2.5; break;
-                case 'D': in_gp = 1.5; break;
+                case 'A': in_gp = 4.3; break;
+                case 'B': in_gp = 3.3; break;
+                case 'C': in_gp = 2.3; break;
+                case 'D': in_gp = 1.3; break;
                 default: num_subj--; in_gp = 0.0; break;
                 }
             }
@@ -132,6 +149,7 @@ void systemC(int num_subj, char* grade[])
                 case 'A': in_gp = 3.7; break;
                 case 'B': in_gp = 2.7; break;
                 case 'C': in_gp = 1.7; break;
+                case 'D': in_gp = -1.0; break;
                 default: num_subj--; in_gp = 0.0; break;
                 }
             }
@@ -145,18 +163,27 @@ void systemC(int num_subj, char* grade[])
         {
             num_subj--; in_gp = 0.0;
         }
-        sum_gp = sum_gp + in_gp;
+        if (in_gp != -1.0) sum_gp = sum_gp + in_gp;
         if (num_subj == num)
         {
-            count++; // output each grade
-            printf("Grade for subject %d is %s, GP %5.2f\n", count, grade[i], in_gp);
+            if (in_gp != -1.0)
+            {
+                count++;
+                printf("Grade for subject %d is %s, GP %5.1f\n", count, grade[i], in_gp);
+            }
+            else
+            {
+                count++;
+                printf("Grade for subject %d is %s, invalid\n", count, grade[i]);
+                invalid++;
+            }
         }
         else
         {
             num--;
         }
     }
-    float gpa = sum_gp / num_subj; // compute and output GPA
+    float gpa = sum_gp / (num_subj-invalid);
     if (gpa > 4.0) gpa = 4.0;
-    printf("Your GPA for %d subjects is %5.2f, under systemP\n", num_subj, gpa);
+    printf("Your GPA for %d valid subjects is %5.2f\n", num_subj, gpa);
 }

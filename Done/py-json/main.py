@@ -42,7 +42,8 @@ for keys in json_data.keys():
     print(f'[------ list name = {keys} ------]')
     i = 0
     for data in json_data[keys]:
-        print(f'[--------- item {i+1} ---------]')
+        print(f'[--------- item {i + 1} ---------]')
         i += 1
-        for key, value in data.items():
-            print(f'{key} : {value}')
+        s = str(data.values())
+        s = s[12:len(s) - 1]
+        print(s)
