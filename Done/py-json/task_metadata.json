@@ -1,12 +1,4 @@
 {
-  "TEST": [
-    {
-      "test1" : "t1",
-      "test2" : "t2",
-      "test3" : "t3",
-      "test4" : "t4"
-    }
-  ],
   "TASK_METADATA": [
     {
       "TASK_NUM": "26",
