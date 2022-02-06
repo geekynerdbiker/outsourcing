@@ -1,27 +1,29 @@
 import struct
 import os
+import sys
 import math
+import sqlite3
 
-HEADER_SIGATURE = 'D0CF11E0A1B11AE1'
+HEADER_SIGATURE = b'\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1'
 
-SIZE_OF_SECTOR          = 512
-SIZE_OF_MINI_SECTOR     = 64
-SIZE_OF_DIRECTORY_ENTRY = 4096
+SIZE_OF_SECTOR = 512
+SIZE_OF_MINI_SECTOR = 128
+SIZE_OF_DIRECTORY_ENTRY = 128
 
-COMPOUND_HEADER_TOP_FORMAT      = '<8s16sHHHHHHIIIIIIIIII'
-COMPOUND_HEADER_BOTTOM_FORMAT   = '<109I'
-COMPOUND_FAT_SECTOR_FORMAT      = '<128I'
+COMPOUND_HEADER_TOP_FORMAT = '<8s16sHHHHHHIIIIIIIIII'
+COMPOUND_HEADER_BOTTOM_FORMAT = '<109I'
+COMPOUND_FAT_SECTOR_FORMAT = '<128I'
 COMPOUND_DIRECTORY_ENTRY_FORMAT = '<64sHBBIII16sIQQIII'
 
 EMPTY = 0xFFFFFFFF  # NON_DATA
 
-TYPE_EMPTY        = 0
-TYPE_STORAGE      = 1
-TYPE_STREAM       = 2
+TYPE_EMPTY = 0
+TYPE_STORAGE = 1
+TYPE_STREAM = 2
 TYPE_ROOT_STORAGE = 5
 
-CP_ERROR          = False
-CP_OK             = True
+CP_ERROR = False
+CP_OK = True
 
 
 class DirectoryEntry:
@@ -33,6 +35,7 @@ class DirectoryEntry:
             >>> "Example Code"
                 DirectoryEntry()
     """
+
     def __init__(self):
         """
             .. notes:
@@ -109,6 +112,27 @@ class DirectoryEntry:
             retStr = "root"
         return retStr
 
+    def insert_to_sqlite_db(self):
+        path = ''
+        conn = sqlite3.connect(path + '/database.db', isolation_level=None)
+        c = conn.cursor()
+
+        c.execute(
+            "CREATE TABLE IF NOT EXISTS entry(directory_entry_name PRIMARY KEY, directory_entry_name_length text, object_type text, color_flag text, stream_id_sibling_left text, stream_id_sibling_right text, self.stream_id_child text, clsid text, state_bits text, time_creation text, time_modified text, starting_sector_location text, stream_size text)")
+        c.execute("INSERT INTO users VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (self.directory_entry_name,
+                                                                                      self.directory_entry_name_length,
+                                                                                      self.object_type,
+                                                                                      self.color_flag,
+                                                                                      self.stream_id_sibling_left,
+                                                                                      self.stream_id_sibling_right,
+                                                                                      self.stream_id_child,
+                                                                                      self.clsid,
+                                                                                      self.state_bits,
+                                                                                      self.time_creation,
+                                                                                      self.time_modified,
+                                                                                      self.starting_sector_location,
+                                                                                      self.stream_size))
+
 
 class CompoundHeader:
     """CompoundHeader Class
@@ -119,6 +143,7 @@ class CompoundHeader:
                 CompoundHeader()
 
     """
+
     def __init__(self):
         """
             ..note::
@@ -186,7 +211,7 @@ class CompoundHeader:
         if not len(buffer) == SIZE_OF_SECTOR:
             return CP_ERROR
 
-        baseline = struct.calcsize(COMPOUND_HEADER_TOP_FORMAT) # MUST be 76(0x4C) byte
+        baseline = struct.calcsize(COMPOUND_HEADER_TOP_FORMAT)  # MUST be 76(0x4C) byte
         header1 = buffer[:baseline]
         header2 = buffer[baseline:]
 
@@ -286,9 +311,9 @@ class CompoundFileReader:
         self.__DIFATArray = []
         self.__FATArray = []
         self.__miniFATArray = []  # 전체 miniFAT Entry를 list 형태로 저장
-        self.__miniFATStream = b''      # Root Entry의 stream
+        self.__miniFATStream = b''  # Root Entry의 stream
         self.__directoryEntryArray = []
-        self.__unallocatedData = []    # 미할당 영역을 담는 일종의 토큰이며, 리스트 임시 공간입니다.
+        self.__unallocatedData = []  # 미할당 영역을 담는 일종의 토큰이며, 리스트 임시 공간입니다.
         self.__usedFATSectorMap = []
         self.__usedMiniFATSectorMap = []
 
@@ -412,7 +437,7 @@ class CompoundFileReader:
     def __set_Header(self):
         sec_no = -1  # 헤더 섹터의 인덱스
         raw_stream = self.__read_sector(sec_no)
-        
+
         # 해당 rawStream 값으로 헤더 구조체에 맞게 매핑
         # 자세한 구조체 내용은 set_header() 구조체를 확인
         if self.__Header.set_header(raw_stream) == CP_ERROR:
@@ -448,10 +473,10 @@ class CompoundFileReader:
 
     def __set_directoryEntryArray(self):
         start_sector = self.__Header.get_first_directory_sector_location()
-        entry_chain = self.__read_chain(start_sector, -1, self.__FATArray) # Directory Entry의 chain_size는 알 수 없음
+        entry_chain = self.__read_chain(start_sector, -1, self.__FATArray)  # Directory Entry의 chain_size는 알 수 없음
         if entry_chain == CP_ERROR:
             return CP_ERROR
-       
+
         buf = b"".join([self.__read_sector(sector) for sector in entry_chain])
         buf_len = len(buf)
         if buf_len % SIZE_OF_SECTOR or buf_len % SIZE_OF_DIRECTORY_ENTRY:  # len(buf)%512 != 0 -> readError, Exception
@@ -460,6 +485,7 @@ class CompoundFileReader:
 
         raw_stream = [buf[i:i + SIZE_OF_DIRECTORY_ENTRY] for i in range(0, buf_len, SIZE_OF_DIRECTORY_ENTRY)]
         for index in range(buf_len // SIZE_OF_DIRECTORY_ENTRY):
+            temp_entry = DirectoryEntry()
             temp_entry.set_directory_entry(raw_stream[index])
             self.__directoryEntryArray.append(temp_entry)
             if temp_entry.get_object_type_explain() == "unused" or temp_entry.get_object_type_explain() == "exception":
@@ -468,7 +494,8 @@ class CompoundFileReader:
 
     def __set_miniFATStream(self):
         root_entry = self.__directoryEntryArray[0]
-        if self.__Header.get_number_of_mini_fat_sectors() == 0 or self.__directoryEntryArray[0].stream_size == 0: # miniFAT stream이 없는 경우
+        if self.__Header.get_number_of_mini_fat_sectors() == 0 or self.__directoryEntryArray[
+            0].stream_size == 0:  # miniFAT stream이 없는 경우
             return CP_OK
         chain_size = math.ceil(self.__directoryEntryArray[0].stream_size / SIZE_OF_MINI_SECTOR)
         root_chain = self.__read_chain(root_entry.starting_sector_location, chain_size, self.__FATArray)
@@ -495,7 +522,8 @@ class CompoundFileReader:
             if index.object_type == TYPE_STREAM and index.stream_size != 0:
                 # mini-FAT
                 if size < self.__Header.get_mini_stream_cutoff_size():
-                    target_chain = self.__read_chain(start_sector, math.ceil(size / SIZE_OF_MINI_SECTOR), self.__miniFATArray)
+                    target_chain = self.__read_chain(start_sector, math.ceil(size / SIZE_OF_MINI_SECTOR),
+                                                     self.__miniFATArray)
                     if target_chain == CP_ERROR:
                         return CP_ERROR
                     buf = self.__read_stream_from_miniFATArray(size, target_chain)
@@ -543,38 +571,30 @@ class CompoundFileReader:
             return CP_ERROR
 
         # END_OF_CHAIN 등을 만날 때 까지 체인을 구성
-        if chain_size < 0: # Directory Entry의 chain
+        if chain_size < 0:  # Directory Entry의 chain
             target_chains = [first_chain]
             chain = first_chain
             while True:
+                if chain > len(array):
+                    break
+
                 next_chain = array[chain]
-                #2번 - 체인구성
 
-
-
-
-
-
-
-
+                target_chains.append(next_chain)
+                chain = next_chain
 
             return target_chains
         else:
             target_chains = [first_chain]
             chain = first_chain
             for _ in range(chain_size + 1):
+                if chain > len(array):
+                    break
+
                 next_chain = array[chain]
-                #2번
 
-
-
-
-
-
-
-
-
-
+                target_chains.append(next_chain)
+                chain = next_chain
 
             return target_chains
 

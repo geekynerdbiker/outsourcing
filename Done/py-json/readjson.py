@@ -28,9 +28,18 @@ class Databases:
         except Exception as e:
             print(" create DB  ", e)
 
-    def insert(self, table, column, data):
-        sql = "INSERT INTO {table}({column}) VALUES ({data}) ;".format(table=table,
-                                                                          column=column, data=data)
+    def delete(self, table):
+        sql = "DROP TABLE {table} ;".format(table=table)
+
+        try:
+            self.cursor.execute(sql)
+            self.db.commit()
+        except Exception as e:
+            print(" create DB  ", e)
+
+    def insert(self, table, data, primary_key):
+        sql = "INSERT INTO {table} VALUES ({data}) ON CONFLICT ({primary_key}) DO NOTHING;".format(table=table, data=data, primary_key=primary_key)
+
         try:
             self.cursor.execute(sql)
             self.db.commit()
@@ -40,29 +49,44 @@ class Databases:
 
 # file_path='C://task_metadata.json'
 file_path = 'task_metadata.json'
+# file_path = 'manager_config.json'
 with open(file_path, 'r', encoding='utf-8') as f:
     json_data = json.load(f)
 
 db = Databases()
-for keys in json_data.keys():
-    print(f'[------ list name = {keys} ------]')
+for dname in json_data.keys():
+    print(f'[------ list name = {dname} ------]')
     i = 0
-    for datas in json_data[keys]:
+    l = list(json_data[dname][0].keys())
+    keys = []
+    primary_key = ''
+
+    for k in range(len(l)):
+        if k == 0:
+            primary_key = l[k]
+            l[k] += ' varchar(255) primary key'
+        else:
+            l[k] += ' varchar(255)'
+        keys.append(l[k])
+
+    keys = str(keys)
+    keys = keys.replace('[', '').replace('\'', '').replace(']', '')
+    print(keys)
+    db.delete(dname)
+    db.create(dname, keys)
+
+    for datas in json_data[dname]:
         print(f'[--------- item {i + 1} ---------]')
         i += 1
         s = str(datas.values())
         s = s[12:len(s) - 1]
         print(s)
 
-        column, data = [], []
+        data = []
         for key, value in datas.items():
-            column.append(key)
-            data.append(value)
-
-        column = str(column)
-        column = column.replace('[', '').replace('\'', '').replace(']', '')
+            data.append(value.replace(' ', '_').replace('\'', '').replace('\"', ''))
 
         data = str(data)
         data = data.replace('[', '').replace(']', '')
 
-        db.insert(table=keys, column=column, data=data)
+        db.insert(table=dname, data=data, primary_key=primary_key)
