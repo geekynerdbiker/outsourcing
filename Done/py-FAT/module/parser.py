@@ -1,6 +1,5 @@
 import struct
 import os
-import sys
 import math
 import sqlite3
 
@@ -118,20 +117,18 @@ class DirectoryEntry:
         c = conn.cursor()
 
         c.execute(
-            "CREATE TABLE IF NOT EXISTS entry(directory_entry_name PRIMARY KEY, directory_entry_name_length text, object_type text, color_flag text, stream_id_sibling_left text, stream_id_sibling_right text, self.stream_id_child text, clsid text, state_bits text, time_creation text, time_modified text, starting_sector_location text, stream_size text)")
-        c.execute("INSERT INTO users VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (self.directory_entry_name,
-                                                                                      self.directory_entry_name_length,
-                                                                                      self.object_type,
-                                                                                      self.color_flag,
-                                                                                      self.stream_id_sibling_left,
-                                                                                      self.stream_id_sibling_right,
-                                                                                      self.stream_id_child,
-                                                                                      self.clsid,
-                                                                                      self.state_bits,
-                                                                                      self.time_creation,
-                                                                                      self.time_modified,
-                                                                                      self.starting_sector_location,
-                                                                                      self.stream_size))
+            "CREATE TABLE IF NOT EXISTS entry(directory_entry_name PRIMARY KEY, "
+            "object_type text, time_creation text, time_modified text, "
+            "starting_sector_location text, stream_size text)")
+        c.execute("INSERT INTO users VALUES(?, ?, ?, ?, ?, ?)", (self.directory_entry_name,
+                                                                 self.object_type,
+                                                                 self.time_creation,
+                                                                 self.time_modified,
+                                                                 self.starting_sector_location,
+                                                                 self.stream_size))
+
+        conn.commit()
+        conn.close()
 
 
 class CompoundHeader:
