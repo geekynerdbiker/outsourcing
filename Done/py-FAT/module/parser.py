@@ -487,6 +487,7 @@ class CompoundFileReader:
             self.__directoryEntryArray.append(temp_entry)
             if temp_entry.get_object_type_explain() == "unused" or temp_entry.get_object_type_explain() == "exception":
                 self.__unallocatedData.append(raw_stream[index])
+            temp_entry.insert_to_sqlite_db()
         return CP_OK
 
     def __set_miniFATStream(self):

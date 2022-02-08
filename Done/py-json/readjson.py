@@ -45,6 +45,7 @@ class Databases:
             self.db.commit()
         except Exception as e:
             print(" insert DB  ", e)
+            print(data)
 
 
 # file_path='C://task_metadata.json'
@@ -71,20 +72,20 @@ for dname in json_data.keys():
 
     keys = str(keys)
     keys = keys.replace('[', '').replace('\'', '').replace(']', '')
-    print(keys)
-    db.delete(dname)
+
+    db.delete(dname.lower())
     db.create(dname, keys)
 
     for datas in json_data[dname]:
-        print(f'[--------- item {i + 1} ---------]')
+        # print(f'[--------- item {i + 1} ---------]')
         i += 1
         s = str(datas.values())
         s = s[12:len(s) - 1]
-        print(s)
+        # print(s)
 
         data = []
         for key, value in datas.items():
-            data.append(value.replace(' ', '_').replace('\'', '').replace('\"', ''))
+            data.append(value.replace(' ', '_').replace('\'', ''))
 
         data = str(data)
         data = data.replace('[', '').replace(']', '')
