@@ -1,4 +1,4 @@
-package comp2402w22a2;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 import java.util.ListIterator;
@@ -125,13 +125,20 @@ public class DLList<T> implements MyList<T> {
 
     public void insertSingleBlock(int i, DLList<T> other) {
         // TODO: Your code goes here!
+        Node p = getNode(i).prev;
+        Node q = getNode(i);
+
+        p.next = other.getNode(0);
+        other.getNode(0).prev = p;
+        q.prev = other.getNode(other.size() - 1);
+        other.getNode(other.size() - 1).next = q;
     }
 
 
-	// Note: DO NOT CHANGE THIS FUNCTION.
-	// otherwise the server tests might fail.
+    // Note: DO NOT CHANGE THIS FUNCTION.
+    // otherwise the server tests might fail.
     public DLList<T> removeFirst() {
-		if( this.size() == 0 ) return new DLList<T>();
+        if (this.size() == 0) return new DLList<T>();
 
         DLList<T> other = new DLList<T>();
         T first = remove(0);

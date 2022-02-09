@@ -1,4 +1,4 @@
-package comp2402w22a2;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 import java.io.BufferedReader;
@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author morin
@@ -22,6 +24,33 @@ public class Part1 {
     public static void doIt(BufferedReader r, PrintWriter w)
             throws IOException, NumberFormatException {
 
+        List<Integer> l = new ArrayList<>();
+
+        int sum = 0;
+
+        for (String line = r.readLine(); line != null; line = r.readLine()) {
+            l.add(Integer.parseInt(line));
+        }
+
+        for (int i = 0; i < l.size(); i++) {
+            int min = Integer.MAX_VALUE, k = 0;
+            for (int j = 0; j < i; j++) {
+                if (Math.floorMod(i, 2) == 1) break;
+                if (l.get(i).equals(l.get(j))) {
+                    k = l.get(j);
+                    break;
+                }
+                if (l.get(j) <= l.get(i)) {
+                    if (Math.abs(l.get(i) - l.get(j)) < min) {
+                        min = Math.abs(l.get(i) - l.get(j));
+                        k = l.get(j);
+                    }
+                }
+            }
+            sum += k;
+        }
+
+        w.println(Math.floorMod(sum, 2402));
     }
 
     /**

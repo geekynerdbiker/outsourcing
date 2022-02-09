@@ -1,4 +1,4 @@
-package comp2402w22a2;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 import java.lang.reflect.Array;
@@ -62,7 +62,7 @@ public class SkiplistList<T> implements MyList<T> {
     /**
      * Find the node that precedes list index i in the skiplist.
      *
-     * @param x - the value to search for
+     * @param i - the value to search for
      * @return the predecessor of the node at index i or the final
      * node if i exceeds size() - 1.
      */
@@ -96,6 +96,12 @@ public class SkiplistList<T> implements MyList<T> {
 
     public void insertSingleBlock(int i, SkiplistList<T> other) {
         // TODO: Put your code here.
+        Iterator<T> it = other.iterator();
+
+        while(it.hasNext()) {
+            add(i, it.next());
+            i++;
+        }
     }
 
     // Prof Alexa wrote this to help debug when her lengths were turning
@@ -127,7 +133,7 @@ public class SkiplistList<T> implements MyList<T> {
     // DO NOT CHANGE THIS FUNCTION
     // otherwise the server tests might fail.
     public SkiplistList<T> removeFirst() {
-        if( this.size() == 0 )      return new SkiplistList<T>();
+        if (this.size() == 0) return new SkiplistList<T>();
 
         SkiplistList<T> other = new SkiplistList<T>();
         T first = remove(0);
@@ -304,20 +310,20 @@ public class SkiplistList<T> implements MyList<T> {
     }
 
 
-  public String toString() {
-    StringBuilder retStr = new StringBuilder();
-    retStr.append("[");
-    Node u = sentinel.next[0];
-    while( u != null ) {
-      retStr.append(u.x);
-      u = u.next[0];
-      if( u != null ) {
-        retStr.append(", ");
-      }
+    public String toString() {
+        StringBuilder retStr = new StringBuilder();
+        retStr.append("[");
+        Node u = sentinel.next[0];
+        while (u != null) {
+            retStr.append(u.x);
+            u = u.next[0];
+            if (u != null) {
+                retStr.append(", ");
+            }
+        }
+        retStr.append("]");
+        return retStr.toString();
     }
-    retStr.append("]");
-    return retStr.toString();
-  }
 
 
     public static void main(String[] args) {
@@ -329,7 +335,7 @@ public class SkiplistList<T> implements MyList<T> {
 
         SkiplistList<Character> sl = new SkiplistList<>();
         sl.createFixedSkiplistList(al);
-        System.out.println( "Testing toString: ");
+        System.out.println("Testing toString: ");
         System.out.println(sl);
 
         // Feel free to change this value to something else and test more.

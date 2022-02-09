@@ -1,4 +1,4 @@
-package comp2402w22a2;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 import java.io.BufferedReader;
@@ -7,18 +7,56 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-
-public class Part4 {
+/**
+ * @author morin
+ * @author sharp
+ */
+public class Part2 {
 
     /**
-     * Your code goes here - see Part0 for an example
-     *
+     * @param x an integer parameter
      * @param r the reader to read from
      * @param w the writer to write to
      * @throws IOException, NumberFormatException
      */
-    public static void doIt(int x, BufferedReader r, PrintWriter w) throws IOException {
+    public static void doIt(int x, BufferedReader r, PrintWriter w)
+            throws IOException, NumberFormatException {
+
+        List<Integer> l = new ArrayList<>();
+
+        for (String line = r.readLine(); line != null; line = r.readLine()) {
+            if (l.size() == 0) {
+                l.add(Integer.parseInt(line));
+            } else {
+                if (l.contains(Integer.parseInt(line))) {
+                    continue;
+                }
+                l.add(Integer.parseInt(line));
+            }
+        }
+
+        Collections.sort(l);
+
+        List<Integer> list = new ArrayList<>();
+
+        int sum = 0, result = 0;
+        for (int i = 0; i < l.size(); i++) {
+            if (Math.floorMod(i, x) == 0) {
+                list.add(l.get(i));
+                sum += l.get(i);
+            }
+        }
+        int a = 24022022 / list.size(), b = Math.floorMod(24022022, list.size());
+        result = Math.floorMod(a * sum, 2402);
+
+        for (int i = 0; i < b; i++)
+            result += list.get(i);
+
+        w.println(Math.floorMod(result, 2402));
     }
 
 
