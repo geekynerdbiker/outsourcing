@@ -125,13 +125,13 @@ public class DLList<T> implements MyList<T> {
 
     public void insertSingleBlock(int i, DLList<T> other) {
         // TODO: Your code goes here!
-        Node p = getNode(i).prev;
-        Node q = getNode(i);
 
-        p.next = other.getNode(0);
-        other.getNode(0).prev = p;
-        q.prev = other.getNode(other.size() - 1);
-        other.getNode(other.size() - 1).next = q;
+        other.dummy.next.prev = this.getNode(i).prev;
+        other.dummy.prev.next = this.getNode(i);
+        other.dummy.next.prev.next = other.dummy.next;
+        other.dummy.prev.next.prev = other.dummy.prev;
+
+        this.n += other.size();
     }
 
 
@@ -288,6 +288,7 @@ public class DLList<T> implements MyList<T> {
         System.out.println(ml);
         ml.insertSingleBlock(n, other2);
         System.out.println(ml);
+
 
         other0 = ml.removeFirst();
         System.out.println(ml);

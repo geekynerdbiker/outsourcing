@@ -8,7 +8,7 @@ public class Main {
 	// write your code here
 //        String[] input = {"9", "/Users/jacoban/Documents/GitHub/Crebugs/Work/java-list/a2-io/part4b-use-x-9.in"};
 //        Part4.main(input);
-//        DLList.testInsertSingleBlock(7);
-        SkiplistList.testInsertSingleBlock(7);
+        DLList.testInsertSingleBlock(15);
+//        SkiplistList.testInsertSingleBlock(0);
     }
 }

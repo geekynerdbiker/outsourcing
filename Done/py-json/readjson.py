@@ -56,8 +56,8 @@ class Databases:
             print(" insert DB  ", e)
 
 
-# file_path='C://task_metadata.json'
-file_path = 'manager_config.json'
+file_path='task_metadata.json'
+# file_path = 'manager_config.json'
 with open(file_path, 'r', encoding='utf-8') as f:
     json_data = json.load(f)
 
