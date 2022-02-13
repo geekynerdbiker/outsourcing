@@ -780,14 +780,6 @@
             "SCHEDULE_TIME": "{'minutes': 33}"
         },
         {
-            "TASK_NUM": "112",
-            "DATA_ID": "kasi_model_nf_predict_electron_index",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
             "TASK_NUM": "124",
             "DATA_ID": "kasi_hq_scint_sk1elaz_latest",
             "TASK_TYPE": "METADATA",
@@ -2372,7 +2364,7 @@
             "SCHEDULE_TIME": "{'minutes': 33}"
         },
         {
-            "TASK_NUM": "404",
+            "TASK_NUM": "590",
             "DATA_ID": "kasi_gye_ef_vhf_raw_met_det",
             "TASK_TYPE": "METADATA",
             "ENABLE": "True",
@@ -2724,14 +2716,6 @@
             "SCHEDULE_TIME": "{'minutes': 33}"
         },
         {
-            "TASK_NUM": "447",
-            "DATA_ID": "nasa_sdo_aia_94_2048_jpg",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
             "TASK_NUM": "448",
             "DATA_ID": "nasa_sdo_aia_131_512_jpg",
             "TASK_TYPE": "METADATA",
@@ -2812,174 +2796,6 @@
             "SCHEDULE_TIME": "{'minutes': 33}"
         },
         {
-            "TASK_NUM": "523",
-            "DATA_ID": "kasi_swms_diag_g",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "524",
-            "DATA_ID": "kasi_swms_diag_r",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "525",
-            "DATA_ID": "kasi_swms_diag_s",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "525",
-            "DATA_ID": "kasi_swms_diag_s",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "526",
-            "DATA_ID": "kasi_swms_goes11_proton_400",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "527",
-            "DATA_ID": "kasi_swms_goes11_proton_600",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "528",
-            "DATA_ID": "kasi_swms_goes13_proton_400",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "529",
-            "DATA_ID": "kasi_swms_goes13_proton_600",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "530",
-            "DATA_ID": "kasi_swms_goes16_proton_400",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "531",
-            "DATA_ID": "kasi_swms_goes16_proton_600",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "532",
-            "DATA_ID": "kasi_swms_goes14_xray_400",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "533",
-            "DATA_ID": "kasi_swms_goes14_xray_600",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "534",
-            "DATA_ID": "kasi_swms_goes15_xray_400",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "535",
-            "DATA_ID": "kasi_swms_goes15_xray_600",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "536",
-            "DATA_ID": "kasi_swms_goes16_xray_400",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "537",
-            "DATA_ID": "kasi_swms_goes16_xray_600",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "538",
-            "DATA_ID": "kasi_swms_kpindex_400_gif",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "539",
-            "DATA_ID": "kasi_swms_kpindex_600_gif",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "540",
-            "DATA_ID": "kasi_swms_soho_l2",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "541",
-            "DATA_ID": "kasi_swms_soho_l3",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "542",
-            "DATA_ID": "kasi_swms_prediction",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
             "TASK_NUM": "543",
             "DATA_ID": "kasi_swms_soho_eif195_303",
             "TASK_TYPE": "METADATA",
@@ -2990,30 +2806,6 @@
         {
             "TASK_NUM": "544",
             "DATA_ID": "kasi_swms_soho_eit195_681",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "545",
-            "DATA_ID": "kasi_swms_sec_kpindex_400",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "546",
-            "DATA_ID": "kasi_swms_sec_kpindex_600",
-            "TASK_TYPE": "METADATA",
-            "ENABLE": "True",
-            "SCHEDULE_TYPE": "interval",
-            "SCHEDULE_TIME": "{'minutes': 33}"
-        },
-        {
-            "TASK_NUM": "547",
-            "DATA_ID": "kasi_swms_swc_monitor",
             "TASK_TYPE": "METADATA",
             "ENABLE": "True",
             "SCHEDULE_TYPE": "interval",

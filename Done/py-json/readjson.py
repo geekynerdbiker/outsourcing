@@ -56,8 +56,8 @@ class Databases:
             print(" insert DB  ", e)
 
 
-file_path='task_metadata.json'
-# file_path = 'manager_config.json'
+# file_path='task_metadata.json'
+file_path = 'manager_config.json'
 with open(file_path, 'r', encoding='utf-8') as f:
     json_data = json.load(f)
 
@@ -83,7 +83,9 @@ for dname in json_data.keys():
     db.delete(dname)
     db.create(dname, keys)
 
-    for datas in json_data[dname]:
+    json_data = sorted(json_data[dname], key=(lambda x: int(x['TASK_NUM'])))
+
+    for datas in json_data:
         print(f'[--------- item {i + 1} ---------]')
         i += 1
         s = str(datas.values())
@@ -92,7 +94,7 @@ for dname in json_data.keys():
 
         data = []
         for key, value in datas.items():
-            data.append(value.replace('\'', ''))
+            data.append(value.replace('\'', '\'\''))
 
         data = str(data)
         data = data.replace('[', '').replace('\"', '\'').replace(']', '')
