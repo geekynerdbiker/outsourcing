@@ -87,6 +87,7 @@ for dname in json_data.keys():
 
     for datas in json_data:
         print(f'[--------- item {i + 1} ---------]')
+        datas['TASK_NUM'] = str(i+1)
         i += 1
         s = str(datas.values())
         s = s[12:len(s) - 1]
