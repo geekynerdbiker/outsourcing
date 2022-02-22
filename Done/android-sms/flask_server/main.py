@@ -1,24 +1,39 @@
-import os
-from flask import Flask, render_template
-from models import db
+from flask import Flask, make_response, jsonify, request
+import sqlite3
 
-app = Flask('SMS')
+app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/database', methods=['POST'])
 def hello():
-    return render_template('hello.html')
+    data = request.get_json()
+    db_init()
+    db_insert(data)
+    db_print()
+    return jsonify({'data': data})
 
 
-directory = os.path.abspath(os.path.dirname(__file__))
-db_file = os.path.join(directory, 'sms.db')
+def db_init():
+    conn = sqlite3.connect("sms.db")
+    conn.execute(
+        'CREATE TABLE IF NOT EXISTS sms(id INTEGER primary key autoincrement, sender TEXT, date TEXT, contents TEXT)')
+    conn.commit()
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_file
-app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db.init_app(app)
-db.app = app
-db.create_all()
+def db_insert(data):
+    conn = sqlite3.connect("sms.db")
+    cur = conn.cursor()
+    cur.execute('INSERT INTO sms (sender, date, contents) values (?,?,?)',
+                (data['sender'], data['receivedDate'], data['contents']))
+    conn.commit()
 
-app.run(host='127.0.0.1', port=8080, debug=True)
+
+def db_print():
+    con = sqlite3.connect('sms.db')
+    cursor = con.cursor()
+    cursor.execute("SELECT * FROM sms ;")
+    print(cursor.fetchall())
+
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=8080)

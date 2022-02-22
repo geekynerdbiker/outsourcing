@@ -1,23 +1,19 @@
 package geekynerdbiker.crebugs;
 
 import android.content.Intent;
-import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.jetbrains.annotations.NotNull;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import java.io.File;
 import java.io.IOException;
 
-import okhttp3.Call;
-import okhttp3.Callback;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -26,10 +22,8 @@ import okhttp3.Response;
 
 
 public class SmsDisplayActivity extends AppCompatActivity { //객체 선언
-    private DbOpenHelper mDbOpenHelper;
     Button btnTitle, btnClose;
     TextView tvMsg;
-    final String DB_ADDRESS = Environment.getDataDirectory().getAbsolutePath() + "/data/" + "geekynerdbiker.crebugs" + "/databases/sms.db";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,66 +63,69 @@ public class SmsDisplayActivity extends AppCompatActivity { //객체 선언
     }
 
     private void sendToServer(String sender, String receivedDate, String contents) {
-        mDbOpenHelper = new DbOpenHelper(this);
-        mDbOpenHelper.open();
-        mDbOpenHelper.create();
-        mDbOpenHelper.insertColumn(sender, receivedDate, contents);
-        mDbOpenHelper.close();
+        class sendData extends AsyncTask<Void, Void, String> {
+            private static final String urls = "http://10.0.2.2:8080/database";
 
-        connectServer();
-    }
-
-    private void connectServer() {
-        String ipv4Address = "10.0.2.2";
-        String portNumber = "8080";
-
-        String postUrl = "http://" + ipv4Address + ":" + portNumber + "/";
-        postRequest(postUrl);
-    }
-
-    void postRequest(String postUrl) {
-        File fileDataBase = new File(DB_ADDRESS);
-
-        OkHttpClient client = new OkHttpClient();
-
-        RequestBody postBody = RequestBody.create(MediaType.parse(DB_ADDRESS),
-                fileDataBase);
-        Request request = new Request.Builder()
-                .url(postUrl)
-                .post(postBody)
-                .build();
-
-        client.newCall(request).enqueue(new Callback() {
             @Override
-            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        TextView responseText = findViewById(R.id.tvMsg);
-                        try {
-                            responseText.setText("Server's Response\n" + response.body().string());
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
+            protected void onPreExecute() {
+                super.onPreExecute();
             }
 
             @Override
-            public void onFailure(Call call, IOException e) {
-                // Cancel the post on failure.
-                call.cancel();
-                Log.d("FAIL", e.getMessage());
-
-                // In order to access the TextView inside the UI thread, the code is executed inside runOnUiThread()
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        TextView responseText = findViewById(R.id.tvMsg);
-                        responseText.setText("Failed to Connect to Server. Please Try Again.");
-                    }
-                });
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
             }
-        });
+
+            @Override
+            protected void onProgressUpdate(Void... values) {
+                super.onProgressUpdate(values);
+            }
+
+            @Override
+            protected void onCancelled(String s) {
+                super.onCancelled(s);
+            }
+
+            @Override
+            protected void onCancelled() {
+                super.onCancelled();
+            }
+
+            @Override
+            protected String doInBackground(Void... voids) {
+
+                try {
+                    OkHttpClient client = new OkHttpClient();
+                    JSONObject jsonInput = new JSONObject();
+                    jsonInput.put("sender", sender);
+                    jsonInput.put("receivedDate", receivedDate);
+                    jsonInput.put("contents", contents);
+
+                    System.out.println(jsonInput);
+
+                    RequestBody reqBody = RequestBody.create(
+                            MediaType.parse("application/json; charset=utf-8"),
+                            jsonInput.toString()
+                    );
+
+                    Request request = new Request.Builder()
+                            .post(reqBody)
+                            .url(urls)
+                            .build();
+
+                    Response responses = null;
+                    responses = client.newCall(request).execute();
+                    System.out.println(responses.body().string());
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        }
+        sendData sendData = new sendData();
+        sendData.execute();
     }
 }
