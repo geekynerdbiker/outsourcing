@@ -1,4 +1,4 @@
-package comp2402w22a3;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 import java.io.BufferedReader;
@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Part4 {
@@ -21,6 +23,48 @@ public class Part4 {
      */
     public static void doIt(int x, BufferedReader r, PrintWriter w) throws IOException {
         //TODO(student): Your code goes here.
+        List<Integer> l = new ArrayList<>();
+
+        int sum = 0;
+
+        for (String line = r.readLine(); line != null; line = r.readLine()) {
+            l.add(Integer.parseInt(line));
+        }
+
+        int k = 0;
+        List<Integer> chain = new ArrayList<>();
+        for (int i = 0; i < x; i++) {
+            if (i == 0) k = l.get(0);
+            else k = l.get(Math.floorMod(k, l.size()));
+
+            int min = Integer.MAX_VALUE;
+            for (int j = 0; j < chain.size(); j++) {
+                if (chain.get(j) < min) {
+                    min = chain.get(j);
+                }
+            }
+
+            if (Math.floorMod(k, 5) == 0)
+                chain.add(k);
+
+            if (min != Integer.MAX_VALUE) {
+                sum += min;
+
+                if (Math.floorMod(k, 24) == 0) {
+                    int minChain = Integer.MAX_VALUE;
+                    int minChainIndex = 0;
+                    for (int j = 0; j < chain.size(); j++) {
+                        if (minChain > chain.get(j)) {
+                            minChain = chain.get(j);
+                            minChainIndex = j;
+                        }
+                    }
+                    chain.remove(minChainIndex);
+                }
+            }
+        }
+
+        w.println(Math.floorMod(sum, 2402));
     }
 
 

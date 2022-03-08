@@ -1,4 +1,4 @@
-package comp2402w22a3;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 // Students: No need to change anything in this file.

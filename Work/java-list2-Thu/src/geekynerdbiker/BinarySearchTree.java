@@ -1,4 +1,4 @@
-package comp2402w22a3;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 import java.util.Comparator;
@@ -53,8 +53,42 @@ public class BinarySearchTree<Node extends BinarySearchTree.BSTNode<Node, T>, T>
     }
 
 
-    public void insertSingleBlock(BinarySearchTree<Node,T> other) {
+    public void insertSingleBlock(BinarySearchTree<Node, T> other) {
         //TODO(student): Your code goes here.
+
+        Node sNode = this.firstNode();
+        Node otherNode = other.firstNode();
+
+        if (otherNode == null)
+            return;
+
+        T otherFirst = otherNode.x, otherLast;
+
+        while (other.nextNode(otherNode) != null)
+            otherNode = other.nextNode(otherNode);
+
+        otherLast = otherNode.x;
+
+        boolean isValid = false;
+        while (sNode != null) {
+            if (c.compare(otherFirst, sNode.x) < 0) {
+                if (c.compare(otherLast, sNode.x) < 0) {
+                    isValid = true;
+                    break;
+                }
+            } else if (c.compare(otherFirst, sNode.x) >= 0) {
+                if (c.compare(otherLast, sNode.x) >= 0) {
+                    isValid = true;
+                    break;
+                }
+            } else {
+                sNode = this.nextNode(sNode);
+            }
+        }
+
+        if (isValid) {
+            this.add(other.r);
+        }
     }
 
 
@@ -141,7 +175,6 @@ public class BinarySearchTree<Node extends BinarySearchTree.BSTNode<Node, T>, T>
         }
         return z;
     }
-
 
 
     /**
@@ -358,21 +391,21 @@ public class BinarySearchTree<Node extends BinarySearchTree.BSTNode<Node, T>, T>
     // You can use this to test, but don't use it in your code.
     // The size of this and other are not updated properly for this to work
     // elsewhere, but it's good enough to use in tests if you don't care about size.
-    public BinarySearchTree<Node,T> removeChild() {
+    public BinarySearchTree<Node, T> removeChild() {
 
         Node sample = super.newNode();
-        BinarySearchTree<Node,T> other = new
+        BinarySearchTree<Node, T> other = new
                 BinarySearchTree<Node, T>(sample);
 
-        if( (this.r.left == nil) && (this.r.right == nil) ) { // neither child exists do nothing
+        if ((this.r.left == nil) && (this.r.right == nil)) { // neither child exists do nothing
             return other;
         }
-        if( this.r.left != nil ) { // There is a left child
+        if (this.r.left != nil) { // There is a left child
             other.r = this.r.left;
             this.r.left = nil;
             other.r.parent = nil;
             other.n = 1; // this isn't correct, but it's a lower bound that isn't 0.
-            this.n--;	 // this isn't correct, but it is an upper bound
+            this.n--;     // this isn't correct, but it is an upper bound
             return other;
         } else {
             other.r = this.r.right;
@@ -385,26 +418,26 @@ public class BinarySearchTree<Node extends BinarySearchTree.BSTNode<Node, T>, T>
     }
 
     // Returns BST made from n random multiples of n.
-    public static BinarySearchTree<BSTEndNode<Integer>,Integer> randomSpacedBST(int n) {
+    public static BinarySearchTree<BSTEndNode<Integer>, Integer> randomSpacedBST(int n) {
         BSTEndNode<Integer> sample = new BSTEndNode<Integer>();
-        BinarySearchTree<BSTEndNode<Integer>,Integer> t = new
+        BinarySearchTree<BSTEndNode<Integer>, Integer> t = new
                 BinarySearchTree<BSTEndNode<Integer>, Integer>(sample);
         Random rand = new Random();
-        for( int i=0; i < n; i++ ) {
-            int value = rand.nextInt(3*n);
-            t.add(n*value);
+        for (int i = 0; i < n; i++) {
+            int value = rand.nextInt(3 * n);
+            t.add(n * value);
         }
 
         return t;
     }
 
     // Random BST of <= n elements in range [start, start+n)
-    public static BinarySearchTree<BSTEndNode<Integer>,Integer> randomIntBST(int start, int n) {
+    public static BinarySearchTree<BSTEndNode<Integer>, Integer> randomIntBST(int start, int n) {
         BSTEndNode<Integer> sample = new BSTEndNode<Integer>();
-        BinarySearchTree<BSTEndNode<Integer>,Integer> t = new
+        BinarySearchTree<BSTEndNode<Integer>, Integer> t = new
                 BinarySearchTree<BSTEndNode<Integer>, Integer>(sample);
         Random rand = new Random();
-        for( int i=0; i < n; i++ ) {
+        for (int i = 0; i < n; i++) {
             int value = rand.nextInt(n);
             t.add(start + value);
         }
@@ -418,18 +451,18 @@ public class BinarySearchTree<Node extends BinarySearchTree.BSTNode<Node, T>, T>
         int n = 10;
         BinarySearchTree<BinarySearchTree.BSTEndNode<Integer>, Integer> bst =
                 BinarySearchTree.randomSpacedBST(n);
-		System.out.println(bst);
+        System.out.println(bst);
 
 
         BinarySearchTree<BinarySearchTree.BSTEndNode<Integer>, Integer> other =
-                BinarySearchTree.randomIntBST(n+1, n-1);
-		System.out.println(other);
+                BinarySearchTree.randomIntBST(n + 1, n - 1);
+        System.out.println(other);
 
 
         bst.insertSingleBlock(other);
-		System.out.println( bst );
+        System.out.println(bst);
 
-        for( int i=0; i < n; i++ ) {
+        for (int i = 0; i < n; i++) {
             other = bst.removeChild();
             bst.insertSingleBlock(other);
         }

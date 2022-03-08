@@ -1,4 +1,4 @@
-package comp2402w22a3;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 import java.io.BufferedReader;
@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author morin
@@ -23,6 +25,33 @@ public class Part2 {
     public static void doIt(int x, BufferedReader r, PrintWriter w)
             throws IOException, NumberFormatException {
         //TODO(student): Your code goes here.
+        List<Integer> l = new ArrayList<>();
+
+        int sum = 0;
+
+        for (String line = r.readLine(); line != null; line = r.readLine()) {
+            l.add(Integer.parseInt(line));
+        }
+
+        int k = 0;
+        List<Integer> chain = new ArrayList<>();
+        for (int i = 0; i < x; i++) {
+            if (i == 0) k = l.get(0);
+            else k = l.get(Math.floorMod(k, l.size()));
+
+            chain.add(k);
+            int min = Integer.MAX_VALUE;
+            for (int j = 0; j < chain.size()-1; j++) {
+                if(chain.get(j) >= k)
+                    if(chain.get(j) < min)
+                        min = chain.get(j);
+            }
+
+            if (min != Integer.MAX_VALUE)
+                sum += min;
+        }
+
+        w.println(Math.floorMod(sum, 2402));
     }
 
 

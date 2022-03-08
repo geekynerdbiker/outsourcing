@@ -1,4 +1,4 @@
-package comp2402w22a3;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 
@@ -30,12 +30,42 @@ public class IntBST extends BinarySearchTree<BinarySearchTree.BSTEndNode<Integer
 
     public int numDescendantsMod(int y) {
         // TODO(students): Your code goes here.
-        return 0;
+        int count = 0;
+
+        BSTEndNode<Integer> sNode = this.firstNode();
+
+        while (sNode != null) {
+            if(Math.floorMod(sNode.x, y) == 0 )
+                count++;
+            sNode = this.nextNode(sNode);
+        }
+
+        return count;
     }
 
 
     public void sum(IntBST other) {
         // TODO(student): Your solution goes here.
+        IntBST rst = emptyBST();
+
+        BSTEndNode<Integer> sNode = this.firstNode();
+        BSTEndNode<Integer> otherNode = other.firstNode();
+
+        while (sNode != null) {
+            rst.add(sNode.x + otherNode.x);
+            int k = sNode.x;
+            sNode = this.nextNode(sNode);
+            this.remove(k);
+            otherNode = other.nextNode(otherNode);
+            if(otherNode == null)
+                otherNode = other.firstNode();
+        }
+
+        BSTEndNode<Integer> curr = rst.firstNode();
+        while( curr != null) {
+            this.add(curr.x);
+            curr = rst.nextNode(curr);
+        }
     }
 
 
@@ -92,6 +122,7 @@ public class IntBST extends BinarySearchTree<BinarySearchTree.BSTEndNode<Integer
         System.out.println( other );
         bst.sum(other);
         System.out.println( bst );
+        System.out.println(bst.numDescendantsMod(3));
 
         testSum(10, 10);
         testSum(10, 3);
@@ -106,6 +137,7 @@ public class IntBST extends BinarySearchTree<BinarySearchTree.BSTEndNode<Integer
         IntBST other = IntBST.randomBST(k);
 
         bst.sum(other);
+
         System.out.println("Done Test Sum------");
     }
 }

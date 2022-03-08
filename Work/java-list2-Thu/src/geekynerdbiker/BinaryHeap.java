@@ -1,13 +1,8 @@
-package comp2402w22a3;
+package geekynerdbiker;
 // Thank you Pat Morin for the basic skeleton of this file.
 
 
-import java.util.AbstractQueue;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.Random;
+import java.util.*;
 
 /**
  * This class implements a priority queue as a class binary heap
@@ -155,7 +150,25 @@ public class BinaryHeap<T> extends AbstractQueue<T> {
         // While not required, I've included a Pair and PairComparator class
         // that you can use if you like. Don't worry about it unless you think
         // you want something like that.
-        return null;
+
+        PriorityQueue<Pair> p = new PriorityQueue<Pair>(new PairComparator());
+
+        p.add(new Pair(0, this.a[0]));
+
+        for (int i = 0; i < k-1; ++i) {
+            assert p.peek() != null;
+            int j = p.peek().index;
+            p.poll();
+            int l = left(j), r = right(j);
+            if (l < this.n)
+                p.add(new Pair(l, this.a[l]));
+            if (r < this.n)
+                p.add(new Pair(r, this.a[r]));
+        }
+
+        assert p.peek() != null;
+
+        return p.peek().data;
     }
 
     // Pair is an internal class that allows you to store an
@@ -292,7 +305,7 @@ public class BinaryHeap<T> extends AbstractQueue<T> {
 
         long start, stop;
         double elapsed;
-        System.out.print("performing " + n + " smallest(i) for i=1...n...");
+        System.out.println("performing " + n + " smallest(i) for i=1...n...");
         start = System.nanoTime();
         //System.out.println(h);
         for (int i = 0; i < n; i++) {
