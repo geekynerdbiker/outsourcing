@@ -9,8 +9,19 @@ def hello():
     data = request.get_json()
     db_init()
     db_insert(data)
+    contents = data['contents']
     db_print()
     return jsonify({'data': data})
+
+
+def find_url(str):
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    url = re.findall(regex, str)
+    return [x[0] for x in url]
+
+
+def is_sms_phishing(contents):
+    urls = find_url(contents)
 
 
 def db_init():

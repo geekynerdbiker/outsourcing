@@ -11,90 +11,115 @@ public class MyBST<K extends Comparable<K>, V> {
     }
 
     public V insert(K key, V value) {
-        // TODO
-        MyBSTNode<K, V> node = this.root;
-
         if (key == null) {
             throw new NullPointerException();
         }
-        if (node == null) {
-            this.root = new MyBSTNode<>(key, value, null);
-            this.size++;
-        } else {
-            while (true) {
-                if (node.getKey().compareTo(key) > 0) {
-                    if (node.getLeft() == null) {
-                        node.setLeft(new MyBSTNode<>(key, value, node));
-                        this.size++;
-                        return value;
-                    } else node = node.getLeft();
-                } else if (node.getKey().compareTo(key) < 0) {
-                    if (node.getRight() == null) {
-                        node.setRight(new MyBSTNode<>(key, value, node));
-                        this.size++;
-                        return value;
-                    } else node = node.getRight();
-                } else {
-                    node.setValue(value);
-                    return value;
+        MyBSTNode<K, V> curr = root;
+        V oldValue = null;
+        if (curr == null) {
+            root = new MyBSTNode(key, value, null);
+            size++;
+        } else if (curr.key.equals(key)) {
+            oldValue = curr.getValue();
+            root.setValue(value);
+        } else if (curr != null) {
+            while (curr != null) {
+                if (key.compareTo(curr.key) > 0) {
+                    if (curr.right == null) {
+                        curr.right = new MyBSTNode(key, value, curr);
+                        size++;
+                        curr = null;
+                    } else if (curr.right.key.equals(key)) {
+                        oldValue = curr.right.getValue();
+                        curr = null;
+                    } else {
+                        curr = curr.right;
+                    }
+
+                } else if (key.compareTo(curr.key) < 0) {
+                    if (curr.left == null) {
+                        curr.left = new MyBSTNode(key, value, curr);
+                        size++;
+                        curr = null;
+                    } else if (curr.left.key.equals(key)) {
+                        oldValue = curr.left.getValue();
+                        curr = null;
+                    } else {
+                        curr = curr.left;
+                    }
                 }
             }
+
         }
-        return null;
+        return oldValue;
     }
 
+    /**
+     * Search for a node with key equal to key and return the value associated
+     * with that node.
+     *
+     * @param key of the node being searched for
+     * @return the value associated with the searched key
+     */
     public V search(K key) {
-        MyBSTNode<K, V> n = this.root;
-
-        while (n != null) {
-            int cmp = key.compareTo(n.getKey());
-            if (cmp < 0) {
-                n = n.getLeft();
-            } else if (cmp > 0) {
-                n = n.getRight();
-            } else {
-                return n.getValue();
+        if (key == null) {
+            return null;
+        }
+        MyBSTNode<K, V> curr = root;
+        while (curr != null) {
+            if (curr.key.equals(key)) {
+                return curr.value;
+            } else if (curr.key.compareTo(key) < 0) {
+                curr = curr.right;
+            } else if (curr.key.compareTo(key) > 0) {
+                curr = curr.left;
             }
         }
         return null;
     }
 
+    /**
+     * Search for a node with key equal to key and return the value associated
+     * with that node, then removing the node
+     *
+     * @param key of the node being removed
+     * @return the value of the removed node
+     */
     public V remove(K key) {
-        // TODO
         MyBSTNode<K, V> parent = null;
         MyBSTNode<K, V> curr = root;
 
         while (curr != null) {
-            if (curr.getKey().equals(key)) {
+            if (curr.key.equals(key)) {
                 V oldValue = curr.getValue();
-                if (curr.getLeft() == null && curr.getRight() == null) {
+                if (curr.left == null && curr.right == null) {
                     if (parent == null) {
                         root = null;
-                    } else if (parent.getLeft() == curr) {
-                        parent.setLeft(null);
+                    } else if (parent.left == curr) {
+                        parent.left = null;
                     } else {
-                        parent.setRight(null);
+                        parent.right = null;
                     }
-                } else if (curr.getRight() == null) {
+                } else if (curr.right == null) {
                     if (parent == null) {
-                        root = curr.getLeft();
-                    } else if (parent.getLeft() == curr) {
-                        parent.setLeft(curr.getLeft());
+                        root = curr.left;
+                    } else if (parent.left == curr) {
+                        parent.left = curr.left;
                     } else {
-                        parent.setRight(curr.getLeft());
+                        parent.right = curr.left;
                     }
-                } else if (curr.getLeft() == null) {
+                } else if (curr.left == null) {
                     if (parent == null) {
-                        root = curr.getRight();
-                    } else if (parent.getLeft() == curr) {
-                        parent.setLeft(curr.getRight());
+                        root = curr.right;
+                    } else if (parent.left == curr) {
+                        parent.left = curr.right;
                     } else {
-                        parent.setRight(curr.getRight());
+                        parent.right = curr.right;
                     }
                 } else {
                     MyBSTNode<K, V> succ = curr.successor();
                     while (succ.left != null) {
-                        succ = succ.getLeft();
+                        succ = succ.left;
                     }
                     K succKey = succ.getKey();
                     V succValue = succ.getValue();
