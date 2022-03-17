@@ -8,4 +8,5 @@ class SMS(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     sender = db.Column(db.String(16))
     receivecDate = db.Column(db.String(32))
+    url = db.Column(db.String(256))
     contents = db.Column(db.String(512))

@@ -1,5 +1,5 @@
-from flask import Flask, make_response, jsonify, request
-import sqlite3
+from flask import Flask, jsonify, request
+import sqlite3, re
 
 app = Flask(__name__)
 
@@ -34,8 +34,8 @@ def db_init():
 def db_insert(data):
     conn = sqlite3.connect("sms.db")
     cur = conn.cursor()
-    cur.execute('INSERT INTO sms (sender, date, contents) values (?,?,?)',
-                (data['sender'], data['receivedDate'], data['contents']))
+    cur.execute('INSERT INTO sms (sender, date, url, contents) values (?,?,?,?)',
+                (data['sender'], data['receivedDate'], data['url'], data['contents']))
     conn.commit()
 
 
