@@ -27,16 +27,247 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf0f052-41c2-4886-a441-e811f56a05de" name="Default Changelist" comment="" />
+    <list default="true" id="fdf0f052-41c2-4886-a441-e811f56a05de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack/list_head.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack/pa0.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack/stack.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Work/c-stack/c-stack/types.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/A2 COMP 2402W22.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part1a.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part1a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part1b.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part1b.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part2a-use-x-2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part2a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part2b-use-x-9.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part2b.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part3a.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part3a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part4a-use-x-2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part4a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part4b-use-x-9.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/a2-io/part4b.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/java-list.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Archive 2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Archive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/DLList$Iterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/DLList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/DLList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/IntDLList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Part0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Part1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Part2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Part3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/Part4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/SkiplistList$1SkiplistIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/SkiplistList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/out/production/java-list/geekynerdbiker/SkiplistList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/DLList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/IntDLList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/Part0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/Part1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/Part2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/Part3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/Part4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list/src/geekynerdbiker/SkiplistList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/A3 COMP 2402W22.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/A3 Workshop.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinaryHeap$1PQI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinaryHeap$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinaryHeap$PairComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinaryHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinarySearchTree$1BTI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinarySearchTree$BSTEndNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinarySearchTree$BSTNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinaryTree$BTNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinaryTree$EndNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/BinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/DefaultComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/IntBST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/Part1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/Part2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/Part3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/Part4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/SSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/out/production/java-list2-Thu/comp2402w22a3/a3-io/sample/part4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/BinaryHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/DefaultComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/IntBST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/Part1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/Part2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/Part3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/Part4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/SSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/a3-io/sample/part4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-list2-Thu/src/comp2402w22a3/comp2402w22a3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/androidTest/java/geekynerdbiker/crebugs/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/java/geekynerdbiker/crebugs/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/java/geekynerdbiker/crebugs/SmsDisplayActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/java/geekynerdbiker/crebugs/SmsReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/layout/activity_sms_display.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/main/res/xml/network_security_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/app/src/test/java/geekynerdbiker/crebugs/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/flask_server/sms.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/android-sms-18/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/Archive/display.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/Archive/display.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/Archive/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/Archive/obstacles.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/Archive/rrtMaker.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/Archive/rrtTester.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/COMP2401_A4_W2022.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT/display.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT/display.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT/obstacles.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT/rrtMaker.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-RRT-18/RRT/rrtTester.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_area.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_do4.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_face.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_incdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_maxmin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_month.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_myinfo2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_smaller.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_speed.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_string.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_subfunc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/2021620105_조찬익_type.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/Archive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/과제1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/과제2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/과제3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/과제4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/과제5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/c-basic-21/과제6.pdf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/jacoban/.android/avd/Pixel_2_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,10 +289,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1645448904308" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1647677992983" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.1540724228">
@@ -159,73 +394,130 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="357" y="151" key="#Project_Structure" timestamp="1647677852343">
+      <screen x="0" y="25" width="1739" height="1095" />
+    </state>
+    <state x="357" y="151" key="#Project_Structure/0.25.1739.1095@0.25.1739.1095" timestamp="1647677852343" />
+    <state x="333" y="231" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1647677891216">
+      <screen x="0" y="25" width="1739" height="1095" />
+    </state>
+    <state x="333" y="231" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1739.1095@0.25.1739.1095" timestamp="1647677891216" />
     <state x="598" y="378" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1645009940234">
       <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state x="598" y="378" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1740.1095@0.25.1740.1095" timestamp="1645009940234" />
-    <state x="680" y="283" key="#com.intellij.ide.util.MemberChooser" timestamp="1645084077632">
+    <state x="680" y="283" key="#com.intellij.ide.util.MemberChooser" timestamp="1647681748125">
       <screen x="0" y="25" width="1740" height="1095" />
     </state>
-    <state x="680" y="283" key="#com.intellij.ide.util.MemberChooser/0.25.1740.1095@0.25.1740.1095" timestamp="1645084077632" />
+    <state x="680" y="283" key="#com.intellij.ide.util.MemberChooser/0.25.1740.1095@0.25.1740.1095" timestamp="1647681748125" />
     <state x="455" y="331" key="AndroidCreateResourceDirectoryDialog" timestamp="1645084504538">
       <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state x="455" y="331" key="AndroidCreateResourceDirectoryDialog/0.25.1740.1095@0.25.1740.1095" timestamp="1645084504538" />
-    <state width="1693" height="301" key="GridCell.Tab.0.bottom" timestamp="1645548706921">
-      <screen x="0" y="25" width="1867" height="1055" />
+    <state width="1693" height="301" key="GridCell.Tab.0.bottom" timestamp="1647765016408">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.0.bottom/0.25.1739.1095@0.25.1739.1095" timestamp="1645520987798" />
-    <state width="1693" height="301" key="GridCell.Tab.0.bottom/0.25.1740.1095@0.25.1740.1095" timestamp="1645084911202" />
+    <state width="1693" height="301" key="GridCell.Tab.0.bottom/0.25.1740.1095@0.25.1740.1095" timestamp="1647765016408" />
     <state width="1693" height="301" key="GridCell.Tab.0.bottom/0.25.1741.1095@0.25.1741.1095" timestamp="1645004819852" />
     <state width="1693" height="301" key="GridCell.Tab.0.bottom/0.25.1867.1055@0.25.1867.1055" timestamp="1645548706921" />
-    <state width="1693" height="301" key="GridCell.Tab.0.center" timestamp="1645548706921">
-      <screen x="0" y="25" width="1867" height="1055" />
+    <state width="1693" height="301" key="GridCell.Tab.0.center" timestamp="1647765016407">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.0.center/0.25.1739.1095@0.25.1739.1095" timestamp="1645520987797" />
-    <state width="1693" height="301" key="GridCell.Tab.0.center/0.25.1740.1095@0.25.1740.1095" timestamp="1645084911201" />
+    <state width="1693" height="301" key="GridCell.Tab.0.center/0.25.1740.1095@0.25.1740.1095" timestamp="1647765016407" />
     <state width="1693" height="301" key="GridCell.Tab.0.center/0.25.1741.1095@0.25.1741.1095" timestamp="1645004819852" />
     <state width="1693" height="301" key="GridCell.Tab.0.center/0.25.1867.1055@0.25.1867.1055" timestamp="1645548706921" />
-    <state width="1693" height="301" key="GridCell.Tab.0.left" timestamp="1645548706921">
-      <screen x="0" y="25" width="1867" height="1055" />
+    <state width="1693" height="301" key="GridCell.Tab.0.left" timestamp="1647765016407">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.0.left/0.25.1739.1095@0.25.1739.1095" timestamp="1645520987796" />
-    <state width="1693" height="301" key="GridCell.Tab.0.left/0.25.1740.1095@0.25.1740.1095" timestamp="1645084911200" />
+    <state width="1693" height="301" key="GridCell.Tab.0.left/0.25.1740.1095@0.25.1740.1095" timestamp="1647765016407" />
     <state width="1693" height="301" key="GridCell.Tab.0.left/0.25.1741.1095@0.25.1741.1095" timestamp="1645004819851" />
     <state width="1693" height="301" key="GridCell.Tab.0.left/0.25.1867.1055@0.25.1867.1055" timestamp="1645548706921" />
-    <state width="1693" height="301" key="GridCell.Tab.0.right" timestamp="1645548706921">
-      <screen x="0" y="25" width="1867" height="1055" />
+    <state width="1693" height="301" key="GridCell.Tab.0.right" timestamp="1647765016408">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.0.right/0.25.1739.1095@0.25.1739.1095" timestamp="1645520987797" />
-    <state width="1693" height="301" key="GridCell.Tab.0.right/0.25.1740.1095@0.25.1740.1095" timestamp="1645084911201" />
+    <state width="1693" height="301" key="GridCell.Tab.0.right/0.25.1740.1095@0.25.1740.1095" timestamp="1647765016408" />
     <state width="1693" height="301" key="GridCell.Tab.0.right/0.25.1741.1095@0.25.1741.1095" timestamp="1645004819852" />
     <state width="1693" height="301" key="GridCell.Tab.0.right/0.25.1867.1055@0.25.1867.1055" timestamp="1645548706921" />
-    <state width="1693" height="301" key="GridCell.Tab.1.bottom" timestamp="1645517910073">
-      <screen x="0" y="25" width="1739" height="1095" />
+    <state width="1693" height="301" key="GridCell.Tab.1.bottom" timestamp="1647684132667">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.1.bottom/0.25.1739.1095@0.25.1739.1095" timestamp="1645517910073" />
-    <state width="1693" height="301" key="GridCell.Tab.1.bottom/0.25.1740.1095@0.25.1740.1095" timestamp="1645082099703" />
-    <state width="1693" height="301" key="GridCell.Tab.1.center" timestamp="1645517910072">
-      <screen x="0" y="25" width="1739" height="1095" />
+    <state width="1693" height="301" key="GridCell.Tab.1.bottom/0.25.1740.1095@0.25.1740.1095" timestamp="1647684132667" />
+    <state width="1693" height="301" key="GridCell.Tab.1.center" timestamp="1647684132667">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.1.center/0.25.1739.1095@0.25.1739.1095" timestamp="1645517910072" />
-    <state width="1693" height="301" key="GridCell.Tab.1.center/0.25.1740.1095@0.25.1740.1095" timestamp="1645082099702" />
-    <state width="1693" height="301" key="GridCell.Tab.1.left" timestamp="1645517910072">
-      <screen x="0" y="25" width="1739" height="1095" />
+    <state width="1693" height="301" key="GridCell.Tab.1.center/0.25.1740.1095@0.25.1740.1095" timestamp="1647684132667" />
+    <state width="1693" height="301" key="GridCell.Tab.1.left" timestamp="1647684132666">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.1.left/0.25.1739.1095@0.25.1739.1095" timestamp="1645517910072" />
-    <state width="1693" height="301" key="GridCell.Tab.1.left/0.25.1740.1095@0.25.1740.1095" timestamp="1645082099702" />
-    <state width="1693" height="301" key="GridCell.Tab.1.right" timestamp="1645517910072">
-      <screen x="0" y="25" width="1739" height="1095" />
+    <state width="1693" height="301" key="GridCell.Tab.1.left/0.25.1740.1095@0.25.1740.1095" timestamp="1647684132666" />
+    <state width="1693" height="301" key="GridCell.Tab.1.right" timestamp="1647684132667">
+      <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state width="1693" height="301" key="GridCell.Tab.1.right/0.25.1739.1095@0.25.1739.1095" timestamp="1645517910072" />
-    <state width="1693" height="301" key="GridCell.Tab.1.right/0.25.1740.1095@0.25.1740.1095" timestamp="1645082099703" />
+    <state width="1693" height="301" key="GridCell.Tab.1.right/0.25.1740.1095@0.25.1740.1095" timestamp="1647684132667" />
     <state x="376" y="208" key="SettingsEditor" timestamp="1645083361306">
       <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state x="376" y="208" key="SettingsEditor/0.25.1740.1095@0.25.1740.1095" timestamp="1645083361306" />
+    <state width="867" height="547" key="XDebugger.FullValuePopup" timestamp="1647681287454">
+      <screen x="0" y="25" width="1740" height="1095" />
+    </state>
+    <state width="867" height="547" key="XDebugger.FullValuePopup/0.25.1740.1095@0.25.1740.1095" timestamp="1647681287454" />
+    <state x="491" y="187" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1647682197529">
+      <screen x="0" y="25" width="1740" height="1095" />
+    </state>
+    <state x="491" y="187" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1740.1095@0.25.1740.1095" timestamp="1647682197529" />
     <state x="532" y="269" key="search.everywhere.popup" timestamp="1645084711393">
       <screen x="0" y="25" width="1740" height="1095" />
     </state>
     <state x="532" y="269" key="search.everywhere.popup/0.25.1740.1095@0.25.1740.1095" timestamp="1645084711393" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/geekynerdbiker/crebugs/SmsDisplayActivity.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/geekynerdbiker/crebugs/SmsDisplayActivity.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/geekynerdbiker/crebugs/SmsDisplayActivity.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/geekynerdbiker/crebugs/SmsDisplayActivity.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/geekynerdbiker/crebugs/SmsDisplayActivity.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/geekynerdbiker/crebugs/SmsDisplayActivity.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="geekynerdbiker.crebugs.SmsDisplayActivity$1sendData" memberName="result" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
