@@ -23,7 +23,7 @@
 extern struct list_head stack;
 
 /* Entry for the stack */
-struct entry {
+struct Entry {
 	struct list_head list;
 	char *string;
 };
@@ -46,7 +46,10 @@ struct entry {
 void push_stack(char *string)
 {
 	/* TODO: Implement this function */
-
+    struct Entry e;
+    
+    e.string = string;
+    list_add_tail(&e.list, &stack);
 }
 
 
@@ -65,6 +68,8 @@ void push_stack(char *string)
 int pop_stack(char *buffer)
 {
 	/* TODO: Implement this function */
+    struct Entry e;
+    list_last_entry(&stack, Entry, String);
 	return -1; /* Must fix to return a proper value when @stack is not empty */
 }
 
