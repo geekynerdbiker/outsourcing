@@ -26,10 +26,18 @@ public class HCPractice {
         }
 
         // TODO(Student): Implement this method.
-        // public boolean equals( Object o ) {}
+        public boolean equals(Object o) {
+            if (o instanceof Person) {
+                Person p = (Person) o;
+                return this.fname.compareTo(p.fname) == 0 && this.lname.compareTo(p.lname) == 0 && this.birthYear == p.birthYear && this.luckyNumber == p.luckyNumber;
+            }
+            return false;
+        }
 
         // TODO(Student): Implement this method
-        //public int hashCode() {}
+        public int hashCode() {
+            return luckyNumber;
+        }
 
     }
 
@@ -42,6 +50,7 @@ public class HCPractice {
 
         hs1.add(new Person("Fname" + 1, "Lname" + 3, 2000));
         hs1.add(new Person("Fname" + 1, "Lname" + 3, 2000));
+
         Person p = new Person("Fname" + 2, "Lname" + 4, 2000);
         Person q = new Person("Fname" + 2, "Lname" + 4, 2000, 7);
         hs1.add(p);

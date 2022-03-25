@@ -7,6 +7,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * @author morin
@@ -22,7 +26,58 @@ public class Part1 {
      */
     public static void doIt(int x, BufferedReader r, PrintWriter w)
             throws IOException, NumberFormatException {
-        //TODO(student): Your code goes here.
+
+        List<Integer> l = new ArrayList<>();
+        SortedSet<Integer> s = new TreeSet<>();
+
+        int i = 0, j = 0;
+        int curr = 0, sum = 0;
+
+        for (String line = r.readLine(); line != null; line = r.readLine()) {
+            l.add(Integer.parseInt(line));
+
+            if (j == 0 && x == 1) {
+                w.println(Math.floorMod(l.get(0), 2402));
+                return;
+            } else if (j == curr) {
+                while ((i < x) && (curr < l.size())) {
+                    curr = l.get(curr);
+                    if (s.isEmpty()) {
+                        s.add(curr);
+                        sum = Math.floorMod(sum + curr, 2402);
+                    }
+                    else {
+                        int beforeAdd = s.size();
+                        s.add(curr);
+                        int afterAdd = s.size();
+                        if(beforeAdd < afterAdd)
+                            sum = Math.floorMod(sum + curr, 2402);
+                    }
+                    i++;
+                }
+                if (i == x) {
+                    w.println(sum);
+                    return;
+                }
+            }
+            j++;
+        }
+
+        for(; i < x; i++ ) {
+            curr = l.get(curr % l.size() );
+            if (s.isEmpty()) {
+                s.add(curr);
+                sum = Math.floorMod(sum + curr, 2402);
+            }
+            else {
+                int beforeAdd = s.size();
+                s.add(curr);
+                int afterAdd = s.size();
+                if(beforeAdd != afterAdd)
+                    sum = Math.floorMod(sum + curr, 2402);
+            }
+        }
+        w.println(sum);
     }
 
 

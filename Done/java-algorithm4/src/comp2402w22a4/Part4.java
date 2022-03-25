@@ -7,6 +7,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class Part4 {
 
@@ -20,8 +24,29 @@ public class Part4 {
      * @throws IOException, NumberFormatException
      */
     public static void doIt(BufferedReader r, PrintWriter w) throws IOException, NumberFormatException {
-        //TODO(student): Your code goes here.
 
+        List<Integer> l = new ArrayList<>();
+        SortedSet<Integer> s = new TreeSet<>();
+
+        int i = 0;
+        String line = r.readLine();
+        int n = Integer.parseInt(line);
+//        for (String line = r.readLine(); line != null; line = r.readLine()) {
+        for(int k = 0; k < n && line != null; k++) {
+            line = r.readLine();
+            s.add(Integer.parseInt(line));
+            i++;
+        }
+
+        int sum = 0;
+        SortedSet<Integer> headSet = s;
+
+        while (!headSet.isEmpty()) {
+            sum = Math.floorMod(sum + (headSet.last() * --i), 2402);
+            headSet = headSet.headSet(headSet.last());
+        }
+
+        w.println(sum);
     }
 
     /**

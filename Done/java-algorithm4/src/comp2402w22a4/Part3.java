@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author morin
@@ -22,7 +24,45 @@ public class Part3 {
      */
     public static void doIt(int x, BufferedReader r, PrintWriter w)
             throws IOException, NumberFormatException {
-        //TODO(student): Your code goes here.
+
+        if (x == 0) {
+            w.println(0);
+            return;
+        }
+
+        List<Integer> l = new ArrayList<>();
+        SortedSet<Integer> s = new TreeSet<>();
+
+        int i = 0;
+
+        for (String line = r.readLine(); line != null; line = r.readLine()) {
+            l.add(Integer.parseInt(line));
+
+            if (Math.floorMod(l.get(i), x) == 0)
+                s.add(l.get(i));
+            i++;
+        }
+
+        int start = 0, len = 0, max = 0;
+        SortedSet<Integer> headSet = s;
+        while (!headSet.isEmpty()) {
+            if (len == 0) {
+                start = headSet.last() / x;
+                len++;
+            } else {
+                if (headSet.last() / x == start -1) {
+                    len++;
+                    start--;
+                } else {
+                    if (max < len) max = len;
+                    len = 1;
+                    start = headSet.last() / x;
+                }
+            }
+            headSet = headSet.headSet(headSet.last());
+        }
+        if (max < len) max = len;
+        w.println(max);
     }
 
 

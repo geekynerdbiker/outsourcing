@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author morin
@@ -22,7 +24,36 @@ public class Part2 {
      */
     public static void doIt(int x, BufferedReader r, PrintWriter w)
             throws IOException, NumberFormatException {
-        //TODO(student): Your code goes here.
+
+        if (x == 0) {
+            w.println(0);
+            return;
+        }
+
+        List<Integer> l = new ArrayList<>();
+
+        int i = 0, j = 0;
+        int sum = 0;
+
+        for (String line = r.readLine(); line != null; line = r.readLine()) {
+            l.add(Integer.parseInt(line));
+
+            if (i >= x - 1) {
+                j = i;
+                while (i-j < x) {
+                    if (l.get(i).equals(l.get(j))) j--;
+                    else {
+                        if (Math.floorMod(l.get(i) + l.get(j), 2) == 0) {
+                            sum += l.get(i);
+                        }
+                        break;
+                    }
+                }
+            }
+            i++;
+        }
+
+        w.println(sum);
     }
 
 
