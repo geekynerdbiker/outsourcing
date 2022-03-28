@@ -4,22 +4,25 @@
 using namespace std;
 
 int getMinimumRest();
+int getMaximumRest();
 void process(int, int);
 int getRest();
+int getLastRest();
 bool isRest();
 bool isDone();
 
-int n = 0;
+int n = 0, totalRest = 0;
+int rest = 0, total = 0;
 int idx[1000] = { 0 };
 int cpuSize[1000] = { 0 };
 int cpu[1000][100] = { 0 };
 
 int main(int argc, const char * argv[]) {
-    ifstream ifs("multi.in");
-    ofstream ofs("multi.out");
+    ifstream ifs("multi5.in");
+    ofstream ofs("multi5.out");
     
     bool isFirstLine = true;
-    int rest = 0, total = 0, totalRest = 0;
+    
     int number = 0, cpuNumber = 0, t = 0, state = 0; // 0: work, 1: rest
     
 
@@ -88,6 +91,16 @@ int getMinimumRest() {
     return min;
 }
 
+int getMaximumRest() {
+    int max = 0;
+    
+    for (int j = 0; j < n; j++)
+        if (cpu[j][idx[j]] > 0 && cpu[j][idx[j]] > max)
+            max = cpu[j][idx[j]];
+    
+    return max;
+}
+
 // Process CPU Works
 void process(int i, int min) {
     for (int j = 0; j < n; j++)
@@ -115,13 +128,44 @@ int getRest() {
     return rest;
 }
 
+int getLastRest() {
+    int rest = getMaximumRest();
+    
+    for (int i = 0; i < n; i++)
+        if (idx[i] != cpuSize[i] - 1) {
+            if (cpu[i][idx[i]] >= rest)
+                cpu[i][idx[i]] -= rest;
+            else cpu[i][idx[i]] = 0;
+            if (cpu[i][idx[i]] == 0) idx[i]++;
+        }
+    return rest;
+}
+
+
 // Check CPU is resting
 bool isRest() {
+    bool isLastWork = false;
+    
+    for (int i = 0; i < n; i++) {
+        if (idx[i] == cpuSize[i] - 2) {
+            isLastWork = true;
+        } else if (idx[i] == cpuSize[i] - 1) {
+            continue;
+        } else {
+            isLastWork = false;
+            break;
+        }
+    }
+    
     for (int i = 0; i < n; i++)
-        if (idx[i] != cpuSize[i] - 1)
+        if (idx[i] < cpuSize[i] - 1) {
             if (idx[i] % 2 == 0)
                 return false;
-    
+        }
+    if (isLastWork) {
+        total += getLastRest();
+        return false;
+    }
     return true;
 }
 
@@ -132,14 +176,3 @@ bool isDone() {
             return false;
     return true;
 }
-//
-//// Check CPU works on last I/O
-//bool isLastIO() {
-//    int sum = 0;
-//
-//    for (int i = 0; i < n; i++)
-//        sum += cpuSize[i] - 1;
-//
-//    if (sum % 2 == 0) return true;
-//    else return false;
-//}

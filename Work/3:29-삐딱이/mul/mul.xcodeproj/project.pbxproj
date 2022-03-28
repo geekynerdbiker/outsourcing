@@ -30,6 +30,8 @@
 		5536762227F18AD7006D3105 /* multi2.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multi2.in; sourceTree = "<group>"; };
 		5536762327F18AD7006D3105 /* multi2.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multi2.out; sourceTree = "<group>"; };
 		5536762427F18AD7006D3105 /* multi3.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multi3.in; sourceTree = "<group>"; };
+		5545A35A27F1C014002CA17A /* multi4.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = multi4.in; sourceTree = "<group>"; };
+		5545A35B27F1C502002CA17A /* multi5.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = multi5.in; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 				5536762227F18AD7006D3105 /* multi2.in */,
 				5536762327F18AD7006D3105 /* multi2.out */,
 				5536762427F18AD7006D3105 /* multi3.in */,
+				5545A35A27F1C014002CA17A /* multi4.in */,
+				5545A35B27F1C502002CA17A /* multi5.in */,
 			);
 			path = mul;
 			sourceTree = "<group>";

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "553675F627F07642006D3105"
-               BuildableName = "c-order"
-               BlueprintName = "c-order"
-               ReferencedContainer = "container:c-order.xcodeproj">
+               BlueprintIdentifier = "5536761427F18AB1006D3105"
+               BuildableName = "mul"
+               BlueprintName = "mul"
+               ReferencedContainer = "container:mul.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/jacoban/Documents/GitHub/Crebugs/Work/3:28-mos55/c-order/c-order"
+      customWorkingDirectory = "/Users/jacoban/Documents/GitHub/Crebugs/Work/3:29-&#x1108;&#x1175;&#x1104;&#x1161;&#x11a8;&#x110b;&#x1175;/mul/mul"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -45,18 +45,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "553675F627F07642006D3105"
-            BuildableName = "c-order"
-            BlueprintName = "c-order"
-            ReferencedContainer = "container:c-order.xcodeproj">
+            BlueprintIdentifier = "5536761427F18AB1006D3105"
+            BuildableName = "mul"
+            BlueprintName = "mul"
+            ReferencedContainer = "container:mul.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "-l yob2009.txt"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -68,10 +62,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "553675F627F07642006D3105"
-            BuildableName = "c-order"
-            BlueprintName = "c-order"
-            ReferencedContainer = "container:c-order.xcodeproj">
+            BlueprintIdentifier = "5536761427F18AB1006D3105"
+            BuildableName = "mul"
+            BlueprintName = "mul"
+            ReferencedContainer = "container:mul.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

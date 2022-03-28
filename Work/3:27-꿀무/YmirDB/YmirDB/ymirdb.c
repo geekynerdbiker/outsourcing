@@ -10,7 +10,6 @@
 #include <strings.h>
 #include <stdbool.h>
 #include <ctype.h>
-
 #include "ymirdb.h"
 
 struct entry *head1 = NULL;
@@ -60,7 +59,7 @@ void print_values(element *n){
     }
 }
 bool key_exists_check(char *key_to_check){
-
+    return true;
 }
 
 int command_set(char * set_command){
@@ -69,11 +68,9 @@ int command_set(char * set_command){
     bool key_exists = false;
     char * KEY = strsep(&set_command, " ");
     
-    if ((((int)KEY[0] >=  97 && (int) KEY[0] <= 122 || (int)KEY[0] >= 65 && (int)KEY[0] <= 90)) && strlen(KEY) <= 15){
+    if (((((int)KEY[0] >=  97 && (int) KEY[0] <= 122) || (int)KEY[0] >= 65 && (int)KEY[0] <= 90)) && strlen(KEY) <= 15){
         is_key_valid = true;
-    } else {
-        return -1;
-    }
+    } else return -1;
     
     struct entry * new_node;
     struct entry * to_check_if_key_exists = head1;
@@ -99,8 +96,8 @@ int command_set(char * set_command){
     char temp_key[MAX_KEY] = "\0";
     int key_compare;
 
-    while (values != NULL){ // detecting short-long key
-        if ((int) values[0] >=  97 && (int) values[0] <= 122 || (int)values[0] <= 41 && (int)values[0] <= 132){ // that means it's a letter
+    while (values != NULL){
+        if (((int) values[0] >=  97 && (int) values[0] <= 122) || (int)values[0] <= 41 && (int)values[0] <= 132){
             strcat(temp_key, values);
             strcat(values_arr, values);
 
@@ -148,7 +145,7 @@ int command_set(char * set_command){
                         break;
                     }
                 }
-                if (temp_entry != NULL){ // key found
+                if (temp_entry != NULL){
                     struct element * new_element2 = (struct element *) malloc(sizeof(struct entry));
                     new_element2->type = 1;
                     new_element2->entry = temp_entry;
@@ -197,7 +194,6 @@ int command_set(char * set_command){
 void command_push_append(char * push_append_full_command){
     char * push_append_command = strsep(&push_append_full_command, " ");
     char *key = strsep(&push_append_full_command, " ");
-
     char *pushptr = push_append_full_command;
     char push_val_arr[MAX_LINE] = "";
     pushptr = strsep(&push_append_full_command, " ");
@@ -214,14 +210,14 @@ void command_push_append(char * push_append_full_command){
         strcat(push_val_arr, " ");
         pushptr = strsep(&push_append_full_command, " ");
     }
-    
+     printf("%s\n", push_val_arr);
 }
 
 
 void command_get(char * get_full_command){
     struct entry *get_node = head1;
     struct element *get_values = head2;
-
+    
     get_full_command[strcspn(get_full_command, "\n")] = 0;
 
     if(get_node == NULL){
@@ -230,7 +226,6 @@ void command_get(char * get_full_command){
         while((strcmp(get_node->key, get_full_command)) != 0 && get_node != NULL){
             get_node = get_node->next;
         }
-
         if(get_node != NULL){
             get_values = get_node->values;
             if (get_values == NULL){
@@ -280,6 +275,7 @@ int main(void) {
                     command = strsep(&linecp, " ");
                 }
                 command_set(set_command);
+
             }
             else if ((result = strcasecmp(command, "GET")) == 0){
                 char *node_to_print = strsep(&linecp, " ");
@@ -322,6 +318,7 @@ int main(void) {
             else if ((result = strcasecmp(command, "APPEND")) == 0){
                 printf("command is append\n");
                 char append_command[MAX_LINE] = "";
+                // command = strsep(&linecp, " ");
                 while(command != NULL){
                     command[strcspn(command,"\n")] = 0;
                     strcat(append_command, command);
@@ -380,9 +377,6 @@ int main(void) {
                 break;
             }
         }
-        //
-        // TODO
-        //
       }
 
     return 0;

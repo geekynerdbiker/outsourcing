@@ -7,22 +7,25 @@
 using namespace std;
 
 int getMinimumRest();
+int getMaximumRest();
 void process(int, int);
 int getRest();
+int getLastRest();
 bool isRest();
 bool isDone();
-bool isLastIO();
 
-int n = 0, isIOLast;
+int n = 0, totalRest = 0;
+int rest = 0, total = 0;
+
 vector<int> idx;
 vector<vector<int>> cpu;
 
 int main(int argc, const char * argv[]) {
-    ifstream ifs("multi2.in");
-    ofstream ofs("multi2.out");
+    ifstream ifs("multi.in");
+    ofstream ofs("multi.out");
     
     bool isFirstLine = true;
-    int processor = 0, rest = 0, total = 0, totalRest = 0;
+    int processor = 0, state = 0;
     
     // Input & Parsing process
     while (ifs.peek() != EOF) {
@@ -60,6 +63,10 @@ int main(int argc, const char * argv[]) {
             rest = getRest();
             totalRest += rest;
             total += rest;
+            if(isDone()) {
+                state = 1;
+                break;
+            }
         }
         
         for (int i = 0; i < n; i++) {
@@ -79,7 +86,7 @@ int main(int argc, const char * argv[]) {
     }
     
     // Output process
-    if (isLastIO()) totalRest -= rest;
+    if (state) totalRest -= rest;
     
     ofs << totalRest << " " << total << endl;
     ofs.close();
@@ -89,13 +96,23 @@ int main(int argc, const char * argv[]) {
 
 // Get rest value
 int getMinimumRest() {
-    int min = INT_MAX;
+    int min = 2147483647;
     
     for (int j = 0; j < n; j++)
         if (cpu[j][idx[j]] > 0 && cpu[j][idx[j]] < min)
             min = cpu[j][idx[j]];
     
     return min;
+}
+
+int getMaximumRest() {
+    int max = 0;
+    
+    for (int j = 0; j < n; j++)
+        if (cpu[j][idx[j]] > 0 && cpu[j][idx[j]] > max)
+            max = cpu[j][idx[j]];
+    
+    return max;
 }
 
 // Process CPU Works
@@ -125,14 +142,43 @@ int getRest() {
     return rest;
 }
 
+int getLastRest() {
+    int rest = getMaximumRest();
+    
+    for (int i = 0; i < n; i++)
+        if (idx[i] != cpu[i].size() - 1) {
+            if (cpu[i][idx[i]] >= rest)
+                cpu[i][idx[i]] -= rest;
+            else cpu[i][idx[i]] = 0;
+            if (cpu[i][idx[i]] == 0) idx[i]++;
+        }
+    return rest;
+}
+
+
 // Check CPU is resting
 bool isRest() {
+    bool isLastWork = false;
+    
+    for (int i = 0; i < n; i++) {
+        if (idx[i] == cpu[i].size() - 2) {
+            isLastWork = true;
+        } else if (idx[i] == cpu[i].size() - 1){
+            continue;
+        } else {
+            isLastWork = false;
+            break;
+        }
+    }
+    
     for (int i = 0; i < n; i++)
-        if (idx[i] != cpu[i].size() - 1)
+        if (idx[i] != cpu[i].size() - 1) {
             if (idx[i] % 2 == 0)
                 return false;
+        }
     
-    return true;
+    if (isLastWork) total += getLastRest();
+    return !isLastWork;
 }
 
 // Check CPU has done working
@@ -141,15 +187,4 @@ bool isDone() {
         if (idx[i] != cpu[i].size()-1)
             return false;
     return true;
-}
-
-// Check CPU works on last I/O
-bool isLastIO() {
-    int sum = 0;
-    
-    for (int i = 0; i < n; i++)
-        sum += cpu[i].size() - 1;
-    
-    if (sum % 2 == 0) return true;
-    else return false;
 }
