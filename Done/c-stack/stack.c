@@ -22,10 +22,10 @@
 /* Declaration for the stack instance defined in pa0.c */
 extern struct list_head stack;
 
-/* Entry for the stack */
-struct Entry {
-	struct list_head list;
-	char *string;
+/* entry for the stack */
+struct entry {
+    struct list_head list;
+    char *string;
 };
 /*          ****** DO NOT MODIFY ANYTHING ABOVE THIS LINE ******      */
 /*====================================================================*/
@@ -35,6 +35,12 @@ struct Entry {
  * include any header files if you want to ...                        */
 
 #include <stdlib.h>                    /* like this */
+#include <string.h>
+#define MAX_BUFFER 100
+
+struct entry *temp;
+struct entry *curr;
+struct entry *n;
 
 /**
  * push_stack()
@@ -43,15 +49,18 @@ struct Entry {
  *   Push @string into the @stack. The @string should be inserted into the top
  *   of the stack. You may use either the head or tail of the list for the top.
  */
+
 void push_stack(char *string)
 {
-	/* TODO: Implement this function */
-    struct Entry *e = (struct Entry *)malloc(sizeof(struct Entry));
+    /* TODO: Implement this function */
+    struct entry *e = (struct entry *)malloc(sizeof(struct entry));
     
-    e->string = string;
+    e->string = malloc(sizeof(char) * strlen(string) + 1);
+    strcpy(e->string, string);
+    
+    INIT_LIST_HEAD(&e->list);
     list_add_tail(&e->list, &stack);
 }
-
 
 /**
  * pop_stack()
@@ -67,15 +76,20 @@ void push_stack(char *string)
  */
 int pop_stack(char *buffer)
 {
-	/* TODO: Implement this function */
-    if (!list_empty(&stack)) {
-        list_del(list_last_entry(&stack, struct list_head, next));
+    /* TODO: Implement this function */
+
+    if(!list_empty(&stack)){ // stack이 비어있지 않다면
+        list_for_each_entry_safe(curr, n, &stack, list) {
+            if (list_is_last(&curr->list,&stack)) {
+                strcpy(buffer, curr->string);
+                list_del(&curr->list);
+            }
+        }
         return 0;
     }
-    
-	return -1; /* Must fix to return a proper value when @stack is not empty */
-}
 
+    return -1; /* Must fix to return a proper value when @stack is not empty */
+}
 
 /**
  * dump_stack()
@@ -87,13 +101,10 @@ int pop_stack(char *buffer)
  */
 void dump_stack(void)
 {
-	/* TODO: Implement this function */
-    struct list_head *l;
-    list_for_each_entry_reverse(l, &stack, next) {
-        fprintf(stderr, "%s\n", &l);
-        list_del(l);
-    };
-
-    //	fprintf(stderr, "%s\n", "0xdeadbeef"); /* Example.
-//											Print out values in this form */
+    /* TODO: Implement this function */
+    list_for_each_entry(curr, &stack, list) {
+        fprintf(stderr, "%s\n", curr->string);
+    }
+     /* Example.
+                                            Print out values in this form */
 }

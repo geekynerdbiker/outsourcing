@@ -71,7 +71,7 @@ int main(int argc, const char * argv[]) {
     // Output process
     if (state) totalRest -= rest;
     
-    ofs << totalRest << " " << total << endl;
+    ofs << totalRest << " " << total;
     ofs.close();
     
     return 0;
