@@ -3,6 +3,7 @@
 
 using namespace std;
 
+int getMinimum(int);
 int getMinimumRest();
 int getMaximumRest();
 void process(int, int);
@@ -11,6 +12,8 @@ int getLastRest();
 bool isRest();
 bool isDone();
 
+void getLog();
+
 int n = 0, totalRest = 0;
 int rest = 0, total = 0;
 int idx[1000] = { 0 };
@@ -18,8 +21,8 @@ int cpuSize[1000] = { 0 };
 int cpu[1000][100] = { 0 };
 
 int main(int argc, const char * argv[]) {
-    ifstream ifs("multi5.in");
-    ofstream ofs("multi5.out");
+    ifstream ifs("multi.in");
+    ofstream ofs("multi.out");
     
     bool isFirstLine = true;
     
@@ -44,6 +47,7 @@ int main(int argc, const char * argv[]) {
     
     // Scheduling process
     while (true) {
+        getLog(); // Not nessecsery
         if (isDone()) break;
         if (isRest()) {
             rest = getRest();
@@ -60,7 +64,8 @@ int main(int argc, const char * argv[]) {
             if (idx[i] % 2 == 1) continue;
             
             int curr = cpu[i][idx[i]];
-            int min = cpu[i][idx[i]];
+//            int min = cpu[i][idx[i]];
+            int min = getMinimum(curr);
             
             total += curr;
             cpu[i][idx[i]] = 0;
@@ -73,11 +78,22 @@ int main(int argc, const char * argv[]) {
     
     // Output process
     if (state) totalRest -= rest;
-    
-    ofs << totalRest << " " << total << endl;
-    ofs.close();
+
+    cout << totalRest << " " << total << endl;
+//    ofs << totalRest << " " << total << endl;
+//    ofs.close();
     
     return 0;
+}
+
+int getMinimum(int min) {
+    
+    for (int j = 0; j < n; j++)
+        if (idx[j] % 2 == 1)
+            if (cpu[j][idx[j]] > 0 && cpu[j][idx[j]] < min)
+                min = cpu[j][idx[j]];
+    
+    return min;
 }
 
 // Get rest value
@@ -175,4 +191,13 @@ bool isDone() {
         if (idx[i] != cpuSize[i] - 1)
             return false;
     return true;
+}
+
+void getLog() {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < cpuSize[i]; j++)
+            printf("%d ", cpu[i][j]);
+        printf("\n");
+    }
+    printf("\n");
 }

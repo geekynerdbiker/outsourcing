@@ -13,38 +13,40 @@ enum item_type {
 };
 
 typedef struct element element;
-typedef struct entry entry;
+typedef struct Entry Entry;
 typedef struct snapshot snapshot;
 
 struct element {
   enum item_type type;
+  element* next;
+  element *prev;
   union {
     int value;
-    struct entry *entry;
+    struct Entry *Entry;
   };
 };
 
-struct entry {
+struct Entry {
   char key[MAX_KEY];
   char is_simple;
   element * values;
   size_t length;
 
-  entry* next;
-  entry* prev;
+  Entry* next;
+  Entry* prev;
   
   size_t forward_size;
   size_t forward_max;
-  entry** forward;  // this entry depends on these
+  Entry** forward;  // this Entry depends on these
     
   size_t backward_size;
   size_t backward_max;
-  entry** backward; // these entries depend on this
+  Entry** backward; // these entries depend on this
 };
 
 struct snapshot {
   int id;
-  entry* entries;
+  Entry* entries;
   snapshot* next;
   snapshot* prev;
 };
@@ -58,11 +60,11 @@ const char* HELP =
     "LIST ENTRIES    displays all entries in current state\n"
     "LIST SNAPSHOTS  displays all snapshots in the database\n"
     "\n"
-    "GET <key>    displays entry values\n"
-    "DEL <key>    deletes entry from current state\n"
-    "PURGE <key>  deletes entry from current state and snapshots\n"
+    "GET <key>    displays Entry values\n"
+    "DEL <key>    deletes Entry from current state\n"
+    "PURGE <key>  deletes Entry from current state and snapshots\n"
     "\n"
-    "SET <key> <value ...>     sets entry values\n"
+    "SET <key> <value ...>     sets Entry values\n"
     "PUSH <key> <value ...>    pushes values to the front\n"
     "APPEND <key> <value ...>  appends values to the back\n"
     "\n"
@@ -80,12 +82,12 @@ const char* HELP =
     "SUM <key>  displays sum of values\n"
     "LEN <key>  displays number of values\n"
     "\n"
-    "REV <key>   reverses order of values (simple entry only)\n"
-    "UNIQ <key>  removes repeated adjacent values (simple entry only)\n"
-    "SORT <key>  sorts values in ascending order (simple entry only)\n"
+    "REV <key>   reverses order of values (simple Entry only)\n"
+    "UNIQ <key>  removes repeated adjacent values (simple Entry only)\n"
+    "SORT <key>  sorts values in ascending order (simple Entry only)\n"
     "\n"
     "FORWARD <key> lists all the forward references of this key\n"
     "BACKWARD <key> lists all the backward references of this key\n"
-    "TYPE <key> displays if the entry of this key is simple or general\n";
+    "TYPE <key> displays if the Entry of this key is simple or general\n";
 
 #endif

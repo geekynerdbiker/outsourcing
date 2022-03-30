@@ -12,7 +12,7 @@
 #include <ctype.h>
 #include "ymirdb.h"
 
-struct entry *head1 = NULL;
+struct Entry *head1 = NULL;
 struct element *head2 = NULL;
 
 //
@@ -24,8 +24,8 @@ struct element *head2 = NULL;
 // command_bye
 // command_help
 // ...
-// entry_add
-// entry_delete
+// Entry_add
+// Entry_delete
 // ...
 //
 
@@ -38,7 +38,7 @@ void command_help() {
     printf("%s\n", HELP);
 }
 
-void print_keys(entry *n){
+void print_keys(Entry *n){
     while(n != NULL){
         printf("%s\n", n->key);
         n = n->next;
@@ -52,7 +52,7 @@ void print_values(element *n){
             n = n->next;
         }
         else if (n->type == 1){
-            printf("%s ", head2->entry->key);
+            printf("%s ", head2->Entry->key);
             n = n->next;
         }
         
@@ -72,8 +72,8 @@ int command_set(char * set_command){
         is_key_valid = true;
     } else return -1;
     
-    struct entry * new_node;
-    struct entry * to_check_if_key_exists = head1;
+    struct Entry * new_node;
+    struct Entry * to_check_if_key_exists = head1;
     while(to_check_if_key_exists != NULL){
         if (strcmp(to_check_if_key_exists->key, KEY) == 0){
             new_node = to_check_if_key_exists;
@@ -85,7 +85,7 @@ int command_set(char * set_command){
     }
 
     if(!key_exists){
-        new_node = (struct entry *) malloc(sizeof(struct entry));
+        new_node = (struct Entry *) malloc(sizeof(struct Entry));
     }
     
     strcpy(new_node->key, KEY);
@@ -137,18 +137,18 @@ int command_set(char * set_command){
             }
 
             else {
-                struct entry *temp_entry = head1;
-                while(temp_entry != NULL){
-                    if(strcmp(temp_entry->key, temp_key) != 0){
-                        temp_entry = temp_entry->next;
+                struct Entry *temp_Entry = head1;
+                while(temp_Entry != NULL){
+                    if(strcmp(temp_Entry->key, temp_key) != 0){
+                        temp_Entry = temp_Entry->next;
                     }else{
                         break;
                     }
                 }
-                if (temp_entry != NULL){
-                    struct element * new_element2 = (struct element *) malloc(sizeof(struct entry));
+                if (temp_Entry != NULL){
+                    struct element * new_element2 = (struct element *) malloc(sizeof(struct Entry));
                     new_element2->type = 1;
-                    new_element2->entry = temp_entry;
+                    new_element2->Entry = temp_Entry;
                     new_element2->next = NULL;
 
                     if(head2 == NULL){
@@ -174,7 +174,7 @@ int command_set(char * set_command){
         new_node->values = head2;
         new_node->prev = NULL;
     } else{
-        struct entry *temp = head1;
+        struct Entry *temp = head1;
         while(temp->next != NULL){
             temp = temp->next;
         }
@@ -215,7 +215,7 @@ void command_push_append(char * push_append_full_command){
 
 
 void command_get(char * get_full_command){
-    struct entry *get_node = head1;
+    struct Entry *get_node = head1;
     struct element *get_values = head2;
     
     get_full_command[strcspn(get_full_command, "\n")] = 0;
@@ -237,7 +237,7 @@ void command_get(char * get_full_command){
                     get_values = get_values->next;
                 }
                 else{
-                    printf("%s ", get_values->entry->key);
+                    printf("%s ", get_values->Entry->key);
                     get_values = get_values->next;
                 }
             }
