@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f37f46e7-563b-4cf7-8f09-2f31f712a0da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../java-linkedlist/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:27-꿀무/YmirDB/YmirDB.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../3:27-꿀무/YmirDB/YmirDB.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:27-꿀무/YmirDB/YmirDB/ymirdb.c" beforeDir="false" afterPath="$PROJECT_DIR$/../3:27-꿀무/YmirDB/YmirDB/ymirdb.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:27-꿀무/YmirDB/YmirDB/ymirdb.h" beforeDir="false" afterPath="$PROJECT_DIR$/../3:27-꿀무/YmirDB/YmirDB/ymirdb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3:29-삐딱이/mul/mul/multi (1).inp" beforeDir="false" />
-    </list>
+    <list default="true" id="f37f46e7-563b-4cf7-8f09-2f31f712a0da" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +35,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="14" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -82,11 +73,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="468" y="131" key="new project wizard" timestamp="1648585225920">
-      <screen x="0" y="25" width="1738" height="1095" />
+    <state x="2294" y="127" key="new project wizard" timestamp="1648784989347">
+      <screen x="1792" y="25" width="1866" height="1055" />
     </state>
     <state x="468" y="131" key="new project wizard/0.25.1738.1095@0.25.1738.1095" timestamp="1648585225920" />
+    <state x="2294" y="127" key="new project wizard/1792.25.1866.1055/0.25.1792.1095@1792.25.1866.1055" timestamp="1648784989347" />
   </component>
 </project>
