@@ -1,5 +1,5 @@
 #include <iostream>
-#include <portaudio.h>
+//#include <portaudio.h>
 #include <GLFW/glfw3.h>
 
 #ifdef __linux__
@@ -43,19 +43,19 @@ bool getKey(GLFWwindow* window, int key) {
 //  Escape               |  Quit
 //  ALT+F4               |  Quit
 // -------------------------------------
-uint8_t getKeys(GLFWwindow* window, bool turbo) {
-	uint8_t ret = getKey(window, GLFW_KEY_Z) || (turbo && getKey(window, GLFW_KEY_S));
-	ret |= (getKey(window, GLFW_KEY_X) || (turbo && getKey(window, GLFW_KEY_D))) << 1;
-	ret |= (getKey(window, GLFW_KEY_RIGHT_SHIFT)) << 2;
-	ret |= (getKey(window, GLFW_KEY_ENTER)) << 3;
-	ret |= (getKey(window, GLFW_KEY_UP)) << 4;
-	ret |= (getKey(window, GLFW_KEY_DOWN)) << 5;
-	ret |= (getKey(window, GLFW_KEY_LEFT)) << 6;
-	ret |= (getKey(window, GLFW_KEY_RIGHT)) << 7;
-	return ret;
+uint8_t getKeyboard(GLFWwindow* window, bool t) {
+	uint8_t result = getKey(window, GLFW_KEY_Z) || (t && getKey(window, GLFW_KEY_S));
+	result |= (getKey(window, GLFW_KEY_X) || (t && getKey(window, GLFW_KEY_D))) << 1;
+	result |= (getKey(window, GLFW_KEY_RIGHT_SHIFT)) << 2;
+	result |= (getKey(window, GLFW_KEY_ENTER)) << 3;
+	result |= (getKey(window, GLFW_KEY_UP)) << 4;
+	result |= (getKey(window, GLFW_KEY_DOWN)) << 5;
+	result |= (getKey(window, GLFW_KEY_LEFT)) << 6;
+	result |= (getKey(window, GLFW_KEY_RIGHT)) << 7;
+	return result;
 }
 
-uint8_t getJoy(int joy, bool turbo) {
+uint8_t getJoystick(int joy, bool t) {
 	if (!glfwJoystickPresent(joy)) {
 		return 0;
 	}
@@ -63,43 +63,43 @@ uint8_t getJoy(int joy, bool turbo) {
 	const float* axes = glfwGetJoystickAxes(joy, &count);
 	const unsigned char* buttons = glfwGetJoystickButtons(joy, &count);
 
-	uint8_t ret = buttons[0] == 1 || (turbo && buttons[2] == 1);
-	ret |= (buttons[1] == 1 || (turbo && buttons[3] == 1)) << 1;
-	ret |= (buttons[6] == 1) << 2;
-	ret |= (buttons[7] == 1) << 3;
-	ret |= (axes[1] < -0.5f) << 4;
-	ret |= (axes[1] > 0.5f) << 5;
-	ret |= (axes[0] < -0.5f) << 6;
-	ret |= (axes[0] > 0.5f) << 7;
+	uint8_t result = buttons[0] == 1 || (t && buttons[2] == 1);
+	result |= (buttons[1] == 1 || (t && buttons[3] == 1)) << 1;
+	result |= (buttons[6] == 1) << 2;
+	result |= (buttons[7] == 1) << 3;
+	result |= (axes[1] < -0.5f) << 4;
+	result |= (axes[1] > 0.5f) << 5;
+	result |= (axes[0] < -0.5f) << 6;
+	result |= (axes[0] > 0.5f) << 7;
 
-	return ret;
+	return result;
 }
 
-void notifyPaError(const PaError err) {
+void PaError(const PaError e) {
 	Pa_Terminate();
-	std::cout << std::endl << "PortAudio error:" << std::endl;
-	std::cout << "Error code: " << err << std::endl;
-	std::cout << "Error message: " << Pa_GetErrorText(err) << std::endl;
+	std::cout << std::endl << "PortAudio eor:" << std::endl;
+	std::cout << "Error code: " << e << std::endl;
+	std::cout << "Error message: " << Pa_GetErrorText(e) << std::endl;
 
-	if ((err == paUnanticipatedHostError)) {
+	if ((e == paUnanticipatedHostError)) {
 		const PaHostErrorInfo* hostErrorInfo = Pa_GetLastHostErrorInfo();
-		std::cout << "Host info error code: " << hostErrorInfo->errorCode << std::endl;
-		std::cout << "Host info error message: " << hostErrorInfo->errorText << std::endl << std::endl;
+		std::cout << "Host info eor code: " << hostErrorInfo->eorCode << std::endl;
+		std::cout << "Host info eor message: " << hostErrorInfo->eorText << std::endl << std::endl;
 	}
 }
 
-void printState(NES* nes) {
+void pState(NES* n) {
 	printf("\rSTATUS CPU PC=%hu APU DM=%hhu P1=%hhu P2=%hhu TR=%hhu NO=%hhu PPU BG=%hhu BL=%hhu SP=%hhu SL=%hhu",
-	nes->cpu->PC,
-	nes->apu->dmc.enabled,
-	nes->apu->pulse1.enabled,
-	nes->apu->pulse2.enabled,
-	nes->apu->triangle.enabled,
-	nes->apu->noise.enabled,
-	nes->ppu->flag_show_background,
-	nes->ppu->flag_show_left_background,
-	nes->ppu->flag_show_sprites,
-	nes->ppu->flag_show_left_sprites);
+	n->cpu->PC,
+	n->apu->dmc.enabled,
+	n->apu->pulse1.enabled,
+	n->apu->pulse2.enabled,
+	n->apu->triangle.enabled,
+	n->apu->noise.enabled,
+	n->ppu->flag_show_background,
+	n->ppu->flag_show_left_background,
+	n->ppu->flag_show_sprites,
+	n->ppu->flag_show_left_sprites);
 }
 
 int main(int argc, char* argv[]) {
@@ -113,13 +113,13 @@ int main(int argc, char* argv[]) {
 	strcat(SRAM_path, ".srm");
 
 	std::cout << "Initializing NES..." << std::endl;
-	NES* nes = new NES(argv[1], SRAM_path);
-	if (!nes->initialized) return EXIT_FAILURE;
+	NES* n = new NES(argv[1], SRAM_path);
+	if (!n->initialized) return EXIT_FAILURE;
 
 	std::cout << "Initializing PortAudio..." << std::endl;
-	PaError err = Pa_Initialize();
-	if (err != paNoError) {
-		notifyPaError(err);
+	PaError e = Pa_Initialize();
+	if (e != paNoError) {
+		PaError(e);
 		return EXIT_FAILURE;
 	}
 
@@ -133,8 +133,8 @@ int main(int argc, char* argv[]) {
 #endif
 
 	if (outputParameters.device == paNoDevice) {
-		std::cerr << "ERROR: no PortAudio device found." << std::endl;
-		notifyPaError(err);
+		std::ce << "ERROR: no PortAudio device found." << std::endl;
+		PaError(e);
 		return EXIT_FAILURE;
 	}
 
@@ -144,8 +144,8 @@ int main(int argc, char* argv[]) {
 	outputParameters.hostApiSpecificStreamInfo = nullptr;
 
 	std::cout << "Opening audio stream..." << std::endl;
-	err = Pa_OpenStream(
-		&nes->apu->stream,
+	e = Pa_OpenStream(
+		&n->apu->stream,
 		nullptr,
 		&outputParameters,
 		44100,
@@ -154,21 +154,21 @@ int main(int argc, char* argv[]) {
 		nullptr,
 		nullptr);
 
-	if (err != paNoError) {
-		notifyPaError(err);
+	if (e != paNoError) {
+		PaError(e);
 		return EXIT_FAILURE;
 	}
 
-	std::cout << "Initializing GLFW..." << std::endl;
+	std::cout << "Initializing GLFW" << std::endl;
 	if (!glfwInit()) {
-		std::cerr << "ERROR: Failed to initialize GLFW. Aborting." << std::endl;
+		std::ce << "ERROR: Failed to initialize GLFW. Aborting." << std::endl;
 		return EXIT_FAILURE;
 	}
 
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
 
-	std::cout << "Initializing GLFW window..." << std::endl;
+	std::cout << "Initializing GLFW window" << std::endl;
 	GLFWwindow* window;
 	if (fullscreen) {
 		GLFWmonitor* const primary = glfwGetPrimaryMonitor();
@@ -187,7 +187,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	if (!window) {
-		std::cerr << "ERROR: Failed to create window. Aborting." << std::endl;
+		std::ce << "ERROR: Failed to create window. Aborting." << std::endl;
 		return EXIT_FAILURE;
 	}
 
@@ -210,7 +210,7 @@ int main(int argc, char* argv[]) {
 	glfwGetFramebufferSize(window, &old_w, &old_h);
 	std::cout << "Framebuffer reports initial dimensions " << old_w << "x" << old_h << '.' << std::endl;
 
-	std::cout << "Creating display texture..." << std::endl;
+	std::cout << "Creating display texture" << std::endl;
 	GLuint texture;
 	glEnable(GL_TEXTURE_2D);
 	glGenTextures(1, &texture);
@@ -222,13 +222,13 @@ int main(int argc, char* argv[]) {
 
 	// decrease pops on linux
 #ifdef __linux__
-	PaAlsa_EnableRealtimeScheduling(nes->apu->stream, 1);
+	PaAlsa_EnableRealtimeScheduling(n->apu->stream, 1);
 #endif
 
-	std::cout << "Starting audio stream..." << std::endl;
-	Pa_StartStream(nes->apu->stream);
-	if (err != paNoError) {
-		notifyPaError(err);
+	std::cout << "Starting audio stream" << std::endl;
+	Pa_StartStream(n->apu->stream);
+	if (e != paNoError) {
+		PaError(e);
 		return EXIT_FAILURE;
 	}
 
@@ -238,17 +238,17 @@ int main(int argc, char* argv[]) {
 		const double dt = time - prevtime < 1.0 ? time - prevtime : 1.0;
 		prevtime = time;
 
-		const bool turbo = (nes->ppu->frame % 6) < 3;
+		const bool t = (n->ppu->frame % 6) < 3;
 		glfwPollEvents();
-		nes->controller1->buttons = getKeys(window, turbo) | getJoy(GLFW_JOYSTICK_1, turbo);
-		nes->controller2->buttons = getJoy(GLFW_JOYSTICK_2, turbo);
+		n->controller1->buttons = getKeyboard(window, t) | getJoystick(GLFW_JOYSTICK_1, t);
+		n->controller2->buttons = getJoystick(GLFW_JOYSTICK_2, t);
 
-		if ((nes->ppu->frame & 3) == 0) printState(nes);
+		if ((n->ppu->frame & 3) == 0) pState(n);
 
 		// step the NES state forward by 'dt' seconds, or more if in fast-forward
-		emulate(nes, getKey(window, GLFW_KEY_GRAVE_ACCENT) ? 4.0 * dt : dt);
+		emulate(n, getKey(window, GLFW_KEY_GRAVE_ACCENT) ? 4.0 * dt : dt);
 
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, 256, 240, 0, GL_RGBA, GL_UNSIGNED_BYTE, nes->ppu->front);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, 256, 240, 0, GL_RGBA, GL_UNSIGNED_BYTE, n->ppu->front);
 		glfwGetFramebufferSize(window, &w, &h);
 		if (w != old_w || h != old_h) {
 			old_w = w;
@@ -280,10 +280,10 @@ int main(int argc, char* argv[]) {
 	}
 
 	// save SRAM back to file
-	if (nes->cartridge->battery_present) {
-		std::cout << std::endl << "Writing SRAM..." << std::endl;
+	if (n->cartridge->battery_present) {
+		std::cout << std::endl << "Writing SRAM" << std::endl;
 		FILE* fp = fopen(SRAM_path, "wb");
-		if (fp == nullptr || (fwrite(nes->cartridge->SRAM, 8192, 1, fp) != 1)) {
+		if (fp == nullptr || (fwrite(n->cartridge->SRAM, 8192, 1, fp) != 1)) {
 			std::cout << "WARN: failed to save SRAM file!" << std::endl;
 		}
 		else {
@@ -291,13 +291,8 @@ int main(int argc, char* argv[]) {
 		}
 	}
 
-	std::cout << std::endl << "Stopping audio stream..." << std::endl;
-	Pa_StopStream(nes->apu->stream);
-
-	std::cout << "Closing audio stream..." << std::endl;
-	Pa_CloseStream(nes->apu->stream);
-
-	std::cout << "Terminating GLFW..." << std::endl;
+	Pa_StopStream(n->apu->stream);
+	Pa_CloseStream(n->apu->stream);
 	glfwTerminate();
 
 	std::cout << "Terminating PortAudio..." << std::endl;
