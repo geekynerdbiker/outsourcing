@@ -1,8 +1,8 @@
 //
 //  main.c
-//  c-stack-eval
+//  c-eval
 //
-//  Created by Jacob An on 2022/04/06.
+//  Created by Jacob An on 2022/04/17.
 //
 
 #include <stdio.h>
@@ -17,18 +17,19 @@ typedef struct stackNode
 
 stackNode* top;
 
-void push(double item);
-double pop();
-double peek();
-void del();
-void printStack();
-int eval(char* exp);
-void postfix_case_bloack(char* postfix, int* p);
-void postfix_case_operator_1(char* postfix, char symbol, int* p);
-void postfix_case_operator_2(char* postfix, char symbol, int* p);
-void postfix_case_default(char* postfix, char symbol, char* exp, int* p, int i);
-char* infix_to_postfix(char* exp);
-int syntaxsearch(char* exp);
+void push(double);
+double pop(void);
+double peek(void);
+void del(void);
+void printStack(void);
+double eval(char*);
+void postfix_case_bloack(char*, int*);
+void postfix_case_operator_1(char*, char, int*);
+void postfix_case_operator_2(char*, char, int*);
+void postfix_case_default(char*, char, char*, int*, int);
+char* infix_to_postfix(char*);
+char* infix_to_prefix(char*);
+int syntaxsearch(char*);
 
 
 void push(double item)
@@ -39,7 +40,7 @@ void push(double item)
     top = temp;
 }
 
-double pop()
+double pop(void)
 {
     double item;
     stackNode* temp = top;
@@ -58,7 +59,7 @@ double pop()
     }
 }
 
-double peek()
+double peek(void)
 {
     if (top == NULL)
     {
@@ -70,7 +71,7 @@ double peek()
     }
 }
 
-void del()
+void del(void)
 {
     stackNode* temp;
     
@@ -86,7 +87,7 @@ void del()
     }
 }
 
-void printStack()
+void printStack(void)
 {
     stackNode* p = top;
     
@@ -94,33 +95,31 @@ void printStack()
     
     while (p)
     {
-        printf("%d ", p->data);
+        printf("%.2lf ", p->data);
         p = p->link;
     }
     printf("] ");
 }
 
-int eval(char* exp)
+double eval(char* exp)
 {
-    if (syntaxsearch(exp) == -1 ) return -999;
-    char *postfix = infix_to_postfix(exp);
-    
     double opr1, opr2;
-    int value, i = 0, count = 0;
-    int length = strlen(postfix);
+    double value;
+    int i = 0, count = 0;
+    unsigned long length = strlen(exp);
     char symbol;
     
     for (i = 0; i < length; i++)
     {
-        symbol = postfix[i];
+        symbol = exp[i];
         
-        if (symbol >= '0' && symbol <= '9')
+        if ((symbol >= '0' && symbol <= '9') || symbol =='.')
         {
-            while (postfix[i + count] != ' ')
+            while (exp[i + count] != ' ')
             {
                 count++;
             }
-            value = atoi(&postfix[i]);
+            value = atof(&exp[i]);
             i += count;
             count = 0;
             push(value);
@@ -144,7 +143,7 @@ int eval(char* exp)
             }
         }
     }
-    return (int)pop();
+    return pop();
 }
 
 void postfix_case_bloack(char* postfix, int* p)
@@ -155,7 +154,7 @@ void postfix_case_bloack(char* postfix, int* p)
     {
         temp = (char)pop();
         
-        if ((temp != '(') && (temp != '{') && (temp != '['))
+        if ((temp != '('))
         {
             postfix[(*p)++] = temp;
             postfix[(*p)++] = ' ';
@@ -224,7 +223,7 @@ void postfix_case_default(char* postfix, char symbol, char* exp, int* p, int i)
     postfix[(*p)++] = symbol;
     
     if (exp[i + 1] == '+' || exp[i + 1] == '-' || exp[i + 1] == '*' || exp[i + 1] == '/' ||
-        exp[i + 1] == ')' || exp[i + 1] == '}' || exp[i + 1] == ']' || exp[i + 1] == '\0')
+        exp[i + 1] == ')' || exp[i + 1] == '\0')
     {
         postfix[(*p)++] = ' ';
     }
@@ -233,7 +232,7 @@ void postfix_case_default(char* postfix, char symbol, char* exp, int* p, int i)
 char* infix_to_postfix(char* exp)
 {
     int i = 0, p = 0;
-    int length = strlen(exp);
+    unsigned long length = strlen(exp);
     char symbol;
     char* postfix = (char*)malloc(length * 2);
     
@@ -276,9 +275,138 @@ char* infix_to_postfix(char* exp)
     return postfix;
 }
 
+void prefix_case_bloack(char* postfix, int* p)
+{
+    char temp;
+    
+    while (1)
+    {
+        temp = (char)pop();
+        
+        if ((temp != ')'))
+        {
+            postfix[(*p)++] = temp;
+            postfix[(*p)++] = ' ';
+        }
+        else
+        {
+            break;
+        }
+    }
+}
+
+void prefix_case_operator_1(char* postfix, char symbol, int* p)
+{
+    char temp;
+    
+    while (1)
+    {
+        if (top == NULL)
+        {
+            break;
+        }
+        temp = (char)pop();
+        
+        if (temp == '+' || temp == '-' || temp == '*' || temp == '/')
+        {
+            postfix[(*p)++] = temp;
+            postfix[(*p)++] = ' ';
+        }
+        else
+        {
+            push(temp);
+            break;
+        }
+    }
+    push(symbol);
+}
+
+void prefix_case_operator_2(char* postfix, char symbol, int* p)
+{
+    char temp;
+    
+    while (1)
+    {
+        if (top == NULL)
+        {
+            break;
+        }
+        temp = (char)pop();
+        
+        if (temp == '*' || temp == '/')
+        {
+            postfix[(*p)++] = temp;
+            postfix[(*p)++] = ' ';
+        }
+        else
+        {
+            push(temp);
+            break;
+        }
+    }
+    push(symbol);
+}
+
+void prefix_case_default(char* postfix, char symbol, char* exp, int* p, int i)
+{
+    postfix[(*p)++] = symbol;
+    
+    if (exp[i - 1] == '+' || exp[i - 1] == '-' || exp[i - 1] == '*' || exp[i - 1] == '/' ||
+        exp[i - 1] == ')' || exp[i - 1] == '\0')
+    {
+        postfix[(*p)++] = ' ';
+    }
+}
+
+char* infix_to_prefix(char* exp)
+{
+    int i = 0, p = 0;
+    unsigned long length = strlen(exp);
+    char symbol;
+    char* prefix = (char*)malloc(length * 2);
+    
+    for (i = length-1; i >=0; i--)
+    {
+        symbol = exp[i];
+    
+        switch (symbol)
+        {
+            case '(':
+                prefix_case_bloack(prefix, &p);
+                break;
+                
+            case ')':
+                push(symbol);
+                break;
+                
+            case '+':
+            case '-':
+                prefix_case_operator_1(prefix, symbol, &p);
+                break;
+                
+            case '*':
+            case '/':
+                prefix_case_operator_2(prefix, symbol, &p);
+                break;
+                
+            default:
+                prefix_case_default(prefix, symbol, exp, &p, i);
+                break;
+        }
+    }
+    
+    while (top)
+    {
+        prefix[p++] = (char)pop();
+        prefix[p++] = ' ';
+    }
+    prefix[p] = '\0';
+    return prefix;
+}
+
 int syntaxsearch(char* exp)
 {
-    int length = strlen(exp);
+    unsigned long length = strlen(exp);
     int i = 0;
     int ncount = 0;
     char symbol, opr;
@@ -319,13 +447,13 @@ int syntaxsearch(char* exp)
                 break;
                 
             default:
-                if (symbol < '0' || symbol > '9')
+                if ((symbol >= '0' && symbol <= '9')|| symbol == '.')
                 {
-                    return -1;
+                    ncount++;
                 }
                 else
                 {
-                    ncount++;
+                    return -1;
                 }
                 break;
         }
@@ -337,8 +465,7 @@ int syntaxsearch(char* exp)
     while (top)
     {
         opr = (char)pop();
-        if (opr == '(' || opr == '{' || opr == '[' ||
-            opr == '+' || opr == '-' || opr == '*' || opr == '/')
+        if (opr == '(' || opr == '+' || opr == '-' || opr == '*' || opr == '/')
         {
             return -1;
         }
@@ -346,19 +473,36 @@ int syntaxsearch(char* exp)
     return 0;
 }
 
+char* reverse(char* exp) {
+    unsigned long length = strlen(exp);
+    char* prefix = (char*)malloc(length);
+    
+    for (int i=0; i < length; i++) {
+        prefix[i] = exp[length-1-i];
+    }
+    return prefix;
+    
+}
 int main(void)
 {
-    char* exp[] = {"(78-(4*3*73)", "82*26/6", "78-(91-(16*69)", "(94*69-65+16)", "(95*93+56*98", "5/(10-10)"};
-    int result;
-    
-    for (int i = 0; i < 6; i++){
-        result = eval(exp[i]);
-        if (result == -999) {
-            printf("Error\n");
+    char buf[100 + 1];
+    char *prefix, *postfix;
+    double result;
+
+        printf("중위식을 입력하세요: ");
+        scanf("%s", buf);
+        fflush(stdin);
+        
+        if(syntaxsearch(buf) != -1)
+        {
+            prefix = infix_to_prefix(buf);
+            prefix = reverse(prefix);
+            postfix = infix_to_postfix(buf);
+            result = eval(postfix);
+
+            printf("전위식: %s\n", prefix);
+            printf("후위식 : %s\n", postfix);
+            printf("계산결과: %.8lf\n", result);
         }
-        else {
-            printf("%d\n", result);
-        }
-    }
     return 0;
 }
