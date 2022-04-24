@@ -1,2 +1,10 @@
-
-The total sales of the convenience store is 369200 Won.
+cookie: 13 left.
+water: 10 left.
+mask: 28 left.
+coffee: 8 left.
+coke: 11 left.
+ramen: 41 left.
+mandoo: 3 left.
+bread: 19 left.
+icecream: 22 left.
+The total sales of the convenience store is 6000 Won.

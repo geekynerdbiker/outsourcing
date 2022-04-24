@@ -25,8 +25,9 @@ def read_price():
 def out_stock():
     with open("data/input/output.txt", "w") as f:
         for item in stock:
-            f.write(item + ": " + str(stock[item]) + " left.\n")
-        f.write("\nThe total sales of the convenience store is " + str(total_sales) + " Won.\n")
+            line = item + ": " + str(stock[item]) + " left."
+            f.write(line.strip() + "\n")
+        f.write("The total sales of the convenience store is " + str(total_sales) + " Won.\n")
     f.close()
 
 
