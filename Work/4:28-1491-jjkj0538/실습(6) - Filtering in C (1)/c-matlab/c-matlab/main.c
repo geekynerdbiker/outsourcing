@@ -28,16 +28,16 @@ void main(int argc, const char * argv[]) {
     
     // Simple filter coefficients (moving average filter)
     for (k = 0; k < filter_len; k++) {
-        coeffs[k] = 1;
+        coeffs[k] = 1 / (float)filter_len;
     }
     
     while (1) {
         if (fread(&x, sizeof(short), 1, fi) == NULL) break;
         
-        x_buffer[k] = x;
+        x_buffer[filter_len-1] = x;
         ftemp = 0.0;
         for (k = 0; k < filter_len; k++) {
-            ftemp += 1;
+            ftemp += coeffs[k] * x_buffer[k];
         }
         
         if (ftemp < -32768.0)
@@ -51,7 +51,7 @@ void main(int argc, const char * argv[]) {
         printf("%d\n", y);
         
         // Update filter history
-        for (k = 0; k < filter_len - 1; k++) {
+        for (k = 0; k < filter_len; k++) {
             x_buffer[k] = x_buffer[k+1];
         }
     }
