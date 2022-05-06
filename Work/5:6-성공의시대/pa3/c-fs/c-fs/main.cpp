@@ -1,5 +1,5 @@
 /**
- * While debugging, you can modify this file if you need. It won't be 
+ * While debugging, you can modify this file if you need. It won't be
  * submitted to ZINC. Define your helper functions in file_sys.cpp
 */
 
@@ -12,8 +12,8 @@ using namespace std;
 int main()
 {
     /**
-     * Create a file system (a root directory). You can choose 
-     * either sampleSystem(), which creates some files and directories 
+     * Create a file system (a root directory). You can choose
+     * either sampleSystem(), which creates some files and directories
      * for you to start with, or emptySystem() which gives you an
      * completely empty system.
      *
@@ -24,7 +24,7 @@ int main()
 
     /**
      * Run the command line, until you use 'exit' command.
-     * 
+     *
      * If you don't want to use the CLI, simply comment
      * this line and write some tests yourself.
     */
