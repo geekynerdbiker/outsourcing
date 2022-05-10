@@ -1,0 +1,8 @@
+Hippopotamus, 하마
+Dove, 비둘기
+Pigeon, 비둘기
+Barn Swallow, 제비
+Chick, 병아리
+Duck, 오리
+Goose, 거위
+Parrot, 앵무새

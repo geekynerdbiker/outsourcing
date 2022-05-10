@@ -1,0 +1,27 @@
+Flower, 꽃
+Calendula, 금잔화
+Forsythia, 개나리
+Azalea, 철쭉/진달래
+Camellia, 동백꽃
+Chamomile, 캐모마일
+Rose, 장미
+Tulip, 튤립
+Lily, 백합
+Peppermint, 패퍼민트
+Lavender, 라벤더
+Jasmine, 자스민
+Rosemary, 로즈마리
+Passion flower, 시계초
+China pink, 패랭이꽃
+Sunflower, 해바라기
+Zinnia, 백일홍
+Begonia, 베고니아
+Cactus, 선인장
+Morning glory, 나팔꽃
+Daisy, 데이지
+Narcissus, 수선화
+Pansy, 팬지
+Hyacinth, 히아신스
+Bigleafhydrangea, 수국
+Lotus, 연꽃
+Water lily, 수련

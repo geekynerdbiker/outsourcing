@@ -1,0 +1,13 @@
+humid, 습한
+Muggy, 덥고 습한
+Sultry, 찌는 듯이 더운
+Arid, 건조한
+Bleak, 살을 에는 듯한
+Indian summer, (늦가을의) 봄날 같은 날씨
+Spring, 봄
+Summer, 여름
+fall, 가을
+Autumn, 가을
+Winter, 겨울
+Hurricane, 허리케인
+Haze, 아지랑이

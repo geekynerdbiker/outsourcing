@@ -1,0 +1,30 @@
+Dancer, 무용가
+Artist, 미술가
+Screenwriter, 방송작가
+Producer, 프로듀서
+Delivery man, 배달원
+Actor, 배우
+Bus driver, 버스운전기사
+Taxi driver, 택시운전기사
+Lawyer, 변호사
+Composer, 작곡가
+Pilot, 파일럿
+Flight-instructor, 비행교관
+Office assistant, 사무보조원
+Police officer, 경찰관
+Photographer, 사진작가
+Social worker, 사회복지사
+Biologist, 생물학자
+Signer, 가수
+Voice actor, 성우
+Laundryman, 세탁업자
+Firefighter, 소방관
+Novelist, 소설가
+Vet, 수의사
+Mathematician, 수학자
+Psychologist, 심리학자
+Announcer, 아나운서
+Beautician, 미용사
+Trainer, 트레이너
+Pharmacist, 약사
+Baker, 재빵사

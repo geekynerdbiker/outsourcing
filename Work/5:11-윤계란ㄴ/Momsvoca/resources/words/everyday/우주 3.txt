@@ -1,0 +1,12 @@
+Splashdown, 우주선의 착수(바다로 떨어짐)
+touchdown, 우주선의 착수(바다로 떨어짐)
+Light year, 광년
+White dwarf, 백색 왜성
+Sunspot, 태양 흑점
+Interstellar matter, 성간 물질
+Neutron star, 중성자별
+Rocket, 로켓
+Black hole, 블랙홀
+White hole, 화이트홀
+Aerospace, 항공우주
+Axis, 지축

@@ -1,0 +1,32 @@
+Weather, 날씨
+Climate, 기후
+Weather forecast, 일기예보
+Wind velocity, 풍속
+Tornado, 회오리바람, 폭풍
+Gust, 돌풍
+Blast, 돌풍
+Gale, 돌풍
+Breeze, 미풍, 산들바람
+Wind, 바람
+Heavy snowfall, 폭설
+Blizzard, 눈보라
+Sleet, 진눈깨비
+Snow, 눈
+Rain, 비
+Precipitation, 강수량
+Drizzle, 이슬비
+Shower, 소나기
+Downpour, 폭우
+Hail, 우박
+Wind chill factor, 체감 온도
+Daily temperature range, 일교차
+Heavy rain warning, 호우경보
+High pressure, 고기압
+Low pressure, 저기압
+Misty, 안개 낀
+Overcast, 잔뜩 흐린
+Scorching, 찌는 듯이 더운
+Tropical night, 열대야
+Discomfort index, 불쾌지수
+Weather conditions, 기상 상태
+Natural disasters, 자연재해

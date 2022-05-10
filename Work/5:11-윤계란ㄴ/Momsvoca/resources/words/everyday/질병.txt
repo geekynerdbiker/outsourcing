@@ -1,0 +1,33 @@
+Typhoid fever, 장티푸스
+Tuberculosis, 결핵
+Carrier, 보균자
+Quarantine, 격리(기간), 검역
+Transmit, 전염시키다
+Epidemic, 전염병
+plague, 역병
+Infectious disease, 전염병
+Diseases, 질병
+Symptoms, 증상
+Dizziness, 현기증
+Fatigue, 피로
+Chill, 오한
+Swear, 발한
+perspiration, 발한
+Migraine, 편두통
+Insomnia, 불면증
+Paralysis, 불면증
+Rash, 발진
+Indigestion, 소화불량
+Nausea, 메스꺼움
+Runny nose, 콧물
+Coughing, 기침
+Spasm, 경련
+cramp, 경련
+Injury, 부상
+Sprain, 뺨/접질림
+Bruise, 타박상
+Abrasion, 찰과상
+Fracture, 골절
+Bleeding, 출혈
+Scar, 상처 자국/흉터
+Choking, 질식

@@ -1,0 +1,30 @@
+Sparrow, 참새
+Tiger, 호랑이
+Lion, 사자
+Elephant, 코끼리
+Kangaroo, 캥거루
+Koala, 코알라
+Sloth, 나무늘보
+Armadillo, 아르마딜로
+Pangolin, 천산갑
+Porcupine, 호저/산미치광이
+Hedgehog, 고슴도치
+Squirrel, 다람쥐
+Chipmunk, 얼룩 다람쥐
+Monkey, 원숭이
+Chimpanzee, 침팬지
+Orangutan, 오랑우탄
+Gorilla, 고릴라
+Bonobo, 보노보
+Camel, 낙타
+Ostrich, 타조
+Bear, 곰
+Cat, 고양이
+Fox, 여우
+Wolf, 늑대
+Raccoon, 너구리
+Siberian weasel, 족제비
+Badger, 오소리
+Marten, 담비
+Rooster, 수탉
+Hen, 암탉

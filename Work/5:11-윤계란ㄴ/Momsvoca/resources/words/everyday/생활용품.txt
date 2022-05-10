@@ -1,0 +1,15 @@
+Lamp, 조명등
+Bed, 침대
+Pillow, 베개
+Bunk bed, 2층 침대
+Blanket, 담요
+Wardrobe, 옷장
+Closet, 붙박이장
+Wall, 벽
+Toilet, 화장실
+Living room, 거실
+Bed room, 침실
+Lounge, 라운지
+Lobby, 로비
+Door, 문
+Entrance, 출입구, 현관
