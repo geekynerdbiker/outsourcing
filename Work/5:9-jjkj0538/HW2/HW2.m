@@ -3,18 +3,18 @@ close all; clear all; clc;
 
 im = imread('Lenna_salt_pepper.png');
 im = im2double(im);
-sigma = 5;
+sigma = 3;
 
 result = gaussianFiltering(im, sigma);
 
-imwrite(result, 'result_GaussianFilter.png'); 
+imwrite(result, 'result_GaussianFilter_3.png'); 
 
 %% 연달아 발생한 노이즈를 제거하기 위해서 filterSize를 크게 할 수 있지만, 필터사이즈가 클수록 더 많은 영역에서 중간값을 사용하므로 이미지의 윤곽이 더 많이 무너진다는 것을 확인할 수 있다.
 close all; clear all; clc;
 
 im = imread('Lenna_salt_pepper.png');
-filterSize = [3,3];
+filterSize = [7,7];
 
 result = medianFiltering(im, filterSize);
 
-imwrite(result, 'result_medianFilter.png'); 
+imwrite(result, 'result_medianFilter_7x7.png'); 

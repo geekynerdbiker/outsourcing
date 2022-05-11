@@ -6,7 +6,7 @@
 short x_buffer[MAX_FILTER_LEN];
 float coeffs[MAX_FILTER_LEN];
 
-void lpf(int argcLPF, const char * argvLPF[]) {
+void main(int argcHPF, const char * argvHPF[]) {
     FILE *fi, *fo;
     short filter_len = 8;
     short k;
@@ -14,16 +14,16 @@ void lpf(int argcLPF, const char * argvLPF[]) {
     short y;
     float ftemp;
     
-    if (argcLPF < 3) {
-        printf("Usage : %s input output\n", argvLPF[0]);
+    if (argcHPF < 3) {
+        printf("Usage : %s input output\n", argvHPF[0]);
         exit(-1);
     }
     
-    if ((fi = fopen(argvLPF[1], "rb")) == NULL) {
-        printf("Input file [%s] is not found.\n", argvLPF[1]);
+    if ((fi = fopen(argvHPF[1], "rb")) == NULL) {
+        printf("Input file [%s] is not found.\n", argvHPF[1]);
         exit(-1);
     }
-    fo = fopen(argvLPF[2], "wb");
+    fo = fopen(argvHPF[2], "wb");
     
     for (k = 0; k < filter_len; k++) {
         coeffs[k] = 1.0 / 2.0;

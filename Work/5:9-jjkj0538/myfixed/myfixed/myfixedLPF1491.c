@@ -6,7 +6,7 @@
 short x_buffer[MAX_FILTER_LEN];
 float coeffs[MAX_FILTER_LEN];
 
-void lpf(int argcLPF, const char * argvLPF[]) {
+void main(int argcLPF, const char * argvLPF[]) {
     FILE *fi, *fo;
     short filter_len = 8;
     short k;
