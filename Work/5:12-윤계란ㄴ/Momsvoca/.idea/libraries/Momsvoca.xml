@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Momsvoca">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GraphicLibrary.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Momsvoca.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
