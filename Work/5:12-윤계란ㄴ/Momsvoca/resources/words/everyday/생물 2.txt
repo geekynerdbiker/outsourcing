@@ -1,4 +1,0 @@
-Omnivore, 잡식동물
-Herbivore, 초식동물
-Carnivore, 육식동물
-Predator, 포식자

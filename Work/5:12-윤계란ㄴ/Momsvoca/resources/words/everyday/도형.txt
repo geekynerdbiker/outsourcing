@@ -1,9 +1,0 @@
-Triangle, 삼각형
-Acute triangle, 예각삼각형
-Obtuse triangle, 둔각삼각형
-Circle, 원
-Ellipse, 타원
-Oval, 타원형
-Rectangle, 직사각형
-Pyramid, 각뿔
-Cone, 원뿔

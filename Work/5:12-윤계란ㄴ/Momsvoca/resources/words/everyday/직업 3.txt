@@ -1,7 +1,0 @@
-Teacher, 선생님
-Entertainer, 연예인
-Manager, 매니저
-Nutritionist, 영양사
-Diplomat, 외교관
-Athlete, 운동선수
-Doctor, 의사
