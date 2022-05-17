@@ -1,1 +1,0 @@
-5월 17일 오후 1시 30분까지, 파이썬, 과제 내용은 &quot;tf.keras.applications.xception.Xception을 호출하여 Xception의 구조와 특징을 VGGNet, Inception, ResNet과 비교하여 설명할 것.&quot; 이라서 코딩내용 자체를 제출하기보다는 그를 바탕으로 한 비교가 중요한 과제입니다!, 메일로 제출하긴 하지만 채점은 교수님께서 보시고 개인적으로 체크하는 것으로 알고 있습니다.
