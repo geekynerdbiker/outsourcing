@@ -21,7 +21,7 @@ def update_spread(S, E, I, R, alpha=0.2, beta=0.2, gamma=0.2):
     dIdt = alpha * E - gamma * I
     dRdt = gamma * I
 
-    return S+dSdt, E+dEdt, I+dIdt, R+dRdt
+    return S + dSdt, E + dEdt, I + dIdt, R + dRdt
     pass
 
 
@@ -42,10 +42,10 @@ def run_epidemic_simul(total_days=100, S=0.95, E=0, I=0.05, R=0):
 
     # Answer
     data = []
-    for i in range(total_days):
+    for i in range(total_days + 1):
         print("%d일차 상황: S = %.3lf, E = %.3lf, I = %.3lf, R = %.3lf" % (i, S, E, I, R))
-        S, E, I, R = update_spread(S, E, I, R)
         data.append([S, E, I, R])
+        S, E, I, R = update_spread(S, E, I, R)
     return data
     pass
 
@@ -61,7 +61,8 @@ def print_status(data, day=0):
     """
 
     # Answer
-    print("%d일차 상황: S = %.3lf, E = %.3lf, I = %.3lf, R = %.3lf" % (day, data[day][0], data[day][1], data[day][2], data[day][3]))
+    print("%d일차 상황: S = %.3lf, E = %.3lf, I = %.3lf, R = %.3lf" % (
+    day, data[day][0], data[day][1], data[day][2], data[day][3]))
     return data[day]
     pass
 
@@ -81,16 +82,16 @@ def pick(data, pick_rate=False):
     maxValue, maxIndex = 0, 0
     if pick_rate:
         for i in range(1, len(data)):
-            if data[i][2] - data[i-1][2] > maxValue:
+            if data[i][2] - data[i - 1][2] > maxValue:
                 maxValue = data[i][2] - data[i - 1][2]
                 maxIndex = i
-        return maxIndex
+        return maxIndex - 1
     else:
         for i in range(len(data)):
             if data[i][2] > maxValue:
                 maxValue = data[i][2]
                 maxIndex = i
-        return maxIndex+1
+        return maxIndex
     pass
 
 
@@ -102,7 +103,7 @@ if __name__ == '__main__':
 
     # Answer
     data = run_epidemic_simul(100)
-    print_status(data, 50)
+    print_status(data, 100)
     print(pick(data, False))
     print(pick(data, True))
     pass
