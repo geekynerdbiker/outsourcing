@@ -464,51 +464,22 @@
 	</head>
 	<body>
 		<div style="text-align:center">
-			<div class="headline" style="text-
-			align:center;margin:0 auto;height:100px;">
-				<img src="../images/spark.png" style="float:left;width:100%; height:300px;margin:0 auto;">
-			</div>
-			<div id="UploadBox">
-		        
-		    </div>
 			<div id="wrapper" style="text-align:center;float:center;width:100%;height:820px">
-				<!--video part-->
-				<div id="videoarea" style="position:static;margin-left:2%;margin-top:80px;float:left;width:25%;text-align:center;font-size:1.3em;">
-					<div style="height:450px">
-					<img id="imgvideo" style="width:100%">
-					</div>
-					<div style="overflow:scroll; margin-top:10px; text-align:center; font-size:14px; width:100%;; height:240px; border:4px solid;border-color:#ead9d9" id="videos">
-					</div>
-					<!--<div style="width:100%">
-						<form action="/upload" method="post" enctype="multipart/form-data">
-				        		<input type="file" name="userfile">
-				        		<input onClick="process_img" type="submit" value="파일 업로드하기">
-						</form>
-						<script>
-							function process_img(){
-								console.log("in");
-								document.getElementById("processing").style.visibility = 'visible';
-							}
-						</script>
-					</div>-->
-				</div>
-				
 				<!--image part-->
 				<div id="imagearea" style="position:static;overflow:scroll;height:710px;margin-left:2.5%;margin-top:80px;float:left;width:25%;font-size:1.3em;background-color: #fdf9f9; border:4px solid;border-color:#ead9d9;">
 				
 				</div>
-				<!--information part-->
+				<!--information part1-->
 				<div id="infoarea" style="overflow:scroll;height:710px;float:left;margin-left:2.5%;margin-top:80px;width:40%;position:statici;border:4px solid;border-color:#ead9d9;">
 					<div style="background:#fdf9f9;width:100%;height:710px">
 						<p style="line-height:2em;font-size:30px;">[Crack Information]<br/></p>
-						<div id="info">
+						<div id="info1">
 							<table style="width:100%">
 								<thead>
 									<tr>
-										<th style="width:16%">Time</th>
-										<th style="width:16%">Width</th>
-										<th style="width:16%">Risk</th>
-										<th style="width:52%">GPS location</th>
+										<th style="width:25%">Time</th>
+										<th style="width:25%">Width</th>
+										<th style="width:50%">GPS location</th>
 									</tr>
 								</thead>
 								<tbody id="info_table">
@@ -517,6 +488,25 @@
 						</div>
 					</div>
 				</div>
+
+				<!--information part2-->
+				<div id="infoarea" style="overflow:scroll;height:710px;float:left;margin-left:2.5%;margin-top:80px;width:40%;position:statici;border:4px solid;border-color:#ead9d9;">
+					<div style="background:#fdf9f9;width:100%;height:710px">
+						<p style="line-height:2em;font-size:30px;">[Risk Information]<br/></p>
+						<div id="info2">
+							<table style="width:100%">
+								<thead>
+									<tr>
+										<th style="width:100%">Risk</th>
+									</tr>
+								</thead>
+								<tbody id="risk_table">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
 				<!--processing loading div-->
 				<div id="processing" style="width:1500px;height:830px;visibility:hidden;background-color:#ffffff;position:absolute;top:320px;left:200px;opacity:0.9;">	
 					<div class="windows8" style="top:240px;">
@@ -633,11 +623,14 @@
 							'<tr onclick="changeImage('+start+','+'stop'+')" style="color: red">'+
 							'<td rowspan="2" style="width:80px">'+lists[x]/24+'sec'+'</td>'+
 							'<td rowspan="2" style="width:80px">'+widthlist[list_cnt]+'</td>'+
-							'<td rowspan="2" style="width:80px">'+risklist[list_cnt]+'</td>'+
 							'<td style="width:100px">'+gpsxlist[list_cnt]+'</td>'+
 	  						'</tr>'+
 	  						'<tr onclick="changeImage('+start+','+'stop'+')" style="color: red">'+
 							'<td style="width:100px">'+gpsylist[list_cnt]+'</td>'+
+							'</tr>'
+						);
+						$("#risk_table").append(
+							'<td rowspan="2" style="width:80px">'+risklist[list_cnt]+'</td>'+
 							'</tr>'
 						);
 					}else{
@@ -650,6 +643,11 @@
 							'</tr>'+
 	  						'<tr>'+
 							'<td style="width:200px">'+gpsylist[list_cnt]+'</td>'+
+							'</tr>'
+						);
+						$("#info_table").append(
+							'<tr>'+
+							'<td rowspan="2" style="width:80px">'+risklist[list_cnt]+'</td>'+
 							'</tr>'
 						);
 					}

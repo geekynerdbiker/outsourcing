@@ -9,7 +9,7 @@ fi = fopen('output2.snd', 'rb');
 x = fread(fi, inf, 'int16');
 fclose(fi);
 
-L = Fs*0.02; % a segment for short-time FFT (20 msec)
+L = Fs*0.02;
 
 figure(1)
 subplot(2,1,1); plot(x(1:L));
