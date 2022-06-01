@@ -47,11 +47,12 @@ class ofApp : public ofBaseApp {
 		bool readFile();
 		void freeMemory();
 		bool DFS();
-		void dfsdraw();
+		bool BFS();
+		void path_draw();
 		int HEIGHT;//미로의 높이
 		int WIDTH;//미로의 너비
 		char** input;//텍스트 파일의 모든 정보를 담는 이차원 배열이다.
-		int** visited;//방문여부를 저장할 포인
+		// int** visited;//방문여부를 저장할 포인터
 		int maze_col;//미로칸의 열의 인덱스를 가리킨다.
 		int maze_row;//미로칸의 행의 인덱스를 가리킨다.
 		int k;
@@ -74,8 +75,20 @@ class ofApp : public ofBaseApp {
 		bool bFullscreen;
 		bool bTopmost;
 		bool isdfs;
+        bool isbfs;
 		// Example functions
  		void doFullScreen(bool bFull);
 		void doTopmost(bool bTop);
 
+		vector<string> maze;
+		vector<vector<bool>> check;
+		vector<vector<bool>> visited;
+		vector<vector<bool>> path;
+		
+        int dX,dY;
+        int dir[4][2] = { {0, -1}, {-1, 0}, {0, 1}, {1, 0} };
+		double size;
+
+		int heightWall = 7;
+		int widthWall = 1;
 };
