@@ -2,7 +2,7 @@
 //  main.c
 //  c-sequence
 //
-//  Created by Jacob An on 2022/05/08.
+//  Created by Jacob An on 2022/06/06.
 //
 
 #include <stdio.h>

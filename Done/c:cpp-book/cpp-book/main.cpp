@@ -12,8 +12,9 @@ using namespace std;
 class Manage{
 
 private:
-    int mode;
     FILE *fp;
+    
+    int mode;
     int numBranch;
     int numRoom;
     int capacity;
