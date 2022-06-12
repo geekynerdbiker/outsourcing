@@ -12,7 +12,7 @@ int main(void) {
     Cube cube;
     cube.initCube();
     
-    while (!fs.eof()) {
+    while (fs && !fs.eof()) {
         int x, y, z;
         char name[50] = {'\0', };
         
@@ -33,12 +33,12 @@ int main(void) {
         
         switch (command) {
             case 1:
-                cin >> z >> y >> x >> name;
+                cin >> x >> y >> z >> name;
                 cube.insert(z, y, x, name);
                 break;
                 
             case 2:
-                cin >> z >> y >> x >> name;
+                cin >> x >> y >> z >> name;
                 cube.remove(z, y, x, name);
                 break;
                 
@@ -48,7 +48,7 @@ int main(void) {
                 break;
                 
             case 4:
-                cin >> z >> y >> x;
+                cin >> x >> y >> z;
                 cube.print(z, y, x);
                 break;
                 
@@ -57,14 +57,14 @@ int main(void) {
                 break;
                 
             case 6:
-                cin >> z >> y >> x;
+                cin >> x >> y >> z;
                 cube.turn(z, y, x);
                 cube.printAll();
                 break;
                 
             case 7:
                 int x1, y1, z1, x2, y2, z2;
-                cin >> z1 >> y1 >> x1 >> z2 >> y2 >> x2;
+                cin >> x1 >> y1 >> z1 >> x2 >> y2 >> z2;
                 cube.exchange(z1, y1, x1, z2, y2, x2);
                 break;
                 

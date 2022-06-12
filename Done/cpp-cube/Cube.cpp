@@ -239,14 +239,17 @@ BST* Cube::removeBSTNode(Node* N, BST* bst, BST* par, char name[50]) {
         if (par_Node == NULL) {
             if (bst->left == NULL && bst->right == NULL) {
                 N->word = bst->left;
+                N->count--;
                 delete bst;
                 return bst;
             } else if (bst->left == NULL && bst->right != NULL) {
                 N->word = bst->right;
+                N->count--;
                 delete bst;
                 return bst;
             } else if (bst->left != NULL && bst->right == NULL) {
                 N->word = bst->left;
+                N->count--;
                 delete bst;
                 return bst;
             } else if (bst->left != NULL && bst->right != NULL) {
@@ -262,6 +265,7 @@ BST* Cube::removeBSTNode(Node* N, BST* bst, BST* par, char name[50]) {
                 } else if (cnt == 2) {
                     par_Node->right = bst->right;
                 }
+                N->count--;
                 delete bst;
                 return bst;
             } else if (bst->left == NULL && bst->right != NULL) {
@@ -270,6 +274,7 @@ BST* Cube::removeBSTNode(Node* N, BST* bst, BST* par, char name[50]) {
                 } else if (cnt == 2) {
                     par_Node->right = bst->right;
                 }
+                N->count--;
                 delete bst;
                 return bst;
                 
@@ -280,11 +285,13 @@ BST* Cube::removeBSTNode(Node* N, BST* bst, BST* par, char name[50]) {
                     par_Node->right = bst->left;
                 }
                 
+                N->count--;
                 delete bst;
                 return bst;
             } else if (bst->left != NULL && bst->right != NULL) {
                 BST* temp = getMin(bst->right);
                 strcpy(bst->n, temp->n);
+                N->count--;
                 return bst;
             }
         }
