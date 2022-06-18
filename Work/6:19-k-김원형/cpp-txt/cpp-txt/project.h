@@ -17,6 +17,7 @@ class Project
 	private:
 		// you can add more member variable
 		string userid;
+        int userindex;
 		Info info;
 		int studentnum=11;
 		const string adminid = "admin";
@@ -39,18 +40,48 @@ class Project
 	    }
 	    
 		// command 1
-		void login(string id, string pw){
+		bool login(string id, string pw) {
 		    // Your Code Here ...
+            for (int i = 0; i < studentnum; i++) {
+                if (info.idlist[i] == id) {
+                    if (info.loginfail[i] >= 3) {
+                        cout << "Please contact administrator and reset your password." << endl;
+                        return false;
+                    } if (info.pwlist[i] == pw) {
+                        cout << "Login Success." << endl;
+                        userid = id;
+                        userindex = i;
+                        info.loginfail[i] = 0;
+                        return true;
+                    } else {
+                        cout << "Login Fail." << endl;
+                        if (id != adminid)
+                            info.loginfail[i]++;
+                        return false;
+                    }
+                }
+            }
+            cout << "Login Fail." << endl;
+            return false;
 		};
 
 		// command 2
-		void studentinfo(){
+		void studentinfo() {
 		    // Your Code Here ...
+            cout << "Name: " << info.idlist[userindex] << endl;
+            cout << "Homework: " << info.HW1[userindex] << " " << info.HW2[userindex] << endl;
+            cout << "Project: " << info.PJ1[userindex] << " " << info.PJ2[userindex] << endl;
+            
 		};
 		
 		// command 3
 		void scorerank(){
 		    // Your Code Here ...
+            int hw1 = 1, hw2 = 1, pj1 = 1, pj2 = 1;
+            int sameGrade = 0;
+            
+            for (int i = 0; i < studentnum; i++)
+            
 		};
 		
 		// command 4
