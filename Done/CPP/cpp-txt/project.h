@@ -42,8 +42,10 @@ public:
     // command 1
     bool login(string id, string pw) {
         // Your Code Here ...
-        if (id == adminid && pw ==adminpw)
+        if (id == adminid && pw == adminpw) {
+            cout << "Login Success." << endl;
             return true;
+        }
         
         for (int i = 0; i < studentnum; i++) {
             if (info.idlist[i] == id) {
@@ -88,9 +90,9 @@ public:
             if (info.HW2[i] > info.HW2[userindex])
                 hw2++;
             if (info.PJ1[i] > info.PJ1[userindex])
-                hw1++;
+                pj1++;
             if (info.PJ2[i] > info.PJ2[userindex])
-                hw2++;
+                pj2++;
             
         }
         cout << "Your rank is..." << endl;
@@ -140,15 +142,16 @@ public:
         }
         
         cout << "Average scores and median scores are..." << endl;
-        cout << "HW1: " << avgHW1/studentnum << " " << medHW1 << endl;
-        cout << "HW2: " << avgHW2/studentnum << " " << medHW2 << endl;
-        cout << "Project1: " << avgPJ1/studentnum << " " << medPJ1 << endl;
-        cout << "Project1: " << avgPJ2/studentnum << " " << medPJ2 << endl;
+        cout << "HW1: " << avgHW1/studentnum << ", " << medHW1 << endl;
+        cout << "HW2: " << avgHW2/studentnum << ", " << medHW2 << endl;
+        cout << "Project1: " << avgPJ1/studentnum << ", " << medPJ1 << endl;
+        cout << "Project1: " << avgPJ2/studentnum << ", " << medPJ2 << endl;
     };
     
     // command 5
     void alldata(){
         // Your Code Here ...
+        cout << "All data:" << endl;
         for (int i = 0; i < studentnum; i++) {
             cout << info.idlist[i] << ": ";
             cout << info.HW1[i] << " ";
@@ -299,6 +302,7 @@ public:
         info.HW2[studentnum] = HW2;
         info.PJ1[studentnum] = PJ1;
         info.PJ2[studentnum] = PJ2;
+        info.loginfail[studentnum] = 0;
         
         studentnum++;
     };

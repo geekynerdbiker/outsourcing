@@ -25,13 +25,6 @@ int main(){
     cout << "0. Terminate" << endl;
     
     while (1) {
-        if (isAdmin) {
-            cout << "[Admin Command]" << endl;
-            cout << "5. All data" << endl;
-            cout << "6. Modify info" << endl;
-            cout << "7. Add student" << endl;
-        }
-        
         int cmd;
         
         cout << "Select the command: ";
@@ -49,8 +42,13 @@ int main(){
                 getline(cin, pw);
                 
                 isLoggedIn = Grade.login(id, pw);
-                if (isLoggedIn && id == Grade.admin())
+                if (isLoggedIn && id == Grade.admin()) {
                     isAdmin = true;
+                    cout << "[Admin Command]" << endl;
+                    cout << "5. All data" << endl;
+                    cout << "6. Modify info" << endl;
+                    cout << "7. Add student" << endl;
+                }
                 else isAdmin = false;
             }
         } else if (cmd == 2) {
