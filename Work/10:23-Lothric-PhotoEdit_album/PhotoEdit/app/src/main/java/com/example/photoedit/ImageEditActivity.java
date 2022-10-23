@@ -181,17 +181,17 @@ public class ImageEditActivity extends AppCompatActivity implements View.OnClick
         colorCode = findViewById(R.id.colorCode);
 
         redSeekBar = findViewById(R.id.redSeekBar);
-        redSeekBar.setMin(0);
+        redSeekBar.setMin(-255);
         redSeekBar.setMax(255);
         greenSeekBar = findViewById(R.id.greenSeekBar);
-        greenSeekBar.setMin(0);
+        greenSeekBar.setMin(-255);
         greenSeekBar.setMax(255);
         blueSeekBar = findViewById(R.id.blueSeekBar);
-        blueSeekBar.setMin(0);
+        blueSeekBar.setMin(-255);
         blueSeekBar.setMax(255);
         alphaSeekBar = findViewById(R.id.alphaSeekBar);
-        alphaSeekBar.setMax(100);
-        alphaSeekBar.setMin(0);
+        alphaSeekBar.setMax(255);
+        alphaSeekBar.setMin(-255);
 
 
         redSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -461,8 +461,8 @@ public class ImageEditActivity extends AppCompatActivity implements View.OnClick
             case R.id.brightnessButton:
                 label.setText("밝기");
                 seekBar.setProgress(brightValue);
-                seekBar.setMin(-150);
-                seekBar.setMax(150);
+                seekBar.setMin(-255);
+                seekBar.setMax(255);
                 mode = 1;
                 colorPicker.setVisibility(View.GONE);
                 openSlider();
@@ -470,8 +470,8 @@ public class ImageEditActivity extends AppCompatActivity implements View.OnClick
             case R.id.beforeAfterButton:
                 label.setText("대비");
                 seekBar.setProgress(contrastValue);
-                seekBar.setMin(0);
-                seekBar.setMax(10);
+                seekBar.setMin(-255);
+                seekBar.setMax(255);
                 mode = 2;
                 colorPicker.setVisibility(View.GONE);
                 openSlider();
@@ -479,8 +479,8 @@ public class ImageEditActivity extends AppCompatActivity implements View.OnClick
             case R.id.saturationButton:
                 label.setText("색조");
                 seekBar.setProgress(saturationValue);
-                seekBar.setMin(0);
-                seekBar.setMax(200);
+                seekBar.setMin(-255);
+                seekBar.setMax(255);
                 mode = 3;
                 colorPicker.setVisibility(View.GONE);
                 openSlider();

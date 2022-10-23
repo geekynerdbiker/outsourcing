@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deposit.css">
+    <link rel="stylesheet" href="depQuestion.css">
+    <title>Deposit</title>
+</head>
+
+<body>
+    <main id="depositQuestion">
+        <h1> Are you sure you want to deposit the amount specified?</h1>
+        <p>
+            <!-- &#36; === '$' -->
+            &#36;<span id="amount">0</span>?
+        </p>
+        <div class="yesNo">
+            <!-- onclick="confYes()" \n onclick="confNo()" class="butt"-->
+            <button type="button" name="yesButton" id="buttYes">YES</button>
+            <button type="button" name="noButton" id="buttNo">NO</button>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="depQuestion.js">
+    </script>
+</body>
+
+</html>

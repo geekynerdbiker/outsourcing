@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deposit.css">
+    <title>Enter the amount to deposit</title>
+</head>
+
+<body>
+    <main id="depositPage">
+        <p class="pinInstuctions">Enter the amount to deposit</p>
+        <input type="text" name="accountNumber" class="input" id="inputDeposit" value="$0.0" readonly="readonly">
+        <table>
+            <tr> <!-- first row -->
+                <td><button type="button" class="btnCard" id="a1" name="button">1</button></td>
+                <td><button type="button" class="btnCard" id="a2" name="button">2</button></td>
+                <td><button type="button" class="btnCard" id="a3" name="button">3</button></td>
+            </tr>
+            <tr> <!-- second row -->
+                <td><button type="button" class="btnCard" id="a4" name="button">4</button></td>
+                <td><button type="button" class="btnCard" id="a5" name="button">5</button></td>
+                <td><button type="button" class="btnCard" id="a6" name="button">6</button></td>
+            </tr>
+            <tr> <!-- third row -->
+                <td><button type="button" class="btnCard" id="a7" name="button">7</button></td>
+                <td><button type="button" class="btnCard" id="a8" name="button">8</button></td>
+                <td><button type="button" class="btnCard" id="a9" name="button">9</button></td>
+            </tr>
+            <tr> <!-- fourth row: 0, ., Delete -->
+                <td><button type="button" class="btnCard" id="a0" name="button">0</button></td>
+                <td><button type="button" class="btnCard" id="aPoint" name="button">.</button></td>
+                <td><button type="button" class="btnCard delete" id="aDelete" name="button">Delete</button></td>
+            </tr>
+            <tr> <!-- fourth row: Enter, 0, Delete -->
+                <td colspan="3"><button type="button" class="btnCard enter" id="aEnter" name="button">Enter</button></td>
+            </tr>
+        </table>
+        <button type="button" class="card" id="returnBack" name="button">Back</button>
+    </main>
+
+    <script type="text/javascript" src="deposit.js">
+    </script>
+</body>
+</html>
