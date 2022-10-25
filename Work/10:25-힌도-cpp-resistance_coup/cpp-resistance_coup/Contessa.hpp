@@ -1,20 +1,11 @@
-#include <iostream>
-#include <string>
+#ifndef EX4_CPP_A_CONTESSA_H
+#define EX4_CPP_A_CONTESSA_H
 #include "Player.hpp"
 
-class Contessa : public Player {
-public:
-    Contessa(){};
-    Contessa(Game game , string name){};
-    ~Contessa(){};
-    void role();
-    void coup(Player & player);
-    void print();
-    string getRole();
-    void setRole();
-    void block(Player & player); //Assasination block.
-    void steal(Player* target);
+class Contessa{
     
-private:
-    string playerRole;
+public:
+    void block(Player& p1, Player& p2);
 };
+
+#endif

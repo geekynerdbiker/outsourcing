@@ -1,20 +1,12 @@
-#include <iostream>
-#include <string>
+#ifndef EX4_CPP_A_DUKE_H
+#define EX4_CPP_A_DUKE_H
 #include "Player.hpp"
-
-class Duke : public Player {
-public:
-    Duke();
-    Duke(Game game , string name);
-    ~Duke();
-    void income(); //Can take 1 coins from the treasury.
-    void tax(); //Can take 2 coins from the treasury.
-    void foreign_aid(); //Double the coins of the target player.
-    string role();
-    void coup(Player & player);
-    void block(Player & player);
-    void print();
+class Duke{
     
-private:
-    string playerRole;
+public:
+    void tax(Player& p);
+    void block(Player& p);
 };
+
+#endif
+

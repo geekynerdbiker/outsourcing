@@ -1,15 +1,20 @@
-#include <iostream>
-#include <string>
 #include "Duke.hpp"
-#include "Player.hpp"
+const int TAX_VAL = 3;
+const int BLOCK_VAL = 2;
+const int MAX_MONEY = 10;
 
-Duke::Duke(){};
-Duke::Duke(Game game , string name){};
-Duke::~Duke(){};
-void Duke::income(){return;}     // Can take 1 coins from the treasury.
-void Duke::tax(){return;}         // Can take 2 coins from the treasury.
-void Duke::foreign_aid(){return;} // Double the coins of the target player.
-string Duke::role(){return "Duke";}
-void Duke::coup(Player &player){return;}
-void Duke::block(Player &player){return;}
-void Duke::print(){return;}
+void Duke::block(Player &p) {
+    if(p.lastAct == "foreign_aid"){
+        p.bank -= BLOCK_VAL;
+    } else {
+        throw std::invalid_argument("Nothing to block!\n");
+    }
+}
+
+void Duke::tax(Player& p) {
+    if (p.bank + TAX_VAL >= MAX_MONEY) {
+        throw std::invalid_argument("You have too many coins\n");
+    }
+    
+    p.bank += TAX_VAL;
+}

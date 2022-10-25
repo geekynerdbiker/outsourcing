@@ -1,12 +1,9 @@
-#include <iostream>
-#include <string>
 #include "Contessa.hpp"
-#include "Player.hpp"
 
-void Contessa::role(){}
-void Contessa::coup(Player &player){}
-void Contessa::print(){}
-string Contessa::getRole(){return "";}
-void Contessa::setRole(){}
-void Contessa::block(Player & player){} // Assasination block.
-void Contessa::steal(Player *target){}
+void Contessa::block(Player &p1, Player& p2) {
+    if (p2.lastAct == "assassinate") {
+        p2.lastAct = "";
+    } else {
+        throw std::invalid_argument("Nothing to block!\n");
+    }
+}

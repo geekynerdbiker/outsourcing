@@ -1,29 +1,27 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include "Game.hpp"
+#ifndef EX4_CPP_A_PLAYER_H
+#define EX4_CPP_A_PLAYER_H
 #pragma once
 
-class Game;
-class Player {
+#include "vector"
+#include "string"
+
+class Player{
 public:
-    Player(){};
-    Player(Game &game , const string &name){};
-
-    ~Player(){};
-
+    std::vector<std::string> role;
+    std::string lastAct;
+    Player* lastVic;
+    int bank;
+    
+    Player(): bank(0) {};
+    virtual ~Player() {};
+    
+    void push_role(std::string s);
+    
     void income();
     void foreign_aid();
-    void coup(Player & player);
-    std::string getName();
-    int coins();
-    void print();
-    string role();
-    void setRole();
-
-private:
-    std::string name;
-    string playeRole;
-    int coinsAmount;
-    bool isPlaying;
+    virtual void coup(Player& p);
+    
+    
 };
+
+#endif

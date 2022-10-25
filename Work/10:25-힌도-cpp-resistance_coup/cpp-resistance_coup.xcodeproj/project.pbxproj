@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55D44AE3290837D100B1BD74 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55D44AE2290837D100B1BD74 /* Player.cpp */; };
 		55FDBA5228F86804004C4BBF /* Duke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA3B28F86802004C4BBF /* Duke.cpp */; };
 		55FDBA5428F86804004C4BBF /* Contessa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA3D28F86802004C4BBF /* Contessa.cpp */; };
-		55FDBA5528F86804004C4BBF /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA4028F86802004C4BBF /* Player.cpp */; };
-		55FDBA5628F86804004C4BBF /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA4128F86802004C4BBF /* Game.cpp */; };
 		55FDBA5828F86804004C4BBF /* Assassin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA4528F86803004C4BBF /* Assassin.cpp */; };
-		55FDBA5928F86804004C4BBF /* Ambassador.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA4928F86803004C4BBF /* Ambassador.cpp */; };
 		55FDBA5C28F86804004C4BBF /* Captain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA4D28F86803004C4BBF /* Captain.cpp */; };
 		55FDBA5F28F868C6004C4BBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBA5E28F868C6004C4BBF /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -30,20 +28,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55D44AE1290837D100B1BD74 /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		55D44AE2290837D100B1BD74 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		55FDBA3028F867DF004C4BBF /* cpp-resistance_coup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-resistance_coup"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55FDBA3A28F86802004C4BBF /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		55FDBA3B28F86802004C4BBF /* Duke.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Duke.cpp; sourceTree = "<group>"; };
 		55FDBA3D28F86802004C4BBF /* Contessa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Contessa.cpp; sourceTree = "<group>"; };
-		55FDBA3E28F86802004C4BBF /* Ambassador.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ambassador.hpp; sourceTree = "<group>"; };
-		55FDBA4028F86802004C4BBF /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		55FDBA4128F86802004C4BBF /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		55FDBA4428F86803004C4BBF /* Duke.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Duke.hpp; sourceTree = "<group>"; };
 		55FDBA4528F86803004C4BBF /* Assassin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assassin.cpp; sourceTree = "<group>"; };
 		55FDBA4628F86803004C4BBF /* Captain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Captain.hpp; sourceTree = "<group>"; };
 		55FDBA4728F86803004C4BBF /* Assassin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Assassin.hpp; sourceTree = "<group>"; };
-		55FDBA4928F86803004C4BBF /* Ambassador.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ambassador.cpp; sourceTree = "<group>"; };
 		55FDBA4D28F86803004C4BBF /* Captain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Captain.cpp; sourceTree = "<group>"; };
-		55FDBA4E28F86803004C4BBF /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		55FDBA5128F86804004C4BBF /* Contessa.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Contessa.hpp; sourceTree = "<group>"; };
 		55FDBA5E28F868C6004C4BBF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,8 +72,6 @@
 		55FDBA3228F867DF004C4BBF /* cpp-resistance_coup */ = {
 			isa = PBXGroup;
 			children = (
-				55FDBA4928F86803004C4BBF /* Ambassador.cpp */,
-				55FDBA3E28F86802004C4BBF /* Ambassador.hpp */,
 				55FDBA4528F86803004C4BBF /* Assassin.cpp */,
 				55FDBA4728F86803004C4BBF /* Assassin.hpp */,
 				55FDBA4D28F86803004C4BBF /* Captain.cpp */,
@@ -88,11 +80,9 @@
 				55FDBA5128F86804004C4BBF /* Contessa.hpp */,
 				55FDBA3B28F86802004C4BBF /* Duke.cpp */,
 				55FDBA4428F86803004C4BBF /* Duke.hpp */,
-				55FDBA4128F86802004C4BBF /* Game.cpp */,
-				55FDBA4E28F86803004C4BBF /* Game.hpp */,
-				55FDBA4028F86802004C4BBF /* Player.cpp */,
-				55FDBA3A28F86802004C4BBF /* Player.hpp */,
 				55FDBA5E28F868C6004C4BBF /* main.cpp */,
+				55D44AE2290837D100B1BD74 /* Player.cpp */,
+				55D44AE1290837D100B1BD74 /* Player.hpp */,
 			);
 			path = "cpp-resistance_coup";
 			sourceTree = "<group>";
@@ -124,7 +114,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					55FDBA2F28F867DF004C4BBF = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -155,13 +145,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FDBA5428F86804004C4BBF /* Contessa.cpp in Sources */,
+				55D44AE3290837D100B1BD74 /* Player.cpp in Sources */,
 				55FDBA5828F86804004C4BBF /* Assassin.cpp in Sources */,
 				55FDBA5228F86804004C4BBF /* Duke.cpp in Sources */,
 				55FDBA5F28F868C6004C4BBF /* main.cpp in Sources */,
 				55FDBA5C28F86804004C4BBF /* Captain.cpp in Sources */,
-				55FDBA5628F86804004C4BBF /* Game.cpp in Sources */,
-				55FDBA5928F86804004C4BBF /* Ambassador.cpp in Sources */,
-				55FDBA5528F86804004C4BBF /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +189,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -259,6 +248,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -280,7 +270,9 @@
 		55FDBA3828F867DF004C4BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -288,7 +280,9 @@
 		55FDBA3928F867DF004C4BBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -1,119 +1,71 @@
-/**
- * Demo program for Coup exercise
- *
- * @author: Tal Zichlinsky
- * @since: 2022-02
- */
-
-#include "Player.hpp"
 #include "Duke.hpp"
 #include "Assassin.hpp"
-#include "Ambassador.hpp"
 #include "Captain.hpp"
 #include "Contessa.hpp"
 
 #include <iostream>
-#include <stdexcept>
+#include <algorithm>
+#include <random>
 #include <vector>
+
 using namespace std;
 
+void print_menu() {
+    cout << "=======================================" << endl;
+    cout << "1. 게임 설명" << endl;
+    cout << "2. 게임 시작" << endl;
+    cout << "3. 종료" << endl;
+    cout << "=======================================" << endl;
+}
 int main() {
-
-    Game game_1{};
-
-    /* This player drew the "Duke" card, his name is Moshe
-    and he is a player in game_1 */
-    Duke duke{game_1, "Moshe"};
-    Assassin assassin{game_1, "Yossi"};
-    Ambassador ambassador{game_1, "Meirav"};
-    Captain captain{game_1, "Reut"};
-    Contessa contessa{game_1, "Gilad"};
-
-    vector<string> players = game_1.players();
-
-    /*
-        prints:
-        Moshe
-        Yossi
-        Meirav
-        Reut
-        Gilad
-    */
-    for(string name : players){
-        cout << name << endl;
+    int command;
+    
+    cout << "=======================================" << endl;
+    cout << "|                                      |" << endl;
+    cout << "|    레지스탕스 쿠 게임에 오신 걸 환영합니다!!   |" << endl;
+    cout << "|                                      |" << endl;
+    print_menu();
+    
+    while (true) {
+        cout << "선택 : ";
+        cin >> command;
+        
+        if (command == 1) {
+            cout << "레지스탕스 쿠는 참가자들이 다양한 역할군의 카드들과 코인을 사용하여, 추리와 거짓말을 활용한 보드게임이다." << endl;
+            cout << "각 참가자는 일반 행동과 캐릭터 행동 중 하나를 고를 수 있으며, 어떤 능력을 사용할 지 결정할 수 있다." << endl;
+            cout << "참가자는 거짓말로 보유하고 있지 않은 캐릭터의 능력을 사용할 수 있으며, 타 참가자는 언제든디 도정할 수 있다." << endl;
+            cout << "거짓말이 들통나면 카드를 한 장 오픈하고, 진실이면 도전한 상대가 카드를 한 장 오픈한다." << endl;
+            cout << "카드 2장이 모두 오픈된 참가자는 게임에서 제외되며, 한 명이 남을 때까지 게임을 계속한다." << endl;
+            cout << "적절한 블러핑과 상대의 수를 간파하여 이 게임에서 최종 승자가 되어 보세요!\n" << endl;
+            print_menu();
+        } else if (command == 2) {
+            break;
+        } else if (command == 3) {
+            return 0;
+        } else {
+            cout << "다시 선택하세요" << endl;
+            continue;
+        }
     }
-
-    // prints Moshe
-    cout << game_1.turn() << endl;
-
-    // throws no exceptions
-    duke.income();
-    assassin.income();
-    ambassador.income();
-    captain.income();
-    contessa.income();
-
-    // throws exception, it is duke's turn now
-    assassin.income();
-
-    duke.income();
-    assassin.foreign_aid();
-
-    // throws exception, the last operation duke performed
-    // is income, which cannot be blocked by any role
-    captain.block(duke);
-
-    cout << duke.coins() << endl; // prints 2
-    cout << assassin.coins() << endl; // prints 3
-
-    // throws exception, the last operation duke performed
-    // is foreign aid, which cannot be blocked by contessa
-    contessa.block(assassin);
-
-    duke.block(assassin);
-    cout << assassin.coins() << endl; // prints 1
-
-    ambassador.transfer(duke, assassin); //transfers 1 coin from duke to assassin
-    captain.foreign_aid();
-    contessa.foreign_aid();
-
-    duke.tax();
-    assassin.income();
-    ambassador.foreign_aid();
-    captain.steal(contessa);
-    contessa.foreign_aid();
-
-    duke.tax();
-    // no exception, assassin can coup with only 3 coins
-    assassin.coup(duke);
-
-    players = game_1.players();
-    /*
-        prints:
-        Yossi
-        Meirav
-        Reut
-        Gilad
-    */
-    for (string name : players)
-    {
-        cout << name << endl;
+    cout << "게임에 참여하는 참가자는 플레이어와 컴퓨터 3명으로, 총 4명입니다." << endl;
+    Player p, com1, com2, com3, com4;
+    
+    cout << "덱을 생성하고 카드를 분배합니다." << endl;
+    vector<string> deque = {"Assassin", "Captain", "Contessa" ,"Duke", "Assassin", "Captain", "Contessa" ,"Duke", "Assassin", "Captain", "Contessa" ,"Duke"};
+    auto rd = std::random_device {};
+    auto rng = std::default_random_engine { rd() };
+    std::shuffle(deque.begin(), deque.end(), rng);
+    
+    for (int i = 0; i < 2; i++) {
+        p.push_role(deque[i]);
+        com1.push_role(deque[i+1]);
+        com2.push_role(deque[i+2]);
+        com3.push_role(deque[i+3]);
     }
-
-    contessa.block(assassin);
-
-    players = game_1.players();
-    /*
-        prints:
-        Moshe
-        Yossi
-        Meirav
-        Reut
-        Gilad
-    */
-    for (string name : players)
-    {
-        cout << name << endl;
-    }
+    
+    cout << "참가자에게 카드 분배가 완료되었습니다.\n" << endl;
+    cout << "게임을 시작합니다." << endl;
+    cout << "=======================================" << endl;
+    
 }
 

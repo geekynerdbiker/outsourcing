@@ -1,20 +1,12 @@
-#include <iostream>
-#include <string>
+#ifndef EX4_CPP_A_CAPTIAN_H
+#define EX4_CPP_A_CAPTIAN_H
 #include "Player.hpp"
 
-class Captain : public Player {
-public:
-    Captain(){};
-    Captain(Game game , string name){};
-    ~Captain(){};
-    void role();
-    void coup(Player & player);
-    void print();
-    string getRole();
-    void setRole();
-    void block(Player & player);
-    void steal(Player & target);
+class Captain{
     
-private:
-    string playerRole;
+public:
+    void steal(Player& p1, Player &p2);
+    void block(Player& p1, Player &p2);
 };
+
+#endif
