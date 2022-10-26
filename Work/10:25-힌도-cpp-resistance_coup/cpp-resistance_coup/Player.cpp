@@ -4,7 +4,7 @@ const int COUP_PRICE = 7;
 const int INCOME = 1;
 const int FOREIGN_VAL = 2;
 
-void Player::push_role(std::string s) {
+void Player::push_role(std::pair<std::string, std::string> s) {
     this->role.push_back(s);
 }
 

@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <random>
 #include <vector>
+#include <utility>
 
 using namespace std;
 
@@ -17,6 +18,17 @@ void print_menu() {
     cout << "3. 종료" << endl;
     cout << "=======================================" << endl;
 }
+
+void show_card() {
+    cout << "플레이어들의 카드는 다음과 같습니다." << endl;
+    cout << "---------------------------------------" << endl;
+    cout << "플레이어 : |  "<<"  |   |  "<<"  |" << endl;
+    cout << "컴퓨터 1 : |  "<<"  |   |  "<<"  |" << endl;
+    cout << "컴퓨터 2 : |  "<<"  |   |  "<<"  |" << endl;
+    cout << "컴퓨터 3 : |  "<<"  |   |  "<<"  |" << endl;
+    cout << "---------------------------------------" << endl;
+}
+
 int main() {
     int command;
     
@@ -56,14 +68,14 @@ int main() {
     auto rng = std::default_random_engine { rd() };
     std::shuffle(deque.begin(), deque.end(), rng);
     
-    for (int i = 0; i < 2; i++) {
-        p.push_role(deque[i]);
-        com1.push_role(deque[i+1]);
-        com2.push_role(deque[i+2]);
-        com3.push_role(deque[i+3]);
-    }
-    
     cout << "참가자에게 카드 분배가 완료되었습니다.\n" << endl;
+    for (int i = 0; i < 2; i++) {
+        p.push_role(make_pair(deque[i], "c"));
+        com1.push_role(make_pair(deque[i+1], "c"));
+        com2.push_role(make_pair(deque[i+2], "c"));
+        com3.push_role(make_pair(deque[i+3], "c"));
+    }
+
     cout << "게임을 시작합니다." << endl;
     cout << "=======================================" << endl;
     

@@ -4,10 +4,11 @@
 
 #include "vector"
 #include "string"
+#include <utility>
 
 class Player{
 public:
-    std::vector<std::string> role;
+    std::vector<std::pair<std::string, std::string>> role;
     std::string lastAct;
     Player* lastVic;
     int bank;
@@ -15,7 +16,7 @@ public:
     Player(): bank(0) {};
     virtual ~Player() {};
     
-    void push_role(std::string s);
+    void push_role(std::pair<std::string, std::string>);
     
     void income();
     void foreign_aid();
