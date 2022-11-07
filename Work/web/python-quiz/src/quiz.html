@@ -10,10 +10,17 @@
 <body>
     <div class="quiz-container">
         <div class="question-number">
-            <h3>Question <span class="question-num-value"></span> of
+            <h3>Question <span class="question-num-value"></span> /
                 <span class="total-questions">0</span>
             </h3>
         </div>
+        <div class="score">
+            score
+        </div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
         <div class="question">
             How do you declare a Javascript variable?
         </div>
@@ -22,12 +29,6 @@
             <div id="1" class="option2" onclick="check(this)"></div>
             <div id="2" class="option3" onclick="check(this)"></div>
             <div id="3" class="option4" onclick="check(this)"></div>
-        </div>
-        <div class="button btn">
-            <button type="button" onclick="next()" class="btn">Next</button>
-        </div>
-        <div class="answers-tracker">
-
         </div>
     </div>
     <div class="quiz-over">
@@ -39,5 +40,6 @@
         </div>
     </div>
 </body>
+<script src="scripts.js"></script>
 
 </html>

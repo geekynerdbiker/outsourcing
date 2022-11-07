@@ -6,65 +6,93 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main extends JFrame {
+    // At the left side, there is a big picture
     private JLabel westLabel;
 
+    // Within EastPanel, Several Forms will show
     private JPanel eastPanel;
 
+    // At top-right, there are title and logo
     private JLabel topLabel;
 
+    // applicant name box
     private JPanel applicantBox;
     private JTextArea applicantName;
     private JTextArea applicantNameInput;
 
+    // birth date box
     private JPanel birthDateBox;
     private JTextArea birthDate;
     private JTextArea birthDateInput;
 
+    // email box
     private JPanel emailBox;
     private JTextArea email;
     private JTextArea emailInput;
 
+    // degree box
     private JPanel degreeBox;
     private JTextArea degree;
     private JTextArea degreeInput;
 
+    // attended university box
     private JPanel attendedUniversityBox;
     private JTextArea attendedUniversity;
     private JTextArea attendedUniversityInput;
 
+    // gpa box
     private JPanel gpaBox;
     private JTextArea gpa;
     private JTextArea gpaInput;
 
+    // personal statement box
     private JPanel personalStatementBox;
     private JTextArea personalStatement;
     private JTextArea personalStatementInput;
 
+    // home address box
     private JPanel homeAddressBox;
     private JTextArea homeAddress;
     private JTextArea homeAddressInput;
 
+    // phone number box
+    private JPanel phoneNumberBox;
+    private JTextArea phoneNumber;
+    private JTextArea phoneNumberInput;
+
+    // agree box
+    private JPanel agreeBox;
+    private JCheckBox agreeInput;
+
+    // when click submit button, pop up will show
     private JButton submitButton;
 
     public Main() {
+        // For batching elements, border layout looks good
         setLayout(new BorderLayout(10, 10));
 
         Container container = this.getContentPane();
-        ImageIcon logo = new ImageIcon(getClass().getResource("/images/skku_wallpaper.png"));
+
+        //======================LEFT LOGO=========================
+        // For importing the logo, the path is necessary and image will include in Jlabel
+        ImageIcon logo = new ImageIcon(getClass().getResource("images/skku_wallpaper.png"));
         westLabel = new JLabel();
 
+        // opaque should be true for changing its background color
         westLabel.setOpaque(true);
-        westLabel.setIcon(logo);
+        westLabel.setIcon(logo); // add icon into topLabel
         westLabel.setBackground(Color.WHITE);
         container.add(westLabel, BorderLayout.WEST);
 
-        eastPanel = new JPanel();
-        eastPanel.setLayout(new BoxLayout(eastPanel, BoxLayout.Y_AXIS));
-        eastPanel.setBorder(BorderFactory.createEmptyBorder(0, 15, 0, 0));
-        eastPanel.setSize(600, 450);
+        //======================RIGHT PANEL=========================
+        eastPanel = new JPanel(); // west panel includes three button
+        eastPanel.setLayout(new BoxLayout(eastPanel, BoxLayout.Y_AXIS)); // Align components vertically
+        eastPanel.setBorder(BorderFactory.createEmptyBorder(0, 15, 0, 0)); // Set Margin
+        eastPanel.setSize(600, 650);
         eastPanel.setBackground(Color.WHITE);
 
-        ImageIcon skku = new ImageIcon(getClass().getResource("/images/title_label.png"));
+        // Top title Image
+        ImageIcon skku = new ImageIcon(getClass().getResource("images/title_label.png"));
         topLabel = new JLabel();
 
         topLabel.setOpaque(true);
@@ -75,11 +103,12 @@ public class Main extends JFrame {
 
         eastPanel.add(topLabel);
 
+        // ============ Applicant Name Box, Text, Input =============
         applicantBox = new JPanel();
         applicantBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
         applicantBox.setBackground(Color.WHITE);
         applicantBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
-        applicantBox.setMaximumSize(new Dimension(600, 50));
+        applicantBox.setMaximumSize(new Dimension(600, 30));
 
         applicantName = new JTextArea();
         applicantName.setText("Applicant Name: ");
@@ -97,11 +126,12 @@ public class Main extends JFrame {
         applicantBox.add(applicantNameInput);
         eastPanel.add(applicantBox);
 
+        // ============ Birth Date Box, Text, Input =============
         birthDateBox = new JPanel();
         birthDateBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
         birthDateBox.setBackground(Color.WHITE);
         birthDateBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
-        birthDateBox.setMaximumSize(new Dimension(600, 50));
+        birthDateBox.setMaximumSize(new Dimension(600, 30));
 
         birthDate = new JTextArea();
         birthDate.setText("Birth Date: ");
@@ -119,11 +149,12 @@ public class Main extends JFrame {
         birthDateBox.add(birthDateInput);
         eastPanel.add(birthDateBox);
 
+        // ============ Email Box, Text, Input =============
         emailBox = new JPanel();
         emailBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
         emailBox.setBackground(Color.WHITE);
         emailBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
-        emailBox.setMaximumSize(new Dimension(600, 50));
+        emailBox.setMaximumSize(new Dimension(600, 30));
 
         email = new JTextArea();
         email.setText("Email: ");
@@ -141,11 +172,12 @@ public class Main extends JFrame {
         emailBox.add(emailInput);
         eastPanel.add(emailBox);
 
+        // ============ Degree Box, Text, Input =============
         degreeBox = new JPanel();
         degreeBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
         degreeBox.setBackground(Color.WHITE);
         degreeBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
-        degreeBox.setMaximumSize(new Dimension(600, 50));
+        degreeBox.setMaximumSize(new Dimension(600, 30));
 
         degree = new JTextArea();
         degree.setText("Degree: ");
@@ -163,11 +195,12 @@ public class Main extends JFrame {
         degreeBox.add(degreeInput);
         eastPanel.add(degreeBox);
 
+        // ============ Attended University Box, Text, Input =============
         attendedUniversityBox = new JPanel();
         attendedUniversityBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
         attendedUniversityBox.setBackground(Color.WHITE);
         attendedUniversityBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
-        attendedUniversityBox.setMaximumSize(new Dimension(600, 50));
+        attendedUniversityBox.setMaximumSize(new Dimension(600, 30));
 
         attendedUniversity = new JTextArea();
         attendedUniversity.setText("Attended university (for Graduates): ");
@@ -185,11 +218,12 @@ public class Main extends JFrame {
         attendedUniversityBox.add(attendedUniversityInput);
         eastPanel.add(attendedUniversityBox);
 
+        // ============ GPA Box, Text, Input =============
         gpaBox = new JPanel();
         gpaBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
         gpaBox.setBackground(Color.WHITE);
         gpaBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
-        gpaBox.setMaximumSize(new Dimension(600, 50));
+        gpaBox.setMaximumSize(new Dimension(600, 30));
 
         gpa = new JTextArea();
         gpa.setText("GPA (for Graduates): ");
@@ -207,10 +241,11 @@ public class Main extends JFrame {
         gpaBox.add(gpaInput);
         eastPanel.add(gpaBox);
 
+        // ============ Home Address Box, Text, Input =============
         personalStatementBox = new JPanel();
         personalStatementBox.setLayout(new FlowLayout(FlowLayout.CENTER));
         personalStatementBox.setBackground(Color.WHITE);
-        personalStatementBox.setMaximumSize(new Dimension(500, 130));
+        personalStatementBox.setMaximumSize(new Dimension(500, 100));
         personalStatementBox.setBorder(BorderFactory.createEmptyBorder(16, 0, 8, 10));
 
         personalStatement = new JTextArea();
@@ -219,7 +254,7 @@ public class Main extends JFrame {
 
         personalStatementInput = new JTextArea();
         personalStatementInput.setFont(new Font("", Font.ITALIC, 12));
-        personalStatementInput.setText(" At least 100 words...");
+        personalStatementInput.setText("At least 100 words.");
         personalStatementInput.setMinimumSize(new Dimension(500, 60));
         personalStatementInput.setPreferredSize(new Dimension(500, 60));
         personalStatementInput.setMaximumSize(new Dimension(500, 60));
@@ -230,11 +265,12 @@ public class Main extends JFrame {
         personalStatementBox.add(personalStatementInput);
         eastPanel.add(personalStatementBox);
 
+        // ============ Home Address Box, Text, Input =============
         homeAddressBox = new JPanel();
         homeAddressBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
         homeAddressBox.setBackground(Color.WHITE);
         homeAddressBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
-        homeAddressBox.setMaximumSize(new Dimension(600, 50));
+        homeAddressBox.setMaximumSize(new Dimension(600, 30));
 
         homeAddress = new JTextArea();
         homeAddress.setText("Home Address: ");
@@ -252,6 +288,45 @@ public class Main extends JFrame {
         homeAddressBox.add(homeAddressInput);
         eastPanel.add(homeAddressBox);
 
+        // ============ Phone Number Box, Text, Input =============
+        phoneNumberBox = new JPanel();
+        phoneNumberBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        phoneNumberBox.setBackground(Color.WHITE);
+        phoneNumberBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
+        phoneNumberBox.setMaximumSize(new Dimension(600, 30));
+
+        phoneNumber = new JTextArea();
+        phoneNumber.setText("Phone Number: ");
+        phoneNumber.setEditable(false);
+        phoneNumber.setAlignmentX(JTextArea.RIGHT_ALIGNMENT);
+
+        phoneNumberInput = new JTextArea();
+        phoneNumberInput.setMinimumSize(new Dimension(270, 16));
+        phoneNumberInput.setPreferredSize(new Dimension(270, 16));
+        phoneNumberInput.setMaximumSize(new Dimension(270, 16));
+        phoneNumberInput.setBackground(Color.WHITE);
+        phoneNumberInput.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+        phoneNumberBox.add(phoneNumber);
+        phoneNumberBox.add(phoneNumberInput);
+        eastPanel.add(phoneNumberBox);
+
+        // ============ Agree Box, Check =============
+        agreeBox = new JPanel();
+        agreeBox.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        agreeBox.setBackground(Color.WHITE);
+        agreeBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 30, 10));
+        agreeBox.setMaximumSize(new Dimension(550, 60));
+
+        agreeInput = new JCheckBox("I agree with providing my personal information.");
+        agreeInput.setBackground(Color.WHITE);
+        agreeInput.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+
+        agreeBox.add(agreeInput);
+        eastPanel.add(agreeBox);
+
+        // ============ Submit Button =============
         submitButton = new JButton();
         submitButton.setText("Submit Application");
         submitButton.setFont(new Font("", Font.BOLD, 12));
@@ -259,7 +334,7 @@ public class Main extends JFrame {
         submitButton.setForeground(Color.WHITE);
         submitButton.setOpaque(true);
         submitButton.setBorderPainted(false);
-        submitButton.setMaximumSize(new Dimension(300, 30));
+        submitButton.setMaximumSize(new Dimension(300, 50));
         submitButton.setAlignmentX(CENTER_ALIGNMENT);
         submitButton.setAlignmentY(CENTER_ALIGNMENT);
 
@@ -273,6 +348,7 @@ public class Main extends JFrame {
     }
 
     public static void main(String[] args) {
+        // Initially, shows the panel
         Main skkuForm = new Main();
         skkuForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         skkuForm.setSize(900, 650);
@@ -289,12 +365,12 @@ public class Main extends JFrame {
         public void actionPerformed(ActionEvent e) {
             String result = "";
             int num = 1;
-
+            // 0. name check
             String[] name = applicantNameInput.getText().split("\\s+");
 
             if (name.length < 2) {
                 if (applicantNameInput.getText().length() == 0) {
-                    result += (Integer.toString(num) + ". You forgot to fill the name text field, Please fill it \n");
+                    result += (Integer.toString(num) + ". You forgot to fill the name text field.\n");
                     num++;
                 } else {
                     result += (Integer.toString(num) + ". You forgot to write your name or surname \n");
@@ -302,25 +378,27 @@ public class Main extends JFrame {
                 }
             }
 
+            // 1. empty field check
             if (degreeInput.getText().length() == 0) {
-                result += (Integer.toString(num) + ". You forgot to fill the degree text field, Please fill it \n");
+                result += (Integer.toString(num) + ". You forgot to fill the degree text field.\n");
                 num++;
             }
 
             if (homeAddressInput.getText().length() == 0) {
-                result += (Integer.toString(num) + ". You forgot to fill the home address text field, Please fill it \n");
+                result += (Integer.toString(num) + ". You forgot to fill the home address text field.\n");
                 num++;
             }
 
             if (personalStatementInput.getText().length() == 0) {
-                result += (Integer.toString(num) + ". You forgot to fill the personal statement text field, Please fill it \n");
+                result += (Integer.toString(num) + ". You forgot to fill the personal statement text field.\n");
                 num++;
             }
 
+            // 2. birth date format
             if (birthDateInput.getText().matches("([0-9]{2})/([0-9]{2})/([0-9]{4})")) {
             } else {
                 if (birthDateInput.getText().length() == 0) {
-                    result += (Integer.toString(num) + ". You forgot to fill the birth date text field, Please fill it \n");
+                    result += (Integer.toString(num) + ". You forgot to fill the birth date text field.\n");
                     num++;
                 } else {
                     result += (Integer.toString(num) + ". Birthdate must be in '06/06/1995' format \n");
@@ -328,13 +406,14 @@ public class Main extends JFrame {
                 }
             }
 
+            // 3. email check
             String regexEmail = "^(.+)@(.+)$";
             Pattern patternEmail = Pattern.compile(regexEmail);
             Matcher matcherEmail = patternEmail.matcher(emailInput.getText());
             if (matcherEmail.matches()) {
             } else {
                 if (emailInput.getText().length() == 0) {
-                    result += (Integer.toString(num) + ". You forgot to fill the email text field, Please fill it \n");
+                    result += (Integer.toString(num) + ". You forgot to fill the email text field.\n");
                     num++;
                 } else {
                     result += (Integer.toString(num) + ". Email must be in example@some.some \n");
@@ -342,56 +421,63 @@ public class Main extends JFrame {
                 }
             }
 
-
-            if (attendedUniversityInput.getText().length() == 0 || gpaInput.getText().length() == 0) {
-                result += (Integer.toString(num) + ". For graduate, you have to enter previous university and GPA \n");
-                num++;
+            // 4. phone number check
+            String regexPhone = "^[0-9\\s-]*$";
+            Pattern patternPhone = Pattern.compile(regexPhone);
+            Matcher matcherPhone = patternPhone.matcher(phoneNumberInput.getText());
+            if (matcherPhone.matches()) {
             } else {
-                int gpa_str = gpaInput.getText().trim().length();
-                if (gpa_str > 0) {
-                    double gpa_num = Double.parseDouble(gpaInput.getText().trim());
-                    if (gpa_num < 0 || gpa_num > 4.5) {
-                        result += (Integer.toString(num) + ". GPA must be between 0 and 4.5 \n");
-                        num++;
-                    }
+                if (phoneNumberInput.getText().length() == 0) {
+                    result += (Integer.toString(num) + ". You forgot to fill the phone number text field.\n");
+                    num++;
+                } else {
+                    result += (Integer.toString(num) + ". Proper format for a phone number is ‘10 2158-0222’ \n");
+                    num++;
                 }
             }
 
+            // 5. attended university & gpa 6. gpa range check
+            if (degreeInput.getText().equals("Bachelor")) {
+                if (attendedUniversityInput.getText().length() != 0 || gpaInput.getText().length() != 0) {
+                    result += (Integer.toString(num) + ". For Bachelor, you have to empty previous university and GPA \n");
+                    num++;
+                }
+            } else {
+                if (attendedUniversityInput.getText().length() == 0 || gpaInput.getText().length() == 0) {
+                    result += (Integer.toString(num) + ". For graduate, you have to enter previous university and GPA \n");
+                    num++;
+                } else {
+                    int gpa_str = gpaInput.getText().trim().length();
+                    if (gpa_str > 0) {
+                        double gpa_num = Double.parseDouble(gpaInput.getText().trim());
+                        if (gpa_num < 0 || gpa_num > 4.5) {
+                            result += (Integer.toString(num) + ". GPA must be between 0 and 4.5 \n");
+                            num++;
+                        }
+                    }
+                }
+            }
+            // 7. personal statement check
             if (personalStatementInput.getText().length() < 100) {
                 result += (Integer.toString(num) + ". Your Personal Statement must be at least 100 words \n");
                 num++;
             }
 
-            jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            jFrame.setSize(500, 300);
-            jFrame.setVisible(true);
-            jFrame.setLayout(new GridBagLayout());
-
-            jTextArea = new JTextArea();
-            if (result.length() == 0) {
-                jTextArea.setText("Successfully Submitted");
-                jFrame.setTitle("Success Message");
-            } else {
-                jTextArea.setText(result);
-                jFrame.setTitle("You have following problems");
+            // 8. get agreement
+            if (!agreeInput.isSelected()) {
+                result += (Integer.toString(num) + ". You have to agree with providing personal information. \n");
+                num++;
             }
 
-            JButton jButton = new JButton("OK");
-            jButton.addActionListener(new CloseHandler());
+            JOptionPane jOptionPane = new JOptionPane();
+            if (result.length() == 0)
+                JOptionPane.showMessageDialog(null, "Successfully Submitted", "Success Message", JOptionPane.INFORMATION_MESSAGE);
+            else
+                JOptionPane.showMessageDialog(null, result, "You have following problems", JOptionPane.ERROR_MESSAGE);
 
             GridBagConstraints gbc = new GridBagConstraints();
             gbc.gridwidth = GridBagConstraints.REMAINDER;
             gbc.fill = GridBagConstraints.HORIZONTAL;
-
-            jFrame.add(jTextArea, gbc);
-            jFrame.add(jButton, gbc);
-        }
-
-        private class CloseHandler implements ActionListener {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.exit(0);
-            }
         }
     }
 }

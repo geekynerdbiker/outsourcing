@@ -1,5 +1,5 @@
-const answersTrackerContainer = document.querySelector(".answers-tracker")
-    // const options = document.querySelector(".options").children
+const progressBar = document.querySelector(".progress-bar")
+const options = document.querySelector(".options").children
 const questionNumberSpan = document.querySelector(".question-num-value")
 const question = document.querySelector(".question")
 const totalQuestionsSpan = document.querySelector(".total-questions")
@@ -11,6 +11,7 @@ let currentIndex;
 let index = 0;
 let answeredQuestions = []; // array of anwered question indexes
 let score = 0;
+let progress = 1;
 
 const opt1 = document.querySelector(".option1")
 const opt2 = document.querySelector(".option2")
@@ -47,16 +48,18 @@ function load() {
 }
 
 //Check if selected answer is correct or wrong
-function check(element) {
+async function check(element) {
     if (element.id == questions[currentIndex].answer) {
         element.className = "correct"
-        updateAnswersTracker("correct")
         score++
     } else {
         element.className = "wrong"
-        updateAnswersTracker("wrong")
     }
     disableClick();
+    updateProgressBar();
+    await sleep(1000);
+    next();
+    progress++;
 }
 
 //Make sure the user selected an item before clicking on the Next button
@@ -119,20 +122,14 @@ function randomQuestion() {
 //Restart the quiz
 window.onload = function() {
     this.randomQuestion();
-    this.answersTracker();
+    progress = 1;
 }
 
-//Set up answers tracker elements
-function answersTracker() {
-    for (let i = 0; i < questions.length; i++) {
-        const div = document.createElement("div")
-        answersTrackerContainer.appendChild(div);
-    }
-}
 
 //Update the answers tracker elements
-function updateAnswersTracker(newClass) {
-    answersTrackerContainer.children[index - 1].classList.add(newClass)
+function updateProgressBar(newClass) {
+    var elem = document.getElementById("progress-bar");
+    elem.style.width = progress / questions.length * 100;
 }
 
 //Displays the quiz-over page if quiz is over
@@ -145,4 +142,8 @@ function quizOver() {
 
 function tryAgain() {
     window.location.reload();
+}
+
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms))
 }
