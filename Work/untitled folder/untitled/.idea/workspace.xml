@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa12e68f-19ae-445e-b5d0-3951f2dcbf9b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.xcodeproj/xcshareddata/xcschemes/alloc.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/alloc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/printf.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/printf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/replay" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/replay.dSYM/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/replay.dSYM/Contents/Resources/DWARF/replay" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/test1.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/test1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/test2.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../alloc/alloc/test3.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars/Error_messages.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars/P2random.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars/large-DL-in.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars/large-PR-in.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars/spec-DL-in.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cpp-star wars/cpp-star wars/spec-PR-in.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file1234567/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file1234567/Directory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file1234567/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file1234567/TestDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LSkQhfGNu0psXVQjclY4sw1yhN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa12e68f-19ae-445e-b5d0-3951f2dcbf9b" name="Changes" comment="" />
+      <created>1675871857580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675871857580</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/file1234567/TestDriver.java</url>
+          <line>2</line>
+          <properties class="TestDriver" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
