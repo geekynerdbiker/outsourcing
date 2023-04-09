@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CC3D51CB-03BF-4F2C-B21D-DC6369935750"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBAF6858-6E6D-45FE-819F-2B15539634E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "c-workspace/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75DD23CA-507E-4C6F-86BE-856E5B0592F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "c-workspace/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "add_user()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DECDDBD8-06C9-444E-B0C9-6301808D80A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "c-workspace/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "recommend()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "DECDDBD8-06C9-444E-B0C9-6301808D80A1 - deb8ab6347b011ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recommend"
+                  moduleName = "c-workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacoban/Documents/GitHub/Crebugs/Work/c-workspace/c-workspace/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "DECDDBD8-06C9-444E-B0C9-6301808D80A1 - deb8ab6347b0118a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recommend"
+                  moduleName = "c-workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacoban/Documents/GitHub/Crebugs/Work/c-workspace/c-workspace/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "DECDDBD8-06C9-444E-B0C9-6301808D80A1 - deb8ab6347b0118a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recommend"
+                  moduleName = "c-workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacoban/Documents/GitHub/Crebugs/Work/c-workspace/c-workspace/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23FAD5D6-2809-4184-A466-1819614FDA8F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "c-workspace/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "dot(x, y)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "23FAD5D6-2809-4184-A466-1819614FDA8F - 33401b3cb470f169"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dot"
+                  moduleName = "c-workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacoban/Documents/GitHub/Crebugs/Work/c-workspace/c-workspace/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "23FAD5D6-2809-4184-A466-1819614FDA8F - 33401b3cb470f188"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dot"
+                  moduleName = "c-workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacoban/Documents/GitHub/Crebugs/Work/c-workspace/c-workspace/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

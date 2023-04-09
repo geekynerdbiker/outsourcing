@@ -1,7 +1,7 @@
 // Program name
 //
-// This program was written by [your name] (z5555555)
-// on [date]
+// This program was written by [Jun Shin] (z5360225)
+// on [23/10/2023]
 //
 // TODO: Description of program
 
