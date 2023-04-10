@@ -1,17 +1,77 @@
 import java.io.*;
-import java.util.*;
+import java.util.StringTokenizer;
 
 public class fcfs {
+
+    static void print_FCFS(int n, int WT[], FileWriter output) throws IOException {
+        BufferedWriter bw = new BufferedWriter(output);
+
+        int result = 0;
+        for (int i = 0; i < n; i++) {
+            bw.write(Integer.toString(WT[i]) + "\n");
+        }
+
+        bw.flush();
+        bw.close();
+    }
+
+    static void FCFS(int n, int AT[], int BT[], int WT[]) {
+        int time = 0, turn = 0, temp = 0;
+        for (int i = 0; i < n; i++) {
+            time = time + BT[i];
+            if (temp - AT[i] > 0) {
+                turn = time - AT[i];
+                WT[i] = turn - BT[i];
+            } else if (temp - AT[i] < 0) {
+                time = time + (AT[i] - temp);
+                WT[i] = 0;
+            }
+            temp = time;
+        }
+    }
+
+    static void bubble_sort(int n, int PN[], int AT[], int BT[]) {
+        int temp, temp2, temp3;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - 1; j++) {
+                if (AT[j] > AT[j + 1]) {
+                    temp = AT[j];
+                    AT[j] = AT[j + 1];
+                    AT[j + 1] = temp;
+
+                    temp2 = BT[j];
+                    BT[j] = BT[j + 1];
+                    BT[j + 1] = temp2;
+
+                    temp3 = PN[j];
+                    PN[j] = PN[j + 1];
+                    PN[j + 1] = temp3;
+                } else if (PN[j] > PN[j + 1] && AT[j] == AT[j + 1]) {
+                    temp = AT[j];
+                    AT[j] = AT[j + 1];
+                    AT[j + 1] = temp;
+
+                    temp2 = BT[j];
+                    BT[j] = BT[j + 1];
+                    BT[j + 1] = temp2;
+
+                    temp3 = PN[j];
+                    PN[j] = PN[j + 1];
+                    PN[j + 1] = temp3;
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) throws IOException {
-        File input_fp = new File("1.inp");
-        File output_fp = new File("1.out");
+        File input_fp = new File("fcfs.inp");
+        File output_fp = new File("fcfs.out");
 
         FileReader input;
         FileWriter output;
 
         BufferedReader br;
-        BufferedWriter bw;
-
 
         try {
             input = new FileReader(input_fp);
@@ -21,160 +81,34 @@ public class fcfs {
             String line = "";
 
             int n = Integer.parseInt(br.readLine());
-            int[][] data = new int[n][100];
-            int[] turnaround = new int[n];
-            int[] io = new int[n];
+            int P_num = 0;
+            int at = 0, bt = 0;
+            int[] PN = new int[n];
+            int[] AT = new int[100];
+            int[] BT = new int[100];
+            int[] WT = new int[100];
 
-            Vector<Integer> sorter = new Vector<>();
-            Queue<Integer> pq = new LinkedList<>();
-
-            int[] result = new int[n];
-
-
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < 100; j++)
-                    data[i][j] = -1;
-                io[i] = 0;
-            }
-
-
-            int v_idx = 0;
             while ((line = br.readLine()) != null) {
                 StringTokenizer st = new StringTokenizer(line, " ");
 
                 while (st.hasMoreTokens()) {
-                    int idx = 0;
-
-                    while (true) {
-                        int k = Integer.parseInt(st.nextToken());
-                        data[v_idx][idx++] = k;
-                        if (k == -1) {
-                            result[v_idx++] = idx;
-                            break;
-                        }
-
-                    }
+                    P_num = Integer.parseInt(st.nextToken());
+                    PN[P_num] = P_num;
+                    AT[P_num] = Integer.parseInt(st.nextToken());
+                    BT[P_num] = Integer.parseInt(st.nextToken());
                 }
             }
 
-            int iter = 0;
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; data[i][j] != -1; j += 2) {
-                    iter++;
-                }
-            }
+            bubble_sort(n, PN, AT, BT);
+            FCFS(n, AT, BT, WT);
+            print_FCFS(n, WT, output);
 
-            int curr = 0, cpu = 0, tmp = 0, idle = 0;
-
-            for (int i = 0; i < n; i++) {
-                if (curr == data[i][0]) {
-                    pq.add(i);
-                    data[i][0] = -1;
-                }
-            }
-
-            while (pq.isEmpty()) {
-                curr++;
-                idle++;
-                for (int i = 0; i < n; i++) {
-                    if (curr == data[i][0]) {
-                        pq.add(i);
-                        data[i][0] = -1;
-                    }
-                }
-
-            }
-
-            while (iter != 0) {
-                while (true) {
-                    if (!pq.isEmpty()) {
-                        tmp = pq.poll();
-                        break;
-                    } else {
-                        curr++;
-                        idle++;
-                        for (int i = 0; i < n; i++) {
-                            io[i]--;
-                            if (io[i] == 0) {
-                                for (int j = 0; j < 100; j++) {
-                                    if (data[i][j] != -1) {
-                                        sorter.add(i);
-                                        break;
-                                    }
-                                }
-                            }
-                            if (curr == data[i][0]) {
-                                sorter.add(i);
-                                data[i][0] = -1;
-                            }
-                        }
-                        if (sorter.size() > 1) {
-                            Collections.sort(sorter);
-                        }
-                        for (Integer integer : sorter) {
-                            pq.add(integer);
-                        }
-                        sorter.clear();
-                    }
-                }
-                int i = 0;
-                for (i = 1; ; i += 2) {
-                    if (data[tmp][i] != -1) {
-                        cpu = data[tmp][i];
-                        data[tmp][i] = -1;
-                        if (result[tmp] % 2 == 0) {
-                            turnaround[tmp] = curr + cpu;
-                        }
-                        break;
-                    }
-                }
-
-                while (true) {
-                    if (cpu == 0) {
-                        io[tmp] = data[tmp][i + 1];
-                        data[tmp][i + 1] = -1;
-                        if (result[tmp] % 2 != 0) {
-                            turnaround[tmp] = curr + io[tmp] + 1;
-                        } else
-                            turnaround[tmp] += io[tmp];
-                        break;
-                    }
-
-                    cpu--;
-                    curr++;
-                    for (int j = 0; j < n; j++) {
-                        io[j]--;
-                        if (curr == data[j][0]) {
-                            pq.add(j);
-                            data[j][0] = -1;
-                        } else if (io[j] == 0) {
-                            for (int k = 0; k < 100; k++) {
-                                if (data[j][k] != -1) {
-                                    pq.add(j);
-                                    break;
-                                }
-                            }
-
-                        }
-                    }
-                }
-                iter--;
-            }
-
-            bw = new BufferedWriter(output);
-
-            bw.write(idle + "\n");
-            for (int i = 0; i < n; i++) {
-                bw.write(turnaround[i] + "\n");
-            }
-
-            bw.flush();
             br.close();
-            bw.close();
             input.close();
             output.close();
 
-        } catch (FileNotFoundException e) {
+        } catch (
+                FileNotFoundException e) {
             throw new RuntimeException(e);
         }
     }

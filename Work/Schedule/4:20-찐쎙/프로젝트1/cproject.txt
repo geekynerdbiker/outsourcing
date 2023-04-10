@@ -1,0 +1,185 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <Windows.h>
+
+#define ROW 8
+#define COL 8
+#define CARNUM 4
+
+#define DIR_UP 0
+#define DIR_DOWN 1
+#define DIR_LEFT 2
+#define DIR_RIGHT 3
+
+typedef struct Car_info {
+	char car;
+	int direction;
+	int using_load;
+	int current_point[2];
+	int destination[2];
+	int hold;
+} Car_info;
+
+void init_load(char** load);
+void print_load(char** load);
+
+Car_info* createCar(char** load, char car, int direction, int using_load);
+void update_load(char** load, Car_info* car);
+
+void No_prevention(char** load, Car_info* car[]);
+void Prevention_Hold_and_Wait(char** load, Car_info* car[]);
+void Prevention_No_Preemption(char** load, Car_info* car[]);
+void Prevention_Circular_Wait(char** load, Car_info* car[], int* std_num);
+
+int main()
+{
+	char** load = NULL;
+	int prevention;
+	int time = 0;
+	char car_temp;
+	int direction_temp;
+	int using_load;
+	int std_num[13] = { 0, };
+
+	std_num[9] = 0;
+	std_num[10] = 1;
+	std_num[11] = 2;
+	std_num[12] = 3;
+
+	Car_info* car[4];
+
+	load = (char**)malloc(sizeof(char*) * ROW);
+	for (int i = 0; i < ROW; i++) {
+		load[i] = (char*)malloc(sizeof(char) * (COL + 1));
+	}
+
+	init_load(load);
+
+	for (int i = 0; i < 4; i++) {
+
+		printf("자동차(%d) ID,도로 입력(문자 숫자) : ", i);
+		scanf(" %c %d", &car_temp, &using_load);
+		car[i] = createCar(load, car_temp, i, using_load);
+	}
+
+	update_load(load, car);
+
+	printf("\n교착상태 예방 방법 선택.\n");
+	printf("1.No Prevention, 2.Hold and Wait, 3.No Preemption, 4.Circular Wait :");
+	scanf("%d", &prevention);
+
+
+	switch (prevention) {
+	case 1:
+		No_prevention(load, car);
+		break;
+	case 2:
+		Prevention_Hold_and_Wait(load, car);
+		break;
+	case 3:
+		Prevention_No_Preemption(load, car);
+		break;
+	case 4:
+
+		printf("\n교차로 진입 순서(학번) 입력 : ");
+		for (int i = 0; i < 9; i++)
+			scanf("%1d", &std_num[i]);
+
+		Prevention_Circular_Wait(load, car, std_num);
+		break;
+	}
+	return 0;
+}
+
+void init_load(char** load) {
+	for (int i = 0; i < ROW; i++)
+		memset(load[i], 0, COL);
+}
+
+void print_load(char** load) {
+
+	char value;
+	printf("도로 정보\n\n");
+
+	for (int i = 0; i < ROW; i++) {
+		for (int j = 0; j < COL; j++) {
+			value = load[i][j];
+			if (value == 0)
+				printf("□ ");
+			else
+				printf("%2c ", load[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
+
+void update_load(char** load, Car_info* car[]) {
+
+	/*
+
+
+	구현 1. Car_info를 이용하여 load 업데이트
+
+
+	*/
+}
+
+Car_info* createCar(char** load, char car, int direction, int using_load) {
+	Car_info* tempCar = (Car_info*)malloc(sizeof(Car_info));
+
+	/*
+
+	구현 2. 매개변수를 바탕으로 자동차 정보를 car_info 구조체 형태로 리턴
+
+	*/
+
+	return tempCar;
+}
+
+
+void No_prevention(char** load, Car_info* car[]) {
+
+	/*
+
+	구현 3. 자동차의 기본 이동 조건(No Prevention)
+	이동하려는 위치에 이동 가능할 경우 1칸 이동
+
+	*/
+
+}
+
+void Prevention_Hold_and_Wait(char** load, Car_info* car[]) {
+
+	/*
+
+	구현 4. 점유대기(Hold and Wait) 조건 제거
+	자동차 이동 시, 이동방향의 도로(직선 방향의 모든 칸)을 점유한 후 이동
+
+	*/
+
+}
+
+void Prevention_No_Preemption(char** load, Car_info* car[]) {
+
+	/*
+
+	구현 5. 비전섬(No Preemption) 조건 제거
+	이동하려는 위치에 다른 자동차가 있을 경우, 1칸 후진
+
+	*/
+}
+
+void Prevention_Circular_Wait(char** load, Car_info* car[], int* std_num) {
+
+	/*
+
+	구현 6. 순환 대기(Circular Wait) 조건 제거
+	교차로(4칸)을 교차로 접근 조건 추가
+
+	*/
+
+}
