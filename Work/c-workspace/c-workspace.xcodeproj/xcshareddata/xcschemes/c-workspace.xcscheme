@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/jacoban/Documents/GitHub/Crebugs/Work/c-workspace/c-workspace/word_puzzle"
+      customWorkingDirectory = "/Users/jacoban/Documents/GitHub/Crebugs/Work/c-workspace/c-workspace"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
