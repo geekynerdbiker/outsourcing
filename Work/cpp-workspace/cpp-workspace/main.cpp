@@ -13,12 +13,20 @@ int solve(unsigned long long S, int L) {
             len++;
         }
         
-        while (--k != L) {
-            sum += k;
-            len++;
+        if (k > L)
+            while (--k != L) {
+                sum += k;
+                len++;
+            }
+        else if (k < L) {
+            k--;
+            while (k != L) {
+                sum += k++;
+                len++;
+            }
         }
         
-        while (sum < S) {
+        while (sum <= S) {
             sum += max;
             len++;
         }
