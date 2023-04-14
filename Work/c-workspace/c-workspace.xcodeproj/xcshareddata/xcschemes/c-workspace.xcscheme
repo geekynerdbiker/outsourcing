@@ -54,11 +54,15 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "prog1"
+            argument = "tolower toupper"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "tolower T"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "prog1 prog2"
+            argument = "tolower"
             isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>

@@ -534,51 +534,55 @@
 ////////////////////////////////////////////////////////////////////////
 //void printlist(int aflag, int lflag, int total, int argc,char *dirpath)
 //{
-//    struct group *gid;
 //    struct passwd *uid;
-//    struct tm *time;
-//    char buffer[256];
-//    char cwd[256];
+//    struct group *gid;
+//    
 //    struct stat buf;
 //    struct dirent *dir;
 //    
-//    int k=0, m=0;
+//    struct tm *time;
+//    
+//    char buffer[256];
+//    char current[256];
+//    
+//    int k = 0, m = 0;
 //    char subpath[256] = {'\0'};
-//    char subdirpath[256] = {'\0'};
+//    char subdir[256] = {'\0'};
 //    char checkpath[256] = {'\0'};
 //    
-//    //printf("%s\n",dirpath);
 //    
-//    
-//    if (lflag==1||argc>2) //check option if '-l'
-//    {
-//        getcwd(cwd, sizeof(cwd)); //load current working directory
+//    if (lflag || argc > 2) {
+//        getcwd(current, sizeof(current));
 //        
-//        for(;cwd[k]!='\0';k++);
-//        for(;cwd[k]!='/';k--);
-//        for(;m<k;m++)
-//            subpath[m]=cwd[m];
+//        while (current[k] != '\0')
+//            k++;
+//        while (current[k] != '/')
+//            k--;
+//        while (m < k) {
+//            m++;
+//            subpath[m] = current[m];
+//        }
 //        
 //        for(k=0;dirpath[k]!='\0';k++); //move pointer to end
 //        for(;dirpath[k]!='/'&&k!=0;k--); //search '/'
 //        if(dirpath[k]=='/') k++; //check character
 //        for(m=0;dirpath[k]!='\0';m++,k++)
-//            subdirpath[m]=dirpath[k];
+//            subdir[m]=dirpath[k];
 //        
 //        strcat(checkpath,subpath); //letter aggregation
 //        strcat(checkpath,"/"); //letter aggregation
-//        strcat(checkpath,subdirpath); //letter aggregation
+//        strcat(checkpath,subdir); //letter aggregation
 //        //printf("%s\n",checkpath);
 //        
 //        lstat(checkpath,&buf);
 //        if(S_ISLNK(buf.st_mode))
-//            strcpy(cwd,checkpath);
+//            strcpy(current,checkpath);
 //        
 //        if(lflag==1||dflag>1||nfflag>1||fflag>1) //check option
-//            printf("Directory path: %s\n", cwd);
+//            printf("Directory path: %s\n", current);
 //        else if(dflag>1||nfflag>1||fflag>1)
 //        {
-//            printf("Directory path: %s\n", cwd);
+//            printf("Directory path: %s\n", current);
 //            printf("total: %d\n",total);
 //        }
 //        
@@ -641,127 +645,7 @@
 //    return;
 //}
 //
-////////////////////////////////////////////////////////////////////////
-//// Print function                                                   //
-//// ================================================================ //
-//// Input: int -> Information of option flag                         //
-////      int -> Information of option flag                         //
-////        int -> For calculating tootal                             //
-////        char* -> For print current working directory              //
-////                                                                  //
-//// Output: void                                                     //
-////                                                                  //
-//// Purpose: Print list of directory's files to reverse              //
-////////////////////////////////////////////////////////////////////////
-//void printlistr(int aflag, int lflag,int total, int argc,char *dirpath)
-//{
-//    struct group *gid;
-//    struct passwd *uid;
-//    struct tm *time;
-//    char buffer[256] = {'\0'};
-//    char cwd[256] = {'\0'};
-//    struct stat buf;
-//    struct dirent *dir;
-//    
-//    int k=0, m=0;
-//    char subpath[256] = {'\0'};
-//    char subdirpath[256] = {'\0'};
-//    char checkpath[256] = {'\0'};
-//    
-//    //printf("%s\n",dirpath);
-//    
-//    
-//    if (lflag==1||argc>2) //check option if '-l'
-//    {
-//        getcwd(cwd, sizeof(cwd)); //load current working directory
-//        
-//        for(;cwd[k]!='\0';k++); //move pointer to end
-//        for(;cwd[k]!='/';k--); //search '/'
-//        for(;m<k;m++)
-//            subpath[m]=cwd[m];
-//        
-//        for(k=0;dirpath[k]!='\0';k++); //move pointer to end
-//        for(;dirpath[k]!='/'&&k!=0;k--); //search '/'
-//        if(dirpath[k]=='/') k++; //check character
-//        for(m=0;dirpath[k]!='\0';m++,k++)
-//            subdirpath[m]=dirpath[k];
-//        
-//        strcat(checkpath,subpath); //letter aggregation
-//        strcat(checkpath,"/"); //letter aggregation
-//        strcat(checkpath,subdirpath); //letter aggregation
-//        //printf("%s\n",checkpath);
-//        
-//        lstat(checkpath,&buf); //read file
-//        if(S_ISLNK(buf.st_mode)) //check linker file
-//            strcpy(cwd,checkpath);
-//        
-//        if(lflag==1||dflag>1||nfflag>1||fflag>1) //check option
-//            printf("Directory path: %s\n", cwd);
-//        else if(dflag>1||nfflag>1||fflag>1)
-//        {
-//            printf("Directory path: %s\n", cwd);
-//            printf("total: %d\n",total);
-//        }
-//        
-//    }
-//    
-//    Node *tmp=head;
-//    for (; tmp->next; tmp = tmp->next);
-//    for (; tmp; tmp = tmp->prev) //Repeat function for printing all list
-//    {
-//        
-//        if ((lflag == 1 && aflag == 0 && tmp->filename[0] != '.') || (lflag == 1 && aflag == 1))
-//        { //check option of '-l'
-//            
-//            lstat(tmp->filename, &buf); //read file
-//            
-//            uid = getpwuid(buf.st_uid); //get user id
-//            gid = getgrgid(buf.st_gid); //get group id
-//            
-//            time = localtime(&buf.st_mtime);//save time of fixed file
-//            printf("%c%s ", fileType(buf.st_mode), perm(buf.st_mode));
-//            
-//            if(fileType(buf.st_mode)=='l') //for printing linker file
-//            {
-//                char linker[256] = {'\0'};
-//                char realp[256] = {'\0'};
-//                int i=0;
-//                int j=0;
-//                
-//                realpath(tmp->filename, linker); //real path of linker file
-//                for(;linker[i]!='\0';i++); //move pointer
-//                for(;linker[i]!='/';i--); //search '/'
-//                for(;linker[i]!='\0';i++,j++)
-//                    realp[j]=linker[i+1];
-//                realp[j+1]='\0';
-//                strcat(tmp->filename,"->");
-//                strcat(tmp->filename,realp);
-//            }
-//            
-//            
-//            printf("%hu\t", buf.st_nlink); //number of linker
-//            printf("%s\t", uid->pw_name);  //usser ID
-//            printf("%s\t", gid->gr_name);  //group ID
-//            ////////////////option h///////////////////
-//            if(hflag==1)
-//                printOph(buf.st_size); //print h option
-//            
-//            else
-//                printf("%lld\t", buf.st_size); //size of file
-//            ///////////////////////////////////////////
-//            
-//            
-//            strftime(buffer, 255, "%b %d %H:%M", time); //time function
-//            printf("%s\t", buffer);
-//        }
-//        
-//        if ((aflag == 0 && tmp->filename[0] != '.') || aflag == 1)
-//            printf("%s\n", tmp->filename); //file name
-//    }
-//    if(excount!=argc)
-//        printf("\n");
-//    return;
-//}
+//
 ////////////////////////////////////////////////////////////////////////
 //// Print function                                                   //
 //// ================================================================ //
@@ -779,7 +663,7 @@
 //    struct passwd *uid;
 //    struct tm *time;
 //    char buffer[256] = {'\0'};
-//    char cwd[256] = {'\0'};
+//    char current[256] = {'\0'};
 //    struct stat buf;
 //    struct dirent *dir;
 //    
@@ -988,7 +872,7 @@
 //        for (; tmp; tmp = tmp->next) //For checking all node
 //        {
 //            if (Sflag) {
-//                lstat(name,&buf); //read file
+//                lstat(name, &buf1); //read file
 //                lstat(tmp->filename,&buf2); //read file
 //            }
 //            //////////For checking symbol in string//////////
