@@ -54,15 +54,15 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "tolower toupper"
+            argument = "&apos;/group/*&apos;"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "tolower T"
+            argument = "-S"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "tolower"
+            argument = "-lS"
             isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
