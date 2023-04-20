@@ -1,454 +1,556 @@
-#include <iostream>
-#include <fstream>
-#include <cstring>
-#include <time.h>
+#define _CRT_SECURE_NO_WARNINGS
 
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+//#include <Windows.h>
 
-int transform(char**minimum_set, int set_num, int length);
-void search(char **table, char**pi, int prime_check, int minimum, char**minimum_set, int minimum_number, int length);
-void table(char **pi, int prime_check, char ** min, int minimum, int length);
-int get_prime(char ***hamming, int length, int * digit, int hamming_length, char **min, int minimum);
-void column(char ***hamming, int length, int * digit, int hamming_length, char **min, int minimum);
+#define ROW 8
+#define COL 8
+#define CARNUM 4
 
-int main(void) {
-    char **min, **hamming, ***next_hamming;
-    int length, dontcare = 0, minimum = 0, d = 0, m = 0, hamming_count = 0, i, t;
-    int *digit, *hamming_arrange;
-    char line[64], *context, **data_digit;
-    bool bit_checker = false;
-    
-    ifstream fin("input_minterm.txt");
+#define DIR_UP 0
+#define DIR_DOWN 1
+#define DIR_LEFT 2
+#define DIR_RIGHT 3
 
-    if (!fin) {
-        cout << "No such file exist.";
-        return 0;
+typedef struct Car_info {
+    char car;
+    int direction;
+    int using_load;
+    int current_point[2];
+    int destination[2];
+    int hold;
+} Car_info;
+
+void init_load(char** load);
+void print_load(char** load);
+
+Car_info* createCar(char** load, char car, int direction, int using_load);
+void update_load(char** load, Car_info* car[]);
+
+void No_prevention(char** load, Car_info* car[]);
+void Prevention_Hold_and_Wait(char** load, Car_info* car[]);
+void Prevention_No_Preemption(char** load, Car_info* car[]);
+void Prevention_Circular_Wait(char** load, Car_info* car[], int* std_num);
+
+int main()
+{
+    char** load = NULL;
+    int prevention;
+    int time = 0;
+    char car_temp;
+    int direction_temp;
+    int using_load;
+    int std_num[13] = { 0, };
+
+    std_num[9] = 0;
+    std_num[10] = 1;
+    std_num[11] = 2;
+    std_num[12] = 3;
+
+    Car_info* car[4];
+
+    load = (char**)malloc(sizeof(char*) * ROW);
+    for (int i = 0; i < ROW; i++) {
+        load[i] = (char*)malloc(sizeof(char) * (COL + 1));
     }
 
-    while (!fin.eof()) {
-        fin.getline(line, 64);
-        
-        if (bit_checker == false) {
-            length = atoi(strtok_s(line, " ", &context));
-            bit_checker = true;
-            continue;
-        } else {
-            if (*strtok_s(line, " ", &context) == 'd')
-                dontcare++;
-            else
-                minimum++;
-        }
+    init_load(load);
+
+    for (int i = 0; i < 4; i++) {
+        getchar();
+        printf("자동차(%d) ID,도로 입력(문자 숫자) : ", i);
+        scanf(" %c %d", &car_temp, &using_load);
+        car[i] = createCar(load, car_temp, i, using_load);
     }
 
-    min = new char *[minimum];
+    update_load(load, car);
 
-    for (int i = 0; i < minimum; i++)
-        min[i] = new char[length];
+    printf("\n교착상태 예방 방법 선택.\n");
+    printf("1.No Prevention, 2.Hold and Wait, 3.No Preemption, 4.Circular Wait :");
+    scanf("%d", &prevention);
 
-    fin.close();
-    fin.open("input_minterm.txt");
 
-    bit_checker = false;
+    switch (prevention) {
+    case 1:
+        No_prevention(load, car);
+        break;
+    case 2:
+        Prevention_Hold_and_Wait(load, car);
+        break;
+    case 3:
+        Prevention_No_Preemption(load, car);
+        break;
+    case 4:
 
-    data_digit = new char *[minimum + dontcare];
-    for (int i = 0; i < minimum + dontcare; i++)
-        data_digit[i] = new char[64];
+        printf("\n교차로 진입 순서(학번) 입력 : ");
+        for (int i = 0; i < 9; i++)
+            scanf("%1d", &std_num[i]);
 
-    i = 0;
-    t = 0;
-    digit = new int[length + 1];
-    hamming_arrange = new int[length + 1];
-
-    hamming = new char *[minimum + dontcare];
-    for (int i = 0; i < minimum + dontcare; i++)
-        hamming[i] = new char[length];
-
-    for (int i = 0; i < length + 1; i++) {
-        digit[i] = 0;
-        hamming_arrange[i] = 0;
+        Prevention_Circular_Wait(load, car, std_num);
+        break;
     }
-
-    while (!fin.eof()) {
-        fin.getline(data_digit[t], 64);
-
-        if (bit_checker == false) {
-            bit_checker = true;
-            continue;
-        } else {
-            hamming_count = 0;
-            if (*strtok_s(data_digit[t], " ", &context) == 'm') {
-                min[i] = strtok_s(NULL, " ", &context);
-                for (int k = 0; k < length; k++) {
-                    if (min[i][k] == '1')
-                        hamming_count++;
-                }
-                digit[hamming_count]++;
-                hamming[t] = min[i];
-                i++;
-
-            } else {
-                hamming[t] = strtok_s(NULL, " ", &context);
-                for (int k = 0; k < length; k++) {
-                    if (hamming[t][k] == '1')
-                        hamming_count++;
-                }
-                digit[hamming_count]++;
-            }
-            t++;
-        }
-    }
-
-    fin.close();
-
-    next_hamming = new char**[length + 1];
-
-    for (int i = 0; i < length + 1; i++)
-        next_hamming[i] = new char*[digit[i]];
-
-    for (int i = 0; i < length + 1; i++) {
-        for (int j = 0; j < digit[i]; j++)
-            next_hamming[i][j] = new char[length];
-    }
-
-
-    for (int i = 0; i < minimum + dontcare; i++) {
-        t = 0;
-
-        for (int j = 0; j < length; j++) {
-            if (hamming[i][j] == '1')
-                t++;
-        }
-        next_hamming[t][hamming_arrange[t]] = hamming[i];
-        hamming_arrange[t]++;
-    }
-
-    column(next_hamming, length, digit, length, min, minimum);
-    
-    for (int i = 0; i < length + 1; i++)
-        delete[] next_hamming[i];
-
-    delete[] next_hamming;
-
-    delete[] digit;
-    delete[] hamming_arrange;
-
-    delete[] min;
-
-    for (int i = 0; i < minimum + dontcare; i++)
-        delete[] data_digit[i];
-
-    delete[] data_digit;
-
-    delete[] hamming;
-
     return 0;
 }
 
-int get_prime(char ***hamming, int length, int * ham, int hamming_length, char **min, int minimum) {
-    int n = 0;
-    int col_length;
-    int ham_distance = 0;
-    int check = 0, check_over = 0;
-    
-    static int prime_check1 = 0;
-    static char **pi;
-    
-    int *next_ham;
-    char***next_col;
-
-    next_ham = new int[hamming_length];
-    next_col = new char**[hamming_length];
-
-    for (int i = 0; i < hamming_length; i++) {
-        col_length = 0;
-        for (int j = 0; j < ham[i]; j++) {
-            for (int e = 0; e < ham[i + 1]; e++) {
-                for (int k = 0; k < length; k++) {
-                    if (hamming[i][j][k] != hamming[i + 1][e][k])
-                        ham_distance++;
-                } if (ham_distance == 1)
-                    col_length++;
-                ham_distance = 0;
-            }
-        }
-        next_col[i] = new char*[col_length];
-        next_ham[i] = col_length;
-    }
-
-    for (int i = 0; i < hamming_length; i++) {
-        for (int j = 0; j < next_ham[i]; j++)
-            next_col[i][j] = new char[length];
-    }
-
-
-    for (int i = 0; i < hamming_length; i++) {
-        for (int j = 0; j < ham[i]; j++) {
-            for (int e = 0; e < ham[i + 1]; e++) {
-                for (int k = 0; k < length; k++) {
-                    if (hamming[i][j][k] != hamming[i + 1][e][k])
-                        ham_distance++;
-                } if (ham_distance == 1) {
-                    for (int k = 0; k < length; k++) {
-                        if (hamming[i][j][k] != hamming[i + 1][e][k])
-                            next_col[i][n][k] = 'X';
-                        else
-                            next_col[i][n][k] = hamming[i][j][k];
-                    }
-                    n++;
-                }
-                ham_distance = 0;
-            } if (n == next_ham[i])
-                break;
-        }
-        n = 0;
-    }
-
-
-    for (int i = 0; i < hamming_length + 1; i++) {
-        for (int j = 0; j < ham[i]; j++) {
-            check = 0;
-            for (int e = 0; e < hamming_length; e++) {
-                for (int d = 0; d < next_ham[e]; d++) {
-                    for (int k = 0; k < length; k++) {
-                        if (hamming[i][j][k] != next_col[e][d][k])
-                            ham_distance++;
-                    } if (ham_distance == 1)
-                        check++;
-                    ham_distance = 0;
-                }
-            } if (check == 0)
-                prime_check1++;
-        }
-    }
-    if (hamming_length == 0)
-        return prime_check1;
-    else
-        get_prime(next_col, length, next_ham, hamming_length - 1, min, minimum);
+void init_load(char** load) {
+    for (int i = 0; i < ROW; i++)
+        memset(load[i], 0, COL);
 }
 
-void table(char **pi, int prime_check, char ** min, int minimum, int length) {
-    int m = 0;
-    int ess_check = 0;
-    
-    bool minterm = true;
-    
-    char **table;
-    char **minimum_set;
-    
-    
-    table = new char *[prime_check];
-    minimum_set = new char*[prime_check];
-    
-    for (int i = 0; i < prime_check; i++)
-        table[i] = new char[minimum];
+void print_load(char** load) {
 
-    for (int i = 0; i < prime_check; i++)
-        minimum_set[i] = new char[length];
+    char value;
+    printf("도로 정보\n\n");
 
-    for (int i = 0; i < prime_check; i++) {
-        for (int j = 0; j < minimum; j++) {
-            for (int k = 0; k < length; k++) {
-                if (pi[i][k] != 'X') {
-                    if (pi[i][k] != min[j][k]) {
-                        minterm = false;
-                        break;
-                    }
-                }
-            } if (minterm == true)
-                table[i][j] = 'X';
+    for (int i = 0; i < ROW; i++) {
+        for (int j = 0; j < COL; j++) {
+            value = load[i][j];
+            if (value == 0)
+                printf("□ ");
             else
-                table[i][j] = '0';
-            minterm = true;
+                printf("%2c ", load[i][j]);
         }
+        printf("\n");
     }
-        
-    for (int i = 0; i < minimum; i++) {
-        ess_check = 0;
-        
-        for (int j = 0; j < prime_check; j++) {
-            if (table[j][i] == 'X')
-                ess_check++;
-        } if (ess_check == 1) {
-            for (int j = 0; j < prime_check; j++) {
-                if (table[j][i] == 'X') {
-                    minimum_set[m] = pi[j];
-                    m++;
-                    
-                    for (int k = 0; k < minimum; k++) {
-                        if (table[j][k] == 'X') {
-                            for (int d = 0; d < prime_check; d++)
-                                table[d][k] = '0';
-                        }
-                    }
-                }
-            }
-        }
-    }
-        
-    search(table, pi, prime_check, minimum, minimum_set, m, length);
-    
-    delete[] minimum_set;
-
-    for (int i = 0; i < prime_check; i++)
-        delete table[i];
-    delete[] table;
+    printf("\n");
 }
 
-void column(char ***hamming, int length, int * ham, int hamming_length, char **min, int minimum) {
-    int n = 0; int static prime, prime_check2 = 0;
-    int check = 0, check_over = 0;
-    static char **pi;
-    int ham_distance = 0;
-    int *next_ham;
-    char***next_col;
-    int col_length;
+void update_load(char** load, Car_info* car[]) {
 
-    next_ham = new int[hamming_length];
-    next_col = new char**[hamming_length];
-
-    for (int i = 0; i < hamming_length; i++) {
-        col_length = 0;
-        
-        for (int j = 0; j < ham[i]; j++) {
-            for (int e = 0; e < ham[i + 1]; e++) {
-                for (int k = 0; k < length; k++) {
-                    if (hamming[i][j][k] != hamming[i + 1][e][k])
-                        ham_distance++;
-                } if (ham_distance == 1)
-                    col_length++;
-                ham_distance = 0;
-            }
-        }
-        next_col[i] = new char*[col_length];
-        next_ham[i] = col_length;
-    }
-
-    for (int i = 0; i < hamming_length; i++) {
-        for (int j = 0; j < next_ham[i]; j++)
-            next_col[i][j] = new char[length];
-    }
+    /*
 
 
-    for (int i = 0; i < hamming_length; i++) {
-        for (int j = 0; j < ham[i]; j++) {
-            for (int e = 0; e < ham[i + 1]; e++) {
-                for (int k = 0; k < length; k++) {
-                    if (hamming[i][j][k] != hamming[i + 1][e][k])
-                        ham_distance++;
-                } if (ham_distance == 1) {
-                    for (int k = 0; k < length; k++) {
-                        if (hamming[i][j][k] != hamming[i + 1][e][k])
-                            next_col[i][n][k] = 'X';
-                        else
-                            next_col[i][n][k] = hamming[i][j][k];
-                    }
-                    n++;
-                }
-                ham_distance = 0;
-            }
-            if (n == next_ham[i])
-                break;
-        }
-        n = 0;
-    }
+    구현 1. Car_info를 이용하여 load 업데이트
 
-    if (prime_check2 == 0) {
-        prime = get_prime(hamming, length, ham, hamming_length, min, minimum);
-        pi = new char*[prime];
-        for (int i = 0; i <prime; i++)
-            pi[i] = new char[length];
-    }
 
-    for (int i = 0; i < hamming_length + 1; i++){
-        for (int j = 0; j < ham[i]; j++) {
-            check = 0;
+    */
+    for (int i = 0; i < ROW; i++)
+        for (int j = 0; j < COL; j++)
+            load[i][j] = 0;
             
-            for (int e = 0; e < hamming_length; e++) {
-                for (int d = 0; d < next_ham[e]; d++) {
-                    for (int k = 0; k < length; k++) {
-                        if (hamming[i][j][k] != next_col[e][d][k])
-                            ham_distance++;
-                    } if (ham_distance == 1)
-                        check++;
-                    ham_distance = 0;
-                }
-            } if (check == 0) {
-                pi[prime_check2] = hamming[i][j];
-                
-                if (prime_check2 > 0) {
-                    for (int j = 0; j < prime_check2; j++) {
-                        check_over = 0;
-                        for (int i = 0; i < length; i++) {
-                            if (pi[prime_check2][i] == pi[j][i])
-                                check_over++;
-                        } if (check_over == length) {
-                            prime_check2--;
-                            break;
+    for (int i = 0; i < 4; i++)
+        load[car[i]->current_point[0]][car[i]->current_point[1]] = car[i]->car;
+}
+
+Car_info* createCar(char** load, char car, int direction, int using_load) {
+    Car_info* tempCar = (Car_info*)malloc(sizeof(Car_info));
+
+    /*
+
+    구현 2. 매개변수를 바탕으로 자동차 정보를 car_info 구조체 형태로 리턴
+
+    */
+    tempCar->car = car;
+    tempCar->direction = direction;
+    tempCar->using_load = using_load;
+    
+    switch (direction) {
+        case 0:
+            tempCar->current_point[0] = ROW - 1;
+            tempCar->current_point[1] = using_load;
+            tempCar->destination[0] = 0;
+            tempCar->destination[1] = using_load;
+            break;
+            
+        case 1:
+            tempCar->current_point[0] = 0;
+            tempCar->current_point[1] = using_load;
+            tempCar->destination[0] = ROW - 1;
+            tempCar->destination[1] = using_load;
+            break;
+            
+        case 2:
+            tempCar->current_point[0] = using_load;
+            tempCar->current_point[1] = COL - 1;
+            tempCar->destination[0] = using_load;
+            tempCar->destination[1] = 0;
+            break;
+            
+        case 3:
+            tempCar->current_point[0] = using_load;
+            tempCar->current_point[1] = 0;
+            tempCar->destination[0] = using_load;
+            tempCar->destination[1] = COL - 1;
+            break;
+            
+        default:
+            break;
+    }
+    tempCar->hold = false;
+    return tempCar;
+}
+
+
+void No_prevention(char** load, Car_info* car[]) {
+
+    /*
+
+    구현 3. 자동차의 기본 이동 조건(No Prevention)
+    이동하려는 위치에 이동 가능할 경우 1칸 이동
+
+    */
+    int t = 0;
+    int isDone = false;
+    
+    while (true) {
+        printf("시간 : %d\n", t++);
+        print_load(load);
+        
+        if (isDone)
+            return;
+        
+        for (int i = 0; i < 4; i++) {
+            switch (car[i]->direction) {
+                case 0:
+                    if (car[i]->current_point[0] != car[i]->destination[0])
+                        car[i]->current_point[0]--;
+                    break;
+                    
+                case 1:
+                    if (car[i]->current_point[0] != car[i]->destination[0])
+                        car[i]->current_point[0]++;
+                    break;
+                    
+                case 2:
+                    if (car[i]->current_point[1] != car[i]->destination[1])
+                        car[i]->current_point[1]--;
+                    break;
+                    
+                case 3:
+                    if (car[i]->current_point[1] != car[i]->destination[1])
+                        car[i]->current_point[1]++;
+                    break;
+                    
+                default:
+                    break;
+            }
+            update_load(load, car);
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            if (car[i]->current_point[0] == car[i]->destination[0] && car[i]->current_point[1] == car[i]->destination[1])
+                isDone = true;
+            else {
+                isDone = false;
+                break;
+            }
+        }
+    }
+}
+
+void Prevention_Hold_and_Wait(char** load, Car_info* car[]) {
+
+    /*
+
+    구현 4. 점유대기(Hold and Wait) 조건 제거
+    자동차 이동 시, 이동방향의 도로(직선 방향의 모든 칸)을 점유한 후 이동
+
+    */
+    int t = 0;
+    int isDone = false;
+    
+    while (true) {
+        printf("시간 : %d\n", t++);
+        print_load(load);
+        
+        if (isDone)
+            return;
+        
+        for (int i = 0; i < 4; i++) {
+            switch (car[i]->direction) {
+                case 0:
+                    if (car[i]->current_point[0] != car[i]->destination[0]) {
+                        int isHeld = false;
+                        for (int j = 0; j < 4; j++)
+                            if (car[j]->direction == 2 || car[j]->direction == 3)
+                                if (car[j]->hold) {
+                                    isHeld = true;
+                                    break;
+                                }
+                        if (!isHeld) {
+                            car[i]->hold = true;
+                            car[i]->current_point[0]--;
+                            
+                            if (car[i]->current_point[0] == car[i]->destination[0]) {
+                                car[i]->hold = false;
+                            }
                         }
                     }
-                }
-                prime_check2++;
-            }
-        }
-    }
-
-    if (hamming_length == 0) {
-        table(pi, prime_check2, min, minimum, length);
-        
-        delete[] next_col;
-        delete[] next_ham;
-        
-        delete[] pi;
-    }
-    else
-        column(next_col, length, next_ham, hamming_length - 1, min, minimum);
-}
-
-void search(char **table, char**pi, int prime_check, int minimum, char**minimum_set, int minimum_number, int length) {
-    ofstream file("result.txt");
-    
-    for (int i = 0; i < minimum; i++) {
-        for (int j = 0; j < prime_check; j++) {
-            if (table[j][i] == 'X') {
-                minimum_set[minimum_number] = pi[j];
-                minimum_number++;
-                
-                for (int k = 0; k < minimum; k++) {
-                    if (table[j][k] == 'X') {
-                        for (int d = 0; d < prime_check; d++)
-                            table[d][k] = '0';
+                    break;
+                    
+                case 1:
+                    if (car[i]->current_point[0] != car[i]->destination[0]) {
+                        int isHeld = false;
+                        for (int j = 0; j < 4; j++)
+                            if (car[j]->direction == 2 || car[j]->direction == 3)
+                                if (car[j]->hold) {
+                                    isHeld = true;
+                                    break;
+                                }
+                        if (!isHeld) {
+                            car[i]->hold = true;
+                            car[i]->current_point[0]++;
+                            
+                            if (car[i]->current_point[0] == car[i]->destination[0]) {
+                                car[i]->hold = false;
+                            }
+                        }
                     }
-                }
+                    break;
+                    
+                case 2:
+                    if (car[i]->current_point[1] != car[i]->destination[1]) {
+                        int isHeld = false;
+                        for (int j = 0; j < 4; j++)
+                            if (car[j]->direction == 0 || car[j]->direction == 1)
+                                if (car[j]->hold) {
+                                    isHeld = true;
+                                    break;
+                                }
+                        if (!isHeld) {
+                            car[i]->hold = true;
+                            car[i]->current_point[1]--;
+                            
+                            if (car[i]->current_point[0] == car[i]->destination[0]) {
+                                car[i]->hold = false;
+                            }
+                        }
+                    }
+                    break;
+                    
+                case 3:
+                    if (car[i]->current_point[1] != car[i]->destination[1]) {
+                        int isHeld = false;
+                        for (int j = 0; j < 4; j++)
+                            if (car[j]->direction == 0 || car[j]->direction == 1)
+                                if (car[j]->hold) {
+                                    isHeld = true;
+                                    break;
+                                }
+                        if (!isHeld) {
+                            car[i]->hold = true;
+                            car[i]->current_point[1]++;
+                            
+                            if (car[i]->current_point[0] == car[i]->destination[0]) {
+                                car[i]->hold = false;
+                            }
+                        }
+                    }
+                    break;
+                    
+                default:
+                    break;
+            }
+            update_load(load, car);
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            if (car[i]->current_point[0] == car[i]->destination[0] && car[i]->current_point[1] == car[i]->destination[1])
+                isDone = true;
+            else {
+                isDone = false;
+                break;
             }
         }
     }
-
-    for (int i = 0; i < minimum_number; i++) {
-        for (int j = 0; j < length; j++)
-            file << minimum_set[i][j];
-        file << endl;
-    }
-
-    file << "Cost(# of transistors): " << transform(minimum_set, minimum_number, length) << endl;
-    cout << "파일 생성 완료!" << endl;
-    file.close();
-
 }
 
-int transform(char**minimum_set, int set_num, int length) {
-    int total_trans = 0;
+void Prevention_No_Preemption(char** load, Car_info* car[]) {
 
-    for (int i = 0; i < set_num; i++) {
-        for (int j = 0; j < length; j++) {
-            if (minimum_set[i][j] != 'X') {
-                total_trans += 2;
-                if (minimum_set[i][j] == '0')
-                    total_trans += 2;
+    /*
+
+    구현 5. 비전섬(No Preemption) 조건 제거
+    이동하려는 위치에 다른 자동차가 있을 경우, 1칸 후진
+
+    */
+    int t = 0;
+    int isDone = false;
+    
+    while (true) {
+        printf("시간 : %d\n", t++);
+        print_load(load);
+        
+        if (isDone)
+            return;
+        
+        for (int i = 0; i < 4; i++) {
+            switch (car[i]->direction) {
+                case 0:
+                    if (car[i]->current_point[0] != car[i]->destination[0]) {
+                        if (load[car[i]->current_point[0]-1][car[i]->current_point[1]] == 0)
+                            car[i]->current_point[0]--;
+                        else
+                            car[i]->current_point[0]++;
+                    }
+                    break;
+                    
+                case 1:
+                    if (car[i]->current_point[0] != car[i]->destination[0]) {
+                        if (load[car[i]->current_point[0]+1][car[i]->current_point[1]] == 0)
+                            car[i]->current_point[0]++;
+                        else
+                            car[i]->current_point[0]--;
+                    }
+                    break;
+                    
+                case 2:
+                    if (car[i]->current_point[1] != car[i]->destination[1]) {
+                        if (load[car[i]->current_point[0]][car[i]->current_point[1]-1] == 0)
+                            car[i]->current_point[1]--;
+                        else
+                            car[i]->current_point[1]++;
+                    }
+                    break;
+                    
+                case 3:
+                    if (car[i]->current_point[1] != car[i]->destination[1]) {
+                        if (load[car[i]->current_point[0]][car[i]->current_point[1]+1] == 0)
+                            car[i]->current_point[1]++;
+                        else
+                            car[i]->current_point[1]--;
+                    }
+                    break;
+                    
+                default:
+                    break;
+            }
+            update_load(load, car);
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            if (car[i]->current_point[0] == car[i]->destination[0] && car[i]->current_point[1] == car[i]->destination[1])
+                isDone = true;
+            else {
+                isDone = false;
+                break;
             }
         }
-        total_trans += 2;
     }
+}
 
-    total_trans += (set_num * 2) + 2;
-    return total_trans;
+void Prevention_Circular_Wait(char** load, Car_info* car[], int* std_num) {
+
+    /*
+
+    구현 6. 순환 대기(Circular Wait) 조건 제거
+    교차로(4칸)을 교차로 접근 조건 추가
+
+    */
+    int x1 = -1, x2 = -1, y1 = -1, y2 = -1;
+    for (int i = 0; i < 4; i++) {
+        if (car[i]->direction == 0 || car[i]->direction == 1) {
+            if (x1 < 0)
+                x1 = car[i]->using_load;
+            else
+                x2 = car[i]->using_load;
+        } else {
+            if (y1 < 0)
+                y1 = car[i]->using_load;
+            else
+                y2 = car[i]->using_load;
+        }
+    }
+    
+    if (x2 < x1) {
+        int temp = x2;
+        x2 = x1;
+        x1 = temp;
+    }
+    
+    if (y2 < y1) {
+        int temp = y2;
+        y2 = y1;
+        y1 = temp;
+    }
+    
+    int t = 0;
+    int isDone = false;
+    int isUsing = -1;
+    int *order_list = (int *)malloc(sizeof(int) * 4 + sizeof(std_num));
+    int len = sizeof(std_num);
+    for (int i = 0; i < len + 4; i++) {
+        if (i < len)
+            order_list[i] = std_num[i];
+        else
+            order_list[i] = i - len;
+    } len += 4;
+    
+    while (true) {
+        int order = order_list[t % len] % 4;
+        
+        printf("시간 : %d\n", t);
+        printf("교차로 진입 가능 : %d(%c)\n", order, car[order]->car);
+        t++;
+        print_load(load);
+        
+        if (isDone)
+            return;
+        
+        for (int i = 0; i < 4; i++) {
+            switch (car[i]->direction) {
+                case 0:
+                    if (car[i]->current_point[0] != car[i]->destination[0]) {
+                        if (car[i]->current_point[0]-1 > y2 || car[i]->current_point[0] <= y2)
+                            car[i]->current_point[0]--;
+                        else if (isUsing == i || (order == i && isUsing == -1)) {
+                            car[i]->current_point[0]--;
+                            isUsing = i;
+                        } if (car[i]->current_point[0]-1 < y1)
+                            isUsing = -1;
+                    }
+                    break;
+                    
+                case 1:
+                    if (car[i]->current_point[0] != car[i]->destination[0]) {
+                        if (car[i]->current_point[0]+1 < y1 || car[i]->current_point[0] >= y1)
+                            car[i]->current_point[0]++;
+                        else if (isUsing == i || (order == i && isUsing == -1)) {
+                            car[i]->current_point[0]++;
+                            isUsing = i;
+                        } if (car[i]->current_point[0]+1 > y2)
+                            isUsing = -1;
+                    }
+                    break;
+                    
+                case 2:
+                    if (car[i]->current_point[1] != car[i]->destination[1]) {
+                        if (car[i]->current_point[1]-1 > x2 || car[i]->current_point[1] <= x2)
+                            car[i]->current_point[1]--;
+                        else if (isUsing == i || (order == i && isUsing == -1)) {
+                            car[i]->current_point[1]--;
+                            isUsing = i;
+                        } if (car[i]->current_point[1]-1 < x1)
+                            isUsing = -1;
+                    }
+                    break;
+                    
+                case 3:
+                    if (car[i]->current_point[1] != car[i]->destination[1]) {
+                        if (car[i]->current_point[1]+1 < x1 || car[i]->current_point[1] >= x1)
+                            car[i]->current_point[1]++;
+                        else if (isUsing == i || (order == i && isUsing == -1)) {
+                            car[i]->current_point[1]++;
+                            isUsing = i;
+                        } if (car[i]->current_point[1]+1 > y2)
+                            isUsing = -1;
+                    }
+                    break;
+                    
+                default:
+                    break;
+            }
+            update_load(load, car);
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            if (car[i]->current_point[0] == car[i]->destination[0] && car[i]->current_point[1] == car[i]->destination[1])
+                isDone = true;
+            else {
+                isDone = false;
+                break;
+            }
+        }
+    }
 }
