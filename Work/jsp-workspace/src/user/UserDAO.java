@@ -30,16 +30,16 @@ public class UserDAO {
             rs = pstmt.executeQuery();
             if (rs.next()) {
                 if (rs.getString(1).equals(userPassword))
-                    return 1; //로그인 성공
+                    return 1;
                 else
-                    return 0; // 비밀번호 틀림
+                    return 0;
             }
-            return -1; // 아이디 없음
+            return -1;
         }catch(Exception e) {
             e.printStackTrace();
 
         }
-        return -2; //DB 오류
+        return -2;
     }
 
     public int join(User user) {
@@ -52,11 +52,11 @@ public class UserDAO {
             pstmt.setString(4, user.getUserGender());
             pstmt.setString(5, user.getUserEmail());
             pstmt.setString(6, user.getUserType());
-            return pstmt.executeUpdate(); // 0이상 값이 return된 경우 성공
+            return pstmt.executeUpdate();
         }catch(Exception e) {
             e.printStackTrace();
 
         }
-        return -1; //DB 오류
+        return -1;
     }
 }

@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5567F50829F1B01100CC993A /* sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
 		5574BBFE29E7CB19005BD821 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5574BC1529EB384A005BD821 /* text1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text1.txt; sourceTree = "<group>"; };
 		5574BC1629EB385E005BD821 /* text3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text3.txt; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 			children = (
 				5574BC1429EB382B005BD821 /* group */,
 				5574BBFE29E7CB19005BD821 /* main.c */,
+				5567F50829F1B01100CC993A /* sample.txt */,
 			);
 			path = "c-workspace";
 			sourceTree = "<group>";
