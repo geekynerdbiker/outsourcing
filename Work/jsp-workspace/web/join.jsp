@@ -63,11 +63,13 @@
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="이메일" name="userEmail" maxlength='20'>
                         </div>
-                        <div class="btn-group" cata-toggle="buttons">
-                            <label class="btn btn-primary active">
-                        <input type ="radio" name ="userType" autocomplete ="off" value = "지원자" checked>지원자</label>
-                            <label class="btn btn-primary">
-                        <input type ="radio" name ="userType" autocomplete ="off" value = "기업" checked>기업</label>
+                        <div class="form-group" style="text-align: center;">
+                            <div class="btn-group" cata-toggle="buttons">
+                                <label class="btn btn-primary active">
+                            <input type ="radio" name ="userType" autocomplete ="off" value = "지원자" checked>지원자</label>
+                                <label class="btn btn-primary">
+                            <input type ="radio" name ="userType" autocomplete ="off" value = "기업" checked>기업</label>
+                            </div>
                         </div>
                         <input type="submit" class="btn btn-primary form-control" value="회원가입">
                     </form>

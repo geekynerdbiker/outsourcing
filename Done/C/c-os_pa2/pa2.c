@@ -484,7 +484,6 @@ bool PCP_acquire(int resource_id){
     return false;
 }
 
-// PCP, PIP resource release function
 void PCP_PIP_release(int resource_id){
     struct resource *r = resources + resource_id;
     assert(r->owner == current);

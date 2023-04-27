@@ -7,10 +7,10 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 <%
-  session.invalidate(); // 세션값 제거
+  session.invalidate();
 %>
 <script>
-  location.href = 'main.jsp'; <!-- 메인 페이지로 이동 -->
+  location.href = 'main.jsp';
 </script>
 </body>
 </html>
