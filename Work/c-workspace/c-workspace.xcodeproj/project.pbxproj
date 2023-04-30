@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55067F8329FE9C16007DC33D /* small-list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "small-list.csv"; path = "../../Schedule/1-today-RosemaryRepo/small-list.csv"; sourceTree = "<group>"; };
+		55067F8429FE9C16007DC33D /* students-100.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "students-100.csv"; path = "../../Schedule/1-today-RosemaryRepo/students-100.csv"; sourceTree = "<group>"; };
 		5574BBFE29E7CB19005BD821 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		55E829F829BB59B600B00D9B /* c-workspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-workspace"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -58,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				5574BBFE29E7CB19005BD821 /* main.c */,
+				55067F8329FE9C16007DC33D /* small-list.csv */,
+				55067F8429FE9C16007DC33D /* students-100.csv */,
 			);
 			path = "c-workspace";
 			sourceTree = "<group>";
