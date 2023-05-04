@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5574BBFF29E7CB19005BD821 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5574BBFE29E7CB19005BD821 /* main.c */; };
+		55067FAA2A013A65007DC33D /* example_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA42A013A65007DC33D /* example_hash.c */; };
+		55067FAB2A013A65007DC33D /* a4protos.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA52A013A65007DC33D /* a4protos.c */; };
+		55067FAC2A013A65007DC33D /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA62A013A65007DC33D /* hash.c */; };
+		55067FAD2A013A65007DC33D /* chord_arg_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA72A013A65007DC33D /* chord_arg_parser.c */; };
+		55067FAE2A013A65007DC33D /* chord.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA82A013A65007DC33D /* chord.c */; };
+		55067FAF2A013A65007DC33D /* chord_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA92A013A65007DC33D /* chord_functions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +28,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		55067F8329FE9C16007DC33D /* small-list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "small-list.csv"; path = "../../Schedule/1-today-RosemaryRepo/small-list.csv"; sourceTree = "<group>"; };
-		55067F8429FE9C16007DC33D /* students-100.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "students-100.csv"; path = "../../Schedule/1-today-RosemaryRepo/students-100.csv"; sourceTree = "<group>"; };
-		5574BBFE29E7CB19005BD821 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		55067FA42A013A65007DC33D /* example_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = example_hash.c; sourceTree = "<group>"; };
+		55067FA52A013A65007DC33D /* a4protos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = a4protos.c; sourceTree = "<group>"; };
+		55067FA62A013A65007DC33D /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
+		55067FA72A013A65007DC33D /* chord_arg_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chord_arg_parser.c; sourceTree = "<group>"; };
+		55067FA82A013A65007DC33D /* chord.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chord.c; sourceTree = "<group>"; };
+		55067FA92A013A65007DC33D /* chord_functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chord_functions.c; sourceTree = "<group>"; };
 		55E829F829BB59B600B00D9B /* c-workspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-workspace"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,9 +67,12 @@
 		55E829FA29BB59B600B00D9B /* c-workspace */ = {
 			isa = PBXGroup;
 			children = (
-				5574BBFE29E7CB19005BD821 /* main.c */,
-				55067F8329FE9C16007DC33D /* small-list.csv */,
-				55067F8429FE9C16007DC33D /* students-100.csv */,
+				55067FA52A013A65007DC33D /* a4protos.c */,
+				55067FA72A013A65007DC33D /* chord_arg_parser.c */,
+				55067FA92A013A65007DC33D /* chord_functions.c */,
+				55067FA82A013A65007DC33D /* chord.c */,
+				55067FA42A013A65007DC33D /* example_hash.c */,
+				55067FA62A013A65007DC33D /* hash.c */,
 			);
 			path = "c-workspace";
 			sourceTree = "<group>";
@@ -123,7 +134,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5574BBFF29E7CB19005BD821 /* main.c in Sources */,
+				55067FAD2A013A65007DC33D /* chord_arg_parser.c in Sources */,
+				55067FAA2A013A65007DC33D /* example_hash.c in Sources */,
+				55067FAE2A013A65007DC33D /* chord.c in Sources */,
+				55067FAC2A013A65007DC33D /* hash.c in Sources */,
+				55067FAF2A013A65007DC33D /* chord_functions.c in Sources */,
+				55067FAB2A013A65007DC33D /* a4protos.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
