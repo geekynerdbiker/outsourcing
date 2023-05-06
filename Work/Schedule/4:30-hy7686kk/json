@@ -1,0 +1,198 @@
+{
+    "q": "busan",
+    "rid": "cef6a374cc594ad293c30342170f0c70",
+    "rc": "OK",
+    "sr": [{
+        "@type": "gaiaRegionResult",
+        "index": "0",
+        "gaiaId": "602043",
+        "type": "CITY",
+        "regionNames": {
+            "fullName": "Busan, South Korea",
+            "shortName": "Busan",
+            "displayName": "Busan, South Korea",
+            "primaryDisplayName": "Busan",
+            "secondaryDisplayName": "South Korea",
+            "lastSearchName": "Busan"
+        },
+        "essId": {
+            "sourceName": "GAI",
+            "sourceId": "602043"
+        },
+        "coordinates": {
+            "lat": "35.179548",
+            "long": "129.075651"
+        },
+        "hierarchyInfo": {
+            "country": {
+                "name": "South Korea",
+                "isoCode2": "KR",
+                "isoCode3": "KOR"
+            }
+        }
+    }, {
+        "@type": "gaiaRegionResult",
+        "index": "1",
+        "gaiaId": "6052866",
+        "type": "NEIGHBORHOOD",
+        "regionNames": {
+            "fullName": "Haeundae, Busan, South Korea",
+            "shortName": "Haeundae",
+            "displayName": "Haeundae, Busan, South Korea",
+            "primaryDisplayName": "Haeundae",
+            "secondaryDisplayName": "Busan, South Korea",
+            "lastSearchName": "Haeundae"
+        },
+        "essId": {
+            "sourceName": "GAI",
+            "sourceId": "6052866"
+        },
+        "coordinates": {
+            "lat": "35.163113",
+            "long": "129.163544"
+        },
+        "hierarchyInfo": {
+            "country": {
+                "name": "South Korea",
+                "isoCode2": "KR",
+                "isoCode3": "KOR"
+            }
+        }
+    }, {
+        "@type": "gaiaRegionResult",
+        "index": "2",
+        "gaiaId": "6288096",
+        "type": "NEIGHBORHOOD",
+        "regionNames": {
+            "fullName": "Jung-gu, Busan, South Korea",
+            "shortName": "Jung-gu",
+            "displayName": "Jung-gu, Busan, South Korea",
+            "primaryDisplayName": "Jung-gu",
+            "secondaryDisplayName": "Busan, South Korea",
+            "lastSearchName": "Jung-gu"
+        },
+        "essId": {
+            "sourceName": "GAI",
+            "sourceId": "6288096"
+        },
+        "coordinates": {
+            "lat": "35.106501",
+            "long": "129.032581"
+        },
+        "hierarchyInfo": {
+            "country": { "name": "South Korea", "isoCode2": "KR", "isoCode3": "KOR" }
+        }
+    }, {
+        "@type": "gaiaHotelResult",
+        "index": "3",
+        "hotelId": "18106658",
+        "type": "HOTEL",
+        "regionNames": {
+            "fullName": "Ananti Hilton Busan, Busan, South Korea",
+            "shortName": "Ananti Hilton Busan",
+            "displayName": "Ananti Hilton Busan, Busan, South Korea",
+            "primaryDisplayName": "Ananti Hilton Busan",
+            "secondaryDisplayName": "Busan, South Korea",
+            "lastSearchName": "Ananti Hilton Busan"
+        },
+        "essId": {
+            "sourceName": "LCM",
+            "sourceId": "18106658"
+        },
+        "coordinates": {
+            "lat": "35.198",
+            "long": "129.228864"
+        },
+        "hierarchyInfo": {
+            "country": { "isoCode3": "KOR" }
+        },
+        "cityId": "602043",
+        "hotelAddress": {
+            "street": "268-32, Gijanghaean-ro Gijang-eup",
+            "city": "Busan",
+            "province": ""
+        }
+    }, {
+        "@type": "gaiaHotelResult",
+        "index": "4",
+        "hotelId": "5801054",
+        "type": "HOTEL",
+        "regionNames": {
+            "fullName": "Park Hyatt Busan, Busan, South Korea",
+            "shortName": "Park Hyatt Busan",
+            "displayName": "Park Hyatt Busan, Busan, South Korea",
+            "primaryDisplayName": "Park Hyatt Busan",
+            "secondaryDisplayName": "Busan, South Korea",
+            "lastSearchName": "Park Hyatt Busan"
+        },
+        "essId": {
+            "sourceName": "LCM",
+            "sourceId": "5801054"
+        },
+        "coordinates": {
+            "lat": "35.158034",
+            "long": "129.143047"
+        },
+        "hierarchyInfo": {
+            "country": { "isoCode3": "KOR" }
+        },
+        "cityId": "602043",
+        "hotelAddress": {
+            "street": "51, Marine city 1-ro, Haeundae-gu",
+            "city": "Busan",
+            "province": "Busan"
+        }
+    }, {
+        "@type": "gaiaHotelResult",
+        "index": "5",
+        "hotelId": "12021175",
+        "type": "HOTEL",
+        "regionNames": { "fullName": "Busan Beach Hotel Busan Songdo, Busan, South Korea", "shortName": "Busan Beach Hotel Busan Songdo", "displayName": "Busan Beach Hotel Busan Songdo, Busan, South Korea", "primaryDisplayName": "Busan Beach Hotel Busan Songdo", "secondaryDisplayName": "Busan, South Korea", "lastSearchName": "Busan Beach Hotel Busan Songdo" },
+        "essId": { "sourceName": "LCM", "sourceId": "12021175" },
+        "coordinates": { "lat": "35.08496", "long": "129.025872" },
+        "hierarchyInfo": { "country": { "isoCode3": "KOR" } },
+        "cityId": "602043",
+        "hotelAddress": { "street": "113, Deungdae-ro, Seo-gu", "city": "Busan", "province": "" }
+    }, {
+        "@type": "gaiaHotelResult",
+        "index": "6",
+        "hotelId": "199832",
+        "type": "HOTEL",
+        "regionNames": { "fullName": "Lotte Hotel Busan, Busan, South Korea", "shortName": "Lotte Hotel Busan", "displayName": "Lotte Hotel Busan, Busan, South Korea", "primaryDisplayName": "Lotte Hotel Busan", "secondaryDisplayName": "Busan, South Korea", "lastSearchName": "Lotte Hotel Busan" },
+        "essId": { "sourceName": "LCM", "sourceId": "199832" },
+        "coordinates": { "lat": "35.157587", "long": "129.055898" },
+        "hierarchyInfo": { "country": { "isoCode3": "KOR" } },
+        "cityId": "602043",
+        "hotelAddress": { "street": "772, Gaya-daero, Busanjin-gu", "city": "Busan", "province": "Busan" }
+    }, {
+        "@type": "gaiaHotelResult",
+        "index": "7",
+        "hotelId": "793876",
+        "type": "HOTEL",
+        "regionNames": { "fullName": "Paradise Hotel Busan, Busan, South Korea", "shortName": "Paradise Hotel Busan", "displayName": "Paradise Hotel Busan, Busan, South Korea", "primaryDisplayName": "Paradise Hotel Busan", "secondaryDisplayName": "Busan, South Korea", "lastSearchName": "Paradise Hotel Busan" },
+        "essId": { "sourceName": "LCM", "sourceId": "793876" },
+        "coordinates": { "lat": "35.160249", "long": "129.164184" },
+        "hierarchyInfo": { "country": { "isoCode3": "KOR" } },
+        "cityId": "602043",
+        "hotelAddress": { "street": "296, Haeundaehaebyeon-ro, Haeundae-gu", "city": "Busan", "province": "Busan" }
+    }, {
+        "@type": "gaiaRegionResult",
+        "index": "8",
+        "gaiaId": "5461328",
+        "type": "AIRPORT",
+        "regionNames": { "fullName": "Busan, South Korea (PUS-Gimhae)", "shortName": "Busan (PUS-Gimhae)", "displayName": "Busan (PUS - Gimhae), South Korea", "primaryDisplayName": "Busan (PUS - Gimhae)", "secondaryDisplayName": "South Korea", "lastSearchName": "Busan (PUS - Gimhae)" },
+        "essId": { "sourceName": "GAI", "sourceId": "5461328" },
+        "coordinates": { "lat": "35.169351", "long": "128.949792" },
+        "hierarchyInfo": { "country": { "name": "South Korea", "isoCode2": "KR", "isoCode3": "KOR" } },
+        "isMinorAirport": "false"
+    }, {
+        "@type": "gaiaRegionResult",
+        "index": "9",
+        "gaiaId": "6122748",
+        "type": "POI",
+        "regionNames": { "fullName": "Haeundae Beach, Busan, South Korea", "shortName": "Haeundae Beach", "displayName": "Haeundae Beach, Busan, South Korea", "primaryDisplayName": "Haeundae Beach", "secondaryDisplayName": "Busan, South Korea", "lastSearchName": "Haeundae Beach" },
+        "essId": { "sourceName": "GAI", "sourceId": "6122748" },
+        "coordinates": { "lat": "35.158042", "long": "129.158127" },
+        "hierarchyInfo": { "country": { "name": "South Korea", "isoCode2": "KR", "isoCode3": "KOR" } }
+    }]
+}

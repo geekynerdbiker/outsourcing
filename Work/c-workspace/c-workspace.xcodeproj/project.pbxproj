@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55067FAA2A013A65007DC33D /* example_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA42A013A65007DC33D /* example_hash.c */; };
-		55067FAB2A013A65007DC33D /* a4protos.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA52A013A65007DC33D /* a4protos.c */; };
-		55067FAC2A013A65007DC33D /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA62A013A65007DC33D /* hash.c */; };
-		55067FAD2A013A65007DC33D /* chord_arg_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA72A013A65007DC33D /* chord_arg_parser.c */; };
-		55067FAE2A013A65007DC33D /* chord.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA82A013A65007DC33D /* chord.c */; };
-		55067FAF2A013A65007DC33D /* chord_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FA92A013A65007DC33D /* chord_functions.c */; };
+		55067FB12A04DECE007DC33D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FB02A04DECE007DC33D /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +23,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		55067FA42A013A65007DC33D /* example_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = example_hash.c; sourceTree = "<group>"; };
-		55067FA52A013A65007DC33D /* a4protos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = a4protos.c; sourceTree = "<group>"; };
-		55067FA62A013A65007DC33D /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
-		55067FA72A013A65007DC33D /* chord_arg_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chord_arg_parser.c; sourceTree = "<group>"; };
-		55067FA82A013A65007DC33D /* chord.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chord.c; sourceTree = "<group>"; };
-		55067FA92A013A65007DC33D /* chord_functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chord_functions.c; sourceTree = "<group>"; };
+		55067FB02A04DECE007DC33D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		55067FB22A04E092007DC33D /* test0-output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test0-output.txt"; sourceTree = "<group>"; };
+		55067FB32A04E092007DC33D /* test1-output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test1-output.txt"; sourceTree = "<group>"; };
+		55067FB42A04E092007DC33D /* test0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test0.txt; sourceTree = "<group>"; };
+		55067FB52A04E092007DC33D /* test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test1.txt; sourceTree = "<group>"; };
 		55E829F829BB59B600B00D9B /* c-workspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-workspace"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,12 +61,11 @@
 		55E829FA29BB59B600B00D9B /* c-workspace */ = {
 			isa = PBXGroup;
 			children = (
-				55067FA52A013A65007DC33D /* a4protos.c */,
-				55067FA72A013A65007DC33D /* chord_arg_parser.c */,
-				55067FA92A013A65007DC33D /* chord_functions.c */,
-				55067FA82A013A65007DC33D /* chord.c */,
-				55067FA42A013A65007DC33D /* example_hash.c */,
-				55067FA62A013A65007DC33D /* hash.c */,
+				55067FB02A04DECE007DC33D /* main.c */,
+				55067FB22A04E092007DC33D /* test0-output.txt */,
+				55067FB42A04E092007DC33D /* test0.txt */,
+				55067FB32A04E092007DC33D /* test1-output.txt */,
+				55067FB52A04E092007DC33D /* test1.txt */,
 			);
 			path = "c-workspace";
 			sourceTree = "<group>";
@@ -134,12 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55067FAD2A013A65007DC33D /* chord_arg_parser.c in Sources */,
-				55067FAA2A013A65007DC33D /* example_hash.c in Sources */,
-				55067FAE2A013A65007DC33D /* chord.c in Sources */,
-				55067FAC2A013A65007DC33D /* hash.c in Sources */,
-				55067FAF2A013A65007DC33D /* chord_functions.c in Sources */,
-				55067FAB2A013A65007DC33D /* a4protos.c in Sources */,
+				55067FB12A04DECE007DC33D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

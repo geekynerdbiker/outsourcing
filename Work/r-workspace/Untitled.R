@@ -35,7 +35,7 @@ set.seed(1)
 # Explain your feature here (add comments).
 # show your code below
 # e.g.) randomForest(factor(?) ~ ? + ?, data = ?)
-your_model <- randomForest(factor(win) ~ first + second, data = train)
+your_model <- randomForest(factor(win) ~ third + fourth, data = train)
 
 # STEP 3: Show model error, calculate importance, and rank valuable. Draw figures.
 # STEP 3-1: Show model error and plot it.
@@ -61,3 +61,4 @@ prediction <- predict(your_model, test)
 prediction = as.data.frame(prediction[1:20])
 prediction
 write.csv(prediction, file='lottery-solution.csv')
+
