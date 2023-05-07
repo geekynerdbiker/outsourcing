@@ -1,4 +1,0 @@
-// task3Mb
-print 'Final value3 is:'
-println 3
-end

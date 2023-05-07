@@ -1,5 +1,0 @@
-// task3Mc
-println 'Gargoyle not me'
-println cls
-print 'Final Text task3mc:'
-end
