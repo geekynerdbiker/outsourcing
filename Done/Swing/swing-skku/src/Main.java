@@ -245,8 +245,8 @@ public class Main extends JFrame {
         personalStatementBox = new JPanel();
         personalStatementBox.setLayout(new FlowLayout(FlowLayout.CENTER));
         personalStatementBox.setBackground(Color.WHITE);
-        personalStatementBox.setMaximumSize(new Dimension(500, 100));
-        personalStatementBox.setBorder(BorderFactory.createEmptyBorder(16, 0, 8, 10));
+        personalStatementBox.setMaximumSize(new Dimension(600, 100));
+        personalStatementBox.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 10));
 
         personalStatement = new JTextArea();
         personalStatement.setText("Personal Statement");
@@ -254,7 +254,7 @@ public class Main extends JFrame {
 
         personalStatementInput = new JTextArea();
         personalStatementInput.setFont(new Font("", Font.ITALIC, 12));
-        personalStatementInput.setText("At least 100 words.");
+        personalStatementInput.setText(" At least 100 words.");
         personalStatementInput.setMinimumSize(new Dimension(500, 60));
         personalStatementInput.setPreferredSize(new Dimension(500, 60));
         personalStatementInput.setMaximumSize(new Dimension(500, 60));
@@ -365,17 +365,17 @@ public class Main extends JFrame {
         public void actionPerformed(ActionEvent e) {
             String result = "";
             int num = 1;
+
             // 0. name check
             String[] name = applicantNameInput.getText().split("\\s+");
 
             if (name.length < 2) {
                 if (applicantNameInput.getText().length() == 0) {
                     result += (Integer.toString(num) + ". You forgot to fill the name text field.\n");
-                    num++;
                 } else {
                     result += (Integer.toString(num) + ". You forgot to write your name or surname \n");
-                    num++;
                 }
+                num++;
             }
 
             // 1. empty field check
@@ -384,59 +384,48 @@ public class Main extends JFrame {
                 num++;
             }
 
-            if (homeAddressInput.getText().length() == 0) {
-                result += (Integer.toString(num) + ". You forgot to fill the home address text field.\n");
-                num++;
-            }
-
             if (personalStatementInput.getText().length() == 0) {
                 result += (Integer.toString(num) + ". You forgot to fill the personal statement text field.\n");
                 num++;
             }
 
-            // 2. birth date format
-            if (birthDateInput.getText().matches("([0-9]{2})/([0-9]{2})/([0-9]{4})")) {
-            } else {
+            // 2. birthday format
+            if (!birthDateInput.getText().matches("([0-9]{2})/([0-9]{2})/([0-9]{4})")) {
                 if (birthDateInput.getText().length() == 0) {
                     result += (Integer.toString(num) + ". You forgot to fill the birth date text field.\n");
-                    num++;
                 } else {
                     result += (Integer.toString(num) + ". Birthdate must be in '06/06/1995' format \n");
-                    num++;
                 }
+                num++;
             }
 
             // 3. email check
             String regexEmail = "^(.+)@(.+)$";
             Pattern patternEmail = Pattern.compile(regexEmail);
             Matcher matcherEmail = patternEmail.matcher(emailInput.getText());
-            if (matcherEmail.matches()) {
-            } else {
+            if (!matcherEmail.matches()) {
                 if (emailInput.getText().length() == 0) {
                     result += (Integer.toString(num) + ". You forgot to fill the email text field.\n");
-                    num++;
                 } else {
                     result += (Integer.toString(num) + ". Email must be in example@some.some \n");
-                    num++;
                 }
+                num++;
             }
 
             // 4. phone number check
-            String regexPhone = "^[0-9\\s-]*$";
+            String regexPhone = "^01(?:0|1|[6-9])-\\d{4}-\\d{4}$";
             Pattern patternPhone = Pattern.compile(regexPhone);
             Matcher matcherPhone = patternPhone.matcher(phoneNumberInput.getText());
-            if (matcherPhone.matches()) {
-            } else {
+            if (!matcherPhone.matches()) {
                 if (phoneNumberInput.getText().length() == 0) {
                     result += (Integer.toString(num) + ". You forgot to fill the phone number text field.\n");
-                    num++;
                 } else {
-                    result += (Integer.toString(num) + ". Proper format for a phone number is ‘10 2158-0222’ \n");
-                    num++;
+                    result += (Integer.toString(num) + ". Proper format for a phone number is ‘010-0000-0222’ \n");
                 }
+                num++;
             }
 
-            // 5. attended university & gpa 6. gpa range check
+            // 5. attended university & gpa, gpa range check
             if (degreeInput.getText().equals("Bachelor")) {
                 if (attendedUniversityInput.getText().length() != 0 || gpaInput.getText().length() != 0) {
                     result += (Integer.toString(num) + ". For Bachelor, you have to empty previous university and GPA \n");
@@ -457,6 +446,20 @@ public class Main extends JFrame {
                     }
                 }
             }
+
+            // 6. address field check
+            String regexAddress = "^[0-9]+(\\,)? [a-zA-Z0-9\\s|-]+(\\,)? [a-zA-Z0-9\\s|-]+(\\,)? [a-zA-Z]{1,}$";
+            Pattern patternAddress = Pattern.compile(regexAddress);
+            Matcher matcherAddress = patternAddress.matcher(homeAddressInput.getText());
+            if (!matcherAddress.matches()) {
+                if (homeAddressInput.getText().length() == 0) {
+                    result += (Integer.toString(num) + ". You forgot to fill the home address text field.\n");
+                } else {
+                    result += (Integer.toString(num) + ". Your address must be in 'number, street, district, city' \n");
+                }
+                num++;
+            }
+
             // 7. personal statement check
             if (personalStatementInput.getText().length() < 100) {
                 result += (Integer.toString(num) + ". Your Personal Statement must be at least 100 words \n");

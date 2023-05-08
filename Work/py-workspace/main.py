@@ -82,7 +82,7 @@ for i in range(1, timesteps):
 ### Step 5: Evaluation of spike-count rate over the layer ###
 
 # calculate size of spikes
-spike_count_rate = np.sum(spike_train, axis=0)
+spike_count_rate = np.sum(spike_map, axis=0)
 # print image
 plt.imshow(spike_count_rate, cmap='hot')
 plt.show()

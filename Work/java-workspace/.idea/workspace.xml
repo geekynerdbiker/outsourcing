@@ -5,184 +5,256 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc92c2ea-682e-4840-94cf-f9c010dba918" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Flat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Flat.ctxt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Flat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BlueJ/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Main.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/../BlueJ/Main.ctxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BlueJ/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Meter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Meter.ctxt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/Meter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/Dev0_Flat.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/Dev0_Meter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/Dev1_Flat.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/Dev1_Meter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/ST2_Assignment1_2023_V7.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/prod_Flat.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/prod_Meter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/test_Flat.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/data/test_Meter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlueJ/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/../BlueJ/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/4:30-hy7686kk/Archive.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Schedule/4:30-hy7686kk/Archive.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/4:30-hy7686kk/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Schedule/4:30-hy7686kk/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/.idea/libraries/TestFiles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/Assignment2_2023_V5.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task1Ma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task1Mb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task1Mc.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task1a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task1b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task1c.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task1d.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task2Ma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task2a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task2b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task3Ma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task3Mb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task3Mc.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task3Md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task3a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task3b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task4Ma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task4Mb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task4a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task4b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task4c.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task5Ma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task5Mb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/Task5a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/5:5-asxz/TestFiles/min.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Done/Swing/swing-skku/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Done/Swing/swing-skku/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1 (1).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/COMP10002_a1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/COMP10002_a1_marking_rubric.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/program.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test0-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test1-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/ProdCons/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/ProdCons/ProdCons.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.ko.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.mod.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.mod.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/Module.symvers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/modules.order" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.ko" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.mod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.mod.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Userspace/Publish.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Userspace/Subscribe.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/Archive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/EC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/binSub.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/fullyAssociative.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/assignment_autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/binSub.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/circuitSimulator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/comparator.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/directMapped.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/fullyAssociative.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/negator.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/setAssociative.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/sevenSegmentDisplay.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/sevenSegmentDisplayC.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/sevenSegmentDisplayE.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/setAssociative.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/sevenSegmentDisplay.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/sevenSegmentDisplayC.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:9-dbdvm/min_speed.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:9-dbdvm/중간프로젝트_중(수정).pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/a4protos.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/chord.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/chord_arg_parser.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/chord_functions.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/example_hash.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/hash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/resources/light-bulb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/resources/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SeedFile/seed.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/Program.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Cell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Classroom$ClassroomStateCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Classroom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/ControllablePlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Decision$TypeCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Decision.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Grader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/PlayerStat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode3$PresenterStateCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode4$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode4$PresenterStateCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$CellObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$PresenterStateCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_CorpseBomb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_HornDone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Loner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Predator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Scout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Seeker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Classroom_Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/DirectionCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/GameNumberManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/PointBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Point_Immutable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Score.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/StateCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/customplayers/Player_YOURNAMEHERE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Action$TypeCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Action.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/CellInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/PlayerInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Reaction$TypeCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Reaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/TurnInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_corpse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_corpse_detect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_corpse_spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_empty_spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_infected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_infected_corpse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_infected_corpse_spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_infected_spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_outOfSight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor_corpse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor_corpse_spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor_spot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cursor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cursor_invalid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/myPosition_corpse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/myPosition_infected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/myPosition_survivor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/Cell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/Classroom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/ControllablePlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/Decision.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/Grader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/PlayerStat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/Presenter_Mode3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/Presenter_Mode4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/Presenter_Mode5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_CorpseBomb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_HornDone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Loner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Predator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Scout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Seeker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/Classroom_Settings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/DirectionCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/GameNumberManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/PointBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/Point_Immutable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/Score.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/common/StateCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/customplayers/Player_YOURNAMEHERE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/data/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/data/CellInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/data/PlayerInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/data/Reaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/l4g/data/TurnInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/lena.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace copy/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/Archive.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../r-workspace/Archive.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/Untitled.R" beforeDir="false" afterPath="$PROJECT_DIR$/../r-workspace/Untitled.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/lottery-solution.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../r-workspace/lottery-solution.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Main$ButtonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-workspace/Main$ButtonHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-workspace/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/skku_wallpaper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/title_label.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../py-workspace/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace copy/Archive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace copy/Untitled.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace copy/figure1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace copy/figure2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace copy/lottery-solution.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace copy/lottery-train-2023-2-1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace copy/r-workspace.Rproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/Archive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/figure1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/figure2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/lottery-solution.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/lottery-train-2023-2-1.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,21 +342,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Menu.java</url>
-          <line>287</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Menu.java</url>
-          <line>316</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
