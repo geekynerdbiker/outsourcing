@@ -4,268 +4,517 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc92c2ea-682e-4840-94cf-f9c010dba918" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Done/Swing/swing-skku/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Done/Swing/swing-skku/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1 (1).zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/COMP10002_a1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/COMP10002_a1_marking_rubric.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/program.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test0-output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test1-output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:5:1500-디루/COMP10002_a1/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/ProdCons/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/ProdCons/ProdCons.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.ko.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.mod.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.mod.o.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/.pubsub.o.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/Module.symvers" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/modules.order" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.ko" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.mod.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.mod.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Kernel/pubsub.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Userspace/Publish.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-OC/proj4/PubSub/Userspace/Subscribe.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/Archive.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/EC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/binSub.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/fullyAssociative.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/assignment_autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/binSub.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/binSub/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/circuitSimulator" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer23.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/answers/answer9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/comparator.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test23.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/comparator/tests/test9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/directMapped.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/directMapped/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/fullyAssociative.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/fullyAssociative/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/negator.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/negator/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/setAssociative.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/setAssociative/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/answers/answer9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/sevenSegmentDisplay.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplay/tests/test9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/answers/answer9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/sevenSegmentDisplayC.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayC/tests/test9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/answers/answer9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/sevenSegmentDisplayE.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/pa6/sevenSegmentDisplayE/tests/test9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/setAssociative.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/sevenSegmentDisplay.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:8-맛없는짜장면/pa6 의뢰/sevenSegmentDisplayC.v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:9-dbdvm/min_speed.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Schedule/c-5:9-dbdvm/중간프로젝트_중(수정).pdf" beforeDir="false" />
+    <list default="true" id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace/ftl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../py-workspace/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:12-c-망고스틱/ftl_lab2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Schedule/10:12-c-망고스틱/ftl_lab2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:12-c-망고스틱/lab4/lab4/ftl.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Schedule/10:12-c-망고스틱/lab4/lab4/ftl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/FileContentIndex/789dbebc-2c6b-46d6-9cff-dc60d0f2735f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/FileContentIndex/b4f2fcb7-c4c8-489a-97e0-9eb312047d2c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/FileContentIndex/e48fd008-791a-42bd-a24b-efcab4ca7c1f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/FileContentIndex/efc9e052-3ef8-4ecf-bf30-5e1d9bd10dfd.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/config/applicationhost.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/GenAiWebsite/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/ProjectEvaluation/genaiwebsite.metadata.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vs/ProjectEvaluation/genaiwebsite.projects.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/Account/Login.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/Account/Login.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/Account/Register.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/Account/Register.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/Account/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Controllers/GenAIsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Data/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/GenAiWebsite.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/GenAiWebsite.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Migrations/20231006102310_GenAiMigration3.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Migrations/20231006102310_GenAiMigration3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Models/GenAI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Models/IndexViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Pages/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Properties/generate_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/ScaffoldingReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/GenAIs/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/GenAIs/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/GenAIs/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/GenAIs/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/GenAIs/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Home/Contact.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Home/GenAI.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Home/GenAiSites.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Home/Jobs.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Shared/_LoginPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/GenAiWebsite.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/GenAiWebsite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/GenAiWebsite.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/GenAiWebsite.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/GenAiWebsite.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/GenAiWebsite.staticwebassets.runtime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/MessagePack.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/MessagePack.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Build.Framework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Build.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.DiaSymReader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.NET.StringTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.VisualStudio.Debugger.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.DependencyResolver.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.LibraryModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.Packaging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.ProjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/NuGet.Versioning.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/Python.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Reflection.MetadataLoadContext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/af/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ar/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/az/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/bg/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/bn-BD/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/da/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/dotnet-aspnet-codegenerator-design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/el/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fa/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fi-FI/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr-BE/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/generate_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/he/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/hr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/hu/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/hy/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/id/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/is/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko-KR/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ku/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/lv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ms-MY/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/mt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/nb-NO/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/nb/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/nl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/pt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ro/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/sk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/sl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/sr-Latn/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/sr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/sv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/th-TH/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/uk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/uz-Cyrl-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/uz-Latn-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/vi/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-CN/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/GenAiWebsite.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/project.razor.vs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/project.razor.vscode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/ref/GenAiWebsite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/refint/GenAiWebsite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/scopedcss/bundle/GenAiWebsite.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/scopedcss/projectbundle/GenAiWebsite.bundle.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/staticwebassets.pack.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/staticwebassets/msbuild.GenAiWebsite.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/staticwebassets/msbuild.build.GenAiWebsite.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.GenAiWebsite.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.GenAiWebsite.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/GenAiWebsite.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/GenAiWebsite.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/GenAiWebsite.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/Videos/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/csv/salaries2023.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/0f802a61-8e20-4a6e-bc56-f79558d913f5_OIP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/616d40a0-2675-4e4d-a95e-96cc690ed42a_OIP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/akjdbksa_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/amazon_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/Blockchain3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/CloudComputing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/Robotics2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/bg6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/background/bg7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/chatgpt_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/dall-e2_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/ecoryx_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/amazon_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/amazon_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/bard_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/bard_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/chatgpt_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/chatgpt_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/dalle_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/dalle_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/githubcopilot_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/githubcopilot_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/google_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/google_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/ibm_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/ibm_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/midjourney_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/midjourney_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/ms_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/ms_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/synthesia_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/synthesia_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genai/x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/amazon_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/bard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/bard_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/chatgpt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/chatgpt_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/dalle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/dalle_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/githubcopilot_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/google.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/google_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/ibm_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/iot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/job.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/microsoft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/midjourney.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/midjourney_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/ms_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/pie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/synthesia_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/genaisites/x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/github copilot_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/google_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/ibm_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/jubb_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/kjasdjksabd_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/microsoft_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/nlzncs_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/sadlamsd_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/salndsa_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/sdasdk_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/sdfdsf_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/synthesia_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/usadask_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/images/vvuvvj_thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/GenAiWebsite/wwwroot/py/generate_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/GenAIWebsite-ba458dbb2c08d259fe1de30ea600127922cb46a9/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/WDP Assignment (1)/AssignmentFiles.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/WDP Assignment (1)/WDP2023FinalAssignment.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/WDP Assignment (1)/WDP2023FinalAssignment.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:14-c-asxz/WDP Assignment (1)/WDP2023_7175_MarkingRubric.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Schedule/10:15-c-kkkpxxx/hw1-v4 (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/.DS_Store.dec" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/.DS_Store.dec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/.DS_Store.enc" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/.DS_Store.enc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace/KISA_SEED_CBC.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace/KISA_SEED_CBC.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../cpp-workspace/cpp-workspace/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Main$ButtonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-workspace/Main$ButtonHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-workspace/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/skku_wallpaper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/title_label.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../py-workspace/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../py-workspace/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace copy/Archive.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace copy/Untitled.R" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace copy/figure1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace copy/figure2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace copy/lottery-solution.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace copy/lottery-train-2023-2-1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace copy/r-workspace.Rproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/Archive.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/figure1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/figure2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/lottery-solution.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../r-workspace/lottery-train-2023-2-1.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="78eygtx9" />
+    <option name="directoryName" value="40y5srwd" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -277,10 +526,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2Oue1WfakMCRPqEeloJvKG6z1MD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
+  <component name="ProjectId" id="2WT3vI71ttB0cf9LqgTV45PT1I6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -291,44 +541,40 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jacoban/Documents/GitHub/Crebugs/Work/java-workspace&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.DoublyLinkedList">
+    <configuration name="Coder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Coder" />
       <module name="java-workspace" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="PROGRAM_PARAMETERS" value="-d" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoublyLinkedList" />
+      <module name="java-workspace" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DoublyLinkedList" />
+        <item itemvalue="Application.Coder" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc92c2ea-682e-4840-94cf-f9c010dba918" name="Changes" comment="" />
-      <created>1682414679766</created>
+      <changelist id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="" />
+      <created>1696742974093</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1682414679766</updated>
+      <updated>1696742974093</updated>
     </task>
     <servers />
   </component>

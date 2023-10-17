@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc92c2ea-682e-4840-94cf-f9c010dba918" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../py-workspace/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/mainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Coder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/artifacts/untitled1_ear_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/artifacts/untitled1_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/db/DB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/db/DBMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/db/api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/db/data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/db/location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/db/locationMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/lib/json-simple-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/lib/json.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/java/lib/mariadb-java-client-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/webapp/history.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/webapp/load-wifi.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp-workspace/freewifi/src/main/webapp/search.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="78eygtx9" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2Oue1WfakMCRPqEeloJvKG6z1MD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/jacoban/Documents/GitHub/Crebugs/Work/java-workspace",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "scala_project_settings_configurable.last_selected_tab_index": "0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Coder">
+    <configuration name="Coder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Coder" />
+      <module name="java-workspace" />
+      <option name="PROGRAM_PARAMETERS" value="-d" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mainTest" />
+      <module name="java-workspace" />
+      <option name="PROGRAM_PARAMETERS" value="-e" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.mainTest" />
+      <item itemvalue="Application.Coder" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Coder" />
+        <item itemvalue="Application.mainTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="html" value="HTML" />
+        <entry key="java" value="JAVA" />
+        <entry key="json" value="JSON" />
+        <entry key="json5" value="JSON5" />
+        <entry key="scala" value="Scala" />
+        <entry key="svg" value="SVG" />
+        <entry key="xhtml" value="XHTML" />
+        <entry key="xml" value="XML" />
+        <entry key="xpath" value="XPath" />
+        <entry key="yaml" value="yaml" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc92c2ea-682e-4840-94cf-f9c010dba918" name="Changes" comment="" />
+      <created>1682414679766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682414679766</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CustomLinkedListTest.java</url>
+          <line>555</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CustomLinkedListTest.java</url>
+          <line>528</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Machine/MachineMain.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Machine/MachineMain.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Machine/MachineMain.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Machine/MachineMain.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Machine/MachineMain.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Machine/MachineMain.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/dfpl/db/hash/UnitTest4.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/dfpl/db/hash/UnitTest4.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/dfpl/db/hash/UnitTest5.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/dfpl/db/hash/UnitTest5.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Coder.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Machine/MachineMain.java</url>
+          <line>39</line>
+          <properties>
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_workspace$Sint.ic" NAME="Sint Coverage Results" MODIFIED="1683572751091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

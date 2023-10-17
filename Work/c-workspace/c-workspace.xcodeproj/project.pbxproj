@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55067FB12A04DECE007DC33D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 55067FB02A04DECE007DC33D /* main.c */; };
+		5540AF002AD91A250077062F /* KISA_SEED_CBC.c in Sources */ = {isa = PBXBuildFile; fileRef = 5540AEFF2AD91A250077062F /* KISA_SEED_CBC.c */; };
+		5540AF032AD91AD30077062F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5540AF022AD91AD30077062F /* Makefile */; };
+		55CAC4412A4863E100CAE57B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 55CAC4402A4863E100CAE57B /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,11 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		55067FB02A04DECE007DC33D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		55067FB22A04E092007DC33D /* test0-output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test0-output.txt"; sourceTree = "<group>"; };
-		55067FB32A04E092007DC33D /* test1-output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test1-output.txt"; sourceTree = "<group>"; };
-		55067FB42A04E092007DC33D /* test0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test0.txt; sourceTree = "<group>"; };
-		55067FB52A04E092007DC33D /* test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test1.txt; sourceTree = "<group>"; };
+		5540AEFE2AD91A250077062F /* KISA_SEED_CBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KISA_SEED_CBC.h; sourceTree = "<group>"; };
+		5540AEFF2AD91A250077062F /* KISA_SEED_CBC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KISA_SEED_CBC.c; sourceTree = "<group>"; };
+		5540AF022AD91AD30077062F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		5540AF0B2AD9A6AF0077062F /* SCSM25_FONS4MVN_ID0001_T20200801000000.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = SCSM25_FONS4MVN_ID0001_T20200801000000.zip; sourceTree = "<group>"; };
+		55CAC4402A4863E100CAE57B /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		55E829F829BB59B600B00D9B /* c-workspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-workspace"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,11 +63,11 @@
 		55E829FA29BB59B600B00D9B /* c-workspace */ = {
 			isa = PBXGroup;
 			children = (
-				55067FB02A04DECE007DC33D /* main.c */,
-				55067FB22A04E092007DC33D /* test0-output.txt */,
-				55067FB42A04E092007DC33D /* test0.txt */,
-				55067FB32A04E092007DC33D /* test1-output.txt */,
-				55067FB52A04E092007DC33D /* test1.txt */,
+				55CAC4402A4863E100CAE57B /* main.c */,
+				5540AEFF2AD91A250077062F /* KISA_SEED_CBC.c */,
+				5540AEFE2AD91A250077062F /* KISA_SEED_CBC.h */,
+				5540AF022AD91AD30077062F /* Makefile */,
+				5540AF0B2AD9A6AF0077062F /* SCSM25_FONS4MVN_ID0001_T20200801000000.zip */,
 			);
 			path = "c-workspace";
 			sourceTree = "<group>";
@@ -97,7 +99,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					55E829F729BB59B600B00D9B = {
 						CreatedOnToolsVersion = 14.2;
@@ -127,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55067FB12A04DECE007DC33D /* main.c in Sources */,
+				5540AF032AD91AD30077062F /* Makefile in Sources */,
+				55CAC4412A4863E100CAE57B /* main.c in Sources */,
+				5540AF002AD91A250077062F /* KISA_SEED_CBC.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +171,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -225,6 +230,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -247,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -255,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

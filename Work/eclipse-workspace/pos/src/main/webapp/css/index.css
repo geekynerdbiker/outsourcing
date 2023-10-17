@@ -1,0 +1,421 @@
+/* 
+### Primary
+- Dark Blue: #526fb0
+- Deep Blue: #445d92
+### Neutral
+- Background Black: #18191d
+- Dark Black: #303038
+- Very Light Gray: #9698a6
+- White: #fff 
+- Black: #000
+
+*/
+@charset "utf-8";
+@font-face {
+    font-family: 'OTWelcomeBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 초기화 */
+* {
+	margin : 0;
+	padding : 0;
+}
+.hidden {
+	position : absolute;
+	left : -9999px;
+}
+li {list-style: none;}
+a {text-decoration: none; color:#000;}
+body {
+    font-family: 'OTWelcomeBA', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0 auto;
+	min-width: 1500px;
+    background-color: #18191d;
+}
+/* input { 
+
+    -webkit-appearance : none;
+    
+    -moz-appearance:none;
+    
+    appearance:none;
+    
+    } */
+    
+    
+table {
+	border-collapse: collapse;
+}
+/* main */
+#main {
+    width: 1503px;
+    margin: 0px auto;
+}
+#main section.cont {
+    float: left;    
+}
+/* main-Left */
+#sectionLeft {
+    width: 700px;
+    height: 1000px;
+}
+/* #sectionLeft div { 나중에 가운데선 넣는 거 생각해보기
+    margin-top: 40px;
+    border-right: 2px solid #cccccc;
+    height: 900px;
+} */
+/* 주문내역 리스트 */
+#orderList_h3 {
+    width: 600px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #ffffff;
+    background-color: #303038;
+    top: 27px;
+    position: relative;
+}
+#orderList {
+    width: 600px;
+    height: 500px;
+    margin: 27px auto 0;
+    padding-bottom: 50px;
+    background-color: #303038;
+    overflow: hidden;
+}
+#orderList tr.gradient {
+    background: #526fb0;
+}
+#orderList th {
+    border-bottom: 3px solid #cccccc;
+    height: 50px;
+    color: #ffffff;
+    
+}
+#orderList td {
+    border-bottom: 3px solid #cccccc;
+    text-align: center;
+    height: 50px;
+    color: #ffffff;
+
+}
+#orderList td > input[type='button'] {
+    background-color: #526fb0;
+    border: 3px solid #526fb0;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+#orderList td > input[type='button']:hover {
+    background-color: #374b75;
+    border: 3px solid #374b75;
+}
+#orderList td > input[name="amount"] {
+    border: none;
+    /* background-color: #303038; */
+}
+/* #orderList td > .plus {
+    background-color: #526fb0;
+    border: 3px solid #526fb0;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+#orderList td > .plus:hover {
+    background-color: #374b75;
+    border: 3px solid #374b75;
+} */
+/* 계산서 */
+#count {
+    margin: 77px auto 0;
+    width: 600px;
+    background-color: #303038;
+}
+#count td {
+    border-bottom: 3px solid #cccccc;
+    color: #ffffff;
+    padding: 20px 30px 20px 0;
+    text-align: center;
+}
+#count .important {
+    font-size: larger;
+}
+/* main-right */
+#sectionRight{
+    width: 800px;
+    height: 1000px;
+}
+/* 메뉴 카테고리 테이블 */
+#menu {
+    width: 650px;
+    margin: 20px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px solid #526fb0;
+    table-layout: fixed;
+}
+#menu tr {
+    height: 50px;
+}
+#menu td {
+    text-align: center;
+    border: 1px solid #526fb0;
+    background-color: #303038;
+}
+#menu td:hover {
+    background-color: #526fb0;
+}
+#menu td>a {
+    color: #ffffff;
+}
+.btn_left {
+    background-color: #526fb0;
+    border: 3px solid #526fb0;
+    border-radius: 50%;
+    overflow: hidden;
+    border-spacing: 0;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+.btn_right {
+    background-color: #526fb0;
+    border: 3px solid #526fb0;
+    border-radius: 50%;
+    overflow: hidden;
+    border-spacing: 0;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+.btn_left:hover {
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+    color: #526fb0;
+}
+.btn_right:hover {
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+    color: #526fb0;
+}
+/* 메뉴별 테이블 */
+
+/* Coffee */
+#coffee_menu {
+    width: 700px;
+    margin: 35px auto;
+}
+#coffee_menu td {
+    width: 25%;
+    background-color: #303038;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    transition: 0.5s;
+}
+#coffee_menu td:hover {
+    background-color: #526fb0;
+}
+#coffee_menu td > a {
+    color: #ffffff;
+    font-size: 12px;
+	display:block;
+}
+img {
+    width: 120px;
+    height: 120px;
+}
+
+/* Tea */
+#tea_menu {
+    width: 700px;
+    margin: 35px auto;
+}
+#tea_menu td {
+    width: 25%;
+    background-color: #303038;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    transition: 0.5s;
+    
+}
+#tea_menu td:hover {
+    background-color: #526fb0;
+    
+}
+#tea_menu td > a {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* Drink */
+#drink_menu {
+    width: 700px;
+    margin: 35px auto;
+}
+#drink_menu td {
+    width: 25%;
+    background-color: #303038;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    transition: 0.5s;
+    
+}
+#drink_menu td:hover {
+    background-color: #526fb0;
+}
+#drink_menu td > a {
+    color: #ffffff;
+    font-size: 12px;
+}
+/* Cake */
+#cake_menu {
+    width: 700px;
+    margin: 35px auto;
+}
+#cake_menu td {
+    width: 25%;
+    background-color: #303038;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    transition: 0.5s;
+    
+}
+#cake_menu td:hover {
+    background-color: #526fb0;
+}
+#cake_menu td > a {
+    color: #ffffff;
+    font-size: 12px;
+}
+/* Meal */
+#meal_menu {
+    width: 700px;
+    margin: 35px auto;
+}
+#meal_menu td {
+    width: 25%;
+    background-color: #303038;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    transition: 0.5s;
+
+}
+#meal_menu td:hover {
+    background-color: #526fb0;
+}
+#meal_menu td > a {
+    color: #ffffff;
+    font-size: 12px;
+}
+/* Bread */
+#bread_menu {
+    width: 700px;
+    margin: 35px auto;
+}
+#bread_menu td {
+    width: 25%;
+    background-color: #303038;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    transition: 0.5s;
+    
+}
+#bread_menu td:hover {
+    background-color: #526fb0;
+}
+#bread_menu td > a {
+    color: #ffffff;
+    font-size: 12px;
+}
+/* MD */
+#md_menu {
+    width: 700px;
+    margin: 35px auto;
+}
+#md_menu td {
+    width: 25%;
+    background-color: #303038;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    transition: 0.5s;
+    
+}
+#md_menu td:hover {
+    background-color: #526fb0;
+}
+#md_menu td > a {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* footer - ownerSet */
+input[type='submit'] {
+    font-family: 'OTWelcomeBA', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#ownerSet {
+    width: 100%;
+    /* overflow: hidden; */
+}
+#ownerSet li {
+    list-style: none;
+}
+#ownerSet li > form {
+    text-align: center;
+    background-color: #303038;width: 24.85%;
+    float: left;
+    border-right: 2.3px solid #cccccc;
+}
+#ownerSet li > form > input {
+    height: 100px;
+    line-height: 100px;
+    border: 0px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #303038;
+}
+#ownerSet li > form:hover {
+    background-color: #526fb0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#ownerSet li > form > input:hover {
+    background-color: #526fb0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* 디지털 시계 */
+p {
+    text-align: center; font-size: 15px; color: #ffffff;
+}
