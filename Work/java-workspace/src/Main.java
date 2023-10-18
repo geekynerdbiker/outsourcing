@@ -200,7 +200,7 @@ class Rect extends Shape {
     // 메소드 오버라이딩, Object 클래스의 public String toString()을 오버라이딩
     @Override
     public String toString() {
-        return "Rectangle (" + p1.x + "," + p1.y + ") (" + p2.x + "," + p2.y + ")";//화면에 사각형의 좌표 값을 출력, 예) "Rectangle (10,15) (20,30)"
+        return ("Rectangle " + p1 + " " + p2);//화면에 사각형의 좌표 값을 출력, 예) "Rectangle (10,15) (20,30)"
     }
 
     public void move(int width, int height) {
@@ -235,7 +235,7 @@ class Circle extends Shape {
     // 메소드 오버라이딩, Object 클래스의 public String toString()을 오버라이딩
     @Override
     public String toString() {
-        return "Circle " + radius + " (" + center.x + "," + center.y + ")";//화면에 반지름과 중심 좌표 값을 출력, 예) "Circle 5 (20,30)"
+        return ("Circle " + radius + " " + center);//화면에 반지름과 중심 좌표 값을 출력, 예) "Circle 5 (20,30)"
     }
 
     public void move(int width, int height) {

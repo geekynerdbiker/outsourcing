@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/property_information.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/1_00000000_홍길동.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/2_00000000_홍길동.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/3_00000000_홍길동.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/prob_2_3_00000000_홍길동.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/prob_3_4_00000000_홍길동.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/prob_3_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
