@@ -5,6 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-workspace/assignment3_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Coder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/DoublyLinkedList$Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/DoublyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/GraphicEditor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/GraphicEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$Common.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_ENC_DEC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_SEED_INFO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_SEED_KEY.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/MAIN_MENU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Rect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/SHAPE_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/ShapeList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Coder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoublyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KISA_SEED_CBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../python-workspace/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python-workspace/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -58,6 +90,11 @@
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/transactionmanager" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Coder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Coder" />
@@ -110,39 +147,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>321</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>309</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>320</line>
-          <properties class="ShapeList" method="add_rear">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>308</line>
-          <properties class="ShapeList" method="add_front">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
