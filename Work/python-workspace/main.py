@@ -1,65 +1,121 @@
-import pandas as pd
+from Investor import Investor
+from DataVisualiser import DataVisualiser
+from SimpleDataAnalyser import SimpleDataAnalyser
+
+investor = Investor()
+# investor.run()
 
 
-class SimpleDataAnalyser:  # to deal with the loading of data as well as the simple analyses
-    def __init__(self):
-        super()
+# 3.2
+'''
+sda = SimpleDataAnalyser()
+sda.extract_property_info('property_information.csv')
+print(len(df))
+>> 118771
 
-    def extract_property_info(self, file_path):
-        return pd.read_csv(file_path)
+sda.extract_property_info('s')
 
-    def currency_exchange(self, dataframe, exchange_rate):
-        dataframe['price'] = dataframe['price'].mul(exchange_rate)
-        return dataframe
-
-    def suburb_summary(self, dataframe, suburb='all'):
-        # bedrooms_mean
-        # bedrooms_std
-        # bedrooms_median
-        # bedrooms_min
-        # bedrooms_max
-        #
-        # bathrooms_mean
-        # bathrooms_std
-        # bathrooms_median
-        # bathrooms_min
-        # bathrooms_max
-        #
-        # parking_spaces_mean
-        # parking_spaces_std
-        # parking_spaces_median
-        # parking_spaces_min
-        # parking_spaces_max
-
-        if suburb == 'all':
-            for sub in dataframe['suburb'].unique():
-                print(sub + " Mean", df.loc[dataframe['suburb'] == sub]['bedrooms'].mean())
-                print(sub + " Standard Deviation", df.loc[dataframe['suburb'] == sub]['bedrooms'].std())
-                print(sub + " Median", df.loc[dataframe['suburb'] == sub]['bedrooms'].median())
-                print(sub + " Minimum", df.loc[dataframe['suburb'] == sub]['bedrooms'].min())
-                print(sub + " Maximum", df.loc[dataframe['suburb'] == sub]['bedrooms'].max())
-                print()
-        else:
-            if suburb not in dataframe['suburb'].unique():
-                print("No suburb named", suburb)
-            else:
-                print(suburb + " Mean", df.loc[dataframe['suburb'] == suburb]['bedrooms'].mean())
-                print(suburb + " Standard Deviation", df.loc[dataframe['suburb'] == suburb]['bedrooms'].std())
-                print(suburb + " Median", df.loc[dataframe['suburb'] == suburb]['bedrooms'].median())
-                print(suburb + " Minimum", df.loc[dataframe['suburb'] == suburb]['bedrooms'].min())
-                print(suburb + " Maximum", df.loc[dataframe['suburb'] == suburb]['bedrooms'].max())
-                print()
+>> No such file.
+'''
 
 
-class DataVisualiser:  # to deal with the visualisations
-    pass
-
-
-class Investor:  # to display a menu, ask for and process user inputs, etc.
-    pass
-
-
+# 3.3
+'''
 sda = SimpleDataAnalyser()
 df = sda.extract_property_info('property_information.csv')
+print(df['price'][:5])
 
-sda.suburb_summary(df, 'Clayton')
+>> 0     965000.0
+>> 1     405000.0
+>> 2     881000.0
+>> 3    1070000.0
+>> 4     500000.0
+>> Name: price, dtype: float64
+
+df = sda.currency_exchange(df, 0.5)
+print(df['price'][:5])
+
+>> 0    482500.0
+>> 1    202500.0
+>> 2    440500.0
+>> 3    535000.0
+>> 4    250000.0
+>> Name: price, dtype: float64
+'''
+
+# 3.4
+'''
+sda = SimpleDataAnalyser()
+df = sda.extract_property_info('property_information.csv')
+sda.suburb_summary(df, 'Box Hill')
+
+>> Box Hill Mean 2.4675324675324677
+>> Box Hill Standard Deviation 1.2300724425499947
+>> Box Hill Median 2.0
+>> Box Hill Minimum 0.0
+>> Box Hill Maximum 12.0
+
+sda.suburb_summary(df, 'asd')
+
+>> No such suburb found.
+'''
+
+# 3.5
+'''
+sda = SimpleDataAnalyser()
+df = sda.extract_property_info('property_information.csv')
+sda.avg_land_size(df, 'Box Hill')
+
+>> Box Hill Land Size 600.8221088435374
+
+sda.avg_land_size(df, 'asd')
+
+>> No such suburb found.
+'''
+
+# 3.6
+'''
+sda = SimpleDataAnalyser()
+dv = DataVisualiser()
+df = sda.extract_property_info('property_information.csv')
+dv.prop_val_distribution(df)
+-> Create all_pvd.png with AUD
+
+dv.prop_val_distribution(df, 'Clayton')
+-> Create Clayton_pvd.png with AUD
+
+dv.prop_val_distribution(df, 'asd')
+>> No such suburb found, use 'all' as default.
+-> Create all_pvd.png with AUD
+
+dv.prop_val_distribution(df, 'Box Hill', 'usd')
+-> Create Box hill_pvd.png with USD
+
+dv.prop_val_distribution(df, 'Box Hill', 'usb')
+>> No such currency found, use 'AUD' as default.
+-> Create all_pvd.png with AUD
+'''
+
+# 3.7
+'''
+sda = SimpleDataAnalyser()
+dv = DataVisualiser()
+df = sda.extract_property_info('property_information.csv')
+dv.sales_trend(df)
+-> Create sold.png
+'''
+
+# 3.8
+'''
+sda = SimpleDataAnalyser()
+df = sda.extract_property_info('property_information.csv')
+print(sda.locate_price(133000, df, 'Clayton'))
+>> True
+
+print(sda.locate_price(133000, df, 'asd'))
+>> No such suburb found.
+>> None
+
+print(sda.locate_price(845000, df, 'Clayton'))
+>> False
+'''
