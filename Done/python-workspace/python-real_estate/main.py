@@ -3,7 +3,7 @@ from DataVisualiser import DataVisualiser
 from SimpleDataAnalyser import SimpleDataAnalyser
 
 investor = Investor()
-# investor.run()
+investor.run()
 
 
 # 3.2

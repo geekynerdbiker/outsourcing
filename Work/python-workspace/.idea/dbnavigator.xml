@@ -95,7 +95,7 @@
           <database value="mydbase" />
           <type value="USER_PASSWORD" />
           <user value="myadmin" />
-          <deprecated-pwd value="cXdlcjEyMzQ=" />
+          <deprecated-pwd value="" />
         </database>
         <properties>
           <auto-commit value="false" />

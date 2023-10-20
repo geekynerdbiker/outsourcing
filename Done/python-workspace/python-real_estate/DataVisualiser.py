@@ -53,6 +53,7 @@ class DataVisualiser:  # to deal with the visualisations
 
     def sales_trend(self, dataframe):
         df = dataframe.dropna(subset=['sold_date'])
+        df = df.copy()
         df['sold_date'] = pd.to_datetime(df['sold_date'], format="%d/%m/%Y")
         df['sold_year'] = df['sold_date'].dt.year
 

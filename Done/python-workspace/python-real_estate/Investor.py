@@ -28,9 +28,9 @@ class Investor:  # to display a menu, ask for and process user inputs, etc.
             if option == '1':
                 print(self.suburb_list)
                 while True:
-                    suburb = input("\nEnter suburb name (a for 'all'): ")
+                    suburb = input("\nEnter suburb name (all for 'all'): ")
 
-                    if suburb not in self.suburb_list and suburb != 'a':
+                    if suburb not in self.suburb_list and suburb != 'all':
                         print('No such suburb found.')
                     else:
                         break
@@ -63,9 +63,11 @@ class Investor:  # to display a menu, ask for and process user inputs, etc.
                         break
 
                 if self.sda.locate_price(price, self.df, suburb):
-                    print('Found price with', price, 'in', suburb + '.')
+                    print('\nFound price with', price, 'in', suburb + '.')
+                    print()
                 else:
                     print('Cannot find price with', price, 'in', suburb + '.')
+                    print()
 
             elif option == '4':
                 break
