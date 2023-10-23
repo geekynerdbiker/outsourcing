@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5540AF002AD91A250077062F /* KISA_SEED_CBC.c in Sources */ = {isa = PBXBuildFile; fileRef = 5540AEFF2AD91A250077062F /* KISA_SEED_CBC.c */; };
-		5540AF032AD91AD30077062F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5540AF022AD91AD30077062F /* Makefile */; };
-		55CAC4412A4863E100CAE57B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 55CAC4402A4863E100CAE57B /* main.c */; };
+		558F8FC42AE6D2F8008CADBE /* sample.c in Sources */ = {isa = PBXBuildFile; fileRef = 558F8FBE2AE6D2F6008CADBE /* sample.c */; };
+		558F8FC52AE6D2F8008CADBE /* keyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 558F8FBF2AE6D2F7008CADBE /* keyin.c */; };
+		558F8FC62AE6D2F8008CADBE /* jjuggumi.c in Sources */ = {isa = PBXBuildFile; fileRef = 558F8FC02AE6D2F7008CADBE /* jjuggumi.c */; };
+		558F8FC72AE6D2F8008CADBE /* canvas.c in Sources */ = {isa = PBXBuildFile; fileRef = 558F8FC22AE6D2F8008CADBE /* canvas.c */; };
+		558F8FC92AE6D323008CADBE /* mugunghwa.c in Sources */ = {isa = PBXBuildFile; fileRef = 558F8FC82AE6D323008CADBE /* mugunghwa.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,11 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5540AEFE2AD91A250077062F /* KISA_SEED_CBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KISA_SEED_CBC.h; sourceTree = "<group>"; };
-		5540AEFF2AD91A250077062F /* KISA_SEED_CBC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KISA_SEED_CBC.c; sourceTree = "<group>"; };
-		5540AF022AD91AD30077062F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		5540AF0B2AD9A6AF0077062F /* SCSM25_FONS4MVN_ID0001_T20200801000000.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = SCSM25_FONS4MVN_ID0001_T20200801000000.zip; sourceTree = "<group>"; };
-		55CAC4402A4863E100CAE57B /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		558F8FBA2AE6D2F5008CADBE /* canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = canvas.h; sourceTree = "<group>"; };
+		558F8FBB2AE6D2F5008CADBE /* jjuggumi.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jjuggumi.dat; sourceTree = "<group>"; };
+		558F8FBC2AE6D2F5008CADBE /* keyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyin.h; sourceTree = "<group>"; };
+		558F8FBE2AE6D2F6008CADBE /* sample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sample.c; sourceTree = "<group>"; };
+		558F8FBF2AE6D2F7008CADBE /* keyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keyin.c; sourceTree = "<group>"; };
+		558F8FC02AE6D2F7008CADBE /* jjuggumi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jjuggumi.c; sourceTree = "<group>"; };
+		558F8FC12AE6D2F8008CADBE /* jjuggumi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jjuggumi.h; sourceTree = "<group>"; };
+		558F8FC22AE6D2F8008CADBE /* canvas.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = canvas.c; sourceTree = "<group>"; };
+		558F8FC82AE6D323008CADBE /* mugunghwa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mugunghwa.c; sourceTree = "<group>"; };
 		55E829F829BB59B600B00D9B /* c-workspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-workspace"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,11 +69,15 @@
 		55E829FA29BB59B600B00D9B /* c-workspace */ = {
 			isa = PBXGroup;
 			children = (
-				55CAC4402A4863E100CAE57B /* main.c */,
-				5540AEFF2AD91A250077062F /* KISA_SEED_CBC.c */,
-				5540AEFE2AD91A250077062F /* KISA_SEED_CBC.h */,
-				5540AF022AD91AD30077062F /* Makefile */,
-				5540AF0B2AD9A6AF0077062F /* SCSM25_FONS4MVN_ID0001_T20200801000000.zip */,
+				558F8FC22AE6D2F8008CADBE /* canvas.c */,
+				558F8FBA2AE6D2F5008CADBE /* canvas.h */,
+				558F8FC02AE6D2F7008CADBE /* jjuggumi.c */,
+				558F8FBB2AE6D2F5008CADBE /* jjuggumi.dat */,
+				558F8FC12AE6D2F8008CADBE /* jjuggumi.h */,
+				558F8FBF2AE6D2F7008CADBE /* keyin.c */,
+				558F8FBC2AE6D2F5008CADBE /* keyin.h */,
+				558F8FBE2AE6D2F6008CADBE /* sample.c */,
+				558F8FC82AE6D323008CADBE /* mugunghwa.c */,
 			);
 			path = "c-workspace";
 			sourceTree = "<group>";
@@ -129,9 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540AF032AD91AD30077062F /* Makefile in Sources */,
-				55CAC4412A4863E100CAE57B /* main.c in Sources */,
-				5540AF002AD91A250077062F /* KISA_SEED_CBC.c in Sources */,
+				558F8FC52AE6D2F8008CADBE /* keyin.c in Sources */,
+				558F8FC92AE6D323008CADBE /* mugunghwa.c in Sources */,
+				558F8FC42AE6D2F8008CADBE /* sample.c in Sources */,
+				558F8FC62AE6D2F8008CADBE /* jjuggumi.c in Sources */,
+				558F8FC72AE6D2F8008CADBE /* canvas.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
