@@ -18,8 +18,8 @@ public class Worldcub {
     static JButton buttonLeft;
     static JButton buttonRight;
     static String[] images = {
-            "sc1.png", "sc2.png", "sc3.png", "sc4.png", "sc5.png", "sc6.png", "sc7.png", "sc8.png", "sc9.png"
-            , "sc10.png", "sc11.png", "sc12.png", "sc13.png", "sc14.png", "sc15.png", "sc16.png",
+            "sc/sc1.png", "sc/sc2.png", "sc/sc3.png", "sc/sc4.png", "sc/sc5.png", "sc/sc6.png", "sc/sc7.png", "sc/sc8.png", "sc/sc9.png"
+            , "sc/sc10.png", "sc/sc11.png", "sc/sc12.png", "sc/sc13.png", "sc/sc14.png", "sc/sc15.png", "sc/sc16.png",
     };
     static int imageIndex = 2; //th image index initialized
 
@@ -34,7 +34,6 @@ public class Worldcub {
 
 
     static class MyFrame extends JFrame implements ActionListener {
-
         public MyFrame(String title) {
             super(title);
             //ui 초기화
@@ -52,10 +51,10 @@ public class Worldcub {
             labelVs = new JLabel("VS");
             labelVs .setFont(new Font("Arial", Font.BOLD, 20));
             buttonLeft = new JButton("LeftButton");
-            buttonLeft.setIcon(changeImage("sc1.png"));
+            buttonLeft.setIcon(changeImage("sc/sc1.png"));
             buttonLeft.setPreferredSize(new Dimension(200,200));
             buttonRight = new JButton("RightButton");
-            buttonRight.setIcon(changeImage("sc2.png"));
+            buttonRight.setIcon(changeImage("sc/sc2.png"));
             buttonRight.setPreferredSize(new Dimension(200,200));
             //클릭 이벤트
             buttonLeft.addActionListener(this);

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Persons>
+<Person>
+  <Name>
+  	<First>Steve</First>
+  	<Last>O'reilly</Last>
+  </Name>
+  <Credential>
+  	<Id>Captian</Id>
+  	<Password Encryption="yes">secretPassword</Password>
+  </Credential>
+  <Phone>
+  	<Work>3609545197</Work>
+  	<Cell>2539875423</Cell>
+  </Phone>
+  <Category>Family</Category>
+</Person>
+<Person>
+  <Name>
+  	<First>Jason</First>
+  	<Last>Cohen</Last>
+  </Name>
+  <Credential>
+  	<Id>JCohen</Id>
+  	<Password Encryption="no">publicPass</Password>
+  </Credential>
+  <Phone>
+  	<Work>4259186134</Work>
+  	<Cell Provider="Verizon">5032967856</Cell>
+  </Phone>
+  <Category>Friend</Category>
+</Person>
+<Person>
+  <Name>
+  	<First>Richard</First>
+  	<Last>Johnson</Last>
+  </Name>
+  <Credential>
+  	<Id>Rich</Id>
+  	<Password Encryption="yes">Dev9696</Password>
+  </Credential>
+  <Phone>
+  	<Work>3604569785</Work>
+  	<Cell Provider="Att">360901233A</Cell>
+  </Phone>
+  <Category>Friend</Category>
+</Person>
+<Person>
+  <Name>
+  	<First>John</First>
+  	<Last>Johnson</Last>
+  </Name>
+  <Credential>
+  	<Id>keyboardGuru</Id>
+  	<Password Encryption="yes">routerTable</Password>
+  </Credential>
+  <Phone>
+  	<Work>2533609184</Work>
+  	<Cell Provider="T-Mobile">2534389153</Cell>
+  </Phone>
+  <Category>Family</Category>
+</Person>
+<Person>
+  <Name>
+  	<First>Jaime</First>
+  	<Last>Pruitt</Last>
+  </Name>
+  <Credential>
+  	<Id>Pdog</Id>
+  	<Password Encryption="no">JamJam</Password>
+  </Credential>
+  <Phone>
+  	<Work>3602317635</Work>
+  	<Cell>5096354298</Cell>
+  </Phone>
+  <Category>Work</Category>
+</Person>
+</Persons>

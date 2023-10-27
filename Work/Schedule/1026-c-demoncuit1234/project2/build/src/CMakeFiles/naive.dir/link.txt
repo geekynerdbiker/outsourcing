@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-7/root/usr/bin/c++     CMakeFiles/naive.dir/naive.cpp.o CMakeFiles/naive.dir/matrix.cpp.o  -o naive 

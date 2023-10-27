@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nfsmnt/117010435/CSC4005-2023Fall/project2/src/matrix.cpp
+iostream
+-
+fstream
+-
+vector
+-
+stdexcept
+-
+random
+-
+memory.h
+-
+matrix.hpp
+/nfsmnt/117010435/CSC4005-2023Fall/project2/src/matrix.hpp
+
+/nfsmnt/117010435/CSC4005-2023Fall/project2/src/matrix.hpp
+iostream
+-
+vector
+-
+
+/nfsmnt/117010435/CSC4005-2023Fall/project2/src/naive.cpp
+stdexcept
+-
+chrono
+-
+matrix.hpp
+/nfsmnt/117010435/CSC4005-2023Fall/project2/src/matrix.hpp
+

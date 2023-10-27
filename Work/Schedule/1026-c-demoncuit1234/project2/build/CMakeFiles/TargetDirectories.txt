@@ -1,0 +1,9 @@
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/CMakeFiles/rebuild_cache.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/CMakeFiles/edit_cache.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/src/CMakeFiles/rebuild_cache.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/src/CMakeFiles/mpi.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/src/CMakeFiles/edit_cache.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/src/CMakeFiles/openmp.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/src/CMakeFiles/simd.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/src/CMakeFiles/locality.dir
+/nfsmnt/117010435/CSC4005-2023Fall/project2/build/src/CMakeFiles/naive.dir

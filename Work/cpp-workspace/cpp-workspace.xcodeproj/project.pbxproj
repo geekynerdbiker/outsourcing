@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55E75B012AE714F700F11E40 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55E75AF82AE714F600F11E40 /* Time.cpp */; };
 		55E75B022AE714F700F11E40 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55E75AFC2AE714F700F11E40 /* main.cpp */; };
-		55E75B032AE714F700F11E40 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55E75AFD2AE714F700F11E40 /* Person.cpp */; };
-		55E75B042AE714F700F11E40 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55E75AFE2AE714F700F11E40 /* Date.cpp */; };
-		55E75B052AE714F700F11E40 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55E75AFF2AE714F700F11E40 /* Student.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,17 +24,7 @@
 
 /* Begin PBXFileReference section */
 		551198CF29C0AEEB001C4AFF /* cpp-workspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cpp-workspace"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55E75AF62AE714F600F11E40 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		55E75AF72AE714F600F11E40 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
-		55E75AF82AE714F600F11E40 /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
-		55E75AF92AE714F700F11E40 /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
-		55E75AFA2AE714F700F11E40 /* T_Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Array.h; sourceTree = "<group>"; };
-		55E75AFB2AE714F700F11E40 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
 		55E75AFC2AE714F700F11E40 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		55E75AFD2AE714F700F11E40 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
-		55E75AFE2AE714F700F11E40 /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
-		55E75AFF2AE714F700F11E40 /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
-		55E75B002AE714F700F11E40 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,17 +57,7 @@
 		551198D129C0AEEB001C4AFF /* cpp-workspace */ = {
 			isa = PBXGroup;
 			children = (
-				55E75AFE2AE714F700F11E40 /* Date.cpp */,
-				55E75AF72AE714F600F11E40 /* Date.h */,
 				55E75AFC2AE714F700F11E40 /* main.cpp */,
-				55E75AF92AE714F700F11E40 /* output.txt */,
-				55E75AFD2AE714F700F11E40 /* Person.cpp */,
-				55E75AF62AE714F600F11E40 /* Person.h */,
-				55E75AFF2AE714F700F11E40 /* Student.cpp */,
-				55E75B002AE714F700F11E40 /* Student.h */,
-				55E75AFA2AE714F700F11E40 /* T_Array.h */,
-				55E75AF82AE714F600F11E40 /* Time.cpp */,
-				55E75AFB2AE714F700F11E40 /* Time.h */,
 			);
 			path = "cpp-workspace";
 			sourceTree = "<group>";
@@ -143,11 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E75B012AE714F700F11E40 /* Time.cpp in Sources */,
-				55E75B032AE714F700F11E40 /* Person.cpp in Sources */,
-				55E75B052AE714F700F11E40 /* Student.cpp in Sources */,
 				55E75B022AE714F700F11E40 /* main.cpp in Sources */,
-				55E75B042AE714F700F11E40 /* Date.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
