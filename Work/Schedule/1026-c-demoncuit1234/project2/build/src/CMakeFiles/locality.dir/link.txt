@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-7/root/usr/bin/c++     CMakeFiles/locality.dir/locality.cpp.o CMakeFiles/locality.dir/matrix.cpp.o  -o locality 

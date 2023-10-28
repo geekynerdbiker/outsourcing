@@ -1,22 +1,33 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-	<div class="jumbotron">
-        <h1>Web Application</h1>
-        
-    </div>
+        <div class="jumbotron">
+            <h1>Web Application</h1>
 
-    <div class="row">
-        <div class="col-md-4">
-            <a runat="server" href="~/Verification" style="color: #959393"><h2>Verification</h2></a>                    
         </div>
-        <div class="col-md-4">
-            <a runat="server" href="~/Search" style="color: #959393"><h2>Search</h2></a>  
-        </div>
-        <div class="col-md-4">
-            <a runat="server" href="~/About" style="color: #959393"><h2>About</h2></a>            
-        </div>
-    </div>
 
-</asp:Content>
+        <div class="row">
+            <div class="col-md-4">
+                <a runat="server" href="~/Verification" style="color: #959393">
+                    <h2>Verification</h2>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a runat="server" href="~/Search" style="color: #959393">
+                    <h2>Search</h2>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a runat="server" href="~/Search" style="color: #959393">
+                    <h2>XPathSearch</h2>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a runat="server" href="~/Add" style="color: #959393">
+                    <h2>AddPark</h2>
+                </a>
+            </div>
+        </div>
+
+    </asp:Content>

@@ -33,7 +33,7 @@ namespace XmlServices
 
                 if (validated)
                 {
-                    result = "Valid";
+                    result = "No Error";
                 }
                 else
                 {
@@ -54,16 +54,9 @@ namespace XmlServices
             List<string> list = new List<string>();
             StringBuilder builder = new StringBuilder();
 
-            foreach (var element in xmlDoc.Descendants("Person"))
+            foreach (var element in xmlDoc.Descendants("Park"))
             {
-                foreach(var child in element.Descendants("First"))
-                {
-                    if (child.Value.ToLower() == key.ToLower())
-                    {
-                        list.Add(element.ToString());
-                    }
-                }
-                foreach (var child in element.Descendants("Last"))
+                foreach (var child in element.Descendants("Name"))
                 {
                     if (child.Value.ToLower() == key.ToLower())
                     {
@@ -76,38 +69,36 @@ namespace XmlServices
             {               
                 XDocument xml = XDocument.Parse(result);
                 int count = xml.Elements().Count();
-                foreach (XElement element in xml.Descendants("Person"))
+                foreach (XElement element in xml.Descendants("Park"))
                 {
                     foreach (XElement children in element.Descendants())
                     {
                         string select = children.Name.ToString();
                         switch (select)
                         {
-                            case "First":
-                                builder.Append("First Name: " + children.Value + "\n");
+                            case "Name":
+                                builder.Append("Name: " + children.Value + "\n");
                                 break;
-                            case "Last":
-                                builder.Append("Last Name: " + children.Value + "\n");
+                            case "Type":
+                                builder.Append("Type: " + children.Value + "\n");
                                 break;
-                            case "Id":
-                                builder.Append("User ID: " + children.Value + "\n");
+                            case "Owner":
+                                builder.Append("Owner: " + children.Value + "\n");
                                 break;
-                            case "Password":
-                                builder.Append("Password: " + children.Value + "\nEncrypted: " +
-                                    children.FirstAttribute.Value.ToUpper() + "\n");
+                            case "Address":
+                                builder.Append("Address: " + children.Value + "\n");
                                 break;
-                            case "Work":
-                                builder.Append("Work Phone: " + formatPhone(children.Value) + "\n");
+                            case "URL":
+                                builder.Append("URL: " + children.Value + "\n");
                                 break;
-                            case "Cell":
-                                builder.Append("Cell Phone: " + formatPhone(children.Value) + "\n");
-                                if (children.FirstAttribute != null)
-                                {
-                                    builder.Append("Provider: " + children.FirstAttribute.Value + "\n");
-                                }
+                            case "NeighboringStates":
+                                builder.Append("NeighboringStates: " + children.Value + "\n");
                                 break;
-                            case "Category":
-                                builder.Append("Category: " + children.Value);
+                            case "Establishedn":
+                                builder.Append("Establishedn: " + children.Value + "\n");
+                                break;
+                            case "Founder":
+                                builder.Append("Founder: " + children.Value + "\n");
                                 break;
                             default:
                                 continue;
@@ -124,22 +115,95 @@ namespace XmlServices
             return results;
         }
 
-        private string formatPhone(string phoneNumber)
+        public string XPathSearch(string xmlUrl, string key)
         {
+            XDocument xmlDoc = XDocument.Load(xmlUrl);
+            List<string> list = new List<string>();
             StringBuilder builder = new StringBuilder();
-            char[] numbers = phoneNumber.ToCharArray();
-            for (int i = 0; i < numbers.Length; i++)
+
+            foreach (var element in xmlDoc.Descendants("Park"))
             {
-                if (i == 3 || i == 6)
+                foreach (var child in element.Descendants("Name"))
                 {
-                    builder.Append("-" + numbers[i]);
+                    if (child.Value.ToLower() == key.ToLower())
+                    {
+                        list.Add(element.ToString());
+                    }
                 }
-                else
+            }                       
+            
+            foreach (string result in list.ToArray())
+            {               
+                XDocument xml = XDocument.Parse(result);
+                int count = xml.Elements().Count();
+                foreach (XElement element in xml.Descendants("Park"))
                 {
-                    builder.Append(numbers[i]);
+                    foreach (XElement children in element.Descendants())
+                    {
+                        string select = children.Name.ToString();
+                        switch (select)
+                        {
+                            case "Name":
+                                builder.Append("Name: " + children.Value + "\n");
+                                break;
+                            case "Type":
+                                builder.Append("Type: " + children.Value + "\n");
+                                break;
+                            case "Owner":
+                                builder.Append("Owner: " + children.Value + "\n");
+                                break;
+                            case "Address":
+                                builder.Append("Address: " + children.Value + "\n");
+                                break;
+                            case "URL":
+                                builder.Append("URL: " + children.Value + "\n");
+                                break;
+                            case "NeighboringStates":
+                                builder.Append("NeighboringStates: " + children.Value + "\n");
+                                break;
+                            case "Establishedn":
+                                builder.Append("Establishedn: " + children.Value + "\n");
+                                break;
+                            case "Founder":
+                                builder.Append("Founder: " + children.Value + "\n");
+                                break;
+                            default:
+                                continue;
+                        }
+                    }
                 }
+                builder.Append("\n\n");
             }
-            return builder.ToString();
+            string results = builder.ToString();
+            if (String.IsNullOrEmpty(results))
+            {
+                results = "No Results...";
+            }
+            return results;
+        }
+
+        public void addPark(string xmlUrl, string childName, string attName, string attValue)
+        {
+            XmlDocument xmlDoc;
+            XmlElement childElement;
+            XmlAttribute xmlAtb;
+            XmlNode parentNode;
+        
+            xmlDoc = new XmlDocument();
+            xmlDoc.Load(Server.MapPath(xmlUrl));
+        
+            parentNode = xmlDoc.SelectSingleNode("Parks");
+            childElement = xmlDoc.CreateElement(childName);
+        
+            xmlAtb = xmlDoc.CreateAttribute(attName);
+            xmlAtb.Value = attValue;
+        
+            childElement.SetAttributeNode(xmlAtb);
+        
+            parentNode.AppendChild(childElement);
+        
+            xmlDoc.Save(Server.MapPath(xmlUrl));
+            xmlDoc = null;
         }
     }
 }

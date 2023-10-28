@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-7/root/usr/bin/c++     CMakeFiles/openmp.dir/openmp.cpp.o CMakeFiles/openmp.dir/matrix.cpp.o  -o openmp -lgomp -lpthread 

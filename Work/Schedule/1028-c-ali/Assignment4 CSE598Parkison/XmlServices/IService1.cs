@@ -18,6 +18,12 @@ namespace XmlServices
         [OperationContract]
         string search(string xmlUrl, string key);
 
+        [OperationContract]
+        string XPathSearch(string xmlUrl, string key);
+
+        [OperationContract]
+        string addPark(string xmlUrl, string key);
+
     }
 
  
