@@ -4,7 +4,126 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="" />
+    <list default="true" id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Coder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$Common.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_ENC_DEC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_SEED_INFO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_SEED_KEY.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicBeat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Music.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Track.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/Kof Game Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/Kof Start Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/Star Game Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/Star Start Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/Wwe Game Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/Wwe Start Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/backButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/backButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/exitButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/exitButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/gameInfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/game_title.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/hardButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/hardButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/kof/kof9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/leftButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/leftButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/mainBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/menuBar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/normalButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/normalButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/quitButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/quitButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/rightButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/rightButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/sc9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/sc/src/Worldcub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/startButtonBasic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/startButtonEntered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/AcrosstheNation Selected.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/AcrosstheNation.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/Esaka Selected.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/Esaka.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/Terranteam Selected.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/Terranteam.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/buttonEnteredMusic.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/buttonPressedMusic.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/drumBig1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/drumBig2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/drumBig3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/drumSmall1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/drumSmall2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/drumSmall3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/flowerdance.mp3" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,22 +168,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/jacoban/Documents/GitHub/Crebugs/Work/java-workspace/src",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jacoban/Documents/GitHub/Crebugs/Work/java-workspace/src&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -73,7 +192,7 @@
       <recent name="$PROJECT_DIR$/src/transactionmanager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Coder">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Coder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Coder" />
       <module name="java-workspace" />
@@ -127,11 +246,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Coder" />
         <item itemvalue="Application.TestBst" />
         <item itemvalue="Application.MainBst" />
         <item itemvalue="Application.TransactionManager2" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -159,46 +278,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Coder.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Coder.java</url>
-          <line>150</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Coder.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Coder.java</url>
-          <line>191</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Coder.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Coder.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Coder.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
