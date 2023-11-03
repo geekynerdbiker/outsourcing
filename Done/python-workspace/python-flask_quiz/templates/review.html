@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('serve_css', filename='style.css') }}">
+</head>
+<body>
+<form method="POST" action="/submit">
+    <p class="header">Let's Review !</p>
+
+    {% for i in range(quizzes) %}
+    <div>
+        <p>{{ questions[i]["question"] }}</p>
+        {% for j in range(questions[i]["options"] | length) %}
+        {% if answers[i] == questions[i]["correct_option"] %}
+        {% if index[i] == j %}
+        <label class="correct"><input type="radio" checked onclick="return false"> {{ questions[i]["options"][j] }}</label><br>
+        {% else %}
+        <label><input type="radio" onclick="return false"> {{ questions[i]["options"][j] }}</label><br>
+        {% endif %}
+        {% else %}
+        {% if index[i] == j %}
+        <label class="wrong"><input type="radio" checked onclick="return false"> {{ questions[i]["options"][j] }}</label><br>
+        {% elif corrects[i] == j %}
+        <label class="correct"><input type="radio" checked onclick="return false"> {{ questions[i]["options"][j] }}</label><br>
+        {% else %}
+        <label><input type="radio" onclick="return false"> {{ questions[i]["options"][j] }}</label><br>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+    <br>
+    <button type="submit">Confirm</button>
+</form>
+</body>
+</html>
