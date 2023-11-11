@@ -5,20 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/socket/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python-workspace/socket/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/desktop.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python-workspace/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python-workspace/setting.ini" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/Direction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/Door.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/MapSite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/Maze.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/MazeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/Room.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/SimpleMazeGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/out/production/mazegame/Wall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/Door.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/MapSite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/Maze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/MazeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/SimpleMazeGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame/src/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/Direction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/Door.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/MapSite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/Maze.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/MazeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/MazeCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/MyMazeCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/Room.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/RoomWithBomb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/SecretDoor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/out/production/mazegame/Wall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/Door.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/MapSite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/Maze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/MazeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/MazeCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/MyMazeCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/RoomWithBomb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/SecretDoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mazegame2/src/Wall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
