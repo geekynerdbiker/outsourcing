@@ -1,163 +1,54 @@
-import random
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv('lottery.csv')
 
-DEBUG = False
+df = df[df['win'] == 1]
+count = [0, 0, 0, 0, 0]
 
-probe_distance = 5
-rescued = 0
+count[0] += (len(df.loc[df['first'] <= 10]))
+count[1] += len(df.loc[(df['first'] > 10) & (df['first'] <= 20)])
+count[2] += len(df.loc[(df['first'] > 20) & (df['first'] <= 30)])
+count[3] += len(df.loc[(df['first'] > 30) & (df['first'] <= 40)])
+count[4] += len(df.loc[df['first'] > 40])
 
+count[0] += (len(df.loc[df['second'] <= 10]))
+count[1] += len(df.loc[(df['second'] > 10) & (df['second'] <= 20)])
+count[2] += len(df.loc[(df['second'] > 20) & (df['second'] <= 30)])
+count[3] += len(df.loc[(df['second'] > 30) & (df['second'] <= 40)])
+count[4] += len(df.loc[df['second'] > 40])
 
-class Ship:
-    def __init__(self):
-        self.speed = 0
-        self.position = 0
-        self.angle = random.randint(1, 360)
+count[0] += (len(df.loc[df['third'] <= 10]))
+count[1] += len(df.loc[(df['third'] > 10) & (df['third'] <= 20)])
+count[2] += len(df.loc[(df['third'] > 20) & (df['third'] <= 30)])
+count[3] += len(df.loc[(df['third'] > 30) & (df['third'] <= 40)])
+count[4] += len(df.loc[df['third'] > 40])
 
-    def move(self):
-        self.position -= self.speed
+count[0] += (len(df.loc[df['fourth'] <= 10]))
+count[1] += len(df.loc[(df['fourth'] > 10) & (df['fourth'] <= 20)])
+count[2] += len(df.loc[(df['fourth'] > 20) & (df['fourth'] <= 30)])
+count[3] += len(df.loc[(df['fourth'] > 30) & (df['fourth'] <= 40)])
+count[4] += len(df.loc[df['fourth'] > 40])
 
+count[0] += (len(df.loc[df['fifth'] <= 10]))
+count[1] += len(df.loc[(df['fifth'] > 10) & (df['fifth'] <= 20)])
+count[2] += len(df.loc[(df['fifth'] > 20) & (df['fifth'] <= 30)])
+count[3] += len(df.loc[(df['fifth'] > 30) & (df['fifth'] <= 40)])
+count[4] += len(df.loc[df['fifth'] > 40])
 
-class Crippled(Ship):
-    def __init__(self):
-        super().__init__()
-        self.position = 600
-        self.speed = 1
-        self.rescued = False
+count[0] += (len(df.loc[df['sixth'] <= 10]))
+count[1] += len(df.loc[(df['sixth'] > 10) & (df['sixth'] <= 20)])
+count[2] += len(df.loc[(df['sixth'] > 20) & (df['sixth'] <= 30)])
+count[3] += len(df.loc[(df['sixth'] > 30) & (df['sixth'] <= 40)])
+count[4] += len(df.loc[df['sixth'] > 40])
 
-    def isRescued(self):
-        return self.rescued
+count[0] += (len(df.loc[df['bonus'] <= 10]))
+count[1] += len(df.loc[(df['bonus'] > 10) & (df['bonus'] <= 20)])
+count[2] += len(df.loc[(df['bonus'] > 20) & (df['bonus'] <= 30)])
+count[3] += len(df.loc[(df['bonus'] > 30) & (df['bonus'] <= 40)])
+count[4] += len(df.loc[df['bonus'] > 40])
 
-    def rescue(self):
-        self.rescued = True
+print(count)
 
-    def move(self):
-        super().move()
-        if DEBUG:
-            print("[Crippled] Angle:", str(self.angle), "Pos:", str(self.position))
-
-
-class Probe(Ship):
-    def __init__(self):
-        super().__init__()
-        self.position = 0
-        self.speed = -20
-
-    def probe(self, target: Crippled):
-        if self.speed > 0 or target.isRescued():
-            return False
-        if self.angle == target.angle and self.position < target.position:
-            if target.position - self.position <= probe_distance:
-                return True
-        return False
-
-    def turnaround(self):
-        self.speed *= -1
-
-    def move(self):
-        super().move()
-        if DEBUG:
-            print("[Probe] Angle:", str(self.angle), "Pos:", str(self.position))
-
-
-class Rescue(Ship):
-    def __init__(self, angle):
-        super().__init__()
-        self.position = 0
-        self.speed = -5
-        self.angle = angle
-
-    def rescue(self, target: Crippled):
-        if self.angle == target.angle and self.position < target.position:
-            if target.position - self.position <= 5:
-                return True
-        return False
-
-    def move(self):
-        super().move()
-        if DEBUG:
-            print("[Rescue] Angle:", str(self.angle), "Pos:", str(self.position))
-
-
-class HeadQuarter:
-    def __init__(self):
-        self.probes = []
-        self.rescues = []
-        self.crippled = []
-
-    def sendProbe(self):
-        self.probes.append(Probe())
-
-    def sendRescue(self, angle):
-        self.rescues.append(Rescue(angle))
-
-    def addCrippled(self, crippled):
-        self.crippled.append(crippled)
-
-    def search(self, probe):
-        for c in self.crippled:
-            if probe.probe(c):
-                probe.turnaround()
-                print("Find Crippled in Angle:", probe.angle)
-
-    def rescue(self, rescue):
-        for c in self.crippled:
-            if rescue.rescue(c):
-                c.rescue()
-                print("Rescued Crippled in Angle:", rescue.angle)
-
-    def moveProbes(self):
-        for i in range(len(self.probes)):
-            p = self.probes.pop(0)
-
-            if p.position >= 600:
-                continue
-            if p.speed > 0 and p.position == 0:
-                print("Send Rescue to Angle:", p.angle)
-                self.sendRescue(p.angle)
-                continue
-
-            self.search(p)
-            p.move()
-            self.probes.append(p)
-
-    def moveRescues(self):
-        for i in range(len(self.rescues)):
-            r = self.rescues.pop(0)
-
-            if r.position >= 600:
-                continue
-
-            self.rescue(r)
-            r.move()
-            self.rescues.append(r)
-
-    def moveCrippled(self):
-        global rescued
-        for i in range(len(self.crippled)):
-            c = self.crippled.pop(0)
-
-            if c.position <= 0:
-                continue
-            if c.isRescued():
-                rescued += 1
-                print('Rescued:', rescued)
-                continue
-
-            c.move()
-            self.crippled.append(c)
-
-    def move(self):
-        self.moveCrippled()
-        self.moveProbes()
-        self.moveRescues()
-
-
-hq = HeadQuarter()
-
-tick = 0
-while (True):
-    print("Iteration:", tick)
-    if random.randint(1, 10) <= 1:
-        hq.addCrippled(Crippled())
-    hq.sendProbe()
-    hq.move()
-    tick += 1
+label=['1-10','11-20','21-30','31-40','41-45']
+plt.barh(label, count)
+plt.show()
