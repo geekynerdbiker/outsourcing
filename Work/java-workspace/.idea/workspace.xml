@@ -5,124 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc87fa07-3ec8-4ae0-8cd7-4b75cef4aaf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-workspace/checker/hw1_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-workspace/socket/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-workspace/socket/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/Coder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$Common.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_ENC_DEC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_SEED_INFO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC$KISA_SEED_KEY.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/KISA_SEED_CBC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicBeat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Music.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Track.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/Kof Game Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/Kof Start Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/Star Game Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/Star Start Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/Wwe Game Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/Wwe Start Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/backButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/backButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/exitButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/exitButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/gameInfo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/game_title.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/hardButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/hardButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/kof/kof9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/leftButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/leftButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/mainBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/menuBar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/normalButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/normalButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/quitButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/quitButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/rightButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/rightButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/sc9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/sc/src/Worldcub.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/startButtonBasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/startButtonEntered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/wwe/wwe9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/AcrosstheNation Selected.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/AcrosstheNation.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/Esaka Selected.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/Esaka.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/Terranteam Selected.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/Terranteam.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/buttonEnteredMusic.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/buttonPressedMusic.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/drumBig1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/drumBig2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/drumBig3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/drumSmall1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/drumSmall2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/drumSmall3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/music/flowerdance.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-workspace.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-workspace/desktop.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python-workspace/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-workspace/setting.ini" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
