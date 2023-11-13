@@ -13,8 +13,15 @@ public class Main {
 
         Tree t = new Tree();
         while( (sLine = br.readLine()) != null ) {
-            String parent = String.valueOf(sLine.charAt(0));
-            String child = String.valueOf(sLine.charAt(2));
+            int index = 0;
+            for (int i = 0; i < sLine.length(); i++)
+                if (sLine.charAt(i) == ' ') {
+                    index = i;
+                    break;
+                }
+
+            String parent = sLine.substring(0, index);
+            String child = sLine.substring(index+1);
             t.addNode(parent, child);
         }
         ArrayQueue result = t.levelOrder();

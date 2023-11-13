@@ -18,8 +18,13 @@ public class Tree {
             root.addChild(new Node(child));
             size++;
         } else {
-            if (findNode(root, child) != null)
+            if (findNode(root, parent) == null) {
                 isValid = false;
+                return;
+            } if (findNode(root, child) != null) {
+                isValid = false;
+                return;
+            }
             Node src = findNode(root, parent);
             src.addChild(new Node(child));
             size++;
