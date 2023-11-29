@@ -1,0 +1,10 @@
+digraph MyGraph {
+    // Define nodes
+    A
+    B
+    C
+    // Define edges
+    A -> B
+    B -> C
+    C -> A
+}
