@@ -20,6 +20,7 @@ public abstract class Pizza {
     protected boolean extraCheese;
 
     public abstract double getPrice();
+    public abstract A
 
     public abstract void setSauce(Sauce sauce);
 
