@@ -42,6 +42,7 @@ settings = open('setting.ini', 'r')
 line = None
 
 links = ['' for i in range(10)]
+link_freqs = [_ for _ in range(10)]
 icons = ['' for i in range(15)]
 
 link_idx, icon_idx = 0, 0
@@ -49,8 +50,6 @@ lines = settings.readlines()
 for line in lines:
     line = line.strip()
     if len(line) == 0:
-        continue
-    if line[0] == '#':
         continue
     if link_idx < 10:
         line = line.split('=')
@@ -66,6 +65,7 @@ for line in lines:
 def link_url(url):
     print(url)
     wb.open_new(url)
+
 
 # top line
 button1 = Button(root, text="Main Link 1", overrelief="solid", command=lambda: link_url(links[0]), image=icons[0])
@@ -111,23 +111,19 @@ buttons.append(button16)
 
 # bottom line
 button21 = Button(root, text="Mouse", overrelief="solid", image=icons[10], command=open_mouse)
-button21.place(x=0, y=300, width=240, height=100)
+button21.place(x=0, y=300, width=300, height=100)
 buttons.append(button21)
 
 button22 = Button(root, text="Sound", overrelief="solid", image=icons[11], command=open_sound)
-button22.place(x=240, y=300, width=240, height=100)
+button22.place(x=240, y=300, width=300, height=100)
 buttons.append(button22)
 
 button23 = Button(root, text="Display", overrelief="solid", image=icons[12], command=open_display)
-button23.place(x=480, y=300, width=240, height=100)
+button23.place(x=480, y=300, width=300, height=100)
 buttons.append(button23)
 
 button24 = Button(root, text="Option 4", overrelief="solid", image=icons[13])
-button24.place(x=720, y=300, width=240, height=100)
+button24.place(x=720, y=300, width=300, height=100)
 buttons.append(button24)
-
-button25 = Button(root, text="Exit", overrelief="solid", image=icons[14], command=exit_program)
-button25.place(x=960, y=300, width=240, height=100)
-buttons.append(button25)
 
 root.mainloop()
