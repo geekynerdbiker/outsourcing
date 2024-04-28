@@ -1,9 +1,0 @@
-// task 3 Mandatory Test a
-set fred to -16
-add 100 to fred 
-set v2 to -999
-print 'Final value1 is:'
-println fred
-print 'Final value2 is:'
-println v2
-end

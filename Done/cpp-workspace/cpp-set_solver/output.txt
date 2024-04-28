@@ -1,5 +1,0 @@
-A user named 'User1' is created.
-Request failed: You are not logged in.
-A user named 'User1' is logged in.
-You are successfully logged out.
-Request failed: You are not logged in.
