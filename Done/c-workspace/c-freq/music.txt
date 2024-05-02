@@ -1,0 +1,3 @@
+Ditto,27.5,4186,A major,3,mP
+Ditto2,500,2500,B major,4,mf
+Ditto3,200,1000,B minor,3,decresc

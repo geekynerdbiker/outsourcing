@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login App</title>
+</head>
+
+<body>
+    <main id="pageForm">
+        <nav>
+            <button id="loginBtn">Login</button>
+            <button id="singupBtn">Sing Up</button>
+        </nav>
+
+        <section>
+            <div id="loginPage">
+                <h1>Login</h1>
+                <h2 id="credentials">Enter email and password:</h2>
+                <h3>Email</h3>
+                <div class="inputBox">
+                    <div id="b11">
+                        <input type="text" id="emailLog" name="email" placeholder="Email">
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c11">
+                    </div>
+                    <p class="errorBox" id="logMailError">Mas problem more!</p>
+                </div>
+
+                <h3>Password</h3>
+                <div class="inputBox">
+                    <div id="b12">
+                        <input type="password" id="passwordLog" name="password" placeholder="Password">
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c12">
+                    </div>
+                    <p class="errorBox" id="logPasswordError">Mas problem more!</p>
+                </div>
+
+                <input type="submit" name="login" class="submit" id="login" value="Login">
+            </div>
+
+            <div id="singupPage">
+                <h1>Sing up</h1>
+                <h2>Fill in the form:</h2>
+                <h3>First name</h3>
+                <div class="inputBox">
+                    <div id="b21">
+                        <input type="text" id="firstName" name="firstName" placeholder="First name">
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c21">
+                    </div>
+
+                    <p class="errorBox" id="firstNameError">Mas problem more!</p>
+                </div>
+
+                <h3>Last name</h3>
+                <div class="inputBox">
+                    <div id="b22">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last name">
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c22">
+                    </div>
+
+                    <p class="errorBox" id="lastNameError">Mas problem more!</p>
+                </div>
+
+                <h3>Gender</h3>
+                <div class="inputBox" id="radioBox">
+                    <div id="b23">
+                        <input type="radio" class="radio" id="male" name="gender" value="m">
+                        <label for="male">Male</label>
+                        <input type="radio" class="radio" id="female" name="gender" value="f">
+                        <label for="female">Female</label>
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c23">
+                    </div>
+
+                    <p class="errorBox" id="genderError">Mas problem more!</p>
+                </div>
+
+                <h3>Email</h3>
+                <div class="inputBox">
+                    <div id="b24">
+                        <input type="text" id="emailSingUp" name="email" placeholder="Email">
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c24">
+                    </div>
+
+                    <p class="errorBox" id="singUpMailError">Mas problem more!</p>
+                </div>
+
+                <h3>Password</h3>
+                <div class="inputBox">
+                    <div id="b25">
+                        <input type="password" id="passwordSingUp" name="passwordSingUp" placeholder="Password">
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c25">
+                    </div>
+                    <p class="errorBox" id="singUpPasswordError">Mas problem more!</p>
+                </div>
+
+                <h3>Confirm password</h3>
+                <div class="inputBox">
+                    <div id="b26">
+                        <input type="password" id="confPassword" name="confPassword" placeholder="Confirm password">
+                        <img src="checkmark.png" alt="checkMark" class="checkMark" id="c26">
+                    </div>
+                    <p class="errorBox" id="confPasswordError">Mas problem more!</p>
+                </div>
+
+                <input type="submit" name="login" class="submit" id="singUp" value="Sing Up">
+            </div>
+
+            <div id="signedPage">
+                <h1>You are signed up.</h1>
+            </div>
+
+            <div id="loggedPage">
+                <h1>You are logged in.</h1>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

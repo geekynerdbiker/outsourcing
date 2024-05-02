@@ -1,0 +1,76 @@
+/* GENERAL */
+body {
+    background-color: #e0ebf7;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+
+    margin: 0px;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADING */
+h1 {
+    font-size: 60px;
+    color: #58a0e7;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+/* TABLE */
+table {
+    width: 1000px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+}
+
+tr:first-child {
+    background-color: lightgray;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+th {
+    text-align: left;
+}
+
+/* BOTTOM */
+.card {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+
+    background-color: #f17f33;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+.card:hover {
+    background-color: #f17f335b;
+}

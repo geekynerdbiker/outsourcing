@@ -1,0 +1,3016 @@
+{
+    "TASK":
+    [
+        {
+            "TASK_NUM": "26",
+            "DATA_ID": "nasa_soho_c3",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        
+        {
+            "TASK_NUM": "27",
+            "DATA_ID": "kasi_boh_asc_6300_fits",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "458",
+            "DATA_ID": "kasi_boh_asc_0000_fits",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "459",
+            "DATA_ID": "kasi_boh_asc_5577_fits",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "460",
+            "DATA_ID": "kasi_boh_asc_5725_fits",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "28",
+            "DATA_ID": "kasi_boh_asc_0000_image",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "29",
+            "DATA_ID": "kasi_boh_asc_5577_image",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "30",
+            "DATA_ID": "kasi_boh_asc_6300_image",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "31",
+            "DATA_ID": "kasi_boh_asc_0000_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "32",
+            "DATA_ID": "kasi_boh_asc_0010_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "33",
+            "DATA_ID": "kasi_boh_asc_0020_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "461",
+            "DATA_ID": "kasi_boh_asc_0030_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "34",
+            "DATA_ID": "kasi_boh_asc_5577_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "35",
+            "DATA_ID": "kasi_boh_asc_5725_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "36",
+            "DATA_ID": "kasi_boh_asc_6300_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "37",
+            "DATA_ID": "kasi_boh_asc_0000_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "38",
+            "DATA_ID": "kasi_boh_asc_5577_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "39",
+            "DATA_ID": "kasi_boh_asc_6300_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "40",
+            "DATA_ID": "kasi_model_cactus_cmecat",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "41",
+            "DATA_ID": "kasi_model_cactus_cmelist",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "42",
+            "DATA_ID": "kasi_model_cactus_img_hdr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "47",
+            "DATA_ID": "kasi_model_corhole_aia_193",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "48",
+            "DATA_ID": "kasi_model_corhole_aia_areachmap",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "49",
+            "DATA_ID": "kasi_model_corhole_aia_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "50",
+            "DATA_ID": "kasi_model_corhole_aia_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "51",
+            "DATA_ID": "kasi_model_damap",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "52",
+            "DATA_ID": "kasi_model_damap_korea",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "53",
+            "DATA_ID": "kasi_model_damap_attenuation",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "54",
+            "DATA_ID": "kasi_model_damap_polar_route",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "55",
+            "DATA_ID": "kasi_model_dst_prediction",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "57",
+            "DATA_ID": "kasi_hq_ecallisto_data",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "58",
+            "DATA_ID": "kasi_hq_ecallisto_graph",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "59",
+            "DATA_ID": "kasi_hq_ecallisto_graph_lptcs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        
+        {
+            "TASK_NUM": "61",
+            "DATA_ID": "kasi_hq_ecallisto_position_lptcs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "62",
+            "DATA_ID": "kasi_hq_ecallisto_spectrum",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "63",
+            "DATA_ID": "kasi_model_flare_forcast",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "64",
+            "DATA_ID": "kasi_model_flare_forcast_latest",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "65",
+            "DATA_ID": "kasi_boh_mag_graph_sec",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "66",
+            "DATA_ID": "kasi_boh_mag_graph_sp",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "67",
+            "DATA_ID": "kasi_boh_mag_graph_latest",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "68",
+            "DATA_ID": "kasi_boh_mag_graph_mi",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "69",
+            "DATA_ID": "kasi_boh_mag_graph_mi_ms_dat",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "70",
+            "DATA_ID": "kasi_boh_mag_graph_mi_ms_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "71",
+            "DATA_ID": "kasi_boh_mag_graph_min",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "72",
+            "DATA_ID": "kasi_boh_mag_graph_min_average",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "73",
+            "DATA_ID": "kasi_boh_mag_pi2_list",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "74",
+            "DATA_ID": "kasi_boh_mag_pi2_power",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "75",
+            "DATA_ID": "kasi_boh_mag_mi_spectrum_x",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "76",
+            "DATA_ID": "kasi_boh_mag_mi_spectrum_y",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "77",
+            "DATA_ID": "kasi_boh_mag_mi_spectrum_z",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "78",
+            "DATA_ID": "kasi_boh_mag_sec",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "79",
+            "DATA_ID": "kasi_boh_mag_sec5",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "80",
+            "DATA_ID": "kasi_boh_mag_kindex",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "86",
+            "DATA_ID": "kasi_gye_scint_channel",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "88",
+            "DATA_ID": "kasi_gye_scint_iono",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "89",
+            "DATA_ID": "kasi_gye_scint_navsol",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "90",
+            "DATA_ID": "kasi_gye_scint_synoptic",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "91",
+            "DATA_ID": "kasi_gye_scint_txinfo",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "92",
+            "DATA_ID": "kasi_gye_scint_s4_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "93",
+            "DATA_ID": "kasi_gye_scint_sigph_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "94",
+            "DATA_ID": "kasi_gye_scint_tec_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "95",
+            "DATA_ID": "kopri_jbs_asc_0000_image",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "96",
+            "DATA_ID": "kopri_jbs_asc_0000_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "97",
+            "DATA_ID": "kopri_jbs_asc_0000_raw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "370",
+            "DATA_ID": "kopri_jbs_asc_5577_image",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "371",
+            "DATA_ID": "kopri_jbs_asc_6300_image",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "372",
+            "DATA_ID": "kopri_jbs_asc_5577_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "373",
+            "DATA_ID": "kopri_jbs_asc_6300_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "374",
+            "DATA_ID": "kopri_jbs_asc_5577_raw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "375",
+            "DATA_ID": "kopri_jbs_asc_6300_raw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "98",
+            "DATA_ID": "kopri_jbs_scint_synoptic",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "99",
+            "DATA_ID": "kopri_jbs_scint_scint",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "101",
+            "DATA_ID": "kopri_jbs_scint_iono",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "102",
+            "DATA_ID": "kopri_jbs_scint_navsol",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "103",
+            "DATA_ID": "kopri_jbs_scint_txinfo",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "104",
+            "DATA_ID": "kopri_jbs_scint_s4_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "105",
+            "DATA_ID": "kopri_jbs_scint_sigph_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "106",
+            "DATA_ID": "kopri_jbs_scint_tec_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "107",
+            "DATA_ID": "kopri_meteor_radar_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "108",
+            "DATA_ID": "kopri_meteor_radar_svg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "109",
+            "DATA_ID": "kopri_meteor_radar_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "110",
+            "DATA_ID": "kasi_model_magnetopause",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "505",
+            "DATA_ID": "kasi_model_mc_cylinder",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "506",
+            "DATA_ID": "kasi_model_mc_cylinder_result",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "507",
+            "DATA_ID": "kasi_model_mc_torus",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "508",
+            "DATA_ID": "kasi_model_mc_torus_result",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "111",
+            "DATA_ID": "kasi_model_nf_predict_aurora_index",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "112",
+            "DATA_ID": "kasi_model_nf_predict_electron_index",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "119",
+            "DATA_ID": "kasi_hq_scint_nav",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "120",
+            "DATA_ID": "kasi_hq_scint_obs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "121",
+            "DATA_ID": "kasi_hq_scint_fsl",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "122",
+            "DATA_ID": "kasi_hq_scint_cno",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "490",
+            "DATA_ID": "kasi_hq_scint_nav",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "491",
+            "DATA_ID": "kasi_hq_scint_obs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "492",
+            "DATA_ID": "kasi_hq_scint_fsl",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "493",
+            "DATA_ID": "kasi_hq_scint_fsl",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "123",
+            "DATA_ID": "kasi_hq_scint_s4",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "124",
+            "DATA_ID": "kasi_hq_scint_sk1elaz_latest",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "125",
+            "DATA_ID": "kasi_hq_scint_sk1pos_latest",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "126",
+            "DATA_ID": "kasi_hq_scint_sk1scint_latest",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "147",
+            "DATA_ID": "kasi_boh_soft_co",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "148",
+            "DATA_ID": "kasi_boh_soft_co_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "149",
+            "DATA_ID": "kasi_boh_soft_eclipse_wlf",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "150",
+            "DATA_ID": "kasi_boh_soft_eclipse_haf",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "151",
+            "DATA_ID": "kasi_boh_soft_ha",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "548",
+            "DATA_ID": "kasi_boh_soft_ha_flat",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "549",
+            "DATA_ID": "kasi_boh_soft_ha_dark",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "152",
+            "DATA_ID": "kasi_boh_soft_ha_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "550",
+            "DATA_ID": "kasi_boh_soft_ha_dark_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "551",
+            "DATA_ID": "kasi_boh_soft_ha_flat_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "554",
+            "DATA_ID": "kasi_boh_soft_haf_shift_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "555",
+            "DATA_ID": "kasi_boh_soft_haf_fit",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "556",
+            "DATA_ID": "kasi_boh_soft_haf_flat_fit",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "557",
+            "DATA_ID": "kasi_boh_soft_haf_flat_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "558",
+            "DATA_ID": "kasi_boh_soft_haf_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "162",
+            "DATA_ID": "kasi_boh_soft_fit",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "509",
+            "DATA_ID": "kasi_boh_soft_wl_d_fit",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "510",
+            "DATA_ID": "kasi_boh_soft_wl_f_fit",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "163",
+            "DATA_ID": "kasi_boh_soft_wl_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "164",
+            "DATA_ID": "kasi_boh_soft_wlf",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "165",
+            "DATA_ID": "kasi_soho_c2_diff",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "166",
+            "DATA_ID": "kasi_soho_c3_diff",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "167",
+            "DATA_ID": "kasi_takakhashi_wl_raw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "168",
+            "DATA_ID": "kasi_takakhashi_wl",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "169",
+            "DATA_ID": "kasi_tec_map",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "170",
+            "DATA_ID": "udel_nm_cosmic_ray_png",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "171",
+            "DATA_ID": "udel_nm_svg_cosmic_ray",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "523",
+            "DATA_ID": "kasi_swms_diag_g",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "524",
+            "DATA_ID": "kasi_swms_diag_r",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "525",
+            "DATA_ID": "kasi_swms_diag_s",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "526",
+            "DATA_ID": "kasi_swms_goes11_proton_400",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "527",
+            "DATA_ID": "kasi_swms_goes11_proton_600",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "528",
+            "DATA_ID": "kasi_swms_goes13_proton_400",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "529",
+            "DATA_ID": "kasi_swms_goes13_proton_600",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "530",
+            "DATA_ID": "kasi_swms_goes16_proton_400",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "531",
+            "DATA_ID": "kasi_swms_goes16_proton_600",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "532",
+            "DATA_ID": "kasi_swms_goes14_xray_400",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "533",
+            "DATA_ID": "kasi_swms_goes14_xray_600",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "534",
+            "DATA_ID": "kasi_swms_goes15_xray_400",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "535",
+            "DATA_ID": "kasi_swms_goes15_xray_600",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "536",
+            "DATA_ID": "kasi_swms_goes16_xray_400",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "537",
+            "DATA_ID": "kasi_swms_goes16_xray_600",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "538",
+            "DATA_ID": "kasi_swms_kpindex_400_gif",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "539",
+            "DATA_ID": "kasi_swms_kpindex_600_gif",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "540",
+            "DATA_ID": "kasi_swms_soho_l2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "541",
+            "DATA_ID": "kasi_swms_soho_l3",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "542",
+            "DATA_ID": "kasi_swms_prediction",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "545",
+            "DATA_ID": "kasi_swms_sec_kpindex_400",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "546",
+            "DATA_ID": "kasi_swms_sec_kpindex_600",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "173",
+            "DATA_ID": "kasi_swms_swc_monitor",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "195",
+            "DATA_ID": "kasi_hq_ksrbl_graph",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "196",
+            "DATA_ID": "ghn_gong",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "197",
+            "DATA_ID": "ghn_gong",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "199",
+            "DATA_ID": "ghn_kanz",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "200",
+            "DATA_ID": "ghn_kanz",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "201",
+            "DATA_ID": "ghn_kanz",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "202",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "561",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "562",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "203",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "563",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "564",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "204",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "205",
+            "DATA_ID": "ghn_bbso",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "206",
+            "DATA_ID": "ghn_oact",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "207",
+            "DATA_ID": "ghn_oact",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "208",
+            "DATA_ID": "ghn_oact",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "209",
+            "DATA_ID": "ghn_oact",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "210",
+            "DATA_ID": "jaxa_hinode_xrt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "211",
+            "DATA_ID": "naoj_nro_norh_ifa",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "212",
+            "DATA_ID": "noaa_dscovr_mag",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "213",
+            "DATA_ID": "noaa_dscovr_plasma",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "214",
+            "DATA_ID": "noaa_poes_metop02_bin",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "215",
+            "DATA_ID": "noaa_poes_metop02_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "216",
+            "DATA_ID": "noaa_poes_noaa15_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "217",
+            "DATA_ID": "noaa_poes_noaa15_bin",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "218",
+            "DATA_ID": "noaa_poes_noaa16_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "219",
+            "DATA_ID": "noaa_poes_noaa16_bin",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "220",
+            "DATA_ID": "noaa_poes_noaa17_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "221",
+            "DATA_ID": "noaa_poes_noaa17_bin",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "222",
+            "DATA_ID": "noaa_poes_noaa18_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "223",
+            "DATA_ID": "noaa_poes_noaa18_bin",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "224",
+            "DATA_ID": "noaa_poes_noaa19_txt",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "225",
+            "DATA_ID": "noaa_poes_noaa19_bin",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "226",
+            "DATA_ID": "noaa_swpc_ace_mag_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "227",
+            "DATA_ID": "noaa_swpc_ace_sis_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "228",
+            "DATA_ID": "noaa_swpc_ace_swepam_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "229",
+            "DATA_ID": "noaa_swpc_dayindices",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "230",
+            "DATA_ID": "noaa_swpc_ace_dayindices_curind",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "231",
+            "DATA_ID": "noaa_swpc_ace_dayindices_dayind",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "232",
+            "DATA_ID": "noaa_swpc_dsd",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "233",
+            "DATA_ID": "noaa_swpc_forecasts_dayobs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "234",
+            "DATA_ID": "noaa_swpc_forecasts_daypre",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "235",
+            "DATA_ID": "noaa_swpc_forecasts_rsga",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "236",
+            "DATA_ID": "noaa_swpc_forecasts_sgas",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "237",
+            "DATA_ID": "noaa_swpc_forecasts_srs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "238",
+            "DATA_ID": "noaa_swpc_gs_geomag_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "239",
+            "DATA_ID": "noaa_swpc_gp_geomag_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "240",
+            "DATA_ID": "noaa_swpc_g12_geomag_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "241",
+            "DATA_ID": "noaa_swpc_g8_particle_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "242",
+            "DATA_ID": "noaa_swpc_g9_particle_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "243",
+            "DATA_ID": "noaa_swpc_g10_particle_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "244",
+            "DATA_ID": "noaa_swpc_g11_particle_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "245",
+            "DATA_ID": "noaa_swpc_g12_particle_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "246",
+            "DATA_ID": "noaa_swpc_gs_particle_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "247",
+            "DATA_ID": "noaa_swpc_gp_article_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "248",
+            "DATA_ID": "noaa_swpc_g8_xray_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "249",
+            "DATA_ID": "noaa_swpc_g10_xray_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "250",
+            "DATA_ID": "noaa_swpc_g11_xray_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "251",
+            "DATA_ID": "noaa_swpc_g12_xray_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "252",
+            "DATA_ID": "noaa_swpc_gp_xray_1m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "253",
+            "DATA_ID": "noaa_swpc_gp_xray_5m",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "254",
+            "DATA_ID": "noaa_swpc_hpi_aurora_power",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "255",
+            "DATA_ID": "noaa_swpc_hpi_power",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "256",
+            "DATA_ID": "noaa_swpc_indices_dgd",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "257",
+            "DATA_ID": "hao_mlso_chip_res_hsl",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "258",
+            "DATA_ID": "hao_mlso_dpm_asr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "259",
+            "DATA_ID": "hao_mlso_mk4",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "261",
+            "DATA_ID": "kigam_dzn",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "262",
+            "DATA_ID": "udel_nm_bri",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "263",
+            "DATA_ID": "uh_armaps",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "264",
+            "DATA_ID": "wdc_dst_obs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "265",
+            "DATA_ID": "nso_coronal_hole",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "266",
+            "DATA_ID": "nso_gong_solar_monitor",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "267",
+            "DATA_ID": "norad_tle_resource",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "297",
+            "DATA_ID": "nasa_sdo_solar_monitor",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "511",
+            "DATA_ID": "nasa_soho_c2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "300",
+            "DATA_ID": "nasa_soho_eit_171",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "301",
+            "DATA_ID": "nasa_soho_eit_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "302",
+            "DATA_ID": "nasa_soho_eit_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "303",
+            "DATA_ID": "nasa_soho_eit_284",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "304",
+            "DATA_ID": "nasa_soho_eit_304",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "305",
+            "DATA_ID": "nasa_soho_mdi_igr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "306",
+            "DATA_ID": "nasa_soho_mdi_mag",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "307",
+            "DATA_ID": "nasa_soho_solar_monitor",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "308",
+            "DATA_ID": "nasa_stereo_a_cor1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "309",
+            "DATA_ID": "nasa_stereo_a_cor1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "310",
+            "DATA_ID": "nasa_stereo_a_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "512",
+            "DATA_ID": "nasa_stereo_a_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "513",
+            "DATA_ID": "nasa_stereo_a_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "311",
+            "DATA_ID": "nasa_stereo_a_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "514",
+            "DATA_ID": "nasa_stereo_a_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "515",
+            "DATA_ID": "nasa_stereo_a_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "516",
+            "DATA_ID": "nasa_stereo_a_euvi_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "312",
+            "DATA_ID": "nasa_stereo_a_euvi_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "313",
+            "DATA_ID": "nasa_stereo_a_euvi_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "560",
+            "DATA_ID": "nasa_stereo_a_euvi_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "314",
+            "DATA_ID": "nasa_stereo_a_hi1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "316",
+            "DATA_ID": "nasa_stereo_a_hi1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "318",
+            "DATA_ID": "nasa_stereo_b_cor1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "319",
+            "DATA_ID": "nasa_stereo_b_cor1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "517",
+            "DATA_ID": "nasa_stereo_b_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "321",
+            "DATA_ID": "nasa_stereo_b_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "320",
+            "DATA_ID": "nasa_stereo_b_cor2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "322",
+            "DATA_ID": "nasa_stereo_b_euvi_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "518",
+            "DATA_ID": "nasa_stereo_b_euvi_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "323",
+            "DATA_ID": "nasa_stereo_b_euvi_195",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "324",
+            "DATA_ID": "nasa_stereo_b_hi1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "325",
+            "DATA_ID": "nasa_stereo_b_hi1",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "382",
+            "DATA_ID": "kopri_jbs_asc_oi_6300",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "383",
+            "DATA_ID": "kopri_jbs_asc_oi_5577",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "384",
+            "DATA_ID": "kopri_jbs_asc_na_5893",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "385",
+            "DATA_ID": "kopri_jbs_asc_oi_6343",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "386",
+            "DATA_ID": "kopri_jbs_asc_N2_4278",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "387",
+            "DATA_ID": "kopri_jbs_asc_no_filter",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "519",
+            "DATA_ID": "kopri_jbs_asc_oi_6300_dark",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "388",
+            "DATA_ID": "kopri_jbs_asc_oi_5577_dark",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "520",
+            "DATA_ID": "kopri_jbs_asc_na_5893_dark",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "521",
+            "DATA_ID": "kopri_jbs_asc_oi_6343_dark",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "522",
+            "DATA_ID": "kopri_jbs_asc_N2_4278_dark",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "389",
+            "DATA_ID": "kopri_jbs_asc_no_filter_dark",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "390",
+            "DATA_ID": "kasi_gye_vhf_ef_rv",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "391",
+            "DATA_ID": "kasi_gye_vhf_ef_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "392",
+            "DATA_ID": "kasi_gye_vhf_ef_sp",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "393",
+            "DATA_ID": "kasi_gye_vhf_ef_sw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "394",
+            "DATA_ID": "kasi_gye_vhf_e_rv",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "395",
+            "DATA_ID": "kasi_gye_vhf_e_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "396",
+            "DATA_ID": "kasi_gye_vhf_e_sp",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "397",
+            "DATA_ID": "kasi_gye_vhf_e_sw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "398",
+            "DATA_ID": "kasi_gye_vhf_ef_idbs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "399",
+            "DATA_ID": "kasi_gye_vhf_e_idbs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "400",
+            "DATA_ID": "kasi_gye_vhf_met",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "401",
+            "DATA_ID": "kasi_gye_vhf_met_mpc",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "402",
+            "DATA_ID": "kasi_gye_vhf_met_vel",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "494",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_vel",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "495",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_e_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "496",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_ef_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "497",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_aoa",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "498",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_aoa",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "499",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_decay",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "500",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_decay_2d",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "501",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_hist",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "502",
+            "DATA_ID": "kasi_gye_vhf_emdr_plotspool_vel",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "404",
+            "DATA_ID": "kasi_gye_vhf_ef_raw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "403",
+            "DATA_ID": "kasi_gye_vhf_ef_raw_iono_e",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "590",
+            "DATA_ID": "kasi_gye_ef_vhf_raw_met_det",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "405",
+            "DATA_ID": "kasi_gye_ef_vhf_raw_met",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "406",
+            "DATA_ID": "nasa_sdo_hmi_ic_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "407",
+            "DATA_ID": "nasa_sdo_hmi_ic_flat_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "408",
+            "DATA_ID": "nasa_sdo_hmi_m_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "409",
+            "DATA_ID": "nasa_sdo_hmi_m_color_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "410",
+            "DATA_ID": "nasa_sdo_hmi_ic_4096_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "411",
+            "DATA_ID": "nasa_sdo_hmi_ic_flat_4096_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "412",
+            "DATA_ID": "nasa_sdo_hmi_m_4096_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "413",
+            "DATA_ID": "nasa_sdo_hmi_m_color_4096_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "414",
+            "DATA_ID": "nasa_sdo_hmi_ic_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "415",
+            "DATA_ID": "nasa_sdo_hmi_ic_flat_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "416",
+            "DATA_ID": "nasa_sdo_hmi_m_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "417",
+            "DATA_ID": "nasa_sdo_hmi_m_color_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "418",
+            "DATA_ID": "nasa_sdo_aia_131_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "419",
+            "DATA_ID": "nasa_sdo_aia_1600_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "420",
+            "DATA_ID": "nasa_sdo_aia_1700_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "421",
+            "DATA_ID": "nasa_sdo_aia_171_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "422",
+            "DATA_ID": "nasa_sdo_aia_193_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "423",
+            "DATA_ID": "nasa_sdo_aia_211_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "424",
+            "DATA_ID": "nasa_sdo_aia_304_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "425",
+            "DATA_ID": "nasa_sdo_aia_335_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "426",
+            "DATA_ID": "nasa_sdo_aia_4500_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "427",
+            "DATA_ID": "nasa_sdo_aia_94_jp2",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "428",
+            "DATA_ID": "nasa_sdo_aia_131_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "429",
+            "DATA_ID": "nasa_sdo_aia_1600_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "430",
+            "DATA_ID": "nasa_sdo_aia_1700_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "431",
+            "DATA_ID": "nasa_sdo_aia_171_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "432",
+            "DATA_ID": "nasa_sdo_aia_193_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "433",
+            "DATA_ID": "nasa_sdo_aia_211_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "434",
+            "DATA_ID": "nasa_sdo_aia_304_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "435",
+            "DATA_ID": "nasa_sdo_aia_335_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "436",
+            "DATA_ID": "nasa_sdo_aia_4500_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "437",
+            "DATA_ID": "nasa_sdo_aia_94_1024_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "438",
+            "DATA_ID": "nasa_sdo_aia_131_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "439",
+            "DATA_ID": "nasa_sdo_aia_1600_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "440",
+            "DATA_ID": "nasa_sdo_aia_1700_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "441",
+            "DATA_ID": "nasa_sdo_aia_171_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "442",
+            "DATA_ID": "nasa_sdo_aia_193_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "443",
+            "DATA_ID": "nasa_sdo_aia_211_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "444",
+            "DATA_ID": "nasa_sdo_aia_304_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "445",
+            "DATA_ID": "nasa_sdo_aia_335_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "446",
+            "DATA_ID": "nasa_sdo_aia_4500_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "447",
+            "DATA_ID": "nasa_sdo_aia_94_2048_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "448",
+            "DATA_ID": "nasa_sdo_aia_131_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "449",
+            "DATA_ID": "nasa_sdo_aia_1600_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "450",
+            "DATA_ID": "nasa_sdo_aia_1700_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "451",
+            "DATA_ID": "nasa_sdo_aia_171_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "452",
+            "DATA_ID": "nasa_sdo_aia_193_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "453",
+            "DATA_ID": "nasa_sdo_aia_211_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "454",
+            "DATA_ID": "nasa_sdo_aia_304_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "455",
+            "DATA_ID": "nasa_sdo_aia_335_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "456",
+            "DATA_ID": "nasa_sdo_aia_4500_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "457",
+            "DATA_ID": "nasa_sdo_aia_94_512_jpg",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "543",
+            "DATA_ID": "kasi_swms_soho_eif195_303",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "544",
+            "DATA_ID": "kasi_swms_soho_eit195_681",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "565",
+            "DATA_ID": "kasi_gye_vhf_ef_rv",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "566",
+            "DATA_ID": "kasi_gye_vhf_ef_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "567",
+            "DATA_ID": "kasi_gye_vhf_ef_sp",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "568",
+            "DATA_ID": "kasi_gye_vhf_ef_sw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "569",
+            "DATA_ID": "kasi_gye_vhf_e_rv",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "570",
+            "DATA_ID": "kasi_gye_vhf_e_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "571",
+            "DATA_ID": "kasi_gye_vhf_e_sp",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "572",
+            "DATA_ID": "kasi_gye_vhf_e_sw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "573",
+            "DATA_ID": "kasi_gye_vhf_ef_idbs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "574",
+            "DATA_ID": "kasi_gye_vhf_e_idbs",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "575",
+            "DATA_ID": "kasi_gye_vhf_met",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "576",
+            "DATA_ID": "kasi_gye_vhf_met_mpc",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "577",
+            "DATA_ID": "kasi_gye_vhf_met_vel",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "578",
+            "DATA_ID": "kasi_gye_vhf_plotspool_e_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "579",
+            "DATA_ID": "kasi_gye_vhf_plotspool_ef_snr",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "580",
+            "DATA_ID": "kasi_gye_vhf_plotspool_aoa_2d",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "581",
+            "DATA_ID": "kasi_gye_vhf_plotspool_aoa",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "582",
+            "DATA_ID": "kasi_gye_vhf_plotspool_decay_2d",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "583",
+            "DATA_ID": "kasi_gye_vhf_plotspool_decay",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "584",
+            "DATA_ID": "kasi_gye_vhf_plotspool_hist",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "585",
+            "DATA_ID": "kasi_gye_vhf_plotspool_vel",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "586",
+            "DATA_ID": "kasi_gye_vhf_ef_raw",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "587",
+            "DATA_ID": "kasi_gye_vhf_ef_raw_iono_e",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "588",
+            "DATA_ID": "kasi_gye_vhf_ef_raw_met_det",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        },
+        {
+            "TASK_NUM": "589",
+            "DATA_ID": "kasi_gye_vhf_ef_raw_met",
+            "TASK_TYPE": "METADATA",
+            "ENABLE": "True",
+            "SCHEDULE_TYPE": "interval",
+            "SCHEDULE_TIME": "{'minutes': 33}"
+        }
+    ]  
+    
+}

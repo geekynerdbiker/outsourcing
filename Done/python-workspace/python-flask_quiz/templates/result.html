@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('serve_css', filename='style.css') }}">
+</head>
+<body>
+<form method="POST" action="/">
+    <p class="header">Quiz Finished !</p>
+    <p>{{ message }}</p>
+    <button type="submit">Back to Main</button>
+</form>
+</body>
+</html>

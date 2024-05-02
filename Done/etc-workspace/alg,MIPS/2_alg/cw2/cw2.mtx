@@ -1,0 +1,40 @@
+% [function linesearch_secant]
+% secant method for finding step size alpha that meets the stop criterion.
+% The code first initializes the values of alpha0 and alpha1 to 0 and 0.001.
+% respectively, and then repeats until the stop criterion is met or the maximum 
+% number of iterations is reached. 
+% Calculate the value of α at the rate of (fx - fd) / (f1 - fd) for each iteration. 
+% If the stop criteria are met, the code is out of the loop. 
+% Otherwise, the code updates the values of α0 and α1 to α and α1, 
+% respectively, and proceeds to the next iteration.
+% When the maximum number of iterations is reached, 
+% prints an error message.
+
+% [function feval]
+% Evaluate the slope of the function f at point x. 
+% The function grad uses the function handle as an input and returns the 
+% slope of the function. The function feval uses the function handle and 
+% input argument vectors as inputs and evaluates the function from those 
+% arguments. Used to calculate the search direction d. The search direction
+% d is a negative number of the slope of the function f at the current point x.
+
+% [function steep_desc]
+% Implementing the steepest descent method to minimize the function f. 
+% The function receives the slope of the function f, the initial point x0,
+% the stationary tolerance epsilon, and the maximum number of iterations 
+% max_iter as input. The function returns the final point x and the number
+% of iterations N.
+
+
+% [function steep_desc_secant]
+% Similar to steep desc, but using the linesearch_secant function to determine 
+% the stair size α in each iteration. This code ends when the stop criterion
+% is met. The function then returns the final point x and the number of
+% iterations N.
+
+
+f = @(x) (x(1) - 4)^4 + (x(2) - 3)^2 + 4 * (x(3) + 5)^4;
+x0 = [4, 2, -1];
+epsilon = 1e-6;
+max_iter = 100;
+[x, N] = steep_desc(f, x0, epsilon, max_iter);

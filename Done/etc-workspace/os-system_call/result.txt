@@ -1,0 +1,33 @@
+oslab@oslab-VirtualBox:~/Desktop$ dmesg
+[    63.549646] [System call] oslab_push(): Push 1
+[    63.549648] Stack Top--------------
+[    63.549649] 1
+[    63.549649] Stack Bottom-----------
+[    63.549652] [System call] oslab_push(): Push 1
+[    63.549652] Stack Top--------------
+[    63.549653] 1
+[    63.549653] Stack Bottom-----------
+[    63.549654] [System call] oslab_push(): Push 2
+[    63.549656] Stack Top--------------
+[    63.549656] 2
+[    63.549657] 1
+[    63.549657] Stack Bottom-----------
+[    63.549658] [System call] oslab_push(): Push 3
+[    63.549658] Stack Top--------------
+[    63.549660] 3
+[    63.549661] 2
+[    63.549661] 1
+[    63.549661] Stack Bottom-----------
+[    63.549662] [System call] oslab_pop(): Pop 3
+[    63.549662] Stack Top--------------
+[    63.549663] 2
+[    63.549665] 1
+[    63.549665] Stack Bottom-----------
+[    63.549666] [System call] oslab_pop(): Pop 2
+[    63.549666] Stack Top--------------
+[    63.549666] 1
+[    63.549667] Stack Bottom-----------
+[    63.549667] [System call] oslab_pop(): Pop 1
+[    63.549668] Stack Top--------------
+[    63.549669] Stack Bottom-----------
+oslab@oslab-VirtualBox:~/Desktop$ 

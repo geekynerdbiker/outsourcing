@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:autofillHints="Number 1"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Number 1"
+        android:inputType="number"></EditText>
+
+    <EditText
+        android:id="@+id/edit_text_2"
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Number 2"
+        android:inputType="number"></EditText>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:text="ADD"></Button>
+    <Button
+        android:id="@+id/button_subtract"
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:text="Subtract"></Button>
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:text="Multiply"></Button>
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:text="Divide"></Button>
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Result: "
+        android:textSize="32dp"
+        ></TextView>
+</LinearLayout>

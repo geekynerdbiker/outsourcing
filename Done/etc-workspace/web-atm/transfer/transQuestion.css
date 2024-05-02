@@ -1,0 +1,47 @@
+main {
+    margin-top: 30px;
+    text-align: center;
+    width: 60%;
+}
+
+h1 {
+    font-size: 40px;
+    color: #58a0e7;
+    font-weight: normal;
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 20px;
+
+    border: 1px solid black;
+    width: 160px;
+    height: 80px;
+    border-radius: 10px;
+
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+#buttYes {
+    background-color:rgb(0, 90, 0);
+}
+
+#buttYes:hover{
+    background-color:rgba(0, 90, 0, 0.5);
+}
+
+#buttNo {
+    background-color:rgb(187, 0, 0)    ;
+}
+
+#buttNo:hover {
+    background-color:rgba(187, 0, 0, 0.5)    ;
+}

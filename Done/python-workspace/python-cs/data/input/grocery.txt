@@ -1,0 +1,10 @@
+cookie 13
+water 10
+mask 28
+coffee 8
+kimbap 3
+coke 11
+ramen 41
+mandoo 3
+bread 19
+icecream 22

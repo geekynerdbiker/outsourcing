@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc92c2ea-682e-4840-94cf-f9c010dba918" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../c-workspace/c-workspace/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/project.xcworkspace/xcuserdata/jacoban.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../c-workspace/c-workspace.xcodeproj/xcuserdata/jacoban.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/a4protos.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/chord.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/chord_arg_parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/chord_functions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/example_hash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c-workspace/c-workspace/hash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/resources/light-bulb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-workspace/resources/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeedFile/seed.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Cell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Classroom$ClassroomStateCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Classroom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/ControllablePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Decision$TypeCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Decision.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Grader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/PlayerStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode3$PresenterStateCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode4$PresenterStateCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$CellObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5$PresenterStateCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/Presenter_Mode5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_CorpseBomb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_HornDone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Loner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Predator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Scout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/bots/Bot_Seeker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Classroom_Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/DirectionCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/GameNumberManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/PointBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Point_Immutable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/common/StateCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/customplayers/Player_YOURNAMEHERE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Action$TypeCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/CellInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/PlayerInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Reaction$TypeCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/Reaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/l4g/data/TurnInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_corpse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_corpse_detect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_corpse_spot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_empty_spot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_infected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_infected_corpse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_infected_corpse_spot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_infected_spot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_outOfSight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor_corpse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor_corpse_spot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cell_survivor_spot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cursor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cursor_invalid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/myPosition_corpse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/myPosition_infected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/myPosition_survivor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/Cell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/Classroom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/ControllablePlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/Decision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/Grader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/PlayerStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/Presenter_Mode3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/Presenter_Mode4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/Presenter_Mode5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_CorpseBomb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_HornDone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Loner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Predator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Scout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/bots/Bot_Seeker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/Classroom_Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/DirectionCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/GameNumberManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/PointBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/Point_Immutable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/common/StateCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/customplayers/Player_YOURNAMEHERE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/data/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/data/CellInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/data/PlayerInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/data/Reaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/l4g/data/TurnInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/lena.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../py-workspace copy/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/Archive.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../r-workspace/Archive.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/Untitled.R" beforeDir="false" afterPath="$PROJECT_DIR$/../r-workspace/Untitled.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../r-workspace/lottery-solution.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../r-workspace/lottery-solution.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="78eygtx9" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Oue1WfakMCRPqEeloJvKG6z1MD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/jacoban/Documents/GitHub/Crebugs/Work/java-workspace",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="java-workspace" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc92c2ea-682e-4840-94cf-f9c010dba918" name="Changes" comment="" />
+      <created>1682414679766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682414679766</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Menu.java</url>
+          <line>258</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Menu.java</url>
+          <line>287</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

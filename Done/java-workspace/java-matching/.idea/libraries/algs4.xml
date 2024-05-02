@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="algs4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/algs4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/junit-4.12.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/stdlib-package.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/stdlib.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/xchart-3.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/algs4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/stdlib-package.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/CW3 2/library/stdlib.jar!/" />
+    </SOURCES>
+  </library>
+</component>
