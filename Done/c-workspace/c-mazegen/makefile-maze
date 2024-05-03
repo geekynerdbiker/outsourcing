@@ -1,0 +1,7 @@
+CFLAGS = -Wall -Werror -g
+
+maze: maze.o
+	gcc $(CFLAGS) -o maze maze.o
+
+%.o: %.c
+	gcc $(CFLAGS) -c $< -o $@
