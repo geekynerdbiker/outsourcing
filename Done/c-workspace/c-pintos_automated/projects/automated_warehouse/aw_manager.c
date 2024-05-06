@@ -44,7 +44,7 @@ void _print_place(Robot* __robots, int __number_of_robots, int __row, int __col)
  * It requires array of robots and length of array
  * It must be called before unblocking robot threads
  */
-void print(Robot* __robots, int __number_of_robots){    
+void print(Robot* __robots, int __number_of_robots) {    
     printf("STEP_INFO_START::%d\n", step);
     printf("MAP_INFO::\n");
     for (int row = 0; row < 6; row++){

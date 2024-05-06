@@ -56,6 +56,18 @@ void test_cnt(void){
                 }
                 increase();
                 unblock_threads();
+
+                int count = 0;
+                for (int i = 0; i < num_robots; i++) {
+                        if (boxes_from_node[i].msg.cmd == 4)
+                                count++;
+                }
+
+                if (count == num_robots) {
+                        print(robots, num_robots);
+                        printf("\n\nTest complete.\n\n");
+                        return;
+                }
         }
 }
 

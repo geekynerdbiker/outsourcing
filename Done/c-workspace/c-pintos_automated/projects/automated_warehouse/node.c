@@ -54,27 +54,23 @@ Point dequeue(Queue *queue)
     return point;
 }
 
-bool isOutOfBound(int row, int col)
-{
+bool n_isOutOfBound(int row, int col) {
     return row < ROW_MIN || row > ROW_MAX || col < COL_MIN || col > COL_MAX;
 }
 
-bool isWall(int row, int col)
-{
+bool n_isWall(int row, int col) {
     return map[row][col] == 'X';
 }
 
-bool isAnotherCurrentPayload(int row, int col, int current)
-{
-    return map[row][col] >= '0' && map[row][col] <= '9' &&
-           map[row][col] != current;
+bool n_isAnotherCurrentPayload(int row, int col, int current_payload) {
+    return map[row][col] >= '0' && map[row][col] <= '9' && 
+        map[row][col] != current_payload;
 }
 
-bool isAnotherRequiredPayload(int row, int col, int current)
-{
-    return map[row][col] >= 'A' && map[row][col] <= 'Z' &&
-           map[row][col] != 'W' && map[row][col] != 'S' &&
-           map[row][col] != current;
+bool n_isAnotherRequiredPayload(int row, int col, int current_payload) {
+    return map[row][col] >= 'A' && map[row][col] <= 'Z' && 
+        map[row][col] != 'W' && map[row][col] != 'S' && 
+        map[row][col] != current_payload;
 }
 
 bool msg_is_loaded(Message *msg)
@@ -84,7 +80,7 @@ bool msg_is_loaded(Message *msg)
 
 int find_path(Message *msg)
 {
-    INFO("cnt", "find_path row: %d, col: %d, current: %c, required: %c", msg->row, msg->col, msg->current, msg->required);
+    printf("[cnt] find_path row: %d, col: %d, current: %c, required: %c\n", msg->row, msg->col, msg->current, msg->required);
     int row = msg->row;
     int col = msg->col;
 
@@ -114,39 +110,39 @@ int find_path(Message *msg)
             int nr = current.row + dr[i];
             int nc = current.col + dc[i];
 
-            if (isOutOfBound(nr, nc))
+            if (n_isOutOfBound(nr, nc))
             {
-                INFO("cnt", "skip(isOutOfBound) row: %d, col: %d", nr, nc);
+                printf("[cnt] skip(isOutOfBound) row: %d, col: %d\n", nr, nc);
                 continue;
             }
 
-            if (isWall(nr, nc))
+            if (n_isWall(nr, nc))
             {
-                INFO("cnt", "skip(isWall) row: %d, col: %d", nr, nc);
+                printf("[cnt] skip(isWall) row: %d, col: %d\n", nr, nc);
                 continue;
             }
 
             if (visited[nr][nc])
             {
-                INFO("cnt", "skip(visited) row: %d, col: %d", nr, nc);
+                printf("[cnt] skip(visited) row: %d, col: %d\n", nr, nc);
                 continue;
             }
 
-            if (isAnotherCurrentPayload(nr, nc, msg->current))
+            if (n_isAnotherCurrentPayload(nr, nc, msg->current))
             {
-                INFO("cnt", "skip(isAnotherCurrentPayload) row: %d, col: %d", nr, nc);
+                printf("[cnt] skip(isAnotherCurrentPayload) row: %d, col: %d\n", nr, nc);
                 continue;
             }
 
-            if (isAnotherRequiredPayload(nr, nc, msg->current))
+            if (n_isAnotherRequiredPayload(nr, nc, msg->current))
             {
-                INFO("cnt", "skip(isAnotherRequiredPayload) row: %d, col: %d", nr, nc);
+                printf("[cnt] skip(isAnotherRequiredPayload) row: %d, col: %d\n", nr, nc);
                 continue;
             }
 
             Point next = {nr, nc};
             enqueue(&queue, next);
-            INFO("cnt", "enqueue row: %d, col: %d", nr, nc);
+            printf("[cnt] enqueue row: %d, col: %d\n", nr, nc);
             visited[nr][nc] = true;
             prev[nr][nc] = current;
         }

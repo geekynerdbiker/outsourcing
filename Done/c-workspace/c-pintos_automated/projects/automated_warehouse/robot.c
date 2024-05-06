@@ -13,7 +13,7 @@ void set_robot(Robot* _robot, const char* name, int row, int col, int required, 
     _robot->col = col;
     _robot->required = required;
     _robot->current = current;
-    INFO("robot", "set robot %s at (%d, %d) with required: %c, current: %c", name, row, col, required, current);
+    printf("[robot] set robot %s at (%d, %d) with required: %c, current: %c\n", name, row, col, required, current);
 }
 
 bool robot_is_unloaded(Robot* robot) {
@@ -27,7 +27,7 @@ void update_msg(Message* msg, Robot* robot) {
     msg->col = robot->col;
     msg->current = robot->current;
     msg->required = robot->required;
-    INFO("robot", "update msg row: %d, col: %d, current: %c, required: %c", msg->row, msg->col, msg->current, msg->required);
+    printf("[robot] update msg row: %d, col: %d, current: %c, required: %c\n", msg->row, msg->col, msg->current, msg->required);
 }
 
 
@@ -87,16 +87,16 @@ Command find_movable_direction(Robot* robots, int idx, int number_of_robots) {
 
         switch (i) {
             case 0:
-                INFO("robot", "robot %s can move up", robot->name);
+                printf("[robot] robot %s can move up\n", robot->name);
                 return CMD_UP;
             case 1:
-                INFO("robot", "robot %s can move down", robot->name);
+                printf("[robot] robot %s can move down\n", robot->name);
                 return CMD_DOWN;
             case 2:
-                INFO("robot", "robot %s can move left", robot->name);
+                printf("[robot] robot %s can move left\n", robot->name);
                 return CMD_LEFT;
             case 3:
-                INFO("robot", "robot %s can move right", robot->name);
+                printf("[robot] robot %s can move right\n", robot->name);
                 return CMD_RIGHT;
         }
     }
@@ -137,7 +137,7 @@ int move_robot(Robot* robots, int idx, int number_of_robots, Message* msg) {
             robot->nop++;
             break;
         default:
-            ERROR("robot", "robot %s received invalid command %d", robot->name, cmd);
+            printf("[robot] robot %s received invalid command %d\n", robot->name, cmd);
             update_msg(msg, robot);
             return -1; // Invalid command
     }
@@ -145,28 +145,28 @@ int move_robot(Robot* robots, int idx, int number_of_robots, Message* msg) {
     char new_pos = map[new_row][new_col];
 
     if (isOutOfBound(new_row, new_col)) {
-        ERROR("robot", "robot %s out of bound at (%d, %d)", robot->name, new_row, new_col);
+        printf("[robot] robot %s out of bound at (%d, %d)\n", robot->name, new_row, new_col);
         robot->nop++;
         update_msg(msg, robot);
         return 0;
     }
 
     if (isWall(new_row, new_col)) {
-        ERROR("robot", "robot %s hit the wall at (%d, %d)", robot->name, new_row, new_col);
+        printf("[robot] robot %s hit the wall at (%d, %d)\n", robot->name, new_row, new_col);
         robot->nop++;
         update_msg(msg, robot);
         return 0;
     }
 
     if (isAnotherCurrentPayload(new_row, new_col, robot->current)) {
-        ERROR("robot", "robot %s hit the wrong payload at (%d, %d)", robot->name, new_row, new_col);
+        printf("[robot] robot %s hit the wrong payload at (%d, %d)\n", robot->name, new_row, new_col);
         robot->nop++;
         update_msg(msg, robot);
         return 0;
     }
 
     if (isAnotherRequiredPayload(new_row, new_col, robot->current)) {
-        ERROR("robot", "robot %s required %c hit the wrong required payload at (%d, %d)", robot->name, robot->required, new_row, new_col);
+        printf("[robot] robot %s required %c hit the wrong required payload at (%d, %d)\n", robot->name, robot->required, new_row, new_col);
         robot->nop++;
         update_msg(msg, robot);
         return 0;
@@ -181,7 +181,7 @@ int move_robot(Robot* robots, int idx, int number_of_robots, Message* msg) {
             if (robot_is_unloaded(__robot)) {
                 continue;
             }
-            WARN("robot", "robot %s hit another robot %s at (%d, %d)", robot->name, __robot->name, new_row, new_col);
+            printf("[robot] robot %s hit another robot %s at (%d, %d)\n", robot->name, __robot->name, new_row, new_col);
             robot->nop++;
             update_msg(msg, robot);
             return 0;
@@ -190,13 +190,13 @@ int move_robot(Robot* robots, int idx, int number_of_robots, Message* msg) {
     
     robot->row = new_row;
     robot->col = new_col;
-    INFO("robot", "new position: (%d, %d), current: %c", new_row, new_col, robot->current);
+    printf("[robot] new position: (%d, %d), current: %c", new_row, new_col, robot->current);
     
     if (new_pos == robot->current) {
             if (robot_is_unloaded(robot)) {
-                INFO("robot", "robot %s unloaded %c at (%d, %d)", robot->name, robot->current, new_row, new_col);
+                printf("[robot] robot %s unloaded %c at (%d, %d)\n", robot->name, robot->current, new_row, new_col);
             } else {
-                INFO("robot", "robot %s loaded %c at (%d, %d)", robot->name, robot->current, new_row, new_col);
+                printf("[robot] robot %s loaded %c at (%d, %d)\n", robot->name, robot->current, new_row, new_col);
                 int tmp = robot->current;
                 robot->current = robot->required;
                 robot->required = tmp;
@@ -204,6 +204,6 @@ int move_robot(Robot* robots, int idx, int number_of_robots, Message* msg) {
     }
 
     update_msg(msg, robot);
-    INFO("robot", "move %s to (%d, %d)", robot->name, new_row, new_col);
+    printf("[robot] move %s to (%d, %d)\n", robot->name, new_row, new_col);
     return 0;
 }

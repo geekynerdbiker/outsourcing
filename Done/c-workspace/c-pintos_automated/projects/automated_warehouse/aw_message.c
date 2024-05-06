@@ -69,7 +69,7 @@ int send_to_node(int robotIdx, Message* msg) {
         boxes_from_robots[robotIdx].msg.current = msg->current;
         boxes_from_robots[robotIdx].msg.required = msg->required;
         boxes_from_robots[robotIdx].dirtyBit = 1;
-        INFO("msg", "send robot2cnt row: %d, col: %d, current: %c, required: %c", boxes_from_robots[robotIdx].msg.row, boxes_from_robots[robotIdx].msg.row, boxes_from_robots[robotIdx].msg.current, boxes_from_robots[robotIdx].msg.required);
+        printf("[msg] send robot2cnt row: %d, col: %d, current: %c, required: %c\n", boxes_from_robots[robotIdx].msg.row, boxes_from_robots[robotIdx].msg.row, boxes_from_robots[robotIdx].msg.current, boxes_from_robots[robotIdx].msg.required);
         return 0;
 }
 
@@ -82,7 +82,7 @@ int send_to_robot(int robotIdx, Message* msg) {
         boxes_from_node[robotIdx].msg.cmd = msg->cmd;
         boxes_from_node[robotIdx].dirtyBit = 1;
         
-        INFO("msg", "send cnt2robot cmd: %d", boxes_from_node[robotIdx].msg.cmd);
+        printf("[msg] send cnt2robot cmd: %d\n", boxes_from_node[robotIdx].msg.cmd);
         return 0;
 }
 
@@ -95,7 +95,7 @@ int receive_from_node(int robotIdx, Message* msg) {
         msg->cmd = boxes_from_node[robotIdx].msg.cmd;
         boxes_from_node[robotIdx].dirtyBit = 0;
         
-        INFO("msg", "recv cnt2robot cmd: %d", msg->cmd);
+        printf("[msg] recv cnt2robot cmd: %d\n", msg->cmd);
         return 0;
 }
 
@@ -111,7 +111,7 @@ int receive_from_robot(int robotIdx, Message* msg) {
         msg->required = boxes_from_robots[robotIdx].msg.required;
         boxes_from_robots[robotIdx].dirtyBit = 0;
 
-        INFO("msg", "recv robot2cnt row: %d, col: %d, current: %c, required: %c", msg->row, msg->col, msg->current, msg->required);
+        printf("[msg] recv robot2cnt row: %d, col: %d, current: %c, required: %c\n", msg->row, msg->col, msg->current, msg->required);
         return 0;
 }
 
