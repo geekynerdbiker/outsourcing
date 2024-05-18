@@ -42,10 +42,12 @@ function calculate() {
     
     var n = parseInt(inputString);
 
-    if (n >= 64 && n < 70) {
-      document.querySelector('.result').value = '총 0 개';
-    } else if (n >= 70 && n < 77) {
-      document.querySelector('.result').value = '0';
+    if (n >= 64 && n < 71) {
+      document.querySelector(".display2").value = "안전문 본품";
+      document.querySelector('.result').value = '소형';
+      add('small', false);
+    } else if (n >= 71 && n < 77) {
+      document.querySelector('.result').value = '설치 불가';
     } else if (n >= 77 && n < 84) {
       document.querySelector('.result').value = '총 0 개';
     } else if (n >= 84 && n < 90) {
@@ -107,7 +109,7 @@ function calculate() {
       add('30CM');add('84CM');
     } else if (n >= 198 && n < 204) {
       document.querySelector('.result').value = '총 2 개';
-      add('36CM');add(' 84CM');
+      add('36CM');add('84CM');
     } else if (n >= 204 && n < 210) {
       document.querySelector('.result').value = '총 2 개';
       add('42CM');add('84CM');
@@ -157,18 +159,23 @@ function calculate() {
       document.querySelector('.result').value = '총 3 개';
       add('48CM');add('84CM');add('84CM');
     } else {
-      document.querySelector('.result').value = '0';
+      document.querySelector('.result').value = '설치 불가';
     }
 
-    if (document.querySelector('.result').value == '0') {
+    if (document.querySelector('.result').value == '설치 불가') {
       add2('이 길이는 설치할 수 없습니다.');
       document.querySelector('.result').value = '총 0 개';
-    }
-    else if (document.querySelector('.result').value == '총 0 개') {
-      add2('소형 본품');
+    } else if (document.querySelector('.result').value == '총 0 개') {
+      add2('확장 패널이 필요하지 않습니다.');
+      document.querySelector('.result').value = '총 0 개';
+    } else if (document.querySelector('.result').value == '소형') {
+      document.querySelector('.result').value = '총 0 개';
     }
 
-    document.querySelector(".display2").value = text;
+    if (n > 70) {
+      document.querySelector(".display2").value = "안전문 표준형 본품";
+    }
+    
 }
 
   function clearDisplay() {
@@ -200,7 +207,7 @@ function calculate() {
     clearDisplay();
   }
 
-  function add(text, border=true) {
+  function add(src, border=true) {
     var con = document.querySelector(".rst_container");
 
     var box = document.createElement('div');
@@ -211,10 +218,14 @@ function calculate() {
 
     var img = document.createElement('div');
     img.className = 'rst_img';
+    img.style.backgroundImage = "url(img/" + src + ".png)"
     
     var size = document.createElement('div');
     size.className = 'rst_size';
-    size.innerText = text;
+    if (src == 'small')
+      size.innerText = '소형';
+    else
+      size.innerText = src;
 
     img.appendChild(size);
     box.appendChild(img);
