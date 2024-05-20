@@ -130,7 +130,7 @@ function calculate() {
       add('72CM');add('84CM');
     } else if (n >= 240 && n < 246) {
       document.querySelector('.result').value = '총 3 개';
-      add('36CM');add('48CM');add('84CM');
+      add('36CM');add('42CM');add('84CM');
     } else if (n >= 246 && n < 252) {
       document.querySelector('.result').value = '총 2 개';
       add('84CM');add('84CM');
