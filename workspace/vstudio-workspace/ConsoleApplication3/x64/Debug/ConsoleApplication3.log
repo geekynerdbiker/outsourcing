@@ -1,0 +1,4 @@
+﻿  ConsoleApplication3.cpp
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication3\ConsoleApplication3.cpp(144,29): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication3\ConsoleApplication3.cpp(844,29): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ConsoleApplication3.vcxproj -> C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication3\x64\Debug\ConsoleApplication3.exe

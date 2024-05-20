@@ -1,0 +1,20 @@
+﻿  ConsoleApplication5.cpp
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication5\ConsoleApplication5.cpp(112,45): warning C4244: '인수': 'const _Ty'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=int
+          ]
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication5\ConsoleApplication5.cpp(113,57): warning C4244: '인수': 'const _Ty'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=int
+          ]
+  ConsoleApplication5.vcxproj -> C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication5\x64\Debug\ConsoleApplication5.exe
