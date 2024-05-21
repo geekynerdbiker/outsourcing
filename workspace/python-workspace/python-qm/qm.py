@@ -2,6 +2,7 @@ import string
 import random
 import time
 import RPi.GPIO as GPIO
+from PIL import Image, ImageDraw, ImageFont
 from schemdraw.parsing import logicparse
 
 inputKeys = 16
@@ -16,14 +17,13 @@ GPIO.setup(SDOPin, GPIO.IN)
 keyPressed = 0
 
 
+
 def string_to_parser(s):
     s = s.split('+')
 
     result = ''
     paren_opened = False
     for i in range(len(s)):
-        # if '(' in s[i]:
-        #     result += '('
         result += '('
 
         for j in range(len(s[i])):
@@ -111,23 +111,41 @@ def multiply(t1, t2):
 
 def remove_dups(expr):
     expr = expr.split('+')
-    temp_expr = []
+    new_expr = []
+
     for term in expr:
-        temp_term = list(term)
-        temp_term.sort()
+        new_term = []
+        temp = ''
 
+        for i in range(len(term)):
+            if term[i] != "'" and i + 1 < len(term) and term[i + 1] == "'":
+                if term[i] in new_term:
+                    new_term = []
+                    break
+                elif term[i] + "'" not in new_term:
+                    new_term.append(term[i] + "'")
+            elif term[i] != "'" and i + 1 < len(term) and term[i + 1] != "'":
+                if term[i] + "'" in new_term:
+                    new_term = []
+                    break
+                elif term[i] not in new_term:
+                    new_term.append(term[i])
+            elif term[i] != "'" and i == len(term) - 1:
+                if term[i] not in new_term:
+                    new_term.append(term[i])
+            elif term[i] == "'":
+                continue
+
+        if len(new_term) != 0:
+            new_expr.append(new_term)
+
+    temp_expr = ''
+    for ne in new_expr:
         term = ''
-        for char in temp_term:
-            term += char
-
-        new_term = ""
-        for char in term:
-            if char not in new_term:
-                new_term += char
-        temp_expr.append(new_term)
-
-        temp_expr = list(set(temp_expr))
-    return temp_expr
+        for t in ne:
+            term += t
+        temp_expr += term + '+'
+    return temp_expr[:-1]
 
 
 def multiply_all(terms):
@@ -495,7 +513,7 @@ if __name__ == "__main__":
 
     def get_input():
         sop = get_keys()
-        vars = sop.split('+')
+        vars = remove_bracelet(sop).split('+')
 
         variables = []
         for v in vars:
@@ -513,8 +531,7 @@ if __name__ == "__main__":
 
 
     expr, variables = get_input()
-    # sop = remove_bracelet(expr)
-    sop = expr
+    sop = remove_dups(remove_bracelet(expr))
     minterms = []
 
     if sop and variables:
@@ -522,7 +539,7 @@ if __name__ == "__main__":
         variables = variables.split(',')
 
         number_list = {}
-        for num in range(len(variables) ** 2 - 1):
+        for num in range(len(variables) ** 2):
             bin_num = str(bin(num)[2:])
             while len(bin_num) < len(variables):
                 bin_num = '0' + bin_num
@@ -553,10 +570,9 @@ if __name__ == "__main__":
         minterms = list(set(result))
 
     qm = QM(minterms, variables)
-
     sols = qm.minimize()
-    sols[0] = sols[0].upper()
-    expr = expr.upper()
+    sols[0] = sols[0]
+
     set_delay(12, 11, 10)
     print('\n[Delay]')
     print('\tAND: ' + str(delay_and))
@@ -565,27 +581,37 @@ if __name__ == "__main__":
 
     print('Before: ' + expr)
     circuit = logicparse(string_to_parser(expr))
-    decls = sols[0].split('+')
-    result = get_total_delay(decls)
-    print('\nMaximum Delay Before: ' + str(result))
-    #circuit.draw()
+    circuit.save('before.png', False)
 
-    print('After: ' + sols[0])
-    circuit2 = logicparse(string_to_parser(sols[0]))
-    decls = sols[0].split('+')
-    result = get_total_delay(decls)
-    print('\nMaximum Delay After: ' + str(result))
-    #circuit2.draw()
+    terms = sols[0].split('+')
+    terms.sort()
+    sol = '+'.join(terms)
 
+    print('After: ' + sol)
+    circuit2 = logicparse(string_to_parser(sol))
+    circuit2.save('after.png', False)
 
+    before = Image.open('before.png')
+    after = Image.open('after.png')
 
+    before2 = before.resize((300, 200))
+    after2 = after.resize((300, 200))
 
-    decls = sols[0].split('+')
-    result = get_total_delay(decls)
-    print('\nMaximum Delay: ' + str(result))
+    img = Image.new("RGBA", (600, 300), "white")
 
-# a'b'c'+b'cd'+a'bcd'+ab'c'
-# ab'+b'c(bd+cd')
+    img.paste(before2, (0, 50))
+    img.paste(after2, (300, 50))
 
-# ab+c'
-# AB'+B'C(BD+CD')
+    img_result = ImageDraw.Draw(img)
+    font = ImageFont.truetype("Arial.ttf", size=15)
+
+    img_result.text((30, 0), 'Input: ' + expr, (0, 0, 0), font)
+    img_result.text((330, 0), 'Output: ' + sol, (0, 0, 0), font)
+    img_result.text((30, 250), ('Propagation delay: \n' + str(get_total_delay(expr.split('+'))) + 'ns'), (0, 0, 0),
+                    font)
+    img_result.text((330, 250), 'Propagation delay: \n' + str(get_total_delay(sol.split('+'))) + 'ns', (0, 0, 0), font)
+
+    img.show()
+    img.save(result)
+    # AB'+B'C(BD+CD')
+    # A'B'C'+B'CD'+A'BCD'+AB'C'
