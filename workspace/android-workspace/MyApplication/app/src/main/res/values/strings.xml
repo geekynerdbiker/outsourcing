@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">P5RUPizza</string>
+    <string name="title_activity_new_york_style">NewYorkStyleActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="yes">
+        Yes
+    </string>
+    <string name="no">
+        No
+    </string>
+    <string name="ok">
+        OK
+    </string>
+
+    <string name="subtotal_label">Subtotal</string>
+    <string name="tax_label">Tax</string>
+    <string name="total_label">Total</string>
+    <string name="remove_selected_pizza_label">Remove Selected Pizza</string>
+    <string name="remove_all_pizzas_label">Remove All Pizzas</string>
+    <string name="submit_order_label">Submit Order</string>
+
+    <string name="max_toppings_warning">
+        Unable to add topping: Maximum number of toppings reached (7)</string>
+    <string name="add_pizza_to_order_warning">
+        Are you sure you want to add this pizza to the order?</string>
+    <string name="cancel_order_warning">
+        Are you sure you want to cancel this order?
+    </string>
+    <string name="remove_pizza_warning">
+        Are you sure you want to remove the selected pizza?
+    </string>
+    <string name="remove_all_pizzas_warning">
+        Are you sure you want to remove all pizzas?
+    </string>
+    <string name="submit_order_warning">
+        Are you sure you want to submit this order?
+    </string>
+
+    <string name="added_topping_to_pizza_toast">Added topping to pizza</string>
+    <string name="removed_topping_from_pizza_toast">Removed topping from pizza</string>
+    <string name="added_pizza_to_order_toast">Added pizza to order</string>
+    <string name="removed_all_pizzas_toast">All pizzas removed</string>
+    <string name="removed_selected_pizza_toast">Selected pizza removed</string>
+    <string name="submitted_order_toast">Order submitted</string>
+    <string name="cancelled_order_toast">Order cancelled</string>
+    <string name="max_toppings_toast">Maximum number of toppings reached</string>
+
+    <string name="store_orders_prompt">
+        Please select an order
+    </string>
+    <string name="size_prompt">
+        Please select a size
+    </string>
+    <string name="pizza_prompt">
+        Please add a pizza to the order before submitting
+    </string>
+    <string name="pizza_remove_prompt">
+        Please add a pizza to the order before removing all
+    </string>
+    <string name="order_prompt">
+        Please submit an order
+    </string>
+    <string name="add_topping_prompt">
+        Click to Add Topping
+    </string>
+    <string name="cannot_add_prompt">
+        Cannot Add Toppings
+    </string>
+    <string name="remove_topping_prompt">
+        Click to Remove Topping
+    </string>
+    <string name="cannot_remove_prompt">
+        Cannot Remove Toppings
+    </string>
+
+    <string-array name="crusts">
+        <item>Thin Crust</item>
+        <item>Hand Tossed Crust</item>
+        <item>Brooklyn Crust</item>
+        <item>Hand Tossed Crust</item>
+        <item>Pan Crust</item>
+        <item>Pan Crust</item>
+        <item>Deep Dish Crust</item>
+        <item>Stuffed Crust</item>
+    </string-array>
+
+    <string-array name="styles">
+        <item>New York Style</item>
+        <item>New York Style</item>
+        <item>New York Style</item>
+        <item>New York Style</item>
+        <item>Chicago Style</item>
+        <item>Chicago Style</item>
+        <item>Chicago Style</item>
+        <item>Chicago Style</item>
+    </string-array>
+
+    <string-array name="flavors">
+        <item>BBQ Chicken</item>
+        <item>Build Your Own</item>
+        <item>Deluxe</item>
+        <item>Meatzza</item>
+        <item>BBQ Chicken</item>
+        <item>Build Your Own</item>
+        <item>Deluxe</item>
+        <item>Meatzza</item>
+    </string-array>
+
+    <string name="small_radio_button_label">
+        Small
+    </string>
+    <string name="medium_radio_button_label">
+        Medium
+    </string>
+    <string name="large_radio_button_label">
+        Large
+    </string>
+
+    <string name="remove_all_pizzas_button">
+        Remove All Pizzas
+    </string>
+    <string name="add_to_order_button">
+        Add to Order
+    </string>
+    <string name="submit_order_button">
+        Submit Order
+    </string>
+    <string name="cancel_order_button">
+        Cancel Order
+    </string>
+    <string name="customize_button">
+        Customize
+    </string>
+    <string name="current_order_label">
+        Current Order
+    </string>
+    <string name="select_order_label">
+        Select Order
+    </string>
+    <string name="available_toppings_label">
+        Available Toppings
+    </string>
+    <string name="current_toppings_label">
+        Current Toppings
+    </string>
+    <string name="click_pizza_direction">
+        Click on Pizza to Remove from Order
+    </string>
+    <string name="click_to_add_topping_direction">
+        Click to Add Topping
+    </string>
+    <string name="click_to_remove_topping_direction">
+        Click to Remove Topping
+    </string>
+    <string name="order_pizzas_label">
+        Order Pizza
+    </string>
+    <string name="view_current_order_label">
+        View Current Order
+    </string>
+    <string name="view_store_orders_label">
+        View Store Orders
+    </string>
+    <string name="divider">
+        _____________________________
+    </string>
+
+</resources>

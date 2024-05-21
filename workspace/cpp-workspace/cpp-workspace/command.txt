@@ -1,0 +1,5 @@
+LOAD graph_M.txt
+PRINT
+BFS Y 3
+DIJKSTRA N 5
+EXIT
