@@ -55,7 +55,9 @@
       <div class="subtitle">책을 추천해 드립니다!</div>
       <div class="inner">
         <div class="content">
-          {{result}}
+          {% for line in result %}
+            {{line}}<br>
+          {% endfor %}
         </div>
       </div>
     </main>

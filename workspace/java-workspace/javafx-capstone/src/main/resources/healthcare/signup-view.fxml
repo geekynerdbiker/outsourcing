@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="313.0" prefWidth="366.0" spacing="20.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthcare.SignupController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label prefHeight="66.0" prefWidth="121.0" text="회원가입">
+        <font>
+            <Font size="30.0"/>
+        </font>
+    </Label>
+    <HBox alignment="CENTER" prefHeight="76.0" prefWidth="249.0">
+        <VBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="67.0">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <Label text="아이디">
+                <VBox.margin>
+                    <Insets bottom="30.0"/>
+                </VBox.margin>
+            </Label>
+            <Label text="비밀번호">
+                <opaqueInsets>
+                    <Insets/>
+                </opaqueInsets>
+            </Label>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="76.0" prefWidth="141.0">
+            <TextField fx:id="idInput" prefHeight="23.0" prefWidth="67.0">
+                <VBox.margin>
+                    <Insets bottom="30.0"/>
+                </VBox.margin>
+            </TextField>
+            <TextField fx:id="pwInput" prefHeight="23.0" prefWidth="130.0"/>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="76.0" prefWidth="89.0">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <Button fx:id="checkBtn" onAction="#onCheckButtonClick" text="중복확인">
+                <VBox.margin>
+                    <Insets bottom="10.0"/>
+                </VBox.margin>
+            </Button>
+            <Label fx:id="stateLabel">
+                <VBox.margin>
+                    <Insets bottom="5.0"/>
+                </VBox.margin>
+            </Label>
+            <Button text="로그인" visible="false"/>
+        </VBox>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="41.0" prefWidth="326.0">
+        <Label text="부산의 사는 곳">
+            <HBox.margin>
+                <Insets right="15.0"/>
+            </HBox.margin>
+        </Label>
+        <ComboBox fx:id="locationBox" prefHeight="23.0" prefWidth="86.0" promptText="지역"/>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="41.0" prefWidth="326.0">
+        <Button fx:id="signupBtn" onAction="#onSignupButtonClick" text="가입하기">
+            <HBox.margin>
+                <Insets right="15.0"/>
+            </HBox.margin>
+        </Button>
+        <Button fx:id="cancelBtn" onAction="#onCancelButtonClick" text="취소">
+            <HBox.margin>
+                <Insets left="15.0"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>

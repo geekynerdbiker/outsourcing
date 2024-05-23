@@ -3,10 +3,10 @@ import urllib.request
 from openai import OpenAI
 from flask import Flask, render_template, request
 
-NAVER_API_CLIENT_ID = "네이버 개발자 센터 검색 API"
-NAVER_API_CLIENT_SECRET = "네이버 개발자 센터 검색 API"
+NAVER_API_CLIENT_ID = "ps_ZRRVOEzoCkMGL_4f6"
+NAVER_API_CLIENT_SECRET = "EBaafemBSC"
 
-OPENAI_API_KEY = "OpenAI ChatGPT API"
+OPENAI_API_KEY = "sk-proj-rCjD8xfUENPVJ8BSEuxTT3BlbkFJuyoopyn58YyDhRS6NJCX"
 
 
 def search_book(title):
@@ -55,15 +55,15 @@ def parse_book(keyword):
 def gpt_recommend(keyword):
     client = OpenAI(api_key=OPENAI_API_KEY)
 
-    content = str(keyword)[1:-1] + "에 관한 책들 한글로 추천해줘"
+    content = str(keyword)[1:-1] + "에 관한 책들 한글로 3권 추천해주고, 간단하게 요약 해줘."
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "user", "content": content}
         ]
     )
-
-    return completion.choices[0].message
+    rst = completion.choices[0].message.content.split('\n')
+    return rst
 
 
 app = Flask("Book Recommendation")

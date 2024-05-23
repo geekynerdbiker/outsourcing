@@ -1,9 +1,9 @@
 import string
 import random
-import time
 import RPi.GPIO as GPIO
 from PIL import Image, ImageDraw, ImageFont
 from schemdraw.parsing import logicparse
+
 
 inputKeys = 16
 
@@ -15,8 +15,6 @@ GPIO.setup(SCLPin, GPIO.OUT)
 GPIO.setup(SDOPin, GPIO.IN)
 
 keyPressed = 0
-
-
 
 def string_to_parser(s):
     s = s.split('+')
@@ -468,7 +466,7 @@ if __name__ == "__main__":
 
             delays.append(decl_max)
 
-        return max(delays) + delay_or * (len(decls) - 1)
+        return max(delays) + delay_or
 
 
     def get_key():
@@ -510,7 +508,6 @@ if __name__ == "__main__":
                     sop = ''
                 print(sop)
 
-
     def get_input():
         sop = get_keys()
         vars = remove_bracelet(sop).split('+')
@@ -537,6 +534,7 @@ if __name__ == "__main__":
     if sop and variables:
         sop = sop.split('+')
         variables = variables.split(',')
+        variables.sort()
 
         number_list = {}
         for num in range(len(variables) ** 2):
@@ -573,12 +571,6 @@ if __name__ == "__main__":
     sols = qm.minimize()
     sols[0] = sols[0]
 
-    set_delay(12, 11, 10)
-    print('\n[Delay]')
-    print('\tAND: ' + str(delay_and))
-    print('\tOR: ' + str(delay_or))
-    print('\tNOT: ' + str(delay_not))
-
     print('Before: ' + expr)
     circuit = logicparse(string_to_parser(expr))
     circuit.save('before.png', False)
@@ -590,6 +582,16 @@ if __name__ == "__main__":
     print('After: ' + sol)
     circuit2 = logicparse(string_to_parser(sol))
     circuit2.save('after.png', False)
+
+    set_delay(18.5, 18.5, 18.5)
+    print('\n[Delay]')
+    print('\tAND: ' + str(delay_and))
+    print('\tOR: ' + str(delay_or))
+    print('\tNOT: ' + str(delay_not))
+
+    decls = sols[0].split('+')
+    result = get_total_delay(decls)
+    print('\nMaximum Delay: ' + str(result))
 
     before = Image.open('before.png')
     after = Image.open('after.png')
@@ -604,7 +606,6 @@ if __name__ == "__main__":
 
     img_result = ImageDraw.Draw(img)
     font = ImageFont.truetype("Arial.ttf", size=15)
-
     img_result.text((30, 0), 'Input: ' + expr, (0, 0, 0), font)
     img_result.text((330, 0), 'Output: ' + sol, (0, 0, 0), font)
     img_result.text((30, 250), ('Propagation delay: \n' + str(get_total_delay(expr.split('+'))) + 'ns'), (0, 0, 0),
@@ -612,6 +613,7 @@ if __name__ == "__main__":
     img_result.text((330, 250), 'Propagation delay: \n' + str(get_total_delay(sol.split('+'))) + 'ns', (0, 0, 0), font)
 
     img.show()
-    img.save(result)
+    img.save('result.png')
+
     # AB'+B'C(BD+CD')
     # A'B'C'+B'CD'+A'BCD'+AB'C'

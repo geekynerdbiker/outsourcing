@@ -91,7 +91,7 @@ def run():
             break
 
         time.sleep(0.07)
-        if keyboard.is_pressed('q'):
+        if keyboard.is_pressed('e'):
             attack()
         if keyboard.is_pressed('w'):
             spawn()

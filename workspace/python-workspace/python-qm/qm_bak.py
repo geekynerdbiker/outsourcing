@@ -522,7 +522,7 @@ if __name__ == "__main__":
 
     print('Before: ' + expr)
     circuit = logicparse(string_to_parser(expr))
-    circuit.save('before.png', False)
+    circuit.save('before.svg', False)
 
     terms = sols[0].split('+')
     terms.sort()
@@ -530,7 +530,7 @@ if __name__ == "__main__":
 
     print('After: ' + sol)
     circuit2 = logicparse(string_to_parser(sol))
-    circuit2.save('after.png', False)
+    circuit2.save('after.svg', False)
 
     set_delay(18.5, 18.5, 18.5)
     print('\n[Delay]')
@@ -543,6 +543,7 @@ if __name__ == "__main__":
     print('\nMaximum Delay: ' + str(result))
 
     before = Image.open('before.png')
+
     after = Image.open('after.png')
 
     before2 = before.resize((300, 200))
