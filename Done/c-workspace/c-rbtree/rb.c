@@ -302,11 +302,16 @@ int main(int argc, char* argv[]) {
             }
             token = strtok(NULL, " ");
         }
-        printInorder(root, f_out);
-        fprintf(f_out, "\n");
-        printLevelOrder(root, f_out);
-        fprintf(f_out, "\n");
-
+        if (is_first_line) {
+            printInorder(root, f_out);
+            fprintf(f_out, "\n");
+            printLevelOrder(root, f_out);
+            fprintf(f_out, "\n");
+        } else {
+            printInorder(root, f_out);
+            fprintf(f_out, "\n");
+            printLevelOrder(root, f_out);
+        }
         is_first_line = false;
     }
     fclose(f_in);

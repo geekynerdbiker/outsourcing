@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" href="favicon.png">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="box1">
+    <div class="upper">
+    <input class="display" onkeydown="keyboard(event)" type="text" value="0" readonly>
+      <form>
+        <select class="selection" name="language">
+          <option value="default" hidden="" disabled="disabled" selected="selected" value="">안전문 표준형 본품</option>
+        </select>
+      </form>
+    </div>
+    <div class="calculator">
+      <table class="cal_table">
+        <tr>
+          <td class="num" onclick="input('1')">1</td>
+          <td class="num" onclick="input('2')">2</td>
+          <td class="num" onclick="input('3')">3</td>
+          <td onclick="backspace()">-</td>
+        </tr>
+        <tr>
+          <td class="num" onclick="input('4')">4</td>
+          <td class="num" onclick="input('5')">5</td>
+          <td class="num" onclick="input('6')">6</td>
+          <td onclick="calculate()">=</td>
+        </tr>
+        <tr>
+          <td class="num" onclick="input('7')">7</td>
+          <td class="num" onclick="input('8')">8</td>
+          <td class="num" onclick="input('9')">9</td>
+          <td onclick="calculate()">=</td>
+        </tr>
+        <tr>
+          <td class="num" onclick="input('00')">00</td>
+          <td class="num" onclick="input('0')">0</td>
+          <td class="num" onclick="clearDisplay()">?</td>
+          <td onclick="calculate()">=</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="box2">
+    <input class="result_text" type="text" value="필요한 확장패널은" readonly>
+    <input class="result" type="text" value="총 0 개" readonly>
+    <br>
+    <input class="display2" type="text" value="0" readonly>
+    <br>
+    <div class="rst_container">
+    </div>
+    <div class="return">
+      <div class="goback"  onclick="goback()"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
