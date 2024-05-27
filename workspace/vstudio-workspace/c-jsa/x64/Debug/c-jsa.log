@@ -1,0 +1,5 @@
+﻿  jsa.c
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-jsa\jsa.c(178,18): warning C4013: 'time'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-jsa\jsa.c(252,7): warning C4013: '_kbhit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-jsa\jsa.c(253,15): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  c-jsa.vcxproj -> C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-jsa\x64\Debug\c-jsa.exe
