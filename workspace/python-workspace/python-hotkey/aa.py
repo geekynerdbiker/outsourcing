@@ -106,7 +106,7 @@ root = tkinter.Tk()
 width = root.winfo_screenwidth()
 height = root.winfo_screenheight()
 
-root.geometry("100x50+" + str((width - 600)) + '+' + str((height - 400) // 2))
+root.geometry("200x100+" + str((width - 800)) + '+' + str((height - 400) // 2))
 
 btn = tkinter.Button(root, text='Run', command=run)
 btn.pack()
