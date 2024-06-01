@@ -3,11 +3,12 @@ import urllib.request
 from openai import OpenAI
 from flask import Flask, render_template, request
 
-NAVER_API_CLIENT_ID = "네이버 개발자 센터 검색 API"
-NAVER_API_CLIENT_SECRET = "네이버 개발자 센터 검색 API"
+NAVER_API_CLIENT_ID = "ps_ZRRVOEzoCkMGL_4f6"
+NAVER_API_CLIENT_SECRET = "EBaafemBSC"
 
-OPENAI_API_KEY = "OpenAI ChatGPT API"
+OPENAI_API_KEY = "sk-proj-rCjD8xfUENPVJ8BSEuxTT3BlbkFJuyoopyn58YyDhRS6NJCX"
 
+result = []
 
 def search_book(title):
     client_id = NAVER_API_CLIENT_ID
@@ -45,7 +46,7 @@ def parse_book(keyword):
     for item in json_response['items']:
         date = item['pubdate'][:4] + '-' + item['pubdate'][4:6] + '-' + item['pubdate'][6:]
         book = {"image": item['image'], "title": item['title'], "author": item['author'],
-                "publisher": item['publisher'], "pubdate": date, "description": item['description'],
+                "publisher": item['publisher'], "pubdate": date, "description": item['description'][:200]+'...',
                 "price": item['discount'] + '원'}
         data.append(book)
 
@@ -53,17 +54,18 @@ def parse_book(keyword):
 
 
 def gpt_recommend(keyword):
+    global result
     client = OpenAI(api_key=OPENAI_API_KEY)
 
-    content = str(keyword)[1:-1] + "에 관한 책들 추천해줘"
+    content = str(keyword)[1:-1] + "에 관한 책들 한글로 3권 추천해주고, 간단하게 요약. 출력 형식은 ex) 제목 - 저자 (줄바꿈) 요약문"
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "user", "content": content}
         ]
     )
-
-    return completion.choices[0].message
+    result = completion.choices[0].message.content.split('\n')
+    return result
 
 
 app = Flask("Book Recommendation")
@@ -74,14 +76,29 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/search")
+@app.route("/search", methods=['POST', 'GET'])
 def search():
-    keyword = request.args.get('keyword')
-    if keyword is None or keyword == "":
-        return render_template("no_input.html")
-    data = parse_book(keyword)
+    global result
+    temp = result
 
-    return render_template("search.html", keyword=keyword, data=data)
+    while '' in temp:
+        temp.remove('')
+
+    data = []
+
+    for i in range(len(temp)):
+        if i % 2 == 0:
+            l = temp[i].split('-')
+            keyword = l[0].replace('.', '').replace('제목', '').replace('1', '').replace('2', '').replace('3', '').replace(':', '').replace('"','').strip()
+            author = l[1].strip()
+            rst = parse_book(keyword)
+
+            for r in rst:
+                if r['author'] == author:
+                    data.append(r)
+                    break
+
+    return render_template("search.html", data=data)
 
 
 @app.route("/recommend", methods=['POST', 'GET'])
