@@ -203,31 +203,33 @@ void eval(char *cmdline)
   // TODO
   //
 
-  pid_t *pid = malloc(sizeof(pid_t));
-  sigset_t mask;
-  pid_t pgid;
-  
-  if (!builtin_cmd(argv[0])) {
-    sigemptyset(&mask);
-    sigaddset(&mask, SIGCHLD);
-    sigprocmask(SIG_BLOCK, &mask, NULL);
-
-    if ((*pid = fork()) < 0) {
-      unix_error("fork failed");
-    } else if(*pid == 0) {
-      sigprocmask(SIG_UNBLOCK, &mask, NULL);
-      setpgid(0, 0);
-      execvp(argv[0][0], argv[0]);
-    }
+  for (int job_idx = 0; job_idx < njob; job_idx++) {
+    pid_t *pid = malloc(sizeof(pid_t));
+    sigset_t mask;
+    pid_t pgid;
     
-    setpgid(0, 0);
-    pgid = getpgid(0);
-    int jid = addjob(pgid, pid, njob, mode, cmdline);
+    if (!builtin_cmd(argv[job_idx][0])) {
+      sigemptyset(&mask);
+      sigaddset(&mask, SIGCHLD);
+      sigprocmask(SIG_BLOCK, &mask, NULL);
 
-    sigprocmask(SIG_UNBLOCK, &mask, NULL);
+      if ((*pid = fork()) < 0) {
+        unix_error("fork failed");
+      } else if(*pid == 0) {
+        sigprocmask(SIG_UNBLOCK, &mask, NULL);
+        setpgid(0, 0);
+        execvp(argv[job_idx][0][0], argv[job_idx][0]);
+      }
+      
+      setpgid(0, 0);
+      pgid = getpgid(0);
+      
+      int jid = addjob(pgid, pid, njob, mode[job_idx], cmdline);
+      sigprocmask(SIG_UNBLOCK, &mask, NULL);
 
-    if (mode == jsForeground) waitfg(jid);
-    else printjob(jid);
+      if (mode[job_idx] == jsForeground) waitfg(jid);
+      else printjob(jid);
+    }
   }
 
   //
