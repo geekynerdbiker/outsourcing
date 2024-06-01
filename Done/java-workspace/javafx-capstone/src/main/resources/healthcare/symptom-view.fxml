@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="healthcare.SymptomController">
+   <Label text="연령별 검사 항목">
+      <font>
+         <Font size="24.0"/>
+      </font>
+      <VBox.margin>
+         <Insets bottom="15.0"/>
+      </VBox.margin>
+   </Label>
+   <Label prefHeight="22.0" prefWidth="494.0" text="만19~64세 국민건강보험가입자는 2년마다(비사무직은 매년) 1회 건강검진을 받아야 한다. "/>
+   <Label text="만24세 이상 남성과 40세 이상 여성은 4년마다 이상지질혈증 검사를 받아야 하며, "/>
+   <Label text="만54·66세 여성은 골다공증 검사를 받는다. ">
+      <VBox.margin>
+         <Insets bottom="20.0"/>
+      </VBox.margin>
+   </Label>
+   <Label text="만40·50·60·70세에는 정신건강 검사와 우울증 검사, 만40·50·60·70세는 생활습관평가, "/>
+   <Label text="만66·70·80세는 노인신체기능 검사, 만66세 이상은 2년에 한 번 인지기기능장애 검사를 받아야 한다.  "/>
+   <Label text="암검진의 경우, 만40세 이상 성인은 증상이 없어도 2년마다 위내시경 검사를 받아야 한다. ">
+      <VBox.margin>
+         <Insets bottom="20.0"/>
+      </VBox.margin>
+   </Label>
+   <Label text="만50세 이상은 1년마다 분변잠혈 검사 후 양성판정자는 대장내시경 검사를 받는다. "/>
+   <Label text="만40세 이상 성인 중 간질환 고위험군은 6개월마다 간 초음파 검사와 혈액 검사를 받을 수 있다. "/>
+   <Label text="만20세 이상 여성은 2년마다 자궁경부세포 검사, 만40세 이상 여성은 2년마다 유방촬영 검사를 받을 수 있다. ">
+      <VBox.margin>
+         <Insets bottom="20.0"/>
+      </VBox.margin>
+   </Label>
+   <Label text="대장암과 자궁경부암 검사 비용은 전액 국민건강보험공단이 부담하며, "/>
+   <Label text="기타 암검사는 10%만 본인 부담하면 된다.">
+      <VBox.margin>
+         <Insets bottom="20.0"/>
+      </VBox.margin>
+   </Label>
+   <Button fx:id="confirmBtn" onAction="#onConfirmButtonClick" mnemonicParsing="false" text="확인"/>
+</VBox>

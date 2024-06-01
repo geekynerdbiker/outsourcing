@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="315.0" prefWidth="503.0" spacing="20.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthcare.CheckController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+   </padding>
+   <Label prefHeight="30.0" prefWidth="97.0" text="설문조사">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <HBox alignment="CENTER" prefHeight="123.0" prefWidth="463.0">
+      <VBox prefHeight="76.0" prefWidth="250.0">
+         <Label prefHeight="20.0" prefWidth="68.0" text="기침을 한다."/>
+         <Label prefHeight="20.0" text="소화가 잘 안되거나 설사를 한다."/>
+         <Label prefHeight="20.0" text="눈에 띄게 살이 찌거나 줄어들었다."/>
+         <Label prefHeight="20.0" text="건망증이 심해진 것 같다."/>
+         <Label prefHeight="20.0" text="고열이 난다."/>
+         <Label prefHeight="20.0" text="머리가 어지럽거나 아프다."/>
+      </VBox>
+      <VBox prefHeight="123.0" prefWidth="50.0">
+         <CheckBox fx:id="chk1" mnemonicParsing="false" prefHeight="20.0" text="예"/>
+         <CheckBox fx:id="chk2" mnemonicParsing="false" prefHeight="20.0" text="예"/>
+         <CheckBox fx:id="chk3" mnemonicParsing="false" prefHeight="20.0" text="예"/>
+         <CheckBox fx:id="chk4" mnemonicParsing="false" prefHeight="20.0" text="예"/>
+         <CheckBox fx:id="chk5" mnemonicParsing="false" prefHeight="20.0" text="예"/>
+         <CheckBox fx:id="chk6" mnemonicParsing="false" prefHeight="20.0" text="예"/>
+      </VBox>
+   </HBox>
+   <Label prefHeight="15.0" prefWidth="188.0" text="해당되는 것에 예를 체크해주세요"/>
+   <HBox alignment="CENTER" prefHeight="33.0" prefWidth="463.0">
+      <Button fx:id="resultBtn" onAction="#onResultButtonClick" mnemonicParsing="false" text="결과 확인">
+         <HBox.margin>
+            <Insets right="15.0"/>
+         </HBox.margin>
+      </Button>
+      <Button fx:id="cancelBtn" onAction="#onCancelButtonClick" mnemonicParsing="false" text="취소">
+         <HBox.margin>
+            <Insets right="15.0"/>
+         </HBox.margin>
+      </Button>
+      <Button fx:id="hospitalBtn" onAction="#onHospitalButtonClick" mnemonicParsing="false" text="근처 병원찾기">
+         <HBox.margin>
+            <Insets/>
+         </HBox.margin>
+      </Button>
+   </HBox>
+</VBox>
