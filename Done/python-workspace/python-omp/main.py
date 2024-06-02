@@ -5,15 +5,18 @@ import os
 
 
 def omp(A, y, K):
+    A = A.real
+    y = y.real
+    K = K.real
+
     m, n = A.shape
     X = np.zeros((n, n))
 
     for i in range(n):
         residual = y[:, i]
-        x = np.zeros(n)
+        x_selected = np.zeros((n,))
         index_set = []
 
-        x_selected = []
         for _ in range(int(K[0, i])):
             projections = A.T @ residual
             best_index = np.argmax(np.abs(projections))
@@ -24,13 +27,10 @@ def omp(A, y, K):
             index_set.append(best_index)
 
             A_selected = A[:, index_set]
-            x_selected, _, _, _ = np.linalg.lstsq(A_selected, y[:, i], rcond=None)
-            residual = y[:, i] - A_selected @ x_selected
+            x_selected[index_set], _, _, _ = np.linalg.lstsq(A_selected, y[:, i], rcond=None)
+            residual = y[:, i] - A_selected @ x_selected[index_set]
 
-        for j, index in enumerate(index_set):
-            x[index] = x_selected[j].real
-
-        X[:, i] = x
+        X[:, i] = x_selected
 
     return X
 
@@ -42,7 +42,8 @@ def run_file(filename):
     K = mat['s']
 
     x_hat = omp(A, y, K)
-    img = Image.fromarray(np.abs(x_hat)).convert('L')
+
+    img = Image.fromarray(np.abs(x_hat)).convert('RGB')
     img.save('result/' + filename.split('.')[0] + '_result.png')
 
 

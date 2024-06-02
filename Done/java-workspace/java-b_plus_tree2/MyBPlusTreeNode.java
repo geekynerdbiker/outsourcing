@@ -27,9 +27,7 @@ public class MyBPlusTreeNode {
         this.keyList = keyList;
     }
 
-    public void setKey(int index, int key) {
-        keyList.set(index, key);
-    }
+
     public List<MyBPlusTreeNode> getChildren() {
         return children;
     }
@@ -38,7 +36,11 @@ public class MyBPlusTreeNode {
         this.children = children;
     }
 
-    public boolean isLeaf() {
+    public void setKey(int index, int key) { // 키 리스트에서 특정 키 값만 변경
+        keyList.set(index, key);
+    }
+    
+    public boolean isLeaf() { // 리프 노드인지 검사
         return getChildren() == null || getChildren().isEmpty();
     }
 }
