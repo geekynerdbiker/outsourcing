@@ -218,7 +218,7 @@ function calculate() {
 
     var img = document.createElement('div');
     img.className = 'rst_img';
-    img.style.backgroundImage = "url(img/" + src + ".png)"
+    img.style.backgroundImage = "url(img/p" + src + ".png)"
     
     var size = document.createElement('div');
     size.className = 'rst_size';

@@ -25,53 +25,69 @@ def init():
         exit(101)
 
 
-def spawn():
-    dd_dll.DD_key(101, 1)
-    time.sleep(0.07)
-    dd_dll.DD_key(101, 2)
+def stop():
+    dd_dll.DD_key(210, 1)
+    time.sleep(0.04)
+    dd_dll.DD_key(210, 2)
 
-    return
+    dd_dll.DD_key(402, 1)
+    time.sleep(0.04)
+    dd_dll.DD_key(402, 2)
+
+
+def debuf():
+    dd_dll.DD_key(301, 1)
+    time.sleep(0.04)
+    dd_dll.DD_key(301, 2)
+
+    dd_dll.DD_key(302, 1)
+    time.sleep(0.04)
+    dd_dll.DD_key(302, 2)
+
+    dd_dll.DD_key(101, 1)
+    time.sleep(0.04)
+    dd_dll.DD_key(101, 2)
 
 
 def attack():
     dd_dll.DD_key(204, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(204, 2)
 
     dd_dll.DD_key(304, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(304, 2)
 
     dd_dll.DD_key(203, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(203, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(303, 2)
 
     dd_dll.DD_key(202, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(202, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(303, 2)
 
     dd_dll.DD_key(201, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(201, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(303, 2)
 
     dd_dll.DD_key(200, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(200, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.07)
+    time.sleep(0.04)
     dd_dll.DD_key(303, 2)
 
     return
@@ -90,13 +106,15 @@ def run():
             print("[ Notice ] Hot keys are inactivated.")
             break
 
-        time.sleep(0.07)
-        if keyboard.is_pressed('e'):
+        time.sleep(0.04)
+        if keyboard.is_pressed('z'):
+            debuf()
+        if keyboard.is_pressed('x'):
             attack()
-        if keyboard.is_pressed('w'):
-            spawn()
         if keyboard.is_pressed('c'):
-            capture()
+            stop()
+        # if keyboard.is_pressed('v'):
+        #     capture()
 
 
 init()
@@ -106,7 +124,7 @@ root = tkinter.Tk()
 width = root.winfo_screenwidth()
 height = root.winfo_screenheight()
 
-root.geometry("200x100+" + str((width - 800)) + '+' + str((height - 400) // 2))
+root.geometry("200x100+" + str(100) + '+' + str(100))
 
 btn = tkinter.Button(root, text='Run', command=run)
 btn.pack()
