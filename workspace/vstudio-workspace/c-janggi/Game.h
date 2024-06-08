@@ -77,6 +77,12 @@ public:
 
 #define THESAME this->x = x; this->y = y; this->alive = TRUE; this->country = country; this->pan = game; this->unitname = unitname;
 
+class Movable : public Unit {
+public:
+    Movable() {}
+    Movable(int x, int y, int country, Game* game, LPCTSTR unitname) { THESAME; }
+};
+
 class Cha : public Unit {
 public:
     Cha() {}
@@ -179,6 +185,8 @@ public:
 
     void AskStartUnits();
     void SelectUnit(BOOL enter);
+    void PrintMovable(int x, int y);
+    void RemoveMovable();
     BOOL MoveUnit(int fromX, int fromY, int toX, int toY);
     BOOL InJang();
     void CheckMung();

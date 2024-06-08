@@ -132,6 +132,32 @@ void Game::handleClick(int x, int y) {
     }
 }
 
+void Game::PrintMovable(int x, int y) {
+    int cellSize = 60;
+    int offsetX = 30;
+    int offsetY = 30;
+    Unit* unit = pan[x][y];
+    if (unit != nullptr) {
+        MyList cango;
+        unit->MoveAvailable(&cango);
+
+        for (int i = 0; i < cango.length(); ++i) {
+            Coord* one = cango.get(i);
+            
+            pan[one->x][one->y] = new Movable(x, y, 0, this, TEXT("#"));
+        }
+    }
+}
+
+void Game::RemoveMovable() {
+    for (int i = 0; i < PANXSIZE; i++)
+        for (int j = 0; j < PANYSIZE; j++) {
+            Unit* unit = pan[i][j];
+            if (unit && unit->getCountry() == 0)
+                pan[i][j] = nullptr;
+        }
+}
+
 BOOL Game::MoveUnit(int fromX, int fromY, int toX, int toY) {
     Unit* unit = pan[fromX][fromY];
     if (unit != nullptr) {
