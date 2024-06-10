@@ -44,9 +44,9 @@ def debuf():
     time.sleep(0.04)
     dd_dll.DD_key(302, 2)
 
-    dd_dll.DD_key(101, 1)
+    dd_dll.DD_key(102, 1)
     time.sleep(0.04)
-    dd_dll.DD_key(101, 2)
+    dd_dll.DD_key(102, 2)
 
 
 def attack():
