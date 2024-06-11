@@ -1,2 +1,12 @@
-﻿  main.cpp
+﻿  game.cpp
+  game_extension.cpp
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-yut_nory_2\game_extension.cpp(31,9): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  main.cpp
+  player.cpp
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-yut_nory_2\player.cpp(124,18): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-yut_nory_2\player.cpp(128,18): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-yut_nory_2\player.cpp(132,18): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-yut_nory_2\player.cpp(140,18): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-yut_nory_2\player.cpp(146,18): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+  코드를 생성하고 있습니다...
   c-yut_nory_2.vcxproj -> C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\c-yut_nory_2\x64\Debug\c-yut_nory_2.exe

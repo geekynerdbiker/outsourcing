@@ -81,15 +81,20 @@ void Game::run() {
         cout << "Write down the position of the player to move and yut" << endl;
         cout << "(back-do, do, gae, geol, yut, and mo)" << endl;
 
-        int pos;
-        cout << ">> position : ";
-        cin >> pos;
+        while (pPlayer[turn].remainYut()) {
+            int pos;
+            cout << ">> position : ";
+            cin >> pos;
 
-        string yuts;
-        cout << ">> yut : ";
-        cin >> yuts;
+            string yuts;
+            cout << ">> yut : ";
+            cin >> yuts;
 
-        pPlayer[turn].movePlayer(pos, yuts);
+            pPlayer[turn].movePlayer(pos, yuts);
+        }
+        turn++;
+        if (turn == player_num)
+            turn = 0;
     }
     // cout << "Player " << ? ? ? << " win" << endl;
     /////////////////////////////////////////////////////////////////////////
@@ -111,6 +116,18 @@ void Game::printCurrentTurn(int player_order) {
     if (player_order == 0) {
         cout << "Player " << COLOR_RED << player_order << COLOR_DEFAULT
              << " turn" << endl;
+    }
+    else if (player_order == 1) {
+        cout << "Player " << COLOR_BLUE << player_order << COLOR_DEFAULT
+            << " turn" << endl;
+    }
+    else if (player_order == 2) {
+        cout << "Player " << COLOR_GREEN << player_order << COLOR_DEFAULT
+            << " turn" << endl;
+    }
+    else if (player_order == 3) {
+        cout << "Player " << COLOR_YELLOW << player_order << COLOR_DEFAULT
+            << " turn" << endl;
     }
     cout << "Piece : ";
     pPlayer[player_order].printPieces();
@@ -173,6 +190,7 @@ void Game::printPieceState() {
         }
     }
 
+    cout << endl;
     cout << endl;
     /////////////////////////////////////////////////////////////////////////
     cout << "-----------------------------------------" << endl;

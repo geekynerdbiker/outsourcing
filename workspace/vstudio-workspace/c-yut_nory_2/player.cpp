@@ -157,6 +157,9 @@ int Player::movePlayer(int pos, string yut) {
     //////////////////////////////////////////////////////////////////////
 }
 
+bool Player::remainYut() {
+    return !yut_list.empty();
+}
 void Player::initPieces(int n) {
     for (int i = 0; i < n; i++)
         pieces.push_back(0);

@@ -22,6 +22,7 @@ class Player {
     int movePlayer(int pos, string yut);
     void throwYut(Yut &yut);
 
+    bool remainYut();
     void initPieces(int n);
     void printPieces();
     void printYuts();
