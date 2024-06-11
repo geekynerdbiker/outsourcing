@@ -104,7 +104,7 @@ public class Problem2 {
 
         // 메세지와 일치하는 위치에 도달했으면
         if (msg.length == currMsg.size()) {
-            coordinates.add(path.getLast());
+            coordinates.add(path.get(path.size()-1));
         } else {
             for (int dir = 0; dir < 4; dir++) {
                 // 다음 이동할 방향
@@ -208,8 +208,10 @@ public class Problem2 {
      * @return 변환된 배열
      */
     public static int[][] convertTo2DArray(ArrayList<ArrayList<Integer>> al) {
+        if (al.isEmpty())
+            return new int [0][0];
         int rows = al.size();
-        int cols = al.getFirst().size();
+        int cols = al.get(0).size();
 
         int[][] arr = new int[rows][cols];
 
