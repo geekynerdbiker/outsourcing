@@ -27,67 +27,67 @@ def init():
 
 def stop():
     dd_dll.DD_key(210, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(210, 2)
 
     dd_dll.DD_key(402, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(402, 2)
 
 
 def debuf():
     dd_dll.DD_key(301, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(301, 2)
 
     dd_dll.DD_key(302, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(302, 2)
 
     dd_dll.DD_key(102, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(102, 2)
 
 
 def attack():
     dd_dll.DD_key(204, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(204, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(303, 2)
 
     dd_dll.DD_key(203, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(203, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(303, 2)
 
     dd_dll.DD_key(202, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(202, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(303, 2)
 
     dd_dll.DD_key(201, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(201, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(303, 2)
 
     dd_dll.DD_key(200, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(200, 2)
 
     dd_dll.DD_key(303, 1)
-    time.sleep(0.04)
+    time.sleep(0.01)
     dd_dll.DD_key(303, 2)
 
     return
@@ -106,11 +106,12 @@ def run():
             print("[ Notice ] Hot keys are inactivated.")
             break
 
-        time.sleep(0.04)
+        time.sleep(0.01)
         if keyboard.is_pressed('z'):
             debuf()
         if keyboard.is_pressed('x'):
-            attack()
+            for i in range(2):
+                attack()
         if keyboard.is_pressed('c'):
             stop()
         # if keyboard.is_pressed('v'):

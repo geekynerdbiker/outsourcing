@@ -1,3 +1,0 @@
-﻿  dijkstra.c
-C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication1\dijkstra.c(127,17): warning C4098: 'printArr': 'void' 함수에서 값을 반환하고 있습니다.
-  ConsoleApplication1.vcxproj -> C:\Users\geekynerdbiker\Documents\GitHub\Crebugs\workspace\vstudio-workspace\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
