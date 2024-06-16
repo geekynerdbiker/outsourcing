@@ -44,9 +44,9 @@ def debuf():
     time.sleep(0.01)
     dd_dll.DD_key(302, 2)
 
-    dd_dll.DD_key(102, 1)
+    dd_dll.DD_key(101, 1)
     time.sleep(0.01)
-    dd_dll.DD_key(102, 2)
+    dd_dll.DD_key(101, 2)
 
 
 def attack():
@@ -110,7 +110,7 @@ def run():
         if keyboard.is_pressed('z'):
             debuf()
         if keyboard.is_pressed('x'):
-            for i in range(2):
+            for i in range(int(ent.get())):
                 attack()
         if keyboard.is_pressed('c'):
             stop()
@@ -129,5 +129,9 @@ root.geometry("200x100+" + str(100) + '+' + str(100))
 
 btn = tkinter.Button(root, text='Run', command=run)
 btn.pack()
+
+ent = tkinter.Entry(root)
+ent.insert(0, '1')
+ent.pack()
 
 root.mainloop()

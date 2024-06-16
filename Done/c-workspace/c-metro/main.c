@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996)
 #include <time.h>
 #include <stdio.h>
@@ -11,7 +11,7 @@
 FILE* fp;
 int data[N][N];
 
-typedef struct GraphNode {
+typedef struct {
     char lineNumber[N][20]; // 역 고유번호
     char name[N][20]; // 역 이름
     char nosun[N][20]; // 역 노성
@@ -22,44 +22,43 @@ typedef struct GraphNode {
     int destNumber; // 도착 정점
 } GraphNode;
 
-int checkName(char insert[], GraphNode* Subway);
-int findIndexByName(char name[], GraphNode* Subway);
-int findIndexByLineNumber(char lineNumber[], GraphNode* Subway);
-void input(GraphNode* Subway);
-void findStartAndDest(GraphNode* Subway, char start[], char dest[]);
-void transfer(GraphNode* Subway, int option);
-void shortfind(GraphNode* Subway, int option);
-void print(GraphNode subway, char start[], char dest[], int option);
+int checkName(char insert[], GraphNode* subway);
+int findIndexByName(char name[], GraphNode* subway);
+int findIndexByLineNumber(char lineNumber[], GraphNode* subway);
+void readFile(GraphNode* subway);
+void findStartAndDest(GraphNode* subway, char start[], char dest[]);
+void findPath(GraphNode* subway, int option);
+void printPath(GraphNode *subway, char start[], char dest[], int option);
 
 // 역이름 확인
-int checkName(char insert[], GraphNode* Subway) {
+int checkName(char insert[], GraphNode* subway) {
     int i;
     for (i = 0; i < N; i++) {
-        if (!strcmp(insert, Subway->name[i]))
+        if (!strcmp(insert, subway->name[i]))
             return 1;
     }
     return 0;
 }
 // 역이름으로 인덱스 확인
-int findIndexByName(char name[], GraphNode* Subway) {
+int findIndexByName(char name[], GraphNode* subway) {
     int i;
     for (i = 0; i < N; i++) {
-        if (strcmp(name, Subway->name[i]) == 0)
+        if (strcmp(name, subway->name[i]) == 0)
             return i;
     }
     return -1;
 }
 // 고유 번호로 인덱스 확인
-int findIndexByLineNumber(char lineNumber[], GraphNode* Subway) {
+int findIndexByLineNumber(char lineNumber[], GraphNode* subway) {
     int i;
     for (i = 0; i < N; i++) {
-        if (strcmp(lineNumber, Subway->lineNumber[i]) == 0)
+        if (strcmp(lineNumber, subway->lineNumber[i]) == 0)
             return i;
     }
     return -1;
 }
- // 역이름으로 정점 간의 거리정보 입력
-void input(GraphNode* Subway) {
+// 역이름으로 정점 간의 거리정보 입력
+void readFile(GraphNode* subway) {
     int weight, num1, num2, w = 0;
     int i = 0, s, e, temp = 0;
 
@@ -72,7 +71,7 @@ void input(GraphNode* Subway) {
         }
     }
 
-    char* filename = "data/역이름.txt";
+    char* filename = "data/역이름.csv";
     fp = fopen(filename, "r");
     if (!fp) {
         printf("Missing input file: %s\n", filename);
@@ -83,8 +82,20 @@ void input(GraphNode* Subway) {
     char line[1024];
     while (!feof(fp)) {
         fgets(line, 1024, fp);
-        sscanf(line, "%[^,], %s", Subway->lineNumber[count], Subway->name[count]);
-        Subway->number[count] = count;
+        if (count == 0) {
+            count++;
+            continue;
+        }
+
+
+        char* p = strtok(line, ",");
+        strcpy(subway->lineNumber[count], p);
+
+        p = strtok(NULL, "\n");
+        strcpy(subway->name[count], p);
+        
+
+        subway->number[count] = count;
         count++;
     }
     fclose(fp);
@@ -102,7 +113,7 @@ void input(GraphNode* Subway) {
             printf("Missing input file: %s\n", filename_list[s]);
             return;
         }
-        
+
         i = 1;
         char seq[N][100]; // 해당 노선의 모든 고유번호 저장
         fgets(line, 1024, fp);
@@ -113,21 +124,21 @@ void input(GraphNode* Subway) {
             p = strtok(NULL, ",");
             count++;
         }
-        
+
         while (!feof(fp)) {
             fgets(line, 1024, fp);
             char* p = strtok(line, ",");
-            int start_number = findIndexByLineNumber(p, Subway); // 고유번호의 인덱스 찾아 저장
-            strcpy(Subway->nosun[start_number], nosun[s]); // 인덱스로 노선 정보 삽입
+            int start_number = findIndexByLineNumber(p, subway); // 고유번호의 인덱스 찾아 저장
+            strcpy(subway->nosun[start_number], nosun[s]); // 인덱스로 노선 정보 삽입
             int end_number;
 
             count = 1;
-            while(1) {
+            while (1) {
                 p = strtok(NULL, ",");
                 if (p == NULL) break;
                 weight = atoi(p);
                 if (weight < M) { // 최대값보다 작으면 연결된 정점
-                    end_number = findIndexByLineNumber(seq[count], Subway); //고유번호 행렬로 정점 인덱스 탐색
+                    end_number = findIndexByLineNumber(seq[count], subway); //고유번호 행렬로 정점 인덱스 탐색
                     if (end_number == -1) {
                         for (int i = 0; seq[count][i] != 0; i++) {
                             if (seq[count][i] == '\n') {
@@ -135,11 +146,11 @@ void input(GraphNode* Subway) {
                                 break;
                             }
                         }
-                        end_number = findIndexByLineNumber(seq[count], Subway);
+                        end_number = findIndexByLineNumber(seq[count], subway);
                     }
                     // 양방향 연결
-                    data[start_number-1][end_number-1] = weight;
-                    data[end_number-1][start_number-1] = weight;
+                    data[start_number - 1][end_number - 1] = weight;
+                    data[end_number - 1][start_number - 1] = weight;
                 }
                 count++;
             }
@@ -169,7 +180,7 @@ void input(GraphNode* Subway) {
     while (!feof(fp)) {
         fgets(line, 1024, fp);
         char* p = strtok(line, ",");
-        int start_number = findIndexByLineNumber(p, Subway);
+        int start_number = findIndexByLineNumber(p, subway);
         int end_number;
 
         count = 1;
@@ -180,7 +191,7 @@ void input(GraphNode* Subway) {
 
             if (weight != 0 && weight < M) {
                 int random = (rand() % weight) + 1;
-                end_number = findIndexByLineNumber(seq[count], Subway);
+                end_number = findIndexByLineNumber(seq[count], subway);
                 if (end_number == -1) {
                     for (int i = 0; seq[count][i] != 0; i++) {
                         if (seq[count][i] == '\n') {
@@ -188,10 +199,10 @@ void input(GraphNode* Subway) {
                             break;
                         }
                     }
-                    end_number = findIndexByLineNumber(seq[count], Subway);
+                    end_number = findIndexByLineNumber(seq[count], subway);
                 }
-                data[start_number-1][end_number-1] = random;
-                data[end_number-1][start_number-1] = random;
+                data[start_number - 1][end_number - 1] = random;
+                data[end_number - 1][start_number - 1] = random;
             }
             count++;
         }
@@ -201,13 +212,13 @@ void input(GraphNode* Subway) {
 }
 
 // 출발지와 도착지에 따른 고유 번호 찾기
-void findStartAndDest(GraphNode* Subway, char start[], char dest[]) {
-    Subway->startNumber = findIndexByName(start, Subway);
-    Subway->destNumber = findIndexByName(dest, Subway);
+void findStartAndDest(GraphNode* subway, char start[], char dest[]) {
+    subway->startNumber = findIndexByName(start, subway);
+    subway->destNumber = findIndexByName(dest, subway);
 }
 
 // 최소환승 혹은 최단거리 찾음
-void shortfind(GraphNode* Subway, int option) {
+void findPath(GraphNode* subway, int option) {
     int i = 0, j, k, min;
     int v[N];
 
@@ -217,10 +228,10 @@ void shortfind(GraphNode* Subway, int option) {
         for (i = 0; i < N; i++) {
             for (j = 0; j < N; j++) {
                 // 환승역은 이름이 같으므로 고유번호로 비교
-                if (strcmp(Subway->name[i + 1], Subway->name[j + 1]) == 0) {
+                if (strcmp(subway->name[i + 1], subway->name[j + 1]) == 0) {
                     data[i][j] += 1000;
                 }
-                
+
 
                 if (i == j) {
                     data[i][j] = 0;
@@ -233,11 +244,11 @@ void shortfind(GraphNode* Subway, int option) {
     for (j = 0; j < N; j++)
     {
         v[j] = 0;
-        Subway->dist[j] = M;
+        subway->dist[j] = M;
     }
 
     // 시작번호 지정
-    Subway->dist[Subway->startNumber - 1] = 0;
+    subway->dist[subway->startNumber - 1] = 0;
 
     // 정점의 수만큼 반복
     for (i = 0; i < N; i++)
@@ -247,9 +258,9 @@ void shortfind(GraphNode* Subway, int option) {
         for (j = 0; j < N; j++)
         {
             // 최단거리이면 갱신
-            if (v[j] == 0 && Subway->dist[j] < min) {
+            if (v[j] == 0 && subway->dist[j] < min) {
                 k = j;
-                min = Subway->dist[j];
+                min = subway->dist[j];
             }
         }
         // 방문 확인
@@ -257,17 +268,17 @@ void shortfind(GraphNode* Subway, int option) {
         if (min == M)break;// 최단거리이면 갱신
         for (j = 0; j < N; j++)
         {
-            if (Subway->dist[j] > Subway->dist[k] + data[k][j])
+            if (subway->dist[j] > subway->dist[k] + data[k][j])
             {
-                Subway->dist[j] = Subway->dist[k] + data[k][j];
-                Subway->via[j] = k;
+                subway->dist[j] = subway->dist[k] + data[k][j];
+                subway->via[j] = k;
             }
         }
     }
 }
 
 // 최단거리 출력함수
-void print(GraphNode subway, char start[], char dest[], int option) {
+void printPath(GraphNode *subway, char start[], char dest[], int option) {
     int path[N], path_cnt = 0;
     int i = 0, k, temp = 600;
     int count = 0;
@@ -275,77 +286,74 @@ void print(GraphNode subway, char start[], char dest[], int option) {
     int transfer_time = 0;
 
     // 경로 저장
-    k = subway.destNumber - 1;
+    k = subway->destNumber - 1;
     while (1)
     {
         path[path_cnt++] = k;
-        if (k == (subway.startNumber - 1))break;
-        k = subway.via[k];
+        if (k == (subway->startNumber - 1))break;
+        k = subway->via[k];
     }
 
     // 경로 출력
     printf("<출발>\n");
-    while (strcmp(start, subway.name[path[path_cnt - 1] + 1]) == 0) {
+    while (strcmp(start, subway->name[path[path_cnt - 1] + 1]) == 0) {
         path_cnt--;
-        if (option == 2 && !(strcmp(start, subway.name[path[path_cnt - 1] + 1])))
+        if (option == 2 && !(strcmp(start, subway->name[path[path_cnt - 1] + 1])))
         {
-            subway.dist[subway.destNumber - 1] -= 1000;
+            subway->dist[subway->destNumber - 1] -= 1000;
             data[path[path_cnt]][path[path_cnt - 1]] -= 1000;
         }
-        subway.dist[subway.destNumber - 1] -= data[path[path_cnt]][path[path_cnt - 1]];
+        subway->dist[subway->destNumber - 1] -= data[path[path_cnt]][path[path_cnt - 1]];
     }
     count = path_cnt + 1;
     for (i = path_cnt; i >= 1; i--)
     {
-        if (strcmp(subway.name[temp], subway.name[path[i] + 1]) == 0) {
+        if (strcmp(subway->name[temp], subway->name[path[i] + 1]) == 0) {
             transfer += 1;
             if (option == 2)
             {
-                subway.dist[subway.destNumber - 1] -= 1000;
-                printf("─> <환승: 소요시간 %d분> %s\n", data[path[i]][path[i + 1]] - 1000, subway.name[path[i]+1]);
+                subway->dist[subway->destNumber - 1] -= 1000;
+                printf("─> <환승: 소요시간 %d분> %s\n", data[path[i]][path[i + 1]] - 1000, subway->name[path[i] + 1]);
                 transfer_time += data[path[i]][path[i + 1]] - 1000;
             }
             else {
-                printf("─> <환승: 소요시간 %d분> %s\n", data[path[i]][path[i + 1]], subway.name[path[i]+1]);
+                printf("─> <환승: 소요시간 %d분> %s\n", data[path[i]][path[i + 1]], subway->name[path[i] + 1]);
                 transfer_time += data[path[i]][path[i + 1]];
             }
             continue;
         }
-        if (!(strcmp(dest, subway.name[path[i] + 1])))
+        if (!(strcmp(dest, subway->name[path[i] + 1])))
         {
-            if (option == 2 && !(strcmp(dest, subway.name[path[i] + 1])))
+            if (option == 2 && !(strcmp(dest, subway->name[path[i] + 1])))
             {
-                subway.dist[subway.destNumber - 1] -= 1000;
+                subway->dist[subway->destNumber - 1] -= 1000;
                 data[path[i]][path[i + 1]] -= 1000;
             }
-            subway.dist[subway.destNumber - 1] -= data[path[i]][path[i + 1]];
+            subway->dist[subway->destNumber - 1] -= data[path[i]][path[i + 1]];
             transfer++;
             break;
         }
-        printf("─> <%s> %s\n", subway.nosun[path[i] + 1], subway.name[path[i] + 1]);
+        printf("─> <%s> %s\n", subway->nosun[path[i] + 1], subway->name[path[i] + 1]);
         temp = path[i] + 1;
     }
-    
-    printf("─> <%s> %s\n", subway.nosun[path[i] + 1], subway.name[path[i] + 1]);
+
+    printf("─> <%s> %s\n", subway->nosun[path[i] + 1], subway->name[path[i] + 1]);
 
     count -= transfer;
     printf("\n소요시간 : %d (%d + 환승 소요 시간: %d) 분\n",
-        subway.dist[subway.destNumber - 1], subway.dist[subway.destNumber-1]-transfer_time, transfer_time);
+        subway->dist[subway->destNumber - 1], subway->dist[subway->destNumber - 1] - transfer_time, transfer_time);
     printf("정거장 수 : %d 개\n", count);
     getchar();
 }
 
 int main() {
-    
-    GraphNode subway, * Subway;
-    Subway = &subway;
-
-    input(Subway);
+    GraphNode *subway = (GraphNode *)malloc(sizeof(GraphNode));
+    readFile(subway);
 
     int way;
     char start[100], dest[100];
-    
-     do {
+
+    do {
         printf("출발역을 입력해주세요: ");
         scanf("%s", start);
 
@@ -354,14 +362,14 @@ int main() {
 
         if (strcmp(start, dest) == 0)
             printf("출발역과 도착역이 같습니다. 다시 입력하시오\n");
-        else if (checkName(start, Subway) && checkName(dest, Subway))
+        else if (checkName(start, subway) && checkName(dest, subway))
             break;
         else
             printf("잘못된 역을 입력했습니다. 다시 입력하시오\n");
 
-    }while (1);
-    
-    findStartAndDest(Subway, start, dest);
+    } while (1);
+
+    findStartAndDest(subway, start, dest);
 
     printf("\n방식? 1. 최단경로 2. 최소환승\n:");
     scanf("%d", &way);
@@ -370,13 +378,13 @@ int main() {
     {
     case 1:
         printf("최단경로\n");
-        shortfind(Subway, way);
-        print(subway, start, dest, way);
+        findPath(subway, way);
+        printPath(subway, start, dest, way);
         break;
     case 2:
         printf("최소환승\n");
-        shortfind(Subway, way);
-        print(subway, start, dest, way);
+        findPath(subway, way);
+        printPath(subway, start, dest, way);
         break;
     default:
         printf("잘못된 값을 입력했습니다. 종료합니다.");
