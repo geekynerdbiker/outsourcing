@@ -1,0 +1,152 @@
+---
+title: "프로젝트 구텐베르크 분석"
+author: "이름"
+date: "2024-06-17"
+output: html_document
+---
+
+## 연구 질문
+
+### 프로젝트 구텐베르크의 특정 문학 작품에서 주요 인물의 등장 빈도는 어떠한가?
+### 작품 내에서 감정의 변화는 어떻게 나타나는가?
+
+```{r setup, include=FALSE}
+if(!require(gutenbergr)) install.packages("gutenbergr")
+if(!require(tidytext)) install.packages("tidytext")
+if(!require(dplyr)) install.packages("dplyr")
+if(!require(ggplot2)) install.packages("ggplot2")
+if(!require(tidyr)) install.packages("tidyr")
+
+library(gutenbergr)
+library(tidytext)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+image_folder <- "images"
+
+if (!file.exists(image_folder)) {
+  dir.create(image_folder)
+}
+```
+
+## 데이터
+프로젝트 구텐베르크는 70,000개 이상의 무료 eBook을 제공하는 온라인 도서관입니다. 이 분석에서는 찰스 디킨스의 "A Tale of Two Cities"를 사용합니다. gutenbergr 패키지를 사용하여 작품의 텍스트 데이터를 가져옵니다.
+
+```{r}
+book <- gutenberg_download(98)
+head(book)
+```
+
+## 주요 변수
+이 프로젝트에서 관심 있는 주요 변수는 다음과 같습니다:
+
+### word
+텍스트 데이터를 단어 단위로 나눈 변수입니다. 이는 작품 내에서 각 단어의 빈도를 계산하고, 주요 인물의 언급 빈도를 파악하는 데 사용됩니다.
+
+### linenumber
+각 행의 번호로, 텍스트 데이터의 위치를 나타냅니다. 이는 감정 분석에서 텍스트의 특정 위치를 기준으로 감정 점수를 계산하는 데 사용됩니다.
+
+### sentiment
+단어의 긍정 또는 부정 감정을 나타내는 변수입니다. Bing 감정 사전을 사용하여 각 단어의 감정 점수를 부여하고, 이를 통해 텍스트 전체의 감정 변화를 분석합니다.
+이 변수들은 문학 작품의 주요 요소를 분석하는 데 필수적입니다. word 변수는 단어 빈도와 주요 인물의 등장 빈도를 파악하는 데 중요하며, linenumber 변수는 텍스트의 특정 위치에서의 감정 변화를 분석하는 데 필요합니다. sentiment 변수는 작품 내에서 감정의 흐름을 시각화하고 분석하는 데 사용됩니다.
+
+```{r}
+book_words <- book %>%
+  mutate(linenumber = row_number()) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words)
+
+word_counts <- book_words %>%
+  count(word, sort = TRUE)
+
+word_counts_top10 <- head(word_counts, 10)
+word_counts_top10
+
+ggplot(word_counts_top10, aes(x = reorder(word, n), y = n)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(title = "상위 10개 단어 빈도수", x = "단어", y = "빈도수")
+ggsave(file.path(image_folder, "word_counts_top10.png"), plot = last_plot())
+```
+## 연구 질문 해결을 위한 추가 항목 설명
+### 각 인물의 역할 분석
+주요 인물들이 작품 내에서 어떤 역할을 하고 있는지를 깊이 분석합니다. 예를 들어, 각 인물이 어떤 선택을 하거나, 어떤 사건에 관여하는지를 확인합니다.
+
+### 인물 간 상호 작용 분석
+인물들 간의 관계와 상호 작용을 이해하는 것이 중요합니다. 예를 들어, 각 인물이 다른 인물들에게 어떻게 영향을 미치는지, 그들 간의 관계가 작품의 전개에 어떤 영향을 미치는지를 분석합니다.
+
+### 인물의 발전 분석
+작품 내에서 각 인물이 어떻게 변화하거나 성장하는지를 관찰합니다. 예를 들어, 주요 인물이 처음에 비해 마지막에 어떻게 변화하는지를 분석하여 작품의 테마와 연결시킵니다.
+
+
+## 주요 등장인물 분석
+```{r}
+characters <- c("charles", "lucie", "darnay", "carton")
+
+character_counts <- book_words %>%
+  filter(word %in% characters) %>%
+  count(word, sort = TRUE)
+
+character_counts
+
+ggplot(character_counts, aes(x = reorder(word, n), y = n)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(title = "주요 인물 등장 빈도", x = "인물", y = "빈도수")
+ggsave(file.path(image_folder, "character_counts.png"), plot = last_plot())
+```
+
+  위의 그래프는 Charles, Lucie, Darnay, Carton 등 주요 인물들의 등장 빈도를 보여줍니다. 이를 통해 이들 인물이 작품에서 얼마나 중요하게 다루어지는지를 시각적으로 확인할 수 있습니다.
+
+## 주요 인물 등장 빈도 분석
+위 그래프는 "A Tale of Two Cities"라는 문학 작품에서 주요 인물들의 등장 빈도를 시각적으로 나타낸 것입니다. 주요 인물로는 Charles, Lucie, Darnay, Carton 등이 포함됩니다. 이들 인물들은 작품의 주요 캐릭터로서, 그들의 등장 빈도는 작품 내에서의 중요성을 나타내는 중요한 지표입니다.
+
+### Charles
+Charles는 작품에서 가장 빈번하게 언급되는 인물 중 하나입니다. 그의 등장 빈도가 높은 이유는 그의 인생의 변화와 개인적인 운명이 작품의 중심 테마와 밀접하게 연결되기 때문입니다. 그의 선택과 행동이 작품 전개에 큰 영향을 미치는 것으로 보입니다.
+
+### Lucie
+Lucie 역시 Charles와 마찬가지로 높은 등장 빈도를 보입니다. 그녀는 작품에서의 중요한 여성 캐릭터로, 그녀의 사랑과 희생이 여러 인물들의 운명에 중요한 영향을 미칩니다. 그녀의 등장은 작품의 감정적인 요소를 강화하는 역할을 합니다.
+
+### Darnay
+Darnay는 Charles의 친척으로서, 프랑스 혁명의 배경에서 그의 정체성과 운명에 큰 관심이 집중됩니다. 그의 등장은 작품의 정치적인 측면을 강조하며, 그의 선택이 주요 사건들의 전개에 영향을 미칩니다.
+
+### Carton
+Carton은 작품의 중심 인물 중 하나로, 그의 복잡한 심리와 변화하는 인생의 이야기가 작품의 중요한 테마를 형성합니다. 그의 등장은 자아 구조와 구속에서의 해방에 대한 깊은 사색을 유도합니다.
+
+
+## 감정 분석
+
+```{r}
+bing <- get_sentiments("bing")
+
+sentiment_analysis <- book_words %>%
+  inner_join(bing, by = "word") %>%
+  count(index = linenumber %/% 80, sentiment) %>%
+  pivot_wider(names_from = sentiment, values_from = n, values_fill = list(n = 0)) %>%
+  mutate(sentiment = positive - negative)
+
+ggplot(sentiment_analysis, aes(x = index, y = sentiment)) +
+  geom_line() +
+  labs(title = "감정 변화", x = "문단 인덱스", y = "감정 점수")
+ggsave(file.path(image_folder, "sentiment_analysis.png"), plot = last_plot())
+```
+## 감정 변화 분석 결과 해석
+### 감정의 변화 추이
+시각화된 그래프를 통해 작품 내에서 어떤 시점에서 어떤 감정이 주를 이루는지를 확인할 수 있습니다. 긍정적인 감정이나 부정적인 감정이 작품의 특정 구간에서 강조되는 경우가 있을 수 있습니다.
+
+### 주요 캐릭터와 감정
+특정 캐릭터의 등장과 함께 특정 감정 점수가 어떻게 변화하는지를 관찰할 수 있습니다. 예를 들어, Charles나 Lucie 등의 주요 인물이 나타날 때 특정 감정 점수가 높아지는지를 확인할 수 있습니다.
+
+### 작품의 테마와 연결
+감정 변화가 작품의 주요 테마와 어떻게 연결되는지를 분석합니다. 예를 들어, 자유와 복역, 사랑과 희생 등의 테마가 어떤 감정적 표현을 통해 전달되는지를 이해할 수 있습니다.
+
+
+
+## 결과 및 통찰
+"Two Cities"라는 제목에서 알 수 있듯이, 이 작품은 런던과 파리 사이의 이야기를 다룹니다. 프랑스 혁명의 시기를 배경으로 하여, 두 도시의 대조적인 상황과 인물들의 운명이 얽히는 이야기를 풀어냅니다. Charles, Lucie, Darnay, Carton 등의 인물들이 각자의 선택과 운명에 직면하면서 펼쳐지는 이야기는 강렬한 인상을 남깁니다.
+
+감정 분석을 통해 작품에서의 감정 변화를 분석한 결과, 주요 장면에서의 감정의 높고 낮음이 스토리의 긴장감과 공포를 더욱 강조하는 것으로 나타났습니다. 작품의 감정적 전환점을 발견하고, 이들이 작품의 주요 사건과 어떻게 연결되는지에 대한 통찰을 얻었습니다.
+
+이와 같은 분석은 "A Tale of Two Cities"의 내용을 깊이 이해하고, 작품이 의도한 메시지와 독자에게 전달하고자 하는 감정적 영향을 탐구하는 데 중요한 역할을 합니다.
+

@@ -54,9 +54,9 @@ def attack():
     time.sleep(0.01)
     dd_dll.DD_key(204, 2)
 
-    dd_dll.DD_key(303, 1)
+    dd_dll.DD_key(304, 1)
     time.sleep(0.01)
-    dd_dll.DD_key(303, 2)
+    dd_dll.DD_key(304, 2)
 
     dd_dll.DD_key(203, 1)
     time.sleep(0.01)
@@ -112,8 +112,8 @@ def run():
         if keyboard.is_pressed('x'):
             for i in range(int(ent.get())):
                 attack()
-        if keyboard.is_pressed('c'):
-            stop()
+        # if keyboard.is_pressed('c'):
+        #     stop()
         # if keyboard.is_pressed('v'):
         #     capture()
 
@@ -131,7 +131,7 @@ btn = tkinter.Button(root, text='Run', command=run)
 btn.pack()
 
 ent = tkinter.Entry(root)
-ent.insert(0, '1')
+ent.insert(0, '2')
 ent.pack()
 
 root.mainloop()
