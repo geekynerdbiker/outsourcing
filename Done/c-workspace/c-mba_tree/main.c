@@ -4,11 +4,12 @@
 #include <string.h>
 #include <stdlib.h>
 
-char binaryops[7] = {'+', '-', '*', '/', '&', '|', '^'};
-char unaryops[1] = {'-'};
+char binaryops[7] = { '+', '-', '*', '/', '&', '|', '^' };
+char unaryops[1] = { '-' };
 int numofunaryop = 2;
 
 int complexity = 0;
+int is_arithmetic = 0;
 typedef struct node
 {
     char* op;
@@ -20,7 +21,7 @@ Node* newNode(char* op, Node* lefthand, Node* righthand)
 {
     Node* n = (Node*)malloc(sizeof(Node));
     n->op = (char*)malloc(sizeof(char) * 11);
-    
+
     strcpy(n->op, op);
     n->lefthand = lefthand;
     n->righthand = righthand;
@@ -87,12 +88,20 @@ Node* parser(char* prefix_expr)
 
         // 파싱한 왼쪽 피연산자가 괄호 열림 기호이면
         if ((*left_expr) == '(') {
+            int paren = 0;
             // 오른쪽 피연산자 다음 괄호 닫힘 기호까지 이동 
-            while (*right_expr && (*right_expr) != ')')
+            while (*right_expr) {
+                if ((*right_expr) == '(')
+                    paren++;
+                else if ((*right_expr) == ')' && paren != 0)
+                    paren--;
+                else if ((*right_expr) == ')' && paren == 0)
+                    break;
                 right_expr++;
+            }
             right_expr++;
         }
-        
+
         // 오른쪽 피연산자가 공백이 아닐 때 까지 이동
         while (*right_expr && (*right_expr) == ' ')
             right_expr++;
@@ -148,15 +157,25 @@ void calc_complexity(struct node* root)
     if (root == NULL)
         return;
 
+    if (is_arithmetic == 0) {
+        if (is_arithmeticOp(root->op))
+            is_arithmetic = 1;
+        else if (is_booleanOp(root->op))
+            is_arithmetic = -1;
+        complexity++;
+    }
+
     // 왼쪽 서브트리 처리
     calc_complexity(root->lefthand);
 
     // 현재 노드 연산자 처리
-    if (is_arithmeticOp(root->op)) {
+    if (is_arithmeticOp(root->op) && is_arithmetic == -1) {
         complexity += 1; // Arithmetic Operator
+        is_arithmetic = 1;
     }
-    else if (is_booleanOp(root->op)) {
-        complexity += 2; // Boolean Operator
+    else if (is_booleanOp(root->op) && is_arithmetic == 1) {
+        complexity += 1; // Boolean Operator
+        is_arithmetic = -1;
     }
 
     // 오른쪽 서브트리 처리
@@ -246,7 +265,8 @@ void free_tree(Node* root)
 int main()
 {
     //char prefix_expr[] = "+ ( - 1 ) ( + 1 1 )";
-    char prefix_expr[] = "+ 1 ( - ( + 1 2 ) x )";
+    //char prefix_expr[] = "+ 1 ( - ( + 1 2 ) x )";
+    char prefix_expr[] = "+ ( & ( - x y ) ( - 0 ) ) ( | 1 2 )";
 
     // 수식 파싱
     Node* root = parser(prefix_expr);
