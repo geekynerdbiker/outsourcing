@@ -1,25 +1,63 @@
 from PIL import Image
+from PIL.ExifTags import TAGS, GPSTAGS
+import piexif
+import os
 
 
-def copy_image(input_path, output_path):
-    try:
-        # 이미지 열기
+def get_exif_data(image):
+    exif_data = {}
+    info = image.getexif()
+
+    for tag, value in info.items():
+        tag_name = TAGS.get(tag, tag)
+        exif_data[tag_name] = value
+
+    return exif_data
+
+
+def remove_software_tag(exif_dict):
+    if piexif.ImageIFD.Software in exif_dict['0th']:
+        del exif_dict['0th'][piexif.ImageIFD.Software]
+    return exif_dict
+
+
+def copy_images_with_metadata(input_folder, output_folder):
+    # 입력 폴더 내의 모든 파일에 대해 작업 수행
+    for filename in os.listdir(input_folder):
+        input_path = os.path.join(input_folder, filename)
+
         img = Image.open(input_path)
+        info = img.info
+        exif_bytes = img.info.get('exif')
 
-        # 이미지 복사하기 (새로운 객체 생성)
-        copied_img = img.copy()
+        # EXIF 데이터 추출 및 수정
+        exif_dict = piexif.load(exif_bytes)
+        exif_dict = remove_software_tag(exif_dict)
+        new_exif_bytes = piexif.dump(exif_dict)
 
-        # 새로운 이미지 저장
-        copied_img.save(output_path)
+        # EXIF 데이터 추출
+        exif_data = get_exif_data(img)
 
-        print(f"이미지가 {output_path}에 복사되었습니다.")
+        # 찍은 날짜, 프로그램 이름 등의 EXIF 데이터 출력 (존재하는 경우)
+        date_taken = exif_data.get('DateTimeOriginal', 'N/A')
+        software = exif_data.get('Software', 'N/A')
+        print(f"File: {filename}, Date Taken: {date_taken}, Software: {software}")
 
-    except IOError as e:
-        print(f"이미지를 열 수 없습니다: {e}")
+        # 이미지를 복사하고 메타 데이터를 추가하여 저장
+        new_img = img.copy()
+        new_img.info.update(info)
+
+        output_path = os.path.join(output_folder, filename)
+        new_img.save(output_path, exif=new_exif_bytes, icc_profile=info.get('icc_profile'))
+        print(f"Copied {filename} with metadata to {output_path}")
 
 
-# 사용 예시
-input_image = "input.jpg"
-output_image = "output.jpg"
+# 예제 사용
+input_folder = 'test'
+output_folder = 'test_out'
 
-copy_image(input_image, output_image)
+# 출력 폴더가 존재하지 않으면 생성
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
+
+copy_images_with_metadata(input_folder, output_folder)
