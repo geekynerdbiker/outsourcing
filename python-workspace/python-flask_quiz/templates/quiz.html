@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('serve_css', filename='style.css') }}">
+</head>
+<body>
+<form method="POST" action="/review">
+    <p class="header">Welcome quiz {{ name }}!</p>
+    <p class="header">You choose {{ quizzes }} quizzes.</p>
+    <br>
+    <p class="header">{{ top_player['name'] }} is top player with score {{ top_player['score'] }}!</p>
+
+
+    {% if quizzes > len %}
+    <p>Sorry. We don't have that number of quizzes..</p>
+    {% else %}
+    {% for i in range(quizzes) %}
+    <div>
+        <p>{{ questions[i]["question"] }}</p>
+        {% for j in range(questions[i]["options"] | length) %}
+        <label><input type="radio" name="{{ questions[i]["question"] }}" value="{{ values[j] }}"> {{
+            questions[i]["options"][j] }}</label><br>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {% endif %}
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

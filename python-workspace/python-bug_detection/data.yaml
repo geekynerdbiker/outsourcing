@@ -1,0 +1,6 @@
+train: ../data/yolo_train/images
+val: ../data/yolo_valid/images
+test: ../data/yolo_test/images
+
+nc: 1
+names: ['pest']

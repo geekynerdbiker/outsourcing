@@ -1,0 +1,5 @@
+.header { font-size: 2px; font-weight: bold; }
+.correct { color: blue; }
+.wrong { color: red; }
+body { text-align: center; }
+img { width:100% }

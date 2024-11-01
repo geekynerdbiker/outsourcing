@@ -1,0 +1,14 @@
+jetsons.s01e01-13   , 4
+building Houses.s01e02, 1.5
+The Jetsons - S02e03-09  ,2.5
+A Big thing - s01e04,3
+Squid game - e2, 3
+The big thing.s01e06, 3.1
+Building houses.s01e03, 1.7
+this is not valid.e
+Building Houses.s01e04  ,   1.44
+Squid Game -e1, 4
+the squid game.s01e03, 3.3
+this is also not valid, 1.1
+jetsons.s02e14, 2
+Ax Murdering.s01e01,2.5

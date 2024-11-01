@@ -1,0 +1,12 @@
+# Created on 2023-05-03T14:09:40.441
+
+
+# Created on 2023-05-03T14:09:40.441
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "surefire-forkedjvm-ping-30s"
+
+# Created on 2023-05-03T14:09:41.480
+
+
+# Created on 2023-05-03T14:09:41.481
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "main"
+

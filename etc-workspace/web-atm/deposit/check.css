@@ -1,0 +1,41 @@
+#depositPage{
+    margin-top: 60px;
+}
+
+.redirect {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 30px;
+}
+
+.btn, #returnCard {
+    width: 140px;
+    height: 70px;
+    margin: 15px;
+
+    border-radius: 10px;
+    border: 2px solid black;
+
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #2a3052;
+}
+
+.btn:hover{
+    background-color: #2a305269;
+}
+
+#returnCard {
+    background-color: #f17f33;
+}
+
+#returnCard:hover {
+    background-color: #f17f335b;
+}

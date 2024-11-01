@@ -1,0 +1,66 @@
+a
+r
+p
+pe
+pc
+pd
+P
+PE
+PC
+PD
+
+A 10/21/2023 afternoon hll114 cs cs@rutgers.edu 60
+A 10/21/2023 afternoon hll114 cs cs@rutgers.edu 60
+A 11/31/2023 afternoon hll114 cs cs@rutgers.edu 60
+A 13/31/2023 afternoon hll114 cs cs@rutgers.edu 60
+A 2/29/2023 afternoon hll114 cs cs@rutgers.edu 60
+A 2/28/2023 afternoon hll114 cs cs@rutgers.edu 60
+A 4/29/2024 afternoon hll114 cs cs@rutgers.edu 60
+A 2/29/2024 noon hll114 cs cs@rutgers.edu 60
+
+A 2/29/2024 afternoon hll114 cs cs@rutgers.edu 60
+
+A 10/21/2023 afternoon aa103 ee ee@rutgers.edu 30
+A 10/21/2023 afternoon arc103 EE ee@gmail.com 30
+A 10/21/2023 afternoon arc103 EE ee@rutgers@edu 30
+A 10/21/2023 afternoon arc103 EE eerutgersedu 30
+A 10/21/2023 afternoon arc103 EE ee@rutgers@edu 30
+A 10/21/2023 afternoon arc103 AE ee@rutgersedu 30
+A 10/21/2023 afternoon arc103 ee ee@rutgers.edu 10
+A 10/21/2023 afternoon arc103 ee ee@rutgers.edu 130
+
+A 10/21/2023 morning arc103   eE    ee@rutgers.edu 30
+A 11/1/2023 morning be_aud ITI iti@rutgers.edu 40
+A 12/31/2023 evening TIL232 MATH   MATH@rutgers.edu 120
+A 1/15/2024 morning ab2225  math  math@rutgers.edu 120
+A 12/15/2023 MORNING hll114 cs cs@rutgers.edu 90
+A 10/23/2023 evening ARC103 BAIT BAIT@rutgers.edu  60
+A 2/23/2024 evening hll114 cs cs@rutgers.edu 45
+A 2/29/2024 evening arc103 cs cs@rutgers.edu 120
+A 3/3/2024 evening arc103 bait bait@rutgers.edu 100
+A 3/14/2024 morning mu302 ITI ITI@rutgers.edu 120
+A 1/31/2024 evening MU302 BAIT BAIT@rutgers.edu 50
+A 12/7/2023 AFTERNOON AB2225 EE EE@rutgers.edu 45
+A 11/25/2023 morning ab2225 BAIT BAIT@rutgers.edu 95
+A 12/3/2023 evening mu302 iti iti@rutgers.edu 80
+A 1/8/2024 afternoon til232 ee ee@rutgers.edu 30
+A 12/15/2023 morning ab2225  math  math@rutgers.edu 50
+A 11/8/2023 afternoon til232 iti iti@rutgers.edu 75
+P
+
+R 2/29/2023 MORNING hll114
+R 4/31/2023 MORNING hll114
+R 13/22/2023 MORNING hll114
+R 1/22/2023 MORNING hll114
+R 4/22/2024 MORNING hll114
+R 12/15/2023 MORNING hll114
+R 12/15/2023 MORNING hll114
+A 12/15/2023 MORNING hll114 cs cs@rutgers.edu 90
+P
+PE
+PC
+PD
+
+q
+Q
+Program terminated. You should not process this line.

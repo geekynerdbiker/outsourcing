@@ -1,7 +1,0 @@
-CFLAGS = -Wall -Werror -g
-
-mazegen: mazegen.o
-	gcc $(CFLAGS) -o mazegen mazegen.o
-
-%.o: %.c
-	gcc $(CFLAGS) -c $< -o $@

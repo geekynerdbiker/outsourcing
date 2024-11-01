@@ -1,0 +1,102 @@
+플레이어의 플레이 순서는 2명의 참가자 중 두번째입니다.
+플레이어는 B로 표시됩니다.
+컴퓨터 1이 윷을 던집니다.
+윷이 나왔습니다.
+O o o   o o O 
+o o       o A 
+o   o   o   o 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o B 
+컴퓨터 1이 윷을 던집니다.
+개가 나왔습니다.
+O o o   o A O 
+o o       o o 
+o   o   o   o 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o B 
+플레이어가 윷을 던집니다.
+걸이 나왔습니다.
+O o o   o A O 
+o o       o o 
+o   o   o   B 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+컴퓨터 1이 윷을 던집니다.
+걸이 나왔습니다.
+O A o   o o O 
+o o       o o 
+o   o   o   B 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+플레이어가 윷을 던집니다.
+도가 나왔습니다.
+O A o   o o O 
+o o       o B 
+o   o   o   o 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+컴퓨터 1이 윷을 던집니다.
+도가 나왔습니다.
+A o o   o o O 
+o o       o B 
+o   o   o   o 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+플레이어가 윷을 던집니다.
+모가 나왔습니다.
+A B o   o o O 
+o o       o o 
+o   o   o   o 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+플레이어가 윷을 던집니다.
+개가 나왔습니다.
+A o o   o o O 
+B o       o o 
+o   o   o   o 
+      O       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+컴퓨터 1이 윷을 던집니다.
+걸이 나왔습니다.
+O o o   o o O 
+B o       o o 
+o   o   o   o 
+      A       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+플레이어가 윷을 던집니다.
+모가 나왔습니다.
+O o o   o o O 
+o o       o o 
+o   o   o   o 
+      A       
+o   o   o   o 
+o o       o o 
+O B o   o o O 
+플레이어가 윷을 던집니다.
+윷이 나왔습니다.
+O o o   o o O 
+o o       o o 
+o   o   o   o 
+      A       
+o   o   o   o 
+o o       o o 
+O o o   o o O 
+B 승리!

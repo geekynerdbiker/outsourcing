@@ -1,3 +1,0 @@
-// Simple hello world program
-println 'hello world from SAIL2023'
-end

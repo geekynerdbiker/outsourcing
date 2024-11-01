@@ -1,0 +1,12 @@
+NAME PASSWORD HW1 HW2 PJ1 PJ2
+Andy andy1234 20 20 80 90
+Bryan 1q2w3e4r 15 30 100 100
+Christine crst9876 20 20 70 50
+David dave0000 15 20 80 80
+Eve eveleen 20 30 85 90
+Felix felicis 10 25 90 90
+Gloria 7glory7 20 30 80 90
+Helen zeusleda 20 20 70 100
+Iris flowey00 15 30 100 60
+Jack 10jqka23 20 20 80 90
+Kevin homealone 15 15 100 95
