@@ -1,0 +1,61 @@
+name: Autograding Tests
+'on':
+- push
+- workflow_dispatch
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: msno.txt
+      id: msno-txt
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: msno.txt
+        setup-command: ''
+        command: bash ./tests/msno.test
+        timeout: 1
+        max-score: 2
+    - name: prime.txt
+      id: prime-txt
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: prime.txt
+        setup-command: ''
+        command: bash ./tests/prime.test
+        timeout: 1
+        max-score: 2
+    - name: kernel.txt
+      id: kernel-txt
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: kernel.txt
+        setup-command: ''
+        command: bash ./tests/kernel.test
+        timeout: 1
+        max-score: 2
+    - name: temple.txt
+      id: temple-txt
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: temple.txt
+        setup-command: ''
+        command: bash ./tests/temple.test
+        timeout: 1
+        max-score: 2
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        MSNO-TXT_RESULTS: "${{steps.msno-txt.outputs.result}}"
+        PRIME-TXT_RESULTS: "${{steps.prime-txt.outputs.result}}"
+        KERNEL-TXT_RESULTS: "${{steps.kernel-txt.outputs.result}}"
+        TEMPLE-TXT_RESULTS: "${{steps.temple-txt.outputs.result}}"
+      with:
+        runners: msno-txt,prime-txt,kernel-txt,temple-txt
