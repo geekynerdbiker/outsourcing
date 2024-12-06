@@ -2,12 +2,10 @@ import requests
 import json
 import time
 
-
 NAVER_API_KEY = '네이버 API 키'
 KAKAO_API_KEY = '카카오 API 키'
 
 ORDER_FILE_PATH = 'orders.json'
-
 
 class Order:
     def __init__(self, order_id, customer_name, phone_number, order_date):

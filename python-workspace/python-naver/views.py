@@ -16,7 +16,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 
-from main.models import (Lazylet_Set, Lazylet_Term, Log, User, WordChain_Match,
+from .models import (Lazylet_Set, Lazylet_Term, Log, User, WordChain_Match,
                          WordChain_Player, WordChain_Word)
 
 version = "2.3"
