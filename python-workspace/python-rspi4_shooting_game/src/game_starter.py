@@ -2,7 +2,7 @@ from settings import *
 from src.object_controller import ObjectController
 from src.game_status import GameStatus
 from src.button import Button
-from src.game_objects import Player, Enemy, Missile, BoomEffect
+from src.game_objects import Player, Enemy, Missile, BoomEffect, Item
 import random, time
 
 
@@ -77,8 +77,22 @@ class GameStarter:
 
         prev_time = time.time()        # 이전 시간 초기화
         number = 0                     # 적 생성 카운트 초기화
+        paused = False                 # 일시 정지 상태 플래그
+
+        items = []
 
         while True:
+            # 버튼 b 입력에 따른 일시 정지 및 해제
+            if button.b:
+                paused = not paused    # paused 상태를 토글
+                time.sleep(0.2)        # 버튼의 중복 입력 방지 (간단한 디바운스)
+
+            # 게임이 일시 정지된 경우
+            if paused:
+                DISPLAY.text("Paused", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)  # 화면에 'Paused' 표시
+                continue  # 게임 로직 정지
+
+        
             # 버튼 입력에 따른 플레이어 이동
             if button.left and player.obj_coord[0] > 5:
                 player.move('L')
@@ -93,6 +107,8 @@ class GameStarter:
             if button.a:
                 player.shoot()
 
+            
+                
             # 배경 이미지 출력
             DISPLAY.image(self.__background())
 
@@ -107,6 +123,10 @@ class GameStarter:
                         Enemy(self.__position, self.__name)
                         number += 1
                         prev_time = time.time()
+                        
+                        # 아이템 생성 조건
+                        if random.random() < 0.1:  # 10% 확률로 아이템 생성
+                            Item(self.__position, self.__name)
                     else:
                         number = 0
                         self.__next_step()
@@ -120,6 +140,31 @@ class GameStarter:
 
             # 게임 종료 후 대기 처리
             if not GameStatus.getGamePlay() and time.time() - prev_time > 3:
+                self.__display_game_over_screen()
                 GameStatus.setGameReady(True)
                 GameStatus.setGamePlay(False)
                 break
+
+    # 게임 종료 화면 표시
+    def __display_game_over_screen(self): 
+        while True:
+            # 배경 색상 또는 이미지 표시
+            DISPLAY.clear(color="black")
+            
+            # 승리 또는 패배 메시지 표시
+            if GameStatus.getPlayerWin():
+                DISPLAY.text("You Win!", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 50, color="green", size=30)
+            else:
+                DISPLAY.text("Game Over", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 50, color="red", size=30)
+            
+            DISPLAY.text("Press A to Restart", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 20, color="white", size=20)
+            DISPLAY.text("Press B to Quit", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 50, color="white", size=20)
+            
+            # 버튼 입력 처리
+            button = Button()
+            if button.a:  # R키로 다시 시작
+                GameStatus.setGameReady(True)
+                GameStatus.setGamePlay(False)
+                return  # 종료 화면 루프를 종료
+            elif button.b:  # Q키로 종료
+                exit()  # 프로그램 종료

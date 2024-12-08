@@ -1,0 +1,7 @@
+﻿  PrjClient.cpp
+C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjClient\PrjClient.cpp(242,24): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjClient\PrjClient.cpp(264,24): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjClient\PrjClient.cpp(287,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjClient\PrjClient.cpp(494,59): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjClient\PrjClient.cpp(506,59): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  PrjClient.vcxproj -> C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjClient\x64\Debug\PrjClient.exe

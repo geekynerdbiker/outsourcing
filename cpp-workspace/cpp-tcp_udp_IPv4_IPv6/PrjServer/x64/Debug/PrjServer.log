@@ -1,0 +1,3 @@
+﻿  PrjServer.cpp
+C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjServer\PrjServer.cpp(299,22): warning C4101: 'comm_msg' :참조되지 않은 지역 변수입니다.
+  PrjServer.vcxproj -> C:\Users\geekynerdbiker\Downloads\TCP-IP-Socket-Prog-Book-2nd-Source\Chapter14\PrjServer\x64\Debug\PrjServer.exe

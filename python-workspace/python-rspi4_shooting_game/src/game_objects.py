@@ -166,6 +166,15 @@ OBJECT_INFO = {
         'speed': (0, 0),
         'team': 'none',
         'role': 'effect',
+    },
+    'item1': {
+        'width': 13,
+        'height': 13,
+        'size': (13, 13),
+        'path': os.path.join(IMAGE_PATH, 'item1.png'),
+        'speed': (0, 0),
+        'team': 'none',
+        'role': 'item',
     }
 }
 
@@ -261,6 +270,9 @@ class Player(GameObject):
     def _add_kill_point(self):
         self.__kill_point += 1
 
+    def _add_hp(self):
+        self.__hp += 1
+        
     def _be_attacked(self, missile):
         self.__hp -= missile.damage
         if self.__hp <= 0:
@@ -341,4 +353,8 @@ class Missile(GameObject):
 # 폭발 효과 클래스
 class BoomEffect(GameObject):
     def __init__(self, obj_coord, name='effect-boom1', team='none', role='effect', speed=None):
+        super().__init__(obj_coord, name, team, speed)
+
+class Item(GameObject):
+    def __init__(self, obj_coord, name='item1', team='none', role='item', speed=None):
         super().__init__(obj_coord, name, team, speed)

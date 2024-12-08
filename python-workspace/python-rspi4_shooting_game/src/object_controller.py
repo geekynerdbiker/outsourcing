@@ -18,6 +18,10 @@ class ObjectController:
     __effect_ids = set()
     __effect_objects = dict()
 
+    # 아이템 관련 객체 및 ID 집합
+    __item_ids = set()
+    __item_objects = dict()
+
     @classmethod
     def reset(cls):
         # 모든 객체 및 ID 초기화
@@ -33,6 +37,9 @@ class ObjectController:
 
         __effect_ids = set()
         __effect_objects = dict()
+
+        __item_ids = set()
+        __item_objects = dict()
 
     @classmethod
     def getPlayerObjects(cls):
@@ -52,6 +59,17 @@ class ObjectController:
     @classmethod
     def __init_effect_objects(cls):
         # 효과 객체 초기화
+        cls.__effect_ids = set()
+        cls.__effect_objects = dict()
+
+    @classmethod
+    def getItemObjects(cls):
+        # 아이템 객체 반환
+        return cls.__effect_objects
+
+    @classmethod
+    def __init_item_objects(cls):
+        # 아이템 객체 초기화
         cls.__effect_ids = set()
         cls.__effect_objects = dict()
 
@@ -83,6 +101,11 @@ class ObjectController:
                 # 효과 객체 등록
                 object_id = cls.__issueID(cls.__effect_ids)
                 cls.__effect_objects[object_id] = my_object
+
+            elif my_object.role == 'item':
+                # 아이템 객체 등록
+                object_id = cls.__issueID(cls.__item_ids)
+                cls.__item_objects[object_id] = my_object
 
         return object_id
 
@@ -155,6 +178,13 @@ class ObjectController:
                             object2_ids.remove(object2_id)
                             del objects1[object1_id]
                             del objects2[object2_id]
+                        elif object1.role == 'fighter' and object2.role == 'item':
+                            # 아이템과 충돌 처리
+                            if cls.__player_id:
+                                player_id = list(cls.__player_id)[0]
+                                cls.__player_object[player_id]._add_hp()
+                                object2_ids.remove(object2_id)
+                                del objects2[object2_id]
                         break
                 if flag: break
 
