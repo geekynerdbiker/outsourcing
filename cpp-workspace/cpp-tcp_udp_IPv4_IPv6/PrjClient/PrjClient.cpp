@@ -20,12 +20,15 @@ static volatile bool g_bCommStarted;  // 통신 시작 여부
 static SOCKET        g_sock;          // 클라이언트 소켓
 static HANDLE        g_hReadEvent;    // 이벤트 핸들(1)
 static HANDLE        g_hWriteEvent;   // 이벤트 핸들(2)
+static struct sockaddr_in serveraddr4;		// IPv4 서버 소켓 주소 구조체
+static struct sockaddr_in6	serveraddr6;	// IPv6 서버 소켓 주소 구조체
 
 /* 메시지 관련 전역 변수 */
 static CHAT_MSG      g_chatmsg;       // 채팅 메시지
 static DRAWLINE_MSG  g_drawlinemsg;   // 선 그리기 메시지
 static int           g_drawcolor;     // 선 그리기 색상
 static ERASEPIC_MSG  g_erasepicmsg;   // 그림 지우기 메시지
+
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	LPSTR lpCmdLine, int nCmdShow)
