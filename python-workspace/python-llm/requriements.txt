@@ -1,0 +1,8 @@
+langchain==0.0.192
+huggingface-hub==0.17.2
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+pytesseract==0.3.10
+pdf2image==1.16.3
+Pillow==9.3.0
+tk==0.1.0
