@@ -1,0 +1,100 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Random Tree 1
+      id: random-tree-1
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 1
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Random Tree 2
+      id: random-tree-2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 2
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Random Tree 3
+      id: random-tree-3
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 3
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Random Tree 4
+      id: random-tree-4
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 4
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Random Tree 5
+      id: random-tree-5
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 5
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Random Tree 6
+      id: random-tree-6
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 6
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Random Tree 7
+      id: random-tree-7
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 7
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Random Tree 8
+      id: random-tree-8
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Random Tree 8
+        setup-command: ''
+        command: bash ./tests/1a_random_tree.test
+        timeout: 2
+        max-score: 2
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        RANDOM-TREE-1_RESULTS: "${{steps.random-tree-1.outputs.result}}"
+        RANDOM-TREE-2_RESULTS: "${{steps.random-tree-2.outputs.result}}"
+        RANDOM-TREE-3_RESULTS: "${{steps.random-tree-3.outputs.result}}"
+        RANDOM-TREE-4_RESULTS: "${{steps.random-tree-4.outputs.result}}"
+        RANDOM-TREE-5_RESULTS: "${{steps.random-tree-5.outputs.result}}"
+        RANDOM-TREE-6_RESULTS: "${{steps.random-tree-6.outputs.result}}"
+        RANDOM-TREE-7_RESULTS: "${{steps.random-tree-7.outputs.result}}"
+        RANDOM-TREE-8_RESULTS: "${{steps.random-tree-8.outputs.result}}"
+      with:
+        runners: random-tree-1,random-tree-2,random-tree-3,random-tree-4,random-tree-5,random-tree-6,random-tree-7,random-tree-8
